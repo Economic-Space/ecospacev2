@@ -1,0 +1,208 @@
+* {
+    font-family: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+/* FOR MOBILE */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .logo-img {
+        width: 25px;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+
+
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+
+/* background image */
+.bg-img-orange {
+    position: static;
+    display: block;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 80vh;
+    background: url('../assets/bghome.svg');
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+}
+
+
+.bg-img-white {
+    position: static;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 30vh;
+    background: url('../assets/bgwhite.svg');
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-orange {
+    background-color: #F08C03;
+}
+
+.bg-blue {
+    background-color: #84DFD8;
+}
+
+.bg-black {
+    background-color: #16182B;
+}
+
+.bg-red {
+    background-color: #980000;
+}
+
+.bg-milk {
+    background-color: #F2EEE9;
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.testi-img {
+    width: 300px;
+}
+
+.header-line {
+    width: 300px;
+    margin-left: 200px;
+}
+
+/* TEXT SIZE  */
+.font-14 {font-size: 0.875rem; }
+.font-16 { font-size: 1rem; }
+.font-20 { font-size: 1.25rem; }
+.font-24 { font-size: 1.5rem; }
+.font-26 { font-size: 1.625rem; }
+.font-28 { font-size: 1.75rem; }
+.font-30 { font-size: 1.875rem; }
+.font-32 { font-size: 2rem; }
+.font-36 { font-size: 2.25rem; }
+.font-38 { font-size: 2.375rem; }
+.font-44 { font-size: 2.75rem; }
+.font-60 { font-size: 3.75rem; }
+.font-64 { font-size: 4rem; }
+.font-82 { font-size: 5.125rem; }
+.font-96 { font-size: 6rem; }
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+/* TEXT COLOR */
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-orange {
+    color: #F08C03;
+}
+
+/* DIV STYLING */
+.circle {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+.box-service {
+    width: 24vw; /* approz 410 px in 1728 screen */
+    aspect-ratio: 0.86;
+}
+
+.box-testi {
+    width: 29vw; /* approz 410 px in 1728 screen */
+    aspect-ratio: 0.82;
+}
+
+.service-title {
+    width: 22vw;
+}
+
+
+
