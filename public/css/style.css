@@ -7,6 +7,33 @@ html {
     font-size: 16px;
 }
 
+/* default scaling for font size */
+:root {
+    --vw-scale-factor: 1;
+}
+
+/* FOR SMALLER DESKTOP SCREEN, change font size*/
+@media screen and (max-width: 1500px) {
+    :root {
+        --vw-scale-factor: 0.8; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --vw-scale-factor: 0.6; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --vw-scale-factor: 0.5; /* Adjust for smaller screens */
+    }
+}
+
+
+
+/* show the desktop version by default */
 .desktop {
     display: block;
 }
@@ -98,6 +125,8 @@ html {
     -o-object-fit: fill;
 }
 
+
+/* BACKGROUND COLOR FOR ELEMENT */
 .bg-white {
     background-color: #FFFFFF;
 }
@@ -137,22 +166,24 @@ html {
 }
 
 /* TEXT SIZE  */
-.font-14 {font-size: 0.875rem; }
-.font-16 { font-size: 1rem; }
-.font-20 { font-size: 1.25rem; }
-.font-24 { font-size: 1.5rem; }
-.font-26 { font-size: 1.625rem; }
-.font-28 { font-size: 1.75rem; }
-.font-30 { font-size: 1.875rem; }
-.font-32 { font-size: 2rem; }
-.font-36 { font-size: 2.25rem; }
-.font-38 { font-size: 2.375rem; }
-.font-44 { font-size: 2.75rem; }
-.font-60 { font-size: 3.75rem; }
-.font-64 { font-size: 4rem; }
-.font-82 { font-size: 5.125rem; }
-.font-96 { font-size: 6rem; }
+.font-14 { font-size: calc(0.875rem * var(--vw-scale-factor)); }
+.font-16 { font-size: calc(1rem * var(--vw-scale-factor)); }
+.font-20 { font-size: calc(1.25rem * var(--vw-scale-factor)); }
+.font-24 { font-size: calc(1.5rem * var(--vw-scale-factor)); }
+.font-26 { font-size: calc(1.625rem * var(--vw-scale-factor)); }
+.font-28 { font-size: calc(1.75rem * var(--vw-scale-factor)); }
+.font-30 { font-size: calc(1.875rem * var(--vw-scale-factor)); }
+.font-32 { font-size: calc(2rem * var(--vw-scale-factor)); }
+.font-36 { font-size: calc(2.25rem * var(--vw-scale-factor)); }
+.font-38 { font-size: calc(2.375rem * var(--vw-scale-factor)); }
+.font-44 { font-size: calc(2.75rem * var(--vw-scale-factor)); }
+.font-60 { font-size: calc(3.75rem * var(--vw-scale-factor)); }
+.font-64 { font-size: calc(4rem * var(--vw-scale-factor)); }
+.font-82 { font-size: calc(5.125rem * var(--vw-scale-factor)); }
+.font-96 { font-size: calc(6rem * var(--vw-scale-factor)); }
 
+
+/* FONT WEIGHT */
 .font-light {
     font-weight: 300;
 }
@@ -196,7 +227,7 @@ html {
 }
 
 .box-testi {
-    width: 29vw; /* approz 410 px in 1728 screen */
+    width: 29vw; /* approz 492 px in 1728 screen */
     aspect-ratio: 0.82;
 }
 
