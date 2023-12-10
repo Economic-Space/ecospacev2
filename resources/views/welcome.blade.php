@@ -78,7 +78,7 @@
         <div class="row">
           <div class="col-4">
             <div>
-              <div class="bg-orange rounded-5 text-center service-title mx-auto">
+              <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
                 <h4 class="font-32 font-bold">Academic Chamber</h4>
               </div>
               <div class="border border-3 border-black rounded-5 text-center box-service mx-auto">
@@ -86,7 +86,7 @@
                 <h3 class="font-36"><b>TUTOR SERVICE</b></h3>
                 <p class="font-24">Perkuliahan jadi mudah bersama Expert yang membantu pembelajaran akademik kalian</p>
               </div>
-              <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto">
+              <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                 <img src="{{asset('assets/circle.svg')}}" alt="">
                 <p class="font-24">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
               </div>
@@ -95,7 +95,7 @@
           </div>
           <div class="col-4">
             <div class="">
-              <div class="bg-black rounded-5 text-center service-title mx-auto">
+              <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
                 <h4 class="font-32 font-bold text-white">Event Space</h4>
               </div>
               <div class="border border-3 border-black rounded-5 text-center box-service mx-auto">
@@ -103,7 +103,7 @@
                 <h3 class="font-36"><b>BOOTCAMP</b></h3>
                 <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk pengembangan skill beyond kehidupan akademik</p>
               </div>
-              <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto">
+              <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                 <img src="{{asset('assets/circle.svg')}}" alt="">
                 <p class="font-24 text-white">Never say never untuk Pembelajaran Baru</p>
               </div>
@@ -111,7 +111,7 @@
           </div>
           <div class="col-4">
             <div class="">
-              <div class="bg-blue rounded-5 text-center service-title mx-auto">
+              <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
                 <h4 class="font-32 font-bold">Mentorship Hub</h4>
               </div>
               <div class="border border-3 border-black rounded-5 text-center box-service mx-auto">
@@ -119,7 +119,7 @@
                 <h3 class="font-36"><b>MENTORING</b></h3>
                 <p class="font-24">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat belajar sama orang dalam</p>
               </div>
-              <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto">
+              <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                 <img src="{{asset('assets/circle.svg')}}" alt="">
                 <p class="font-24">Dapatkan Akses 1-on-1 sama Ahlinya</p>
               </div>
@@ -202,12 +202,12 @@
             <h3 class="font-36 text-white font-bold">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
             <p class="text-white font-20">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
           </div>
-          <div class="bg-blue d-flex flex-row ms-md-5 rounded-5">
-            <div><h3 class="text-white font-44 font-bold">1.</h3></div>
+          <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3">
+            <div class="ms-4"><h3 class="text-white font-44 font-bold">1.</h3></div>
             <div><p class="font-20">Persiapan bersama <span class="font-semibold">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
           </div>
-          <div class="bg-orange d-flex flex-row ms-md-5 rounded-5">
-            <div><h3 class="text-white font-44 font-bold">2.</h3></div>
+          <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3">
+            <div class="ms-4"><h3 class="text-white font-44 font-bold">2.</h3></div>
             <div><p class="font-20">Memulai perjalanan <span class="font-semibold">lomba, beasiswa, karir</span> dengan Mentor</p></div>
           </div>
         </div>
@@ -302,7 +302,7 @@
       </div>
       <div class="row">
         <div class="col-6 col-md-3">
-          <div>
+          <div class="half-down">
             <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block">
           </div>
           <div class="bg-red border border-3 border-black rounded-5">
@@ -312,7 +312,7 @@
 
         </div>
         <div class="col-6 col-md-3">
-          <div>
+          <div class="half-down">
             <img src="{{asset('assets/emoji2.svg')}}" alt="" class="mx-auto d-block">
           </div>
           <div class="bg-blue border border-3 border-black rounded-5">
@@ -322,7 +322,7 @@
 
         </div>
         <div class="col-6 col-md-3">
-          <div>
+          <div class="half-down">
             <img src="{{asset('assets/emoji3.svg')}}" alt="" class="mx-auto d-block">
           </div>
           <div class="bg-black border border-3 border-black rounded-5">
@@ -332,7 +332,7 @@
 
         </div>
         <div class="col-6 col-md-3">
-          <div>
+          <div class="half-down">
             <img src="{{asset('assets/emoji4.svg')}}" alt="" class="mx-auto d-block">
           </div>
           <div class="bg-orange border border-3 border-black rounded-5">
@@ -512,7 +512,7 @@
       <div class="desktop">
         <div class="row">
           <div class="col-4" >
-            <div class="border border-3 border-black rounded-4 box-testi">
+            <div class="border border-3 border-black rounded-4 box-testi p-4">
               <h5 class="font-black font-28">Belajar jadi Mudah</h5>
               <img src="{{asset('assets/testi1.svg')}}" alt="" class="testi-img">
               <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
@@ -528,7 +528,7 @@
             </div>
           </div>
           <div class="col-4" >
-            <div class="border border-3 border-black rounded-4 box-testi">
+            <div class="border border-3 border-black rounded-4 box-testi p-4">
               <h5 class="font-black font-28">Belajar jadi Mudah</h5>
               <img src="{{asset('assets/testi1.svg')}}" alt="" class="testi-img">
               <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
@@ -544,7 +544,7 @@
             </div>
           </div>
           <div class="col-4" >
-            <div class="border border-3 border-black rounded-4 box-testi">
+            <div class="border border-3 border-black rounded-4 box-testi p-4">
               <h5 class="font-black font-28">Belajar jadi Mudah</h5>
               <img src="{{asset('assets/testi1.svg')}}" alt="" class="testi-img">
               <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>

@@ -235,5 +235,13 @@ html {
     width: 22vw;
 }
 
+.half-down {
+    transform: translateY(50%);
+}
+
+.half-up {
+    transform: translateY(-50%);
+}
+
 
 
