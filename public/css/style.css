@@ -42,28 +42,6 @@ html {
     display: none;
 }
 
-/* FOR MOBILE */
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .logo-img {
-        width: 25px;
-    }
-}
-
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
@@ -152,12 +130,8 @@ html {
 }
 
 .logo-img {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
-}
-
-.testi-img {
-    width: 300px;
 }
 
 .header-line {
@@ -213,6 +187,10 @@ html {
     color: #F08C03;
 }
 
+.text-blue {
+    color:#84DFD8;
+}
+
 /* DIV STYLING */
 .circle {
     border-radius: 50%;
@@ -221,20 +199,38 @@ html {
     display: inline-block;
 }
 
-/* .box-service {
-    width: 24vw;
-    aspect-ratio: 0.86;
+.box-service {
+    /* width: 24vw;
+    aspect-ratio: 0.86; */
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 
 .box-testi {
-    width: 29vw;
-    aspect-ratio: 0.82;
-} */
+    /* width: 29vw;
+    aspect-ratio: 0.82; */
+}
 
-/* .service-title {
-    width: 22vw;
-} */
+.box-potential {
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+}
 
+/* make div have equal height */
+.equal-height {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-title {
+    width: 90%;
+}
+
+/* transform div to half its height so it will overlay other div*/
 .half-down {
     transform: translateY(50%);
 }
@@ -243,5 +239,65 @@ html {
     transform: translateY(-50%);
 }
 
+/* give stroke under the title header */
+.stroke-underline {
+    position: relative
+}
+
+.stroke-underline::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    background-position: center;
+    bottom: -3.5vw;
+    left: 0;
+}
+
+.img-service {
+    height: 10vw;
+    width: auto;
+}
+
+/* make tutor div is heigher than the parent */
+.parent {
+    position: relative;
+}
+
+/* make the tutor div is in the middle of the parent */
+.bigger {
+    height: 110%;
+    transform: translateY(-5%);
+}
+
+
+/* FOR MOBILE */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .stroke-underline::after {
+        display: none;
+    }
+}
 
 

@@ -14,7 +14,7 @@
   <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md sticky-top bg-white px-md-5">
       <div class="container">
-        <img src="{{asset('assets/logo.svg')}}" class="logo-img" alt="Economic space">
+        <img src="{{asset('assets/logo.svg')}}" class="logo-img" alt="Economic space" >
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,12 +46,12 @@
     <!-- HEADER -->
     <header class="container-fluid bg-img-orange px-md-5 py-md-5">
       <div class="container">
-        <div class="row ps-5 mt-5">
-          <div class="col-12 mt-5">
-            <h1 class=" text-white font-64 font-light mt-5">Persiapkan Dirimu<br>menjadi <span class="font-black">Idaman Recruiters</span></h1>
+        <div class="row px-5 mt-5">
+          <div class="col-12">
+            <h1 class=" text-white font-64 font-light mt-5">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline">Idaman Recruiters</span></h1>
           </div>
         </div>
-        <div class="row ps-5 mt-5">
+        <div class="row px-5 mt-4">
           <div class="col-12">
             <p class="text-white font-30 font-light">Mendukung pengembangan kemampuan spesifik, dengan tetap<br>
               Memperluas Wawasan & Kapabilitas dalam berbagai area lain
@@ -59,9 +59,9 @@
           </div>
         </div>
 
-        <div class="row ps-5 mt-5">
+        <div class="row px-5 mt-4">
           <div class="col-12">
-            <button type="button" class="btn btn-dark font-32 font-bold p-3 px-4 rounded-4">Register Now</button>
+            <button type="button" class="btn btn-dark font-32 font-bold p-2 px-4 rounded-4">Register Now</button>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
 
     <!-- SERVICE PART -->
 
-    <div class="container-fluid px-md-5 py-md-5">
+    <div class="container-fluid px-md-5 py-md-5 mt-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -79,53 +79,53 @@
           </div>
         </div>
 
-        <div class="desktop py-md-3">
-          <div class="row">
+        <div class="desktop py-md-3 px-md-5">
+          <div class="row gx-5">
             <div class="col-4">
-              <div>
+              <div class="equal-height">
                 <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
                   <h4 class="font-32 font-bold">Academic Chamber</h4>
                 </div>
-                <div class="border border-3 border-black rounded-5 text-center box-service mx-auto">
-                  <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block">
-                  <h3 class="font-36"><b>TUTOR SERVICE</b></h3>
-                  <p class="font-24">Perkuliahan jadi mudah bersama Expert yang membantu pembelajaran akademik kalian</p>
+                <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
+                  <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
+                  <h3 class="font-36 text-orange"><b>TUTOR SERVICE</b></h3>
+                  <p class="font-24">Perkuliahan jadi mudah bersama Expert yang <span class="font-semibold">membantu pembelajaran akademik</span> kalian</p>
                 </div>
                 <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                  <img src="{{asset('assets/circle.svg')}}" alt="">
+                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
                   <p class="font-24">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                 </div>
               </div>
 
             </div>
             <div class="col-4">
-              <div class="">
+              <div  class="equal-height">
                 <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
                   <h4 class="font-32 font-bold text-white">Event Space</h4>
                 </div>
-                <div class="border border-3 border-black rounded-5 text-center box-service mx-auto">
-                  <img src="{{asset('assets/face2.svg')}}" alt="face icon" class="mx-auto d-block">
-                  <h3 class="font-36"><b>BOOTCAMP</b></h3>
-                  <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk pengembangan skill beyond kehidupan akademik</p>
+                <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
+                  <img src="{{asset('assets/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
+                  <h3 class="font-36 text-black"><b>BOOTCAMP</b></h3>
+                  <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-semibold">pengembangan skill beyond kehidupan akademik</span></p>
                 </div>
                 <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                  <img src="{{asset('assets/circle.svg')}}" alt="">
+                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
                   <p class="font-24 text-white">Never say never untuk Pembelajaran Baru</p>
                 </div>
               </div>
             </div>
             <div class="col-4">
-              <div class="">
+              <div  class="equal-height">
                 <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
                   <h4 class="font-32 font-bold">Mentorship Hub</h4>
                 </div>
-                <div class="border border-3 border-black rounded-5 text-center box-service mx-auto">
-                  <img src="{{asset('assets/face3.svg')}}" alt="face icon" class="mx-auto d-block">
-                  <h3 class="font-36"><b>MENTORING</b></h3>
-                  <p class="font-24">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat belajar sama orang dalam</p>
+                <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height">
+                  <img src="{{asset('assets/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
+                  <h3 class="font-36 text-blue"><b>MENTORING</b></h3>
+                  <p class="font-24">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-semibold">belajar sama orang dalam</span></p>
                 </div>
                 <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                  <img src="{{asset('assets/circle.svg')}}" alt="">
+                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
                   <p class="font-24">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                 </div>
               </div>
@@ -145,7 +145,7 @@
                       <h4>Academic Chamber</h4>
                     </div>
                     <div class="border border-2 border-black rounded-5 text-center">
-                      <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block">
+                      <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid">
                       <h3><b>TUTOR SERVICE</b></h3>
                       <p>Perkuliahan jadi mudah bersama Expert yang membantu pembelajaran akademik kalian</p>
                     </div>
@@ -200,50 +200,51 @@
     </div>
 
     <!-- MENTOR PART -->
-    <div class="container-fluid bg-black">
+    <div class="container-fluid bg-black parent">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="ms-md-5">
-              <h3 class="font-36 text-white font-bold">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
-              <p class="text-white font-20">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
+          <div class="col-md-4 d-flex justify-content-center flex-column">
+            <div>
+                <div class="ms-md-5">
+                    <h3 class="font-36 text-white font-bold">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
+                    <p class="text-white font-20">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
+                </div>
+                <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center">
+                    <div class="ms-4"><h3 class="text-white font-44 font-bold">1.</h3></div>
+                    <div><p class="font-20">Persiapan bersama <span class="font-semibold">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
+                </div>
+                <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center">
+                    <div class="ms-4"><h3 class="text-white font-44 font-bold">2.</h3></div>
+                    <div><p class="font-20">Memulai perjalanan <span class="font-semibold">lomba, beasiswa, karir</span> dengan Mentor</p></div>
+                </div>
             </div>
-            <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3">
-              <div class="ms-4"><h3 class="text-white font-44 font-bold">1.</h3></div>
-              <div><p class="font-20">Persiapan bersama <span class="font-semibold">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
-            </div>
-            <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3">
-              <div class="ms-4"><h3 class="text-white font-44 font-bold">2.</h3></div>
-              <div><p class="font-20">Memulai perjalanan <span class="font-semibold">lomba, beasiswa, karir</span> dengan Mentor</p></div>
-            </div>
+
           </div>
           <div class="col-md-8">
             <div class="desktop">
-              <div class="container-fluid">
                 <div class="row">
                   <div class="col-4">
-                    <div class="bg-blue rounded-3">
+                    <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
                       <h5 class="font-bold text-center">Joshua Soebroto</h5>
                       <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                      <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100" alt="...">
+                      <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                   </div>
                   <div class="col-4">
-                    <div class="bg-blue rounded-3">
+                    <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
                       <h5 class="font-bold text-center">Joshua Soebroto</h5>
                       <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                      <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100" alt="...">
+                      <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                   </div>
                   <div class="col-4">
-                    <div class="bg-blue rounded-3">
+                    <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
                       <h5 class="font-bold text-center">Joshua Soebroto</h5>
                       <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                      <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100" alt="...">
+                      <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
 
             <div class="mobile">
@@ -311,9 +312,9 @@
         <div class="row">
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block">
+              <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid">
             </div>
-            <div class="bg-red border border-3 border-black rounded-5">
+            <div class="bg-red border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold text-white">Easy Access & <br>Widely Available</h4>
               <p class="text-center font-20 text-white">Tidak ada lagi kata “Sulit” bagi Pelajar untuk mendapatkan akses belajar</p>
             </div>
@@ -321,9 +322,9 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji2.svg')}}" alt="" class="mx-auto d-block">
+              <img src="{{asset('assets/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid">
             </div>
-            <div class="bg-blue border border-3 border-black rounded-5">
+            <div class="bg-blue border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold">One Stop Solution <br>for Students</h4>
               <p class="text-center font-20">Tersedia secara lengkap dari pembelajaran akademik, skill penting, lomba, hingga karir</p>
             </div>
@@ -331,9 +332,9 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji3.svg')}}" alt="" class="mx-auto d-block">
+              <img src="{{asset('assets/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid">
             </div>
-            <div class="bg-black border border-3 border-black rounded-5">
+            <div class="bg-black border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold text-white">Your High Quality <br>Learning Partner</h4>
               <p class="text-center font-20 text-white">Mengundang & bekerja sama dengan Tutor, Mentor, & Pembicara terbaik </p>
             </div>
@@ -341,9 +342,9 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji4.svg')}}" alt="" class="mx-auto d-block">
+              <img src="{{asset('assets/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid">
             </div>
-            <div class="bg-orange border border-3 border-black rounded-5">
+            <div class="bg-orange border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold ">Keep it Cheap <br>& Affordable</h4>
               <h4 class="text-center font-20"></h4>
               <p class="text-center">Menjaga harga tetap terjangkau & menyediakan layanan jalur bantuan</p>
@@ -527,7 +528,7 @@
             <div class="col-4" >
               <div class="border border-3 border-black rounded-4 box-testi p-4">
                 <h5 class="font-black font-28">Belajar jadi Mudah</h5>
-                <img src="{{asset('assets/testi1.svg')}}" alt="" class="testi-img">
+                <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                 <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                 <div class="d-flex flex-row">
@@ -543,7 +544,7 @@
             <div class="col-4" >
               <div class="border border-3 border-black rounded-4 box-testi p-4">
                 <h5 class="font-black font-28">Belajar jadi Mudah</h5>
-                <img src="{{asset('assets/testi1.svg')}}" alt="" class="testi-img">
+                <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                 <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                 <div class="d-flex flex-row">
@@ -559,7 +560,7 @@
             <div class="col-4" >
               <div class="border border-3 border-black rounded-4 box-testi p-4">
                 <h5 class="font-black font-28">Belajar jadi Mudah</h5>
-                <img src="{{asset('assets/testi1.svg')}}" alt="" class="testi-img">
+                <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                 <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                 <div class="d-flex flex-row">
