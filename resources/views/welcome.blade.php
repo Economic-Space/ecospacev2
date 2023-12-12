@@ -46,12 +46,12 @@
     <!-- HEADER -->
     <header class="container-fluid bg-img-orange px-md-5 py-md-5">
       <div class="container">
-        <div class="row px-5 mt-5">
+        <div class="row px-md-5 mt-5">
           <div class="col-12">
             <h1 class=" text-white font-64 font-light mt-5">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline">Idaman Recruiters</span></h1>
           </div>
         </div>
-        <div class="row px-5 mt-4">
+        <div class="row px-md-5 mt-4">
           <div class="col-12">
             <p class="text-white font-30 font-light">Mendukung pengembangan kemampuan spesifik, dengan tetap<br>
               Memperluas Wawasan & Kapabilitas dalam berbagai area lain
@@ -59,7 +59,7 @@
           </div>
         </div>
 
-        <div class="row px-5 mt-4">
+        <div class="row px-md-5 mt-4">
           <div class="col-12">
             <button type="button" class="btn btn-dark font-32 font-bold p-2 px-4 rounded-4">Register Now</button>
           </div>
@@ -289,8 +289,8 @@
     </div>
 
     <!-- POTENTIAL  -->
-    <div class="container-fluid px-md-5 py-md-5">
-      <div class="container">
+    <div class="container-fluid px-md-5 pt-md-5 mt-5">
+      <div class="container px-md-5">
         <div class="row">
           <div class="col-12">
             <h2 class="text-center font-60 font-light">Learn Now & Claim Your Title:</h2>
@@ -298,7 +298,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <div class="bg-black mx-auto" style="width: fit-content">
+            <div class="bg-black mx-auto p-2" style="width: fit-content">
               <h1 class="text-center font-64 font-black text-white">#Talent-Favorit-Top Company HR</h1>
             </div>
 
@@ -312,7 +312,7 @@
         <div class="row">
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid">
+              <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-red border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold text-white">Easy Access & <br>Widely Available</h4>
@@ -322,7 +322,7 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid">
+              <img src="{{asset('assets/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-blue border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold">One Stop Solution <br>for Students</h4>
@@ -332,7 +332,7 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid">
+              <img src="{{asset('assets/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-black border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold text-white">Your High Quality <br>Learning Partner</h4>
@@ -342,7 +342,7 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="half-down">
-              <img src="{{asset('assets/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid">
+              <img src="{{asset('assets/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-orange border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold ">Keep it Cheap <br>& Affordable</h4>
@@ -354,11 +354,13 @@
         </div>
 
         <!-- STEP BY STEP -->
-        <div class="desktop">
+        <div class="desktop mt-5">
           <div class="row">
             <div class="col-4" >
-              <div class="d-flex flex-row">
-                <div class="bg-milk circle"><h3 class="font-82 font-black">1.</h3></div>
+              <div class="d-flex flex-row gap-3">
+                <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+                    1.
+                </div>
                 <div>
                   <h4 class="font-36 font-bold">Register / Sign In</h4>
                   <p class="font-26">Isi Data Diri & Gabung dalam Komunitas</p>
@@ -366,8 +368,10 @@
               </div>
             </div>
             <div class="col-4">
-              <div class="d-flex flex-row">
-                <div class="bg-milk circle"><h3 class="font-82 font-black">2.</h3></div>
+              <div class="d-flex flex-row gap-3">
+                <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+                    2.
+                </div>
                 <div>
                   <h4 class="font-36 font-bold">Pick & Enroll</h4>
                   <p class="font-26">Pilih Program sesuai Kebutuhan Belajarmu</p>
@@ -375,8 +379,10 @@
               </div>
             </div>
             <div class="col-4">
-              <div class="d-flex flex-row">
-                <div class="bg-milk circle"><h3 class="font-82 font-black">3.</h3></div>
+              <div class="d-flex flex-row gap-3">
+                <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+                    3.
+                </div>
                 <div>
                   <h4 class="font-36 font-bold">Make a Change</h4>
                   <p class="font-26">Selesaikan Pembelajaran & Berkarya secara Nyata</p>

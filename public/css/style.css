@@ -194,9 +194,11 @@ html {
 /* DIV STYLING */
 .circle {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box-service {
@@ -212,8 +214,8 @@ html {
 }
 
 .box-potential {
-    padding-top: 7vw;
-    padding-bottom: 7vw;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
 }
 
 /* make div have equal height */
@@ -259,6 +261,11 @@ html {
 
 .img-service {
     height: 10vw;
+    width: auto;
+}
+
+.img-emoji {
+    height: 8vw;
     width: auto;
 }
 
