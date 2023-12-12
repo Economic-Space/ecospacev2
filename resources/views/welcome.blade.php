@@ -46,7 +46,7 @@
     <!-- HEADER -->
     <header class="container-fluid bg-img-orange px-md-5 py-md-5">
       <div class="container">
-        <div class="row px-md-5 mt-5">
+        <div class="row px-md-5">
           <div class="col-12">
             <h1 class=" text-white font-64 font-light mt-5">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline">Idaman Recruiters</span></h1>
           </div>
@@ -289,7 +289,7 @@
     </div>
 
     <!-- POTENTIAL  -->
-    <div class="container-fluid px-md-5 pt-md-5 mt-5">
+    <div class="container-fluid px-md-5 pt-md-5 mt-5 mb-5">
       <div class="container px-md-5">
         <div class="row">
           <div class="col-12">
@@ -440,13 +440,19 @@
       </div>
     </div>
 
+    <!-- SEPARATOR -->
+    {{-- gatau knp gabisa dikasih margin, jadi pake ini aja deh :))) --}}
+    <div class="container">
+        <p class="text-white">.</p>
+    </div>
+
     <!-- CONTRIBUTION -->
 
-    <div class="container-fluid bg-img-white">
+    <div class="container-fluid bg-img-white mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                  <div class="bg-orange mx-auto" style="width: fit-content">
+                  <div class="bg-orange mx-auto half-up" style="width: fit-content">
                     <h3 class="text-center text-white font-bold font-44">Sejak 2023, Terus Memberi Kontribusi & Berdampak</h3>
                   </div>
 
@@ -455,7 +461,6 @@
         </div>
 
         <div class="container desktop">
-
             <div class="row px-md-5">
                 <div class="col-4">
                     <div>

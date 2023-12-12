@@ -72,35 +72,22 @@ html {
 
 /* background image */
 .bg-img-orange {
-    position: static;
-    display: block;
-    overflow: visible;
-    top: 0;
-    height: auto;
     min-height: 80vh;
     background: url('../assets/bghome.svg');
     background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
 }
 
 
 .bg-img-white {
-    position: static;
-    overflow: visible;
-    top: 0;
-    height: auto;
     min-height: 30vh;
     background: url('../assets/bgwhite.svg');
     background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
 }
 
 
