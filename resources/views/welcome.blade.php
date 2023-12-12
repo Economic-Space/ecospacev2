@@ -464,23 +464,32 @@
             <div class="row px-md-5">
                 <div class="col-4">
                     <div>
-                    <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block">
-                    <h1 class="text-center font-96 font-black text-orange">250+</h1>
-                    <p class="text-center font-28">Total Mahasiswa dalam Tutor & Mentor Session</p>
+                        <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                        <div class="hr-vertical">
+                            <h1 class="text-center font-96 font-black text-orange">250+</h1>
+                            <p class="text-center font-28">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-4">
                     <div>
-                    <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block">
-                    <h1 class="text-center font-96 font-black text-orange">70+</h1>
-                    <p class="text-center font-28">Sesi Tutor & Mentor telah sukses dilakukan </p>
+                        <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                        <div class="hr-vertical">
+                            <h1 class="text-center font-96 font-black text-orange">70+</h1>
+                            <p class="text-center font-28">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-4">
                     <div>
-                    <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block">
-                    <h1 class="text-center font-96 font-black text-orange">90%</h1>
-                    <p class="text-center font-28">Tingkat Kepuasan Penggunaan Layanan</p>
+                        <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                        <div>
+                            <h1 class="text-center font-96 font-black text-orange">90%</h1>
+                            <p class="text-center font-28">Tingkat Kepuasan<br>Penggunaan Layanan</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -492,21 +501,21 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div>
-                    <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block">
+                    <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <h1 class="text-center">250+</h1>
                     <p class="text-center">Total Mahasiswa dalam Tutor & Mentor Session</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div>
-                    <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block">
+                    <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <h1 class="text-center">70+</h1>
                     <p class="text-center">Sesi Tutor & Mentor telah sukses dilakukan </p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div>
-                    <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block">
+                    <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <h1 class="text-center">90%</h1>
                     <p class="text-center">Tingkat Kepuasan Penggunaan Layanan</p>
                   </div>
@@ -526,63 +535,60 @@
     </div>
 
     <!-- TESTIMONIAL -->
-    <div class="container-fluid px-md-5 py-md-5">
+    <div class="container-fluid px-md-5 py-md-5 mt-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h2 class="text-center font-60 font-black">Apa Kata Mereka?</h2>
-            <p class="text-center font-32">Mereka sudah mencoba - Yuk <span class="text-orange">Gabung dengan Ratusan Mahasiswa</span> Lainnya </p>
+            <p class="text-center font-32">Mereka sudah mencoba - Yuk <span class="text-orange font-bold">Gabung dengan Ratusan Mahasiswa</span> Lainnya </p>
           </div>
         </div>
-        <div class="desktop">
+        <div class="desktop mt-3">
           <div class="row">
             <div class="col-4" >
               <div class="border border-3 border-black rounded-4 box-testi p-4">
                 <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                 <div class="d-flex flex-row">
-                  <div>
-                    <p class="font-20 font-bold">Michelle Angel Aryanto</p>
-                    <p class="font-20">Akuntansi 21 - UNAIR</p>
+                  <div class="me-auto">
+                    <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
                   </div>
-                  <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ"></div>
+                  <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                 </div>
 
               </div>
             </div>
             <div class="col-4" >
-              <div class="border border-3 border-black rounded-4 box-testi p-4">
-                <h5 class="font-black font-28">Belajar jadi Mudah</h5>
-                <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                <div class="border border-3 border-black rounded-4 box-testi p-4">
+                  <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+                  <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
+                  <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
-                <div class="d-flex flex-row">
-                  <div>
-                    <p class="font-20 font-bold">Michelle Angel Aryanto</p>
-                    <p class="font-20">Akuntansi 21 - UNAIR</p>
+                  <div class="d-flex flex-row">
+                    <div class="me-auto">
+                      <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                    </div>
+                    <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                   </div>
-                  <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ"></div>
-                </div>
 
-              </div>
+                </div>
             </div>
             <div class="col-4" >
-              <div class="border border-3 border-black rounded-4 box-testi p-4">
-                <h5 class="font-black font-28">Belajar jadi Mudah</h5>
-                <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                <p class="font-20">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                <div class="border border-3 border-black rounded-4 box-testi p-4">
+                  <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+                  <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
+                  <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
-                <div class="d-flex flex-row">
-                  <div>
-                    <p class="font-20 font-bold">Michelle Angel Aryanto</p>
-                    <p class="font-20">Akuntansi 21 - UNAIR</p>
+                  <div class="d-flex flex-row">
+                    <div class="me-auto">
+                      <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                    </div>
+                    <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                   </div>
-                  <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ"></div>
-                </div>
 
-              </div>
+                </div>
             </div>
           </div>
         </div>

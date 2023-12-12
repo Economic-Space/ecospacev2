@@ -256,6 +256,16 @@ html {
     width: auto;
 }
 
+.img-contribute {
+    height: 8vw;
+    width: auto;
+}
+
+.img-univ {
+    height: 4vw;
+    width: auto;
+}
+
 /* make tutor div is heigher than the parent */
 .parent {
     position: relative;
@@ -265,6 +275,11 @@ html {
 .bigger {
     height: 110%;
     transform: translateY(-5%);
+}
+
+/* giving vertical line between col */
+.hr-vertical {
+    border-right: 2px solid;
 }
 
 
