@@ -221,19 +221,19 @@ html {
     display: inline-block;
 }
 
-.box-service {
-    width: 24vw; /* approz 410 px in 1728 screen */
+/* .box-service {
+    width: 24vw;
     aspect-ratio: 0.86;
 }
 
 .box-testi {
-    width: 29vw; /* approz 492 px in 1728 screen */
+    width: 29vw;
     aspect-ratio: 0.82;
-}
+} */
 
-.service-title {
+/* .service-title {
     width: 22vw;
-}
+} */
 
 .half-down {
     transform: translateY(50%);
