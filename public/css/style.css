@@ -40,33 +40,6 @@ html {
     display: none;
 }
 
-/* FOR MOBILE */
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .logo-img {
-        width: 25px;
-    }
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 10px 0;
-    }
-}
-
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
@@ -93,19 +66,12 @@ html {
 
 /* background image */
 .bg-img-orange {
-    position: static;
-    display: block;
-    overflow: visible;
-    top: 0;
-    height: auto;
     min-height: 80vh;
     background: url("../assets/bghome.svg");
     background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
 }
 
 .bg-img-white {
@@ -124,18 +90,12 @@ html {
 }
 
 .bg-img-white {
-    position: static;
-    overflow: visible;
-    top: 0;
-    height: auto;
     min-height: 30vh;
     background: url("../assets/bgwhite.svg");
     background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
 }
 
 .bg-img-blue-square {
@@ -184,12 +144,8 @@ html {
 }
 
 .logo-img {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
-}
-
-.testi-img {
-    width: 300px;
 }
 
 .header-line {
@@ -274,26 +230,191 @@ html {
     color: #f08c03;
 }
 
+.text-blue {
+    color:#84DFD8;
+}
+
 /* DIV STYLING */
 .circle {
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box-service {
-    width: 24vw; /* approz 410 px in 1728 screen */
-    aspect-ratio: 0.86;
+    /* width: 24vw;
+    aspect-ratio: 0.86; */
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 
-.box-testi {
-    width: 29vw; /* approz 492 px in 1728 screen */
-    aspect-ratio: 0.82;
+.box-potential {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+}
+
+/* make div have equal height */
+.equal-height {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .service-title {
-    width: 22vw;
+    width: 90%;
+}
+
+/* transform div to half its height so it will overlay other div*/
+.half-down {
+    transform: translateY(50%);
+}
+
+.half-up {
+    transform: translateY(-50%);
+}
+
+/* give stroke under the title header */
+.stroke-underline {
+    position: relative
+}
+
+.stroke-underline::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    background-position: center;
+    bottom: -3.5vw;
+    left: 0;
+}
+
+.img-service {
+    height: 150px;
+    width: auto;
+}
+
+.img-emoji {
+    height: 100px;
+    width: auto;
+}
+
+.img-contribute {
+    height: 150px;
+    width: auto;
+}
+
+.img-univ {
+    height: 80px;
+    width: auto;
+}
+
+.img-circle {
+    height: 50px;
+    width: auto;
+}
+
+/* make tutor div is heigher than the parent */
+.parent {
+    position: relative;
+}
+
+/* make the tutor div is in the middle of the parent */
+.bigger {
+    height: 110%;
+    transform: translateY(-5%);
+}
+
+/* giving vertical line between col */
+.hr-vertical {
+    border-right: 2px solid;
+}
+
+/* FOR MOBILE */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .img-circle {
+        height: 30px;
+        width: auto;
+    }
+
+    .img-service {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-emoji {
+        height: 60px;
+        width: auto;
+    }
+
+    .img-contribute {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-univ {
+        height: 40px;
+        width: auto;
+    }
+
+    .stroke-underline::after {
+        display: none;
+    }
+
+    .hr-vertical {
+        border-right: none;
+    }
+
+    .circle {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .box-potential {
+        padding-top: 40px;
+    }
+
+    .bg-black-half {
+        position: relative;
+    }
+
+    .bg-black-half::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #16182B; /* Set the background color you want */
+        z-index: -1; /* Ensure the pseudo-element is behind the content */
+    }
 }
 
 /* CLOSING */
@@ -651,4 +772,3 @@ html {
     position: relative;
     top: 0%;
 }
-
