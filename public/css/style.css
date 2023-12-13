@@ -415,6 +415,7 @@ html {
         background-color: #16182B; /* Set the background color you want */
         z-index: -1; /* Ensure the pseudo-element is behind the content */
     }
+}
 
 /* CLOSING */
 .wrapper {
@@ -771,4 +772,3 @@ html {
     position: relative;
     top: 0%;
 }
-
