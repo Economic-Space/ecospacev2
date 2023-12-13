@@ -336,6 +336,11 @@ html {
     .hr-vertical {
         border-right: none;
     }
+
+    .circle {
+        max-width: 80px;
+        max-height: 80px;
+    }
 }
 
 
