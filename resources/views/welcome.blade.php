@@ -782,6 +782,19 @@
           </div>
         </div>
       </div>
+
+      <div class="desktop">
+        <div class="container">
+          <div class="box-orange d-flex justify-content-between">
+            <div class="box-wa-1 flex-fill">
+              <h3 class="text-white font-semibold">Punya pertanyaan lebih lanjut?</h3>
+            </div>
+            <div class="box-wa">
+              <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="">Hubungi Kami</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="mobile">
@@ -810,18 +823,7 @@
         </div>
       </div>
       
-      <div class="desktop">
-        <div class="container">
-          <div class="box-orange d-flex justify-content-between">
-            <div class="box-wa-1 flex-fill">
-              <h3 class="text-white font-semibold">Punya pertanyaan lebih lanjut?</h3>
-            </div>
-            <div class="box-wa">
-              <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="">Hubungi Kami</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div class="mobile">
         <div class="container">
           <div class="box-orange">

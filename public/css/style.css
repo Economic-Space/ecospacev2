@@ -115,7 +115,6 @@ html {
 
 .mobile .bg-img-blue-square {
     height: 600px;
-
 }
 
 /* BACKGROUND COLOR FOR ELEMENT */
@@ -231,7 +230,7 @@ html {
 }
 
 .text-blue {
-    color:#84DFD8;
+    color: #84dfd8;
 }
 
 /* DIV STYLING */
@@ -281,17 +280,17 @@ html {
 
 /* give stroke under the title header */
 .stroke-underline {
-    position: relative
+    position: relative;
 }
 
 .stroke-underline::after {
     content: "";
     width: 100%;
     height: 100%;
-    background-image: url('../assets/line.svg');
+    background-image: url("../assets/line.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    position:absolute;
+    position: absolute;
     background-position: center;
     bottom: -3.5vw;
     left: 0;
@@ -412,7 +411,7 @@ html {
         left: 0;
         width: 100%;
         height: 50%;
-        background-color: #16182B; /* Set the background color you want */
+        background-color: #16182b; /* Set the background color you want */
         z-index: -1; /* Ensure the pseudo-element is behind the content */
     }
 }
@@ -577,13 +576,8 @@ html {
     border-radius: 20px;
     margin: 5px;
     height: auto;
-    background-image: linear-gradient(
-        to right,
-        #ff8c00,
-        #ffae42
-    ); /* Add linear gradient */
     position: relative; /* Ensure positioning context */
-    top: -20px;
+    top: -50px;
 }
 
 .mobile .box-orange {
@@ -592,11 +586,6 @@ html {
     margin: 5px;
     padding: 5px;
     height: auto;
-    background-image: linear-gradient(
-        to right,
-        #ff8c00,
-        #ffae42
-    ); /* Add linear gradient */
     position: relative; /* Ensure positioning context */
     top: -50px;
 }
@@ -635,7 +624,7 @@ html {
     display: flex;
     align-items: center;
     padding: 1px; /* Add padding to the inner box */
-    background-color: #f2eee9;
+    background-color: #ffffff;
     border-radius: 15px;
     height: auto;
     width: 20%;
@@ -650,7 +639,7 @@ html {
     display: flex;
     align-items: center;
     padding: 1px; /* Add padding to the inner box */
-    background-color: #f2eee9;
+    background-color: #ffffff;
     border-radius: 15px;
     height: 80%;
     width: 90%;
@@ -741,7 +730,7 @@ html {
     position: relative;
     top: 85px; /* Geser card ke atas */
     background-color: #f2f2f2; /* Warna latar belakang card */
-        padding-right: 60px;
+    padding-right: 60px;
 
     left: -10px;
 }
@@ -750,7 +739,7 @@ html {
     position: relative;
     top: -200px; /* Geser card ke atas */
     background-color: #f2f2f2; /* Warna latar belakang card */
-    padding-right:30px;
+    padding-right: 30px;
     left: 143px;
 }
 .icon-1 {
