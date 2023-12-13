@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/svg" href="{{ asset('assets/logo_favicon.svg') }}" sizes="32x32">
 </head>
 <body>
   <!-- NAVBAR -->
@@ -92,7 +93,7 @@
                   <p class="font-24">Perkuliahan jadi mudah bersama Expert yang <span class="font-semibold">membantu pembelajaran akademik</span> kalian</p>
                 </div>
                 <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
+                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
                   <p class="font-24">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                 </div>
               </div>
@@ -109,7 +110,7 @@
                   <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-semibold">pengembangan skill beyond kehidupan akademik</span></p>
                 </div>
                 <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
+                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
                   <p class="font-24 text-white">Never say never untuk Pembelajaran Baru</p>
                 </div>
               </div>
@@ -125,7 +126,7 @@
                   <p class="font-24">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-semibold">belajar sama orang dalam</span></p>
                 </div>
                 <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
+                  <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
                   <p class="font-24">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                 </div>
               </div>
@@ -137,7 +138,7 @@
         <!-- MOBILE VERSION -->
         <div class="mobile">
           <div class="row g-0">
-            <div id="carouselService" class="carousel slide mobile" data-bs-ride="carousel">
+            <div id="carouselService" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
                   <div class="equal-height">
@@ -150,7 +151,7 @@
                       <p class="font-24">Perkuliahan jadi mudah bersama Expert yang <span class="font-semibold">membantu pembelajaran akademik</span> kalian</p>
                     </div>
                     <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                      <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
+                      <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
                       <p class="font-24">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                     </div>
                   </div>
@@ -166,7 +167,7 @@
                           <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-semibold">pengembangan skill beyond kehidupan akademik</span></p>
                         </div>
                         <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                          <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
+                          <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
                           <p class="font-24 text-white">Never say never untuk Pembelajaran Baru</p>
                         </div>
                     </div>
@@ -182,7 +183,7 @@
                           <p class="font-24">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-semibold">belajar sama orang dalam</span></p>
                         </div>
                         <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                          <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid">
+                          <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
                           <p class="font-24">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                         </div>
                     </div>
@@ -250,13 +251,13 @@
                 </div>
             </div>
 
-            <div class="mobile">
-              <div id="carouselMentor" class="carousel slide mobile" data-bs-ride="carousel">
+            <div class="mobile mt-5 mb-mt-5">
+              <div id="carouselMentor" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="2000">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-10 mx-auto">
                                 <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
                                     <h5 class="font-bold text-center">Joshua Soebroto</h5>
                                     <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
@@ -270,7 +271,7 @@
                   <div class="carousel-item" data-bs-interval="2000">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-10 mx-auto">
                                 <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
                                     <h5 class="font-bold text-center">Joshua Soebroto</h5>
                                     <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
@@ -283,7 +284,7 @@
                   <div class="carousel-item" data-bs-interval="2000">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-10 mx-auto">
                                 <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
                                     <h5 class="font-bold text-center">Joshua Soebroto</h5>
                                     <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
@@ -416,14 +417,14 @@
         </div>
 
 
-        <div class="mobile">
+        <div class="mobile mt-5 mb-mt-5">
           <div class="row">
-            <div id="carouselStep" class="carousel slide mobile" data-bs-ride="carousel">
+            <div id="carouselStep" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2000">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 mx-auto">
                                 <div class="d-flex flex-row gap-3">
                                     <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
                                         1.
@@ -441,7 +442,7 @@
                 <div class="carousel-item" data-bs-interval="2000">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 mx-auto">
                                 <div class="d-flex flex-row gap-3">
                                     <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
                                         2.
@@ -459,7 +460,7 @@
                 <div class="carousel-item" data-bs-interval="2000">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 mx-auto">
                                 <div class="d-flex flex-row gap-3">
                                     <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
                                         3.
@@ -545,36 +546,57 @@
 
         <div class="mobile">
           <div class="row">
-            <div id="carouselImpact" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselImpact" class="carousel slide carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div>
-                        <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
-                        <div class="hr-vertical">
-                            <h1 class="text-center font-96 font-black text-orange">250+</h1>
-                            <p class="text-center font-28">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 mx-auto">
+                                <div>
+                                    <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                                    <div class="hr-vertical">
+                                        <h1 class="text-center font-96 font-black text-orange">250+</h1>
+                                        <p class="text-center font-28">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="carousel-item">
-                    <div>
-                        <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
-                        <div class="hr-vertical">
-                            <h1 class="text-center font-96 font-black text-orange">70+</h1>
-                            <p class="text-center font-28">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
-                        </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 mx-auto">
+                                <div>
+                                    <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                                    <div class="hr-vertical">
+                                        <h1 class="text-center font-96 font-black text-orange">70+</h1>
+                                        <p class="text-center font-28">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
                 <div class="carousel-item">
-                    <div>
-                        <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
-                        <div>
-                            <h1 class="text-center font-96 font-black text-orange">90%</h1>
-                            <p class="text-center font-28">Tingkat Kepuasan<br>Penggunaan Layanan</p>
-                        </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 mx-auto">
+                                <div>
+                                    <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                                    <div>
+                                        <h1 class="text-center font-96 font-black text-orange">90%</h1>
+                                        <p class="text-center font-28">Tingkat Kepuasan<br>Penggunaan Layanan</p>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselImpact" data-bs-slide="prev">
@@ -602,7 +624,7 @@
         <div class="desktop mt-3">
           <div class="row">
             <div class="col-4" >
-              <div class="border border-3 border-black rounded-4 box-testi p-4">
+              <div class="border border-3 border-black rounded-4 p-4">
                 <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                 <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
@@ -617,7 +639,7 @@
               </div>
             </div>
             <div class="col-4" >
-                <div class="border border-3 border-black rounded-4 box-testi p-4">
+                <div class="border border-3 border-black rounded-4 p-4">
                   <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                   <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                   <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
@@ -632,7 +654,7 @@
                 </div>
             </div>
             <div class="col-4" >
-                <div class="border border-3 border-black rounded-4 box-testi p-4">
+                <div class="border border-3 border-black rounded-4 p-4">
                   <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                   <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                   <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
@@ -651,9 +673,9 @@
 
         <div class="mobile">
           <div class="row">
-            <div id="carouselTesti" class="carousel slide mobile" data-bs-ride="carousel">
+            <div id="carouselTesti" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="1000">
+                <div class="carousel-item active" data-bs-interval="3000">
                     <div class="border border-3 border-black rounded-4 box-testi p-4">
                         <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                         <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
@@ -668,7 +690,7 @@
 
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="1000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <div class="border border-3 border-black rounded-4 box-testi p-4">
                         <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                         <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
@@ -683,7 +705,7 @@
 
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="1000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <div class="border border-3 border-black rounded-4 box-testi p-4">
                         <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                         <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">

@@ -195,11 +195,6 @@ html {
     padding-bottom: 5vw;
 }
 
-.box-testi {
-    /* width: 29vw;
-    aspect-ratio: 0.82; */
-}
-
 .box-potential {
     padding-top: 5vw;
     padding-bottom: 2vw;
@@ -247,22 +242,27 @@ html {
 }
 
 .img-service {
-    height: 10vw;
+    height: 150px;
     width: auto;
 }
 
 .img-emoji {
-    height: 8vw;
+    height: 100px;
     width: auto;
 }
 
 .img-contribute {
-    height: 8vw;
+    height: 150px;
     width: auto;
 }
 
 .img-univ {
-    height: 4vw;
+    height: 80px;
+    width: auto;
+}
+
+.img-circle {
+    height: 50px;
     width: auto;
 }
 
@@ -304,8 +304,37 @@ html {
         width: 100px;
     }
 
+    .img-circle {
+        height: 30px;
+        width: auto;
+    }
+
+    .img-service {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-emoji {
+        height: 60px;
+        width: auto;
+    }
+
+    .img-contribute {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-univ {
+        height: 40px;
+        width: auto;
+    }
+
     .stroke-underline::after {
         display: none;
+    }
+
+    .hr-vertical {
+        border-right: none;
     }
 }
 
