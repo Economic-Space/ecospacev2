@@ -572,7 +572,7 @@ html {
 }
 
 .box-orange {
-    background-color: orange;
+    background-color: #F08C03;
     border-radius: 20px;
     margin: 5px;
     height: auto;
@@ -581,7 +581,7 @@ html {
 }
 
 .mobile .box-orange {
-    background-color: orange;
+    background-color: #F08C03;
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
@@ -596,8 +596,9 @@ html {
     align-items: center; /* Center vertically */
     margin: 15px;
 }
+
 .container-fluid.bg-white.py-2 {
-    background-image: linear-gradient(to bottom, #ff8412, #ffe3c8);
+    background-image: linear-gradient(to bottom, #5C3925, #5C5357);
     height: 50px;
 }
 
