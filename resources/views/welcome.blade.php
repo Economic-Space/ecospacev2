@@ -749,6 +749,151 @@
 
 
     </div>
+
+    <!-- CLOSING -->
+    <!--desktop-->
+    <div class="desktop">
+      <div class="container-fluid bg-img-blue-square mt-3" >
+        <div class="px-md-5 py-md-5" style="background: url('assets/assetbgblue.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">  
+          <div class="wrapper">
+              <div class="p"></div>
+              <div class="img-area">
+                <img src="{{ asset('assets/sheet1.svg') }}" class="img img-box box-4">
+                <img src="{{ asset('assets/sheet2.svg') }}" class="img img-box box-5">
+                <img src="{{ asset('assets/sheet3.svg') }}" class="img img-box box-6">
+                <img src="{{ asset('assets/folder1.svg') }}" class="img img-box box-7">
+                <img src="{{ asset('assets/folder2.svg') }}" class="img img-box box-8">
+                <img src="{{ asset('assets/folder3.svg') }}" class="img img-box box-9">
+                <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-10">
+                <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-11">
+                <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-12">
+                <img src="{{ asset('assets/ppt2.svg') }}" class="img img-box box-1">
+                <img src="{{ asset('assets/ppt3.svg') }}" class="img img-box box-2">
+                <img src="{{ asset('assets/ppt1.svg') }}" class="img img-box box-3">
+              </div>
+            </div>
+            <div class="overlay-text">
+                <div class="col-10 ">
+                    <h5 class="font-32 text-orange "><span class="font-family font-black bg-white text-center"> Memberikan Layanan</span> </h5>
+                    <h5 class="font-32 text-orange "><span class="font-family font-black  bg-white text-center">End to End untuk</span> </h5>
+                    <h5 class="font-32 text-orange "><span class="font-family font-black bg-white text-center">Pengembangan Dirimu</span></h5>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile">
+      <div class="container-fluid bg-img-blue-square" >
+        <div class="px-md-5 py-md-5" style="background: url('');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">  
+          <div class="overlay-text">
+              <h5 class="text-orange "><span class="font-40 font-family font-black bg-white text-center"> Memberikan Layanan</span> </h5>
+              <h5 class="text-orange "><span class="font-40 font-family font-black  bg-white text-center">End to End untuk</span> </h5>
+              <h5 class="text-orange "><span class="font-40 font-family font-black bg-white text-center">Pengembangan Dirimu</span></h5>
+          </div>
+          <div class="cards mt-3 ">
+            <div class="card card-1">
+              <img src="{{ asset('assets/icon2.svg') }}" class="icon-1 m-1" alt="">
+              <h3 class="font-black font-28 mt-1 text-right">WhatsApp Community</h3>
+              <p class="font-20 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
+              <button class="btn btn-danger font-bold mt-1">Join Now</button>
+            </div>
+            <div class="card card-2">
+              <img src="{{ asset('assets/icon1.svg') }}" class="icon-2 m-1" alt="">
+              <h3 class="font-black font-28 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition  Page</h3>
+              <p class="font-20 text-right mt-1" style="text-align: right;">Exclusive access information on Career, Scholarship, Competition, etc.
+              No More Miss Out on Opportunities</p>
+              <button class="btn btn-danger font-bold mt-1">Discover Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="desktop">
+        <div class="container">
+          <div class="box-orange d-flex justify-content-between">
+            <div class="box-wa-1 flex-fill">
+              <h3 class="text-white font-semibold">Punya pertanyaan lebih lanjut?</h3>
+            </div>
+            <div class="box-wa">
+              <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="">Hubungi Kami</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="container">
+          <div class="box-orange">
+            <div class="box-wa-1">
+              <p class="text-white font-semibold ">Punya pertanyaan lebih lanjut?</p>
+            </div>
+            <div class="box-wa justify-content-center">
+              <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="">Hubungi Kami</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- FOOTER -->
+    <footer class="desktop">
+        <div class="container px-md-5 py-md-2">
+          <div class="box-white d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-semibold font-36 text-white ml-2">Daftar Kelas</div>
+            </div>
+            <div class="p-2">
+              <h3 class="font-semibold">Siap Buat Belajar bersama Ecnomic Space?</h3>
+              <p>Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid py-2 bg-black mt-5 align-items-center justify-content-center">
+          <p class="text-white px-5 mb-1"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>        
+        </div>
+        <div class="container-fluid bg-white py-2 mt-auto d-flex align-items-center justify-content-between">
+          <p class="text-black px-5 mb-0" >© 2023 Economic Space. All rights reserved.</p>  
+        <div class="d-flex align-items-center">
+            <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
+            <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt=""> 
+        </div>
+        </div>     
+    </footer> 
+
+    <footer class="mobile">
+        <div class="container px-md-5 py-md-2">
+          <div class="box-white d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center">
+              <h3 class="font-semibold">Siap Buat Belajar bersama <span class="font-black">Economic Space?</span> </h3>
+              <p>Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
+            </div>
+            <div>
+            </div>
+            <div class="mt-3">
+                <div class="d-flex align-items-center">
+                  <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-semibold font-36 text-white ml-2">Daftar Kelas</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div>
+        <div class="d-flex flex-column align-items-center" style="background: url('assets/footer.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:100px;;height:100%">
+          <div class=" container-fluid py-2 bg-black mt-2 align-items-center justify-content-center">
+            <div class="icon d-flex align-items-center" >
+                <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
+                <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt=""> 
+            </div>
+                <p class=" text-white px-5 mb-2 text-center" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>        
+            </div>
+        </div>
+        <div class="container-fluid bg-white py-2 align-items-center mb-3">
+            <p class="font-black text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>  
+        </div>
+        </div>
+    </footer> 
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
