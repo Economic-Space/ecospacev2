@@ -48,9 +48,9 @@
     <header class="container-fluid bg-img-orange px-md-5 py-md-5">
       <div class="container">
         <div class="row px-md-5">
-          <div class="col-12">
-            <h1 class=" text-white font-64 font-light mt-5">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline">Idaman Recruiters</span></h1>
-          </div>
+            <div class="type-container">
+                <h1 class=" text-white font-64 font-light mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline typed-out">Idaman Recruiters</span></h1>
+            </div>
         </div>
         <div class="row px-md-5 mt-4">
           <div class="col-12">
@@ -68,6 +68,9 @@
       </div>
 
     </header>
+
+
+
 
     <!-- SERVICE PART -->
 
@@ -161,7 +164,7 @@
                         <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
                           <h4 class="font-32 font-bold text-white">Event Space</h4>
                         </div>
-                        <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
+                        <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height">
                           <img src="{{asset('assets/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
                           <h3 class="font-36 text-black"><b>BOOTCAMP</b></h3>
                           <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-semibold">pengembangan skill beyond kehidupan akademik</span></p>
@@ -208,7 +211,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 d-flex justify-content-center flex-column">
-            <div>
+            <div class="pt-5">
                 <div class="ms-md-5">
                     <h3 class="font-36 text-white font-bold">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
                     <p class="text-white font-20">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
@@ -251,65 +254,75 @@
                 </div>
             </div>
 
-            <div class="mobile mt-5 mb-mt-5">
-              <div id="carouselMentor" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="2000">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-10 mx-auto">
-                                <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
-                                    <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                                    <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                                    <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-10 mx-auto">
-                                <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
-                                    <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                                    <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                                    <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-10 mx-auto">
-                                <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
-                                    <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                                    <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                                    <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentor" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentor" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
     </div>
+
+    {{-- slider mentor untuk mobile --}}
+    <div class="container-fluid bg-black-half">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11">
+                    <div class="mobile mt-5 mb-mt-5">
+                        <div id="carouselMentor" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-10 mx-auto">
+                                          <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
+                                              <h5 class="font-bold text-center">Joshua Soebroto</h5>
+                                              <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                                              <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-10 mx-auto">
+                                          <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
+                                              <h5 class="font-bold text-center">Joshua Soebroto</h5>
+                                              <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                                              <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-10 mx-auto">
+                                          <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
+                                              <h5 class="font-bold text-center">Joshua Soebroto</h5>
+                                              <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                                              <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentor" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselMentor" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- POTENTIAL  -->
     <div class="container-fluid px-md-5 pt-md-5 mt-5 mb-5">
@@ -370,7 +383,7 @@
             <div class="bg-orange border border-3 border-black rounded-5 box-potential">
               <h4 class="text-center font-32 font-bold ">Keep it Cheap <br>& Affordable</h4>
               <h4 class="text-center font-20"></h4>
-              <p class="text-center">Menjaga harga tetap terjangkau & menyediakan layanan jalur bantuan</p>
+              <p class="text-center font-20">Menjaga harga tetap terjangkau & menyediakan layanan jalur bantuan</p>
             </div>
 
           </div>
