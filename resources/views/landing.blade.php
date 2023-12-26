@@ -189,25 +189,25 @@
         <div class="desktop">
             <div class="row">
                 <div class="col-4">
-                <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
-                    <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                    <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                    <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
-                </div>
-                </div>
-                <div class="col-4">
-                <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
-                    <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                    <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                    <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
-                </div>
+                    <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
+                        <h5 class="font-bold text-center">Joshua Soebroto</h5>
+                        <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                        <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                    </div>
                 </div>
                 <div class="col-4">
-                <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
-                    <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                    <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
-                    <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                    <div class="bg-orange rounded-3 bigger d-flex flex-column justify-content-end">
+                        <h5 class="font-bold text-center">Hanum Alya K.</h5>
+                        <p class="text-center">Beswan Djarum 38</p>
+                        <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                    </div>
                 </div>
+                <div class="col-4">
+                    <div class="bg-red rounded-3 bigger d-flex flex-column justify-content-end">
+                        <h5 class="font-bold text-center">Evan Timothy</h5>
+                        <p class="text-center">Ex-Tax intern at Direktorat Jendral Pajak</p>
+                        <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,10 +228,17 @@
                         <div class="carousel-item active" data-bs-interval="2000">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-10 mx-auto">
+                                    <div class="col-5">
                                         <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                                            <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
+                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="bg-orange rounded-4 bigger d-flex flex-column justify-content-end">
+                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
+                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
@@ -242,10 +249,17 @@
                         <div class="carousel-item" data-bs-interval="2000">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-10 mx-auto">
+                                    <div class="col-5">
                                         <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                                            <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
+                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="bg-orange rounded-4 bigger d-flex flex-column justify-content-end">
+                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
+                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
@@ -255,10 +269,17 @@
                         <div class="carousel-item" data-bs-interval="2000">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-10 mx-auto">
+                                    <div class="col-5">
                                         <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                                            <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
+                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="bg-orange rounded-4 bigger d-flex flex-column justify-content-end">
+                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
+                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
@@ -610,7 +631,7 @@
             </div>
         </div>
         <div class="col-4" >
-            <div class="border border-3 border-black rounded-4 p-4">
+            <div class="border border-3 border-blue rounded-4 p-4">
                 <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                 <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
@@ -625,7 +646,7 @@
             </div>
         </div>
         <div class="col-4" >
-            <div class="border border-3 border-black rounded-4 p-4">
+            <div class="border border-3 border-red rounded-4 p-4">
                 <h5 class="font-black font-28">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
                 <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
@@ -712,7 +733,7 @@
 <!--desktop-->
 <div class="desktop">
     <div class="container-fluid bg-img-blue-square mt-3" >
-    <div class="px-md-5 py-md-5" style="background: url('assets/assetbgblue.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
+    <div class="px-md-5 py-md-5" style="background: url('assets/assetbgblue.svg');background-repeat: no-repeat; background-position: center; background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
         <div class="wrapper">
             <div class="p"></div>
             <div class="img-area">

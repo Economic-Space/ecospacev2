@@ -81,21 +81,6 @@ html {
 }
 
 .bg-img-white {
-    position: static;
-    overflow: visible;
-    top: 0;
-    height: auto;
-    min-height: 30vh;
-    background: url("../assets/bgwhite.svg");
-    background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
-    background-repeat: no-repeat;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
-}
-
-.bg-img-white {
     min-height: 30vh;
     background: url("../assets/bgwhite.svg");
     background-position: 0px 0px, 100% 50%;
@@ -237,6 +222,15 @@ html {
 
 .text-blue {
     color: var(--color-blue);
+}
+
+/* border color */
+.border-blue {
+    border-color:var(--color-blue) !important;
+}
+
+.border-red {
+    border-color:var(--color-red) !important;
 }
 
 /* DIV STYLING */
@@ -531,11 +525,6 @@ html {
 .overlay-text p,
 .overlay-text h5 {
     margin: 10px 0;
-}
-
-.font-literata {
-    font-family: "Literata", serif;
-    font-weight: bold;
 }
 
 .box-orange {
