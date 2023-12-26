@@ -437,7 +437,6 @@ html {
     position: absolute;
     top: 20px;
     left: 0;
-    transition: 0.5s;
 }
 
 .img-area .box-1 {
@@ -504,44 +503,6 @@ html {
     top: 340%;
     left: 430px;
     width: 190px;
-}
-
-.img-area:hover .box-1 {
-    width: 330px;
-}
-.img-area:hover .box-2 {
-    width: 350px;
-}
-.img-area:hover .box-3 {
-    width: 450px;
-}
-.img-area:hover .box-4 {
-    width: 300px;
-}
-
-.img-area:hover .box-5 {
-    width: 260px;
-}
-.img-area:hover .box-6 {
-    width: 260px;
-}
-.img-area:hover .box-7 {
-    width: 210px;
-}
-.img-area:hover .box-8 {
-    width: 210px;
-}
-.img-area:hover .box-9 {
-    width: 210px;
-}
-.img-area:hover .box-10 {
-    width: 210px;
-}
-.img-area:hover .box-11 {
-    width: 210px;
-}
-.img-area:hover .box-12 {
-    width: 210px;
 }
 
 .position-relative {
