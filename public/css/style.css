@@ -10,6 +10,12 @@ html {
 /* default scaling for font size */
 :root {
     --vw-scale-factor: 1;
+    --color-black: #16182b;
+    --color-blue: #84dfd8;
+    --color-orange: #f08c03;
+    --color-milk: #f2eee9;
+    --color-red: #980000;
+    --color-white: #ffffff;
 }
 
 /* FOR SMALLER DESKTOP SCREEN, change font size*/
@@ -115,32 +121,31 @@ html {
 
 .mobile .bg-img-blue-square {
     height: 600px;
-
 }
 
 /* BACKGROUND COLOR FOR ELEMENT */
 .bg-white {
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 
 .bg-orange {
-    background-color: #f08c03;
+    background-color: var(--color-orange);
 }
 
 .bg-blue {
-    background-color: #84dfd8;
+    background-color: var(--color-blue);
 }
 
 .bg-black {
-    background-color: #16182b;
+    background-color: var(--color-black);
 }
 
 .bg-red {
-    background-color: #980000;
+    background-color: var(--color-red);
 }
 
 .bg-milk {
-    background-color: #f2eee9;
+    background-color: var(--color-milk);
 }
 
 .logo-img {
@@ -219,7 +224,7 @@ html {
 
 /* TEXT COLOR */
 .text-white {
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .text-black {
@@ -227,11 +232,11 @@ html {
 }
 
 .text-orange {
-    color: #f08c03;
+    color: var(--color-orange);
 }
 
 .text-blue {
-    color:#84DFD8;
+    color: var(--color-blue);
 }
 
 /* DIV STYLING */
@@ -281,17 +286,17 @@ html {
 
 /* give stroke under the title header */
 .stroke-underline {
-    position: relative
+    position: relative;
 }
 
 .stroke-underline::after {
     content: "";
     width: 100%;
     height: 100%;
-    background-image: url('../assets/line.svg');
+    background-image: url("../assets/line.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    position:absolute;
+    position: absolute;
     background-position: center;
     bottom: -3.5vw;
     left: 0;
@@ -412,9 +417,10 @@ html {
         left: 0;
         width: 100%;
         height: 50%;
-        background-color: #16182B; /* Set the background color you want */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
+        background-color: black;
+        z-index: -1;
     }
+}
 
 /* CLOSING */
 .wrapper {
@@ -437,7 +443,6 @@ html {
     position: absolute;
     top: 20px;
     left: 0;
-    transition: 0.5s;
 }
 
 .img-area .box-1 {
@@ -506,44 +511,6 @@ html {
     width: 190px;
 }
 
-.img-area:hover .box-1 {
-    width: 330px;
-}
-.img-area:hover .box-2 {
-    width: 350px;
-}
-.img-area:hover .box-3 {
-    width: 450px;
-}
-.img-area:hover .box-4 {
-    width: 300px;
-}
-
-.img-area:hover .box-5 {
-    width: 260px;
-}
-.img-area:hover .box-6 {
-    width: 260px;
-}
-.img-area:hover .box-7 {
-    width: 210px;
-}
-.img-area:hover .box-8 {
-    width: 210px;
-}
-.img-area:hover .box-9 {
-    width: 210px;
-}
-.img-area:hover .box-10 {
-    width: 210px;
-}
-.img-area:hover .box-11 {
-    width: 210px;
-}
-.img-area:hover .box-12 {
-    width: 210px;
-}
-
 .position-relative {
     position: relative;
     overflow: hidden; /* Ensure the container doesn't overflow */
@@ -572,30 +539,20 @@ html {
 }
 
 .box-orange {
-    background-color: orange;
+    background-color: var(--color-orange);
     border-radius: 20px;
     margin: 5px;
     height: auto;
-    background-image: linear-gradient(
-        to right,
-        #ff8c00,
-        #ffae42
-    ); /* Add linear gradient */
     position: relative; /* Ensure positioning context */
-    top: -20px;
+    top: -50px;
 }
 
 .mobile .box-orange {
-    background-color: orange;
+    background-color: var(--color-orange);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     height: auto;
-    background-image: linear-gradient(
-        to right,
-        #ff8c00,
-        #ffae42
-    ); /* Add linear gradient */
     position: relative; /* Ensure positioning context */
     top: -50px;
 }
@@ -606,8 +563,9 @@ html {
     align-items: center; /* Center vertically */
     margin: 15px;
 }
+
 .container-fluid.bg-white.py-2 {
-    background-image: linear-gradient(to bottom, #ff8412, #ffe3c8);
+    background-image: linear-gradient(to bottom, #5C3925, #5C5357);
     height: 50px;
 }
 
@@ -634,7 +592,7 @@ html {
     display: flex;
     align-items: center;
     padding: 1px; /* Add padding to the inner box */
-    background-color: #f2eee9;
+    background-color: var(--color-white);
     border-radius: 15px;
     height: auto;
     width: 20%;
@@ -649,7 +607,7 @@ html {
     display: flex;
     align-items: center;
     padding: 1px; /* Add padding to the inner box */
-    background-color: #f2eee9;
+    background-color: var(--color-white);
     border-radius: 15px;
     height: 80%;
     width: 90%;
@@ -740,7 +698,7 @@ html {
     position: relative;
     top: 85px; /* Geser card ke atas */
     background-color: #f2f2f2; /* Warna latar belakang card */
-        padding-right: 60px;
+    padding-right: 60px;
 
     left: -10px;
 }
@@ -749,7 +707,7 @@ html {
     position: relative;
     top: -200px; /* Geser card ke atas */
     background-color: #f2f2f2; /* Warna latar belakang card */
-    padding-right:30px;
+    padding-right: 30px;
     left: 143px;
 }
 .icon-1 {
@@ -763,7 +721,7 @@ html {
 }
 
 .btn-danger {
-    background-color: #980000;
+    background-color: var(--color-red);
     border-radius: 15px;
 }
 
@@ -771,4 +729,3 @@ html {
     position: relative;
     top: 0%;
 }
-
