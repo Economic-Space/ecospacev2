@@ -10,6 +10,12 @@ html {
 /* default scaling for font size */
 :root {
     --vw-scale-factor: 1;
+    --color-black: #16182b;
+    --color-blue: #84dfd8;
+    --color-orange: #f08c03;
+    --color-milk: #f2eee9;
+    --color-red: #980000;
+    --color-white: #ffffff;
 }
 
 /* FOR SMALLER DESKTOP SCREEN, change font size*/
@@ -119,27 +125,27 @@ html {
 
 /* BACKGROUND COLOR FOR ELEMENT */
 .bg-white {
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 
 .bg-orange {
-    background-color: #f08c03;
+    background-color: var(--color-orange);
 }
 
 .bg-blue {
-    background-color: #84dfd8;
+    background-color: var(--color-blue);
 }
 
 .bg-black {
-    background-color: #16182b;
+    background-color: var(--color-black);
 }
 
 .bg-red {
-    background-color: #980000;
+    background-color: var(--color-red);
 }
 
 .bg-milk {
-    background-color: #f2eee9;
+    background-color: var(--color-milk);
 }
 
 .logo-img {
@@ -218,7 +224,7 @@ html {
 
 /* TEXT COLOR */
 .text-white {
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .text-black {
@@ -226,11 +232,11 @@ html {
 }
 
 .text-orange {
-    color: #f08c03;
+    color: var(--color-orange);
 }
 
 .text-blue {
-    color: #84dfd8;
+    color: var(--color-blue);
 }
 
 /* DIV STYLING */
@@ -411,8 +417,8 @@ html {
         left: 0;
         width: 100%;
         height: 50%;
-        background-color: #16182b; /* Set the background color you want */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
+        background-color: black;
+        z-index: -1;
     }
 }
 
@@ -533,7 +539,7 @@ html {
 }
 
 .box-orange {
-    background-color: #F08C03;
+    background-color: var(--color-orange);
     border-radius: 20px;
     margin: 5px;
     height: auto;
@@ -542,7 +548,7 @@ html {
 }
 
 .mobile .box-orange {
-    background-color: #F08C03;
+    background-color: var(--color-orange);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
@@ -586,7 +592,7 @@ html {
     display: flex;
     align-items: center;
     padding: 1px; /* Add padding to the inner box */
-    background-color: #ffffff;
+    background-color: var(--color-white);
     border-radius: 15px;
     height: auto;
     width: 20%;
@@ -601,7 +607,7 @@ html {
     display: flex;
     align-items: center;
     padding: 1px; /* Add padding to the inner box */
-    background-color: #ffffff;
+    background-color: var(--color-white);
     border-radius: 15px;
     height: 80%;
     width: 90%;
@@ -715,7 +721,7 @@ html {
 }
 
 .btn-danger {
-    background-color: #980000;
+    background-color: var(--color-red);
     border-radius: 15px;
 }
 
