@@ -7,12 +7,12 @@
     <div class="container">
     <div class="row px-md-5">
         <div class="type-container">
-            <h1 class=" text-white font-64 font-light mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline typed-out">Idaman Recruiters</span></h1>
+            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline">Idaman Recruiters</span></h1>
         </div>
     </div>
     <div class="row px-md-5 mt-4">
         <div class="col-12">
-        <p class="text-white font-30 font-light">Mendukung pengembangan kemampuan spesifik, dengan tetap<br>
+        <p class="font-400 text-white font-30">Mendukung pengembangan kemampuan spesifik, dengan tetap<br>
             Memperluas Wawasan & Kapabilitas dalam berbagai area lain
         </p>
         </div>
@@ -20,7 +20,7 @@
 
     <div class="row px-md-5 mt-4">
         <div class="col-12">
-        <button type="button" class="btn btn-dark font-32 font-bold p-2 px-4 rounded-4">Register Now</button>
+        <button type="button" class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4">Register Now</button>
         </div>
     </div>
     </div>
@@ -36,8 +36,8 @@
     <div class="container">
     <div class="row">
         <div class="col-12">
-        <h2 class="text-center font-60 font-black"><b>Belajar - Eksplorasi - <span class="text-orange">Raih Impianmu</span></b></h2>
-        <p class="text-center font-32">Satu Platform untuk Semua Kebutuhan Pengembangan Dirimu</p>
+        <h2 class="text-center font-60 font-900"><b>Belajar - Eksplorasi - <span class="text-orange">Raih Impianmu</span></b></h2>
+        <p class="text-center font-32 font-400">Satu Platform untuk Semua Kebutuhan Pengembangan Dirimu</p>
         </div>
     </div>
 
@@ -46,16 +46,16 @@
         <div class="col-4">
             <div class="equal-height">
             <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
-                <h4 class="font-32 font-bold">Academic Chamber</h4>
+                <h4 class="font-32 font-900">Academic Chamber</h4>
             </div>
             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
                 <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                <h3 class="font-36 text-orange"><b>TUTOR SERVICE</b></h3>
-                <p class="font-24">Perkuliahan jadi mudah bersama Expert yang <span class="font-semibold">membantu pembelajaran akademik</span> kalian</p>
+                <h3 class="font-36 text-orange font-900"><b>TUTOR SERVICE</b></h3>
+                <p class="font-24 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
             </div>
             <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                 <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                <p class="font-24">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
+                <p class="font-24 font-400">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
             </div>
             </div>
 
@@ -63,32 +63,32 @@
         <div class="col-4">
             <div  class="equal-height">
             <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
-                <h4 class="font-32 font-bold text-white">Event Space</h4>
+                <h4 class="font-32 font-900 text-white">Event Space</h4>
             </div>
             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
                 <img src="{{asset('assets/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                <h3 class="font-36 text-black"><b>BOOTCAMP</b></h3>
-                <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-semibold">pengembangan skill beyond kehidupan akademik</span></p>
+                <h3 class="font-36 text-900"><b>BOOTCAMP</b></h3>
+                <p class="font-24 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
             </div>
             <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                 <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                <p class="font-24 text-white">Never say never untuk Pembelajaran Baru</p>
+                <p class="font-24 text-white font-400">Never say never untuk Pembelajaran Baru</p>
             </div>
             </div>
         </div>
         <div class="col-4">
             <div  class="equal-height">
             <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
-                <h4 class="font-32 font-bold">Mentorship Hub</h4>
+                <h4 class="font-32 font-900">Mentorship Hub</h4>
             </div>
             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height">
                 <img src="{{asset('assets/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                <h3 class="font-36 text-blue"><b>MENTORING</b></h3>
-                <p class="font-24">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-semibold">belajar sama orang dalam</span></p>
+                <h3 class="font-36 text-blue font-900"><b>MENTORING</b></h3>
+                <p class="font-24 font-400">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
             </div>
             <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                 <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                <p class="font-24">Dapatkan Akses 1-on-1 sama Ahlinya</p>
+                <p class="font-24 font-400">Dapatkan Akses 1-on-1 sama Ahlinya</p>
             </div>
             </div>
         </div>
@@ -104,48 +104,48 @@
             <div class="carousel-item active" data-bs-interval="2000">
                 <div class="equal-height">
                 <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
-                    <h4 class="font-32 font-bold">Academic Chamber</h4>
+                    <h4 class="font-32 font-900">Academic Chamber</h4>
                 </div>
                 <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
                     <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                    <h3 class="font-36 text-orange"><b>TUTOR SERVICE</b></h3>
-                    <p class="font-24">Perkuliahan jadi mudah bersama Expert yang <span class="font-semibold">membantu pembelajaran akademik</span> kalian</p>
+                    <h3 class="font-36 text-orange font-900"><b>TUTOR SERVICE</b></h3>
+                    <p class="font-24 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
                 </div>
                 <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                     <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                    <p class="font-24">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
+                    <p class="font-24 font-400">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                 </div>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
                 <div  class="equal-height">
                     <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
-                        <h4 class="font-32 font-bold text-white">Event Space</h4>
+                        <h4 class="font-32 font-bold text-white font-900">Event Space</h4>
                     </div>
                     <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height">
                         <img src="{{asset('assets/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                        <h3 class="font-36 text-black"><b>BOOTCAMP</b></h3>
-                        <p class="font-24">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-semibold">pengembangan skill beyond kehidupan akademik</span></p>
+                        <h3 class="font-36 text-black font-900"><b>BOOTCAMP</b></h3>
+                        <p class="font-24 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
                     </div>
                     <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                         <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                        <p class="font-24 text-white">Never say never untuk Pembelajaran Baru</p>
+                        <p class="font-24 text-white font-400">Never say never untuk Pembelajaran Baru</p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
                 <div  class="equal-height">
                     <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
-                        <h4 class="font-32 font-bold">Mentorship Hub</h4>
+                        <h4 class="font-32 font-900">Mentorship Hub</h4>
                     </div>
                     <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height">
                         <img src="{{asset('assets/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                        <h3 class="font-36 text-blue"><b>MENTORING</b></h3>
-                        <p class="font-24">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-semibold">belajar sama orang dalam</span></p>
+                        <h3 class="font-36 text-blue font-900"><b>MENTORING</b></h3>
+                        <p class="font-24 font-400">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
                     </div>
                     <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
                         <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                        <p class="font-24">Dapatkan Akses 1-on-1 sama Ahlinya</p>
+                        <p class="font-24 font-400">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                     </div>
                 </div>
             </div>
@@ -171,16 +171,16 @@
         <div class="col-md-4 d-flex justify-content-center flex-column">
         <div class="pt-5">
             <div class="ms-md-5">
-                <h3 class="font-36 text-white font-bold">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
-                <p class="text-white font-20">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
+                <h3 class="font-36 text-white font-800">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
+                <p class="text-white font-20 font-400">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
             </div>
             <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center">
-                <div class="ms-4"><h3 class="text-white font-44 font-bold">1.</h3></div>
-                <div><p class="font-20">Persiapan bersama <span class="font-semibold">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
+                <div class="ms-4"><h3 class="text-white font-44 font-900">1.</h3></div>
+                <div><p class="font-20 font-400">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
             </div>
             <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center">
                 <div class="ms-4"><h3 class="text-white font-44 font-bold">2.</h3></div>
-                <div><p class="font-20">Memulai perjalanan <span class="font-semibold">lomba, beasiswa, karir</span> dengan Mentor</p></div>
+                <div><p class="font-20 font-400">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
             </div>
         </div>
 
@@ -190,22 +190,22 @@
             <div class="row">
                 <div class="col-4">
                     <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
-                        <h5 class="font-bold text-center">Joshua Soebroto</h5>
-                        <p class="text-center">Non Permanent at EY (Junior Auditor)</p>
+                        <h5 class="font-bold text-center font-700">Joshua Soebroto</h5>
+                        <p class="text-center font-400">Non Permanent at EY (Junior Auditor)</p>
                         <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="bg-orange rounded-3 bigger d-flex flex-column justify-content-end">
-                        <h5 class="font-bold text-center">Hanum Alya K.</h5>
-                        <p class="text-center">Beswan Djarum 38</p>
+                        <h5 class="font-bold text-center font-700">Hanum Alya K.</h5>
+                        <p class="text-center font-400">Beswan Djarum 38</p>
                         <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="bg-red rounded-3 bigger d-flex flex-column justify-content-end">
-                        <h5 class="font-bold text-center">Evan Timothy</h5>
-                        <p class="text-center">Ex-Tax intern at Direktorat Jendral Pajak</p>
+                        <h5 class="font-bold text-center font-700">Evan Timothy</h5>
+                        <p class="text-center font-400">Ex-Tax intern at Direktorat Jendral Pajak</p>
                         <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                 </div>
@@ -230,15 +230,15 @@
                                 <div class="row">
                                     <div class="col-5">
                                         <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
-                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24 font-700">Joshua Soebroto</h5>
+                                            <p class="text-center font-16 font-400">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
                                     <div class="col-5">
                                         <div class="bg-orange rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
-                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24 font-700">Joshua Soebroto</h5>
+                                            <p class="text-center font-16 font-400">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
@@ -251,15 +251,15 @@
                                 <div class="row">
                                     <div class="col-5">
                                         <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
-                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24 font-700">Joshua Soebroto</h5>
+                                            <p class="text-center font-16 font-400">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
                                     <div class="col-5">
                                         <div class="bg-orange rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
-                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24 font-700">Joshua Soebroto</h5>
+                                            <p class="text-center font-16 font-400">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
@@ -271,15 +271,15 @@
                                 <div class="row">
                                     <div class="col-5">
                                         <div class="bg-blue rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
-                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24 font-700">Joshua Soebroto</h5>
+                                            <p class="text-center font-16 font-400">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
                                     <div class="col-5">
                                         <div class="bg-orange rounded-4 bigger d-flex flex-column justify-content-end">
-                                            <h5 class="font-bold text-center font-24">Joshua Soebroto</h5>
-                                            <p class="text-center font-16">Non Permanent at EY (Junior Auditor)</p>
+                                            <h5 class="font-bold text-center font-24 font-700">Joshua Soebroto</h5>
+                                            <p class="text-center font-16 font-400">Non Permanent at EY (Junior Auditor)</p>
                                             <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
@@ -308,20 +308,20 @@
     <div class="container px-md-5">
     <div class="row">
         <div class="col-12">
-        <h2 class="text-center font-60 font-light">Learn Now & Claim Your Title:</h2>
+        <h2 class="text-center font-60 font-400">Learn Now & Claim Your Title:</h2>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
         <div class="bg-black mx-auto p-2" style="width: fit-content">
-            <h1 class="text-center font-64 font-black text-white">#Talent-Favorit-Top Company HR</h1>
+            <h1 class="text-center font-64 font-900 text-white">#Talent-Favorit-Top Company HR</h1>
         </div>
 
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-        <p class="text-center font-32">Kembangkan Potensimu sejak dini bersama Economic Space</p>
+        <p class="text-center font-32 font-400">Kembangkan Potensimu sejak dini bersama Economic Space</p>
         </div>
     </div>
     <div class="row">
@@ -330,8 +330,8 @@
             <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
         </div>
         <div class="bg-red border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-bold text-white">Easy Access & <br>Widely Available</h4>
-            <p class="text-center font-20 text-white">Tidak ada lagi kata “Sulit” bagi Pelajar untuk mendapatkan akses belajar</p>
+            <h4 class="text-center font-32 font-700 text-white">Easy Access & <br>Widely Available</h4>
+            <p class="text-center font-20 text-white font-400">Tidak ada lagi kata “Sulit” bagi Pelajar untuk mendapatkan akses belajar</p>
         </div>
 
         </div>
@@ -340,8 +340,8 @@
             <img src="{{asset('assets/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
         </div>
         <div class="bg-blue border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-bold">One Stop Solution <br>for Students</h4>
-            <p class="text-center font-20">Tersedia secara lengkap dari pembelajaran akademik, skill penting, lomba, hingga karir</p>
+            <h4 class="text-center font-32 font-700">One Stop Solution <br>for Students</h4>
+            <p class="text-center font-20 font-400">Tersedia secara lengkap dari pembelajaran akademik, skill penting, lomba, hingga karir</p>
         </div>
 
         </div>
@@ -350,8 +350,8 @@
             <img src="{{asset('assets/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
         </div>
         <div class="bg-black border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-bold text-white">Your High Quality <br>Learning Partner</h4>
-            <p class="text-center font-20 text-white">Mengundang & bekerja sama dengan Tutor, Mentor, & Pembicara terbaik </p>
+            <h4 class="text-center font-32 font-700 text-white">Your High Quality <br>Learning Partner</h4>
+            <p class="text-center font-20 text-white font-400">Mengundang & bekerja sama dengan Tutor, Mentor, & Pembicara terbaik </p>
         </div>
 
         </div>
@@ -360,9 +360,8 @@
             <img src="{{asset('assets/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
         </div>
         <div class="bg-orange border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-bold ">Keep it Cheap <br>& Affordable</h4>
-            <h4 class="text-center font-20"></h4>
-            <p class="text-center font-20">Menjaga harga tetap terjangkau & menyediakan layanan jalur bantuan</p>
+            <h4 class="text-center font-32 font-700 ">Keep it Cheap <br>& Affordable</h4>
+            <p class="text-center font-20 font-400">Menjaga harga tetap terjangkau & menyediakan layanan jalur bantuan</p>
         </div>
 
         </div>
@@ -373,34 +372,34 @@
         <div class="row">
         <div class="col-4" >
             <div class="d-flex flex-row gap-3">
-            <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+            <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
                 1
             </div>
             <div>
-                <h4 class="font-36 font-bold">Register / Sign In</h4>
-                <p class="font-26">Isi Data Diri & Gabung dalam Komunitas</p>
+                <h4 class="font-36 font-700">Register / Sign In</h4>
+                <p class="font-26 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
             </div>
             </div>
         </div>
         <div class="col-4">
             <div class="d-flex flex-row gap-3">
-            <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+            <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
                 2
             </div>
             <div>
-                <h4 class="font-36 font-bold">Pick & Enroll</h4>
-                <p class="font-26">Pilih Program sesuai Kebutuhan Belajarmu</p>
+                <h4 class="font-36 font-700">Pick & Enroll</h4>
+                <p class="font-26 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
             </div>
             </div>
         </div>
         <div class="col-4">
             <div class="d-flex flex-row gap-3">
-            <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+            <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
                 3
             </div>
             <div>
-                <h4 class="font-36 font-bold">Make a Change</h4>
-                <p class="font-26">Selesaikan Pembelajaran & Berkarya secara Nyata</p>
+                <h4 class="font-36 font-700">Make a Change</h4>
+                <p class="font-26 font-400">Selesaikan Pembelajaran & Berkarya secara Nyata</p>
             </div>
             </div>
         </div>
@@ -418,12 +417,12 @@
                     <div class="row">
                         <div class="col-12 mx-auto">
                             <div class="d-flex flex-row gap-3">
-                                <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+                                <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
                                     1
                                 </div>
                                 <div>
-                                    <h4 class="font-36 font-bold">Register / Sign In</h4>
-                                    <p class="font-26">Isi Data Diri & Gabung dalam Komunitas</p>
+                                    <h4 class="font-36 font-700">Register / Sign In</h4>
+                                    <p class="font-26 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
                                 </div>
                             </div>
                         </div>
@@ -436,12 +435,12 @@
                     <div class="row">
                         <div class="col-12 mx-auto">
                             <div class="d-flex flex-row gap-3">
-                                <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+                                <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
                                     2
                                 </div>
                                 <div>
-                                    <h4 class="font-36 font-bold">Pick & Enroll</h4>
-                                    <p class="font-26">Pilih Program sesuai Kebutuhan Belajarmu</p>
+                                    <h4 class="font-36 font-700">Pick & Enroll</h4>
+                                    <p class="font-26 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
                                 </div>
                             </div>
                         </div>
@@ -454,12 +453,12 @@
                     <div class="row">
                         <div class="col-12 mx-auto">
                             <div class="d-flex flex-row gap-3">
-                                <div class="bg-milk circle ratio ratio-1x1 font-82 font-black">
+                                <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
                                     3
                                 </div>
                                 <div>
-                                    <h4 class="font-36 font-bold">Make a Change</h4>
-                                    <p class="font-26">Selesaikan Pembelajaran & Berkarya secara Nyata</p>
+                                    <h4 class="font-36 font-700">Make a Change</h4>
+                                    <p class="font-26 font-400">Selesaikan Pembelajaran & Berkarya secara Nyata</p>
                                 </div>
                             </div>
                         </div>
@@ -495,7 +494,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="bg-orange mx-auto half-up" style="width: fit-content">
-                <h3 class="text-center text-white font-bold font-44">Sejak 2023, Terus Memberi Kontribusi & Berdampak</h3>
+                <h3 class="text-center text-white font-900 font-44">Sejak 2023, Terus Memberi Kontribusi & Berdampak</h3>
                 </div>
 
             </div>
@@ -508,8 +507,8 @@
                 <div>
                     <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <div class="hr-vertical">
-                        <h1 class="text-center font-96 font-black text-orange">250+</h1>
-                        <p class="text-center font-28">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
+                        <h1 class="text-center font-96 font-900 text-orange">250+</h1>
+                        <p class="text-center font-28 font-400">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
                     </div>
                 </div>
             </div>
@@ -517,8 +516,8 @@
                 <div>
                     <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <div class="hr-vertical">
-                        <h1 class="text-center font-96 font-black text-orange">70+</h1>
-                        <p class="text-center font-28">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
+                        <h1 class="text-center font-96 font-900 text-orange">70+</h1>
+                        <p class="text-center font-28 font-400">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
                     </div>
 
                 </div>
@@ -527,8 +526,8 @@
                 <div>
                     <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <div>
-                        <h1 class="text-center font-96 font-black text-orange">90%</h1>
-                        <p class="text-center font-28">Tingkat Kepuasan<br>Penggunaan Layanan</p>
+                        <h1 class="text-center font-96 font-900 text-orange">90%</h1>
+                        <p class="text-center font-28 font-400">Tingkat Kepuasan<br>Penggunaan Layanan</p>
                     </div>
 
                 </div>
@@ -547,8 +546,8 @@
                             <div>
                                 <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
                                 <div class="hr-vertical">
-                                    <h1 class="text-center font-96 font-black text-orange">250+</h1>
-                                    <p class="text-center font-28">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
+                                    <h1 class="text-center font-96 font-900 text-orange">250+</h1>
+                                    <p class="text-center font-28 font-400">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
                                 </div>
                             </div>
                         </div>
@@ -563,8 +562,8 @@
                             <div>
                                 <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
                                 <div class="hr-vertical">
-                                    <h1 class="text-center font-96 font-black text-orange">70+</h1>
-                                    <p class="text-center font-28">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
+                                    <h1 class="text-center font-96 text-orange font-900">70+</h1>
+                                    <p class="text-center font-28 font-400">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
                                 </div>
 
                             </div>
@@ -580,8 +579,8 @@
                             <div>
                                 <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
                                 <div>
-                                    <h1 class="text-center font-96 font-black text-orange">90%</h1>
-                                    <p class="text-center font-28">Tingkat Kepuasan<br>Penggunaan Layanan</p>
+                                    <h1 class="text-center font-96 font-900 text-orange">90%</h1>
+                                    <p class="text-center font-28 font-400">Tingkat Kepuasan<br>Penggunaan Layanan</p>
                                 </div>
 
                             </div>
@@ -609,21 +608,21 @@
     <div class="container">
     <div class="row">
         <div class="col-12">
-        <h2 class="text-center font-60 font-black">Apa Kata Mereka?</h2>
-        <p class="text-center font-32">Mereka sudah mencoba - Yuk <span class="text-orange font-bold">Gabung dengan Ratusan Mahasiswa</span> Lainnya </p>
+        <h2 class="text-center font-60 font-900">Apa Kata Mereka?</h2>
+        <p class="text-center font-32 font-400">Mereka sudah mencoba - Yuk <span class="text-orange font-700">Gabung dengan Ratusan Mahasiswa</span> Lainnya </p>
         </div>
     </div>
     <div class="desktop mt-3">
         <div class="row">
         <div class="col-4" >
             <div class="border border-3 border-black rounded-4 p-4">
-            <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+            <h5 class="font-900 font-28">Belajar jadi Mudah</h5>
             <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-            <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+            <p class="font-20 mt-4 font-500">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
             <div class="d-flex flex-row">
                 <div class="me-auto">
-                <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                <p class="font-20 font-400"><span class="font-bold font-700">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
                 </div>
                 <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
             </div>
@@ -632,13 +631,13 @@
         </div>
         <div class="col-4" >
             <div class="border border-3 border-blue rounded-4 p-4">
-                <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+                <h5 class="font-black font-28 font-900">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                <p class="font-20 mt-4 font-500">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                 <div class="d-flex flex-row">
                 <div class="me-auto">
-                    <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                    <p class="font-20 font-400"><span class="font-bold font-700">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
                 </div>
                 <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                 </div>
@@ -647,13 +646,13 @@
         </div>
         <div class="col-4" >
             <div class="border border-3 border-red rounded-4 p-4">
-                <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+                <h5 class="font-black font-28 font-900">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                <p class="font-20 mt-4 font-500">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                 <div class="d-flex flex-row">
                 <div class="me-auto">
-                    <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                    <p class="font-20 font-400"><span class="font-bold font-700">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
                 </div>
                 <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                 </div>
@@ -669,13 +668,13 @@
             <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
                 <div class="border border-3 border-black rounded-4 box-testi p-4">
-                    <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+                    <h5 class="font-black font-28 font-900">Belajar jadi Mudah</h5>
                     <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                    <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                    <p class="font-20 mt-4 font-500">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                     <div class="d-flex flex-row">
                         <div class="me-auto">
-                        <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                        <p class="font-20 font-400"><span class="font-bold font-700">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
                         </div>
                         <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                     </div>
@@ -684,13 +683,13 @@
             </div>
             <div class="carousel-item" data-bs-interval="3000">
                 <div class="border border-3 border-black rounded-4 box-testi p-4">
-                    <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+                    <h5 class="font-black font-28 font-900">Belajar jadi Mudah</h5>
                     <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                    <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                    <p class="font-20 mt-4 font-500">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                     <div class="d-flex flex-row">
                         <div class="me-auto">
-                        <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                        <p class="font-20 font-400"><span class="font-bold font-700">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
                         </div>
                         <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                     </div>
@@ -699,13 +698,13 @@
             </div>
             <div class="carousel-item" data-bs-interval="3000">
                 <div class="border border-3 border-black rounded-4 box-testi p-4">
-                    <h5 class="font-black font-28">Belajar jadi Mudah</h5>
+                    <h5 class="font-black font-28 font-900">Belajar jadi Mudah</h5>
                     <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                    <p class="font-20 mt-4">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
+                    <p class="font-20 mt-4 font-500">individu mencapai kesuksesan akademik, persiapan kompetisi yang unggul, dan pembangunan karier yang cemerlang di bidang ekonomi. Kami menyediakan akses ke kursus dan webinar dengan narasumber</p>
 
                     <div class="d-flex flex-row">
                         <div class="me-auto">
-                        <p class="font-20"><span class="font-bold">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
+                        <p class="font-20 font-400"><span class="font-bold font-700">Michelle Angel Aryanto</span><br>Akuntansi 21 - UNAIR</p>
                         </div>
                         <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
                     </div>
@@ -766,10 +765,10 @@
     <div class="container">
         <div class="box-orange d-flex justify-content-between">
         <div class="box-wa-1 flex-fill">
-            <h3 class="text-white font-semibold">Punya pertanyaan lebih lanjut?</h3>
+            <h3 class="text-white font-700">Punya pertanyaan lebih lanjut?</h3>
         </div>
         <div class="box-wa">
-            <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="">Hubungi Kami</div>
+            <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="font-400">Hubungi Kami</div>
         </div>
         </div>
     </div>
@@ -807,7 +806,7 @@
     <div class="container">
         <div class="box-orange">
         <div class="box-wa-1">
-            <p class="text-white font-semibold ">Punya pertanyaan lebih lanjut?</p>
+            <p class="text-white font-700 ">Punya pertanyaan lebih lanjut?</p>
         </div>
         <div class="box-wa justify-content-center">
             <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="">Hubungi Kami</div>

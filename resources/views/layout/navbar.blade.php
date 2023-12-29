@@ -23,20 +23,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a class="nav-link active font-24" aria-current="page" href="#">Tutor</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active font-24" aria-current="page" href="#">Event</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active font-24" aria-current="page" href="#">Mentorship</a>
-              </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link font-24" aria-current="page" href="#">Tutor</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link font-24" aria-current="page" href="#">Event</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link font-24" aria-current="page" href="#">Mentorship</a>
+                </li>
 
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <a class="nav-link active font-24" aria-current="page" href="#">Sign Up</a>
+                    <a class="nav-link font-24" aria-current="page" href="#">Sign Up</a>
                 </li>
                 <li class="nav-item px-2">
                     <a class="btn btn-dark font-24" aria-current="page" href="#">Login</a>
@@ -54,19 +54,19 @@
         <div class="container px-md-5 py-md-2">
           <div class="box-white d-flex justify-content-between">
             <div class="d-flex align-items-center">
-              <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-semibold font-36 text-white ml-2">Daftar Kelas</div>
+              <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-semibold font-36 text-white ml-2 font-400">Daftar Kelas</div>
             </div>
             <div class="p-2">
-              <h3 class="font-semibold">Siap Buat Belajar bersama Economic Space?</h3>
-              <p>Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
+              <h3 class="font-700">Siap Buat Belajar bersama Economic Space?</h3>
+              <p class="font-400">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
             </div>
           </div>
         </div>
         <div class="container-fluid py-2 bg-black mt-5 align-items-center justify-content-center">
-          <p class="text-white px-5 mb-1"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
+          <p class="text-white px-5 mb-1 font-400"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
         </div>
         <div class="container-fluid bg-white py-2 mt-auto d-flex align-items-center justify-content-between">
-          <p class="text-black px-5 mb-0" >© 2023 Economic Space. All rights reserved.</p>
+          <p class="text-black px-5 mb-0 font-700" >© 2023 Economic Space. All rights reserved.</p>
         <div class="d-flex align-items-center">
             <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
             <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt="">
@@ -78,14 +78,14 @@
         <div class="container px-md-5 py-md-2">
           <div class="box-white d-flex flex-column justify-content-center align-items-center">
             <div class="text-center">
-              <h3 class="font-semibold">Siap Buat Belajar bersama <span class="font-black">Economic Space?</span> </h3>
-              <p>Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
+              <h3 class="font-400">Siap Buat Belajar bersama <span class="font-800">Economic Space?</span> </h3>
+              <p class="font-400">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
             </div>
             <div>
             </div>
             <div class="mt-3">
                 <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-semibold font-36 text-white ml-2">Daftar Kelas</div>
+                  <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-700 font-36 text-white ml-2">Daftar Kelas</div>
                 </div>
               </div>
           </div>
@@ -97,11 +97,11 @@
                 <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
                 <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt="">
             </div>
-                <p class=" text-white px-5 mb-2 text-center" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
+                <p class=" text-white px-5 mb-2 text-center font-400" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
             </div>
         </div>
         <div class="container-fluid bg-white py-2 align-items-center mb-3">
-            <p class="font-black text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>
+            <p class="font-700 text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>
         </div>
         </div>
     </footer>

@@ -5,6 +5,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    font-weight: 400;
 }
 
 /* default scaling for font size */
@@ -45,6 +46,17 @@ html {
 .mobile {
     display: none;
 }
+
+/* NAVBAR */
+.nav-link {
+    color: var(--color-black);
+}
+
+.active {
+    font-weight: 700;
+}
+
+/* HOME */
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -191,8 +203,41 @@ html {
 }
 
 /* FONT WEIGHT */
-.font-light {
+
+.font-100 {
+    font-weight: 100;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-300 {
     font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-800 {
+    font-weight: 800;
+}
+
+.font-900 {
+    font-weight: 900;
 }
 
 .font-semibold {
