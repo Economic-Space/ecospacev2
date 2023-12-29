@@ -53,9 +53,9 @@
                 <h3 class="font-36 text-orange font-900"><b>TUTOR SERVICE</b></h3>
                 <p class="font-24 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
             </div>
-            <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                <p class="font-24 font-400">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
+            <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                <p class="font-24 font-400 mb-0">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
             </div>
             </div>
 
@@ -70,9 +70,9 @@
                 <h3 class="font-36 text-900"><b>BOOTCAMP</b></h3>
                 <p class="font-24 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
             </div>
-            <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                <p class="font-24 text-white font-400">Never say never untuk Pembelajaran Baru</p>
+            <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                <p class="font-24 text-white font-400 mb-0">Never say never untuk Pembelajaran Baru</p>
             </div>
             </div>
         </div>
@@ -86,9 +86,9 @@
                 <h3 class="font-36 text-blue font-900"><b>MENTORING</b></h3>
                 <p class="font-24 font-400">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
             </div>
-            <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                <p class="font-24 font-400">Dapatkan Akses 1-on-1 sama Ahlinya</p>
+            <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                <p class="font-24 font-400 mb-0">Dapatkan Akses 1-on-1 sama Ahlinya</p>
             </div>
             </div>
         </div>
@@ -103,33 +103,33 @@
             <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
                 <div class="equal-height">
-                <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
-                    <h4 class="font-32 font-900">Academic Chamber</h4>
-                </div>
-                <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
-                    <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                    <h3 class="font-36 text-orange font-900"><b>TUTOR SERVICE</b></h3>
-                    <p class="font-24 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
-                </div>
-                <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                    <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                    <p class="font-24 font-400">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
-                </div>
+                    <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
+                        <h4 class="font-32 font-900">Academic Chamber</h4>
+                    </div>
+                    <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
+                        <img src="{{asset('assets/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
+                        <h3 class="font-36 text-orange font-900"><b>TUTOR SERVICE</b></h3>
+                        <p class="font-24 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
+                    </div>
+                    <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                        <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                        <p class="font-24 font-400 mb-0">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
                 <div  class="equal-height">
                     <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
-                        <h4 class="font-32 font-bold text-white font-900">Event Space</h4>
+                        <h4 class="font-32 font-900 text-white">Event Space</h4>
                     </div>
-                    <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height">
+                    <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
                         <img src="{{asset('assets/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
-                        <h3 class="font-36 text-black font-900"><b>BOOTCAMP</b></h3>
+                        <h3 class="font-36 text-900"><b>BOOTCAMP</b></h3>
                         <p class="font-24 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
                     </div>
-                    <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                        <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                        <p class="font-24 text-white font-400">Never say never untuk Pembelajaran Baru</p>
+                    <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                        <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                        <p class="font-24 text-white font-400 mb-0">Never say never untuk Pembelajaran Baru</p>
                     </div>
                 </div>
             </div>
@@ -143,9 +143,9 @@
                         <h3 class="font-36 text-blue font-900"><b>MENTORING</b></h3>
                         <p class="font-24 font-400">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
                     </div>
-                    <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-1 aligns-items-center justify-content-center gap-3 half-up">
-                        <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle">
-                        <p class="font-24 font-400">Dapatkan Akses 1-on-1 sama Ahlinya</p>
+                    <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                        <img src="{{asset('assets/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                        <p class="font-24 font-400 mb-0">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                     </div>
                 </div>
             </div>
@@ -174,13 +174,13 @@
                 <h3 class="font-36 text-white font-800">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
                 <p class="text-white font-20 font-400">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
             </div>
-            <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center">
-                <div class="ms-4"><h3 class="text-white font-44 font-900">1.</h3></div>
-                <div><p class="font-20 font-400">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
+            <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center py-2">
+                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">1.</h3></div>
+                <div><p class="font-20 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
             </div>
-            <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center">
-                <div class="ms-4"><h3 class="text-white font-44 font-bold">2.</h3></div>
-                <div><p class="font-20 font-400">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
+            <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center py-2">
+                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">2.</h3></div>
+                <div><p class="font-20 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
             </div>
         </div>
 
@@ -204,8 +204,8 @@
                 </div>
                 <div class="col-4">
                     <div class="bg-red rounded-3 bigger d-flex flex-column justify-content-end">
-                        <h5 class="font-bold text-center font-700">Evan Timothy</h5>
-                        <p class="text-center font-400">Ex-Tax intern at Direktorat Jendral Pajak</p>
+                        <h5 class="font-bold text-center font-700 text-white">Evan Timothy</h5>
+                        <p class="text-center font-400 text-white">Ex-Tax intern at Direktorat Jendral Pajak</p>
                         <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                 </div>
@@ -765,10 +765,10 @@
     <div class="container">
         <div class="box-orange d-flex justify-content-between">
         <div class="box-wa-1 flex-fill">
-            <h3 class="text-white font-700">Punya pertanyaan lebih lanjut?</h3>
+            <h3 class="text-white font-700 font-36 mb-0 mt-2">Punya pertanyaan lebih lanjut?</h3>
         </div>
         <div class="box-wa">
-            <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="font-400">Hubungi Kami</div>
+            <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="font-400 font-28">Hubungi Kami</div>
         </div>
         </div>
     </div>
