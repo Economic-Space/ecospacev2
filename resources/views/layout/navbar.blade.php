@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Economic Space</title>
+    {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    {{-- font --}}
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    {{-- custom css --}}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    {{-- logo for page title --}}
     <link rel="icon" type="image/svg" href="{{ asset('assets/logo_favicon.svg') }}" sizes="32x32">
+    {{-- animation --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
 
@@ -51,7 +57,7 @@
 
     <!-- FOOTER -->
     <footer class="desktop">
-        <div class="container px-md-5 py-md-2">
+        <div class="container">
           <div class="box-white d-flex justify-content-between">
             <div class="d-flex align-items-center">
                 <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt="">
@@ -69,7 +75,7 @@
           <p class="text-white px-5 mb-1 font-400 font-22"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
         </div>
         <div class="container-fluid bg-white py-2 mt-auto d-flex align-items-center justify-content-between">
-          <p class="text-black px-5 mb-0 font-700 font-24" >© 2023 Economic Space. All rights reserved.</p>
+          <p class="text-white px-5 mb-0 font-700 font-24" >© 2023 Economic Space. All rights reserved.</p>
         <div class="d-flex align-items-center">
             <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
             <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt="">
@@ -111,6 +117,12 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

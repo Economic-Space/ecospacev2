@@ -6,8 +6,8 @@
 <header class="container-fluid bg-img-orange px-md-5 py-md-5">
     <div class="container">
     <div class="row px-md-5">
-        <div class="type-container">
-            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-black stroke-underline">Idaman Recruiters</span></h1>
+        <div>
+            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-900 stroke-underline">Idaman Recruiters</span></h1>
         </div>
     </div>
     <div class="row px-md-5 mt-4">
@@ -44,7 +44,7 @@
     <div class="desktop py-md-3 px-md-5">
         <div class="row gx-5">
         <div class="col-4">
-            <div class="equal-height">
+            <div class="equal-height" data-aos="fade-down" data-aos-duration="1000">
             <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
                 <h4 class="font-32 font-900">Academic Chamber</h4>
             </div>
@@ -61,7 +61,7 @@
 
         </div>
         <div class="col-4">
-            <div  class="equal-height">
+            <div  class="equal-height" data-aos="fade-down" data-aos-duration="2000">
             <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
                 <h4 class="font-32 font-900 text-white">Event Space</h4>
             </div>
@@ -77,7 +77,7 @@
             </div>
         </div>
         <div class="col-4">
-            <div  class="equal-height">
+            <div  class="equal-height" data-aos="fade-down" data-aos-duration="3000">
             <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
                 <h4 class="font-32 font-900">Mentorship Hub</h4>
             </div>
@@ -169,7 +169,7 @@
     <div class="container">
     <div class="row">
         <div class="col-md-4 d-flex justify-content-center flex-column">
-        <div class="pt-5">
+        <div>
             <div class="ms-md-5">
                 <h3 class="font-36 text-white font-800">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
                 <p class="text-white font-20 font-400">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
@@ -186,27 +186,27 @@
 
         </div>
         <div class="col-md-8">
-        <div class="desktop">
-            <div class="row">
-                <div class="col-4">
+        <div class="desktop swiper sample-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <div class="bg-blue rounded-3 bigger d-flex flex-column justify-content-end">
                         <h5 class="font-bold text-center font-700">Joshua Soebroto</h5>
                         <p class="text-center font-400">Non Permanent at EY (Junior Auditor)</p>
                         <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="swiper-slide">
                     <div class="bg-orange rounded-3 bigger d-flex flex-column justify-content-end">
                         <h5 class="font-bold text-center font-700">Hanum Alya K.</h5>
                         <p class="text-center font-400">Beswan Djarum 38</p>
-                        <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                        <img src="{{asset('assets/mentor2.svg')}}" class="d-block w-100 img-fluid align-self-end mb-0" alt="...">
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="swiper-slide">
                     <div class="bg-red rounded-3 bigger d-flex flex-column justify-content-end">
                         <h5 class="font-bold text-center font-700 text-white">Evan Timothy</h5>
                         <p class="text-center font-400 text-white">Ex-Tax intern at Direktorat Jendral Pajak</p>
-                        <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                        <img src="{{asset('assets/mentor3.svg')}}" class="d-block w-100 img-fluid align-self-end mb-0" alt="...">
                     </div>
                 </div>
             </div>
@@ -239,7 +239,7 @@
                                         <div class="bg-orange rounded-4 bigger d-flex flex-column justify-content-end">
                                             <h5 class="font-bold text-center font-24 font-700">Joshua Soebroto</h5>
                                             <p class="text-center font-16 font-400">Non Permanent at EY (Junior Auditor)</p>
-                                            <img src="{{asset('assets/mentor1.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
+                                            <img src="{{asset('assets/mentor2.svg')}}" class="d-block w-100 img-fluid align-self-end" alt="...">
                                         </div>
                                     </div>
                                 </div>
@@ -324,18 +324,18 @@
         <p class="text-center font-32 font-400">Kembangkan Potensimu sejak dini bersama Economic Space</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-6 col-md-3">
-        <div class="half-down">
-            <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-        </div>
-        <div class="bg-red border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-700 text-white">Easy Access & <br>Widely Available</h4>
-            <p class="text-center font-20 text-white font-400">Tidak ada lagi kata “Sulit” bagi Pelajar untuk mendapatkan akses belajar</p>
+    <div class="row half-up-px">
+        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="750">
+            <div class="half-down">
+                <img src="{{asset('assets/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+            </div>
+            <div class="bg-red border border-3 border-black rounded-5 box-potential">
+                <h4 class="text-center font-32 font-700 text-white">Easy Access & <br>Widely Available</h4>
+                <p class="text-center font-20 text-white font-400">Tidak ada lagi kata “Sulit” bagi Pelajar untuk mendapatkan akses belajar</p>
+            </div>
         </div>
 
-        </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="1500">
         <div class="half-down">
             <img src="{{asset('assets/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
         </div>
@@ -345,7 +345,7 @@
         </div>
 
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="2250">
         <div class="half-down">
             <img src="{{asset('assets/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
         </div>
@@ -355,7 +355,7 @@
         </div>
 
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="3000">
         <div class="half-down">
             <img src="{{asset('assets/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
         </div>
@@ -368,7 +368,7 @@
     </div>
 
     <!-- STEP BY STEP -->
-    <div class="desktop mt-5">
+    <div class="desktop mt-5 half-up-px">
         <div class="row">
         <div class="col-4" >
             <div class="d-flex flex-row gap-3">
@@ -481,12 +481,6 @@
     </div>
 </div>
 
-<!-- SEPARATOR -->
-{{-- gatau knp gabisa dikasih margin, jadi pake ini aja deh :))) --}}
-<div class="container">
-    <p class="text-white">.</p>
-</div>
-
 <!-- CONTRIBUTION -->
 
 <div class="container-fluid bg-img-white mt-5">
@@ -507,7 +501,7 @@
                 <div>
                     <img src="{{asset('assets/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <div class="hr-vertical">
-                        <h1 class="text-center font-96 font-900 text-orange">250+</h1>
+                        <h1 class="text-center font-96 font-900 text-orange"><span id="numcounter1">250</span>+</h1>
                         <p class="text-center font-28 font-400">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
                     </div>
                 </div>
@@ -516,7 +510,7 @@
                 <div>
                     <img src="{{asset('assets/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <div class="hr-vertical">
-                        <h1 class="text-center font-96 font-900 text-orange">70+</h1>
+                        <h1 class="text-center font-96 font-900 text-orange"><span id="numcounter2">70</span>+</h1>
                         <p class="text-center font-28 font-400">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
                     </div>
 
@@ -526,7 +520,7 @@
                 <div>
                     <img src="{{asset('assets/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
                     <div>
-                        <h1 class="text-center font-96 font-900 text-orange">90%</h1>
+                        <h1 class="text-center font-96 font-900 text-orange"><span id="numcounter3">90</span>%</h1>
                         <p class="text-center font-28 font-400">Tingkat Kepuasan<br>Penggunaan Layanan</p>
                     </div>
 
@@ -614,7 +608,7 @@
     </div>
     <div class="desktop mt-3">
         <div class="row">
-        <div class="col-4" >
+        <div class="col-4" data-aos="fade-down" data-aos-duration="1000">
             <div class="border border-3 border-black rounded-4 p-4">
             <h5 class="font-900 font-28">Belajar jadi Mudah</h5>
             <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
@@ -629,7 +623,7 @@
 
             </div>
         </div>
-        <div class="col-4" >
+        <div class="col-4" data-aos="fade-down" data-aos-duration="2000">
             <div class="border border-3 border-blue rounded-4 p-4">
                 <h5 class="font-black font-28 font-900">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
@@ -644,7 +638,7 @@
 
             </div>
         </div>
-        <div class="col-4" >
+        <div class="col-4" data-aos="fade-down" data-aos-duration="3000">
             <div class="border border-3 border-red rounded-4 p-4">
                 <h5 class="font-black font-28 font-900">Belajar jadi Mudah</h5>
                 <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
@@ -731,7 +725,7 @@
 <!-- CLOSING -->
 <!--desktop-->
 <div class="desktop">
-    <div class="container-fluid bg-img-blue-square mt-3" >
+    <div class="container-fluid bg-img-blue-square mt-5" >
     <div class="px-md-5 py-md-5" style="background: url('assets/assetbgblue.svg');background-repeat: no-repeat; background-position: center; background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
         <div class="wrapper">
             <div class="p"></div>
@@ -752,9 +746,9 @@
         </div>
         <div class="overlay-text">
             <div class="col-10 ">
-                <h5 class="font-32 text-orange "><span class="font-family font-black bg-white text-center"> Memberikan Layanan</span> </h5>
-                <h5 class="font-32 text-orange "><span class="font-family font-black  bg-white text-center">End to End untuk</span> </h5>
-                <h5 class="font-32 text-orange "><span class="font-family font-black bg-white text-center">Pengembangan Dirimu</span></h5>
+                <h5 class="font-32 text-orange "><span class="font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
+                <h5 class="font-32 text-orange "><span class="font-family font-900  bg-white text-center">End to End untuk</span> </h5>
+                <h5 class="font-32 text-orange "><span class="font-family font-900 bg-white text-center">Pengembangan Dirimu</span></h5>
             </div>
         </div>
         </div>

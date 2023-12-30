@@ -283,6 +283,10 @@ html {
     transform: translateY(-50%);
 }
 
+.half-up-px {
+    transform: translateY(-50px);
+}
+
 .equal-height {
     height: 100%;
     width: 100%;
