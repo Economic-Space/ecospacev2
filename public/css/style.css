@@ -302,16 +302,6 @@ html {
 }
 
 /* ===== TUTOR =======*/
-/* make tutor div is heigher than the parent */
-.parent {
-    position: relative;
-}
-
-/* make the tutor div is in the middle of the parent */
-.bigger {
-    height: 110%;
-    transform: translateY(-5%);
-}
 
 
 /* ==== POTENTIAL ======*/
