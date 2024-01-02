@@ -232,6 +232,11 @@ html {
     transform: translateX(0);
 }
 
+.carousel-control-next,
+.carousel-control-prev  {
+    filter: invert(100%);
+}
+
 
 /* ====== HOME ======== */
 .header-line {
@@ -296,12 +301,20 @@ html {
     flex-direction: column;
 }
 
+.width-smaller {
+    width: 75%;
+    margin: auto;
+}
+
 .img-circle {
     height: 50px;
     width: auto;
 }
 
 /* ===== TUTOR =======*/
+.swiper-slide {
+    height: auto !important;
+}
 
 
 /* ==== POTENTIAL ======*/
@@ -324,6 +337,11 @@ html {
     align-items: center;
     justify-content: center;
 }
+
+.step-slider .swiper-wrapper{
+    transition-timing-function: linear;
+}
+
 
 /* ===== CONTRIBUTE ===== */
 .img-contribute {
@@ -741,7 +759,7 @@ html {
         top: 0;
         left: 0;
         width: 100%;
-        height: 50%;
+        height: 60%;
         background-color: black;
         z-index: -1;
     }

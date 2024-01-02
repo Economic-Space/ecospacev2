@@ -92,9 +92,9 @@
             </div>
             <div>
             </div>
-            <div class="mt-3">
+            <div class="mt-1">
                 <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-700 font-40 text-white ml-2">Daftar Kelas</div>
+                  <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-700 font-44 text-white ml-2">Daftar Kelas</div>
                 </div>
               </div>
           </div>

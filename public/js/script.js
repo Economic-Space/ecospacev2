@@ -74,3 +74,22 @@ const swiper = new Swiper('.sample-slider', {
     slidesPerView: 3,
 })
 
+const swiper2 = new Swiper('.mobile-slider', {
+    loop: true,
+    autoplay: {
+        delay: 0,
+    },
+    speed: 3000,
+    slidesPerView: 2,
+})
+
+const swiper3 = new Swiper('.step-slider', {
+    loop: true,
+    autoplay: {
+        delay: 0,
+    },
+    speed: 3000,
+    slidesPerView: 1,
+})
+
+
