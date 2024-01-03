@@ -23,29 +23,31 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md sticky-top bg-white px-md-5">
         <div class="container">
-          <img src="{{asset('assets/logo.svg')}}" class="logo-img" alt="Economic space" >
+        <a href="{{ url('/') }}" class="logo-link">
+            <img src="{{ asset('assets/logo.svg') }}" class="logo-img" alt="Economic space">
+        </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="#">Tutor</a>
+                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Tutor</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="#">Event</a>
+                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Event</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="#">Mentorship</a>
+                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Mentorship</a>
                 </li>
 
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="#">Sign Up</a>
+                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Sign Up</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="btn btn-dark font-24" aria-current="page" href="#">Login</a>
+                    <a class="btn btn-dark font-24" aria-current="page" href="{{url('/soon')}}">Login</a>
                 </li>
             </ul>
           </div>
@@ -74,11 +76,12 @@
         <div class="container-fluid py-2 bg-black mt-5 align-items-center justify-content-center">
           <p class="text-white px-5 mb-1 font-400 font-22"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
         </div>
-        <div class="container-fluid bg-white py-2 mt-auto d-flex align-items-center justify-content-between">
+        <div class="container-fluid py-1 mt-auto d-flex align-items-center justify-content-between brown-gradient">
           <p class="text-white px-5 mb-0 font-700 font-24" >© 2023 Economic Space. All rights reserved.</p>
         <div class="d-flex align-items-center">
             <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
             <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt="">
+
         </div>
         </div>
     </footer>
@@ -103,13 +106,15 @@
         <div class="d-flex flex-column align-items-center" style="background: url('assets/footer.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:100px;;height:100%">
           <div class=" container-fluid py-2 bg-black mt-2 align-items-center justify-content-center">
             <div class="icon d-flex align-items-center" >
+                {{-- ini blm bisa diklik --}}
                 <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
                 <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt="">
+
             </div>
                 <p class=" text-white px-5 mb-2 text-center font-400" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
             </div>
         </div>
-        <div class="container-fluid bg-white py-2 align-items-center mb-3">
+        <div class="container-fluid brown-gradient py-1 align-items-center">
             <p class="font-700 text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>
         </div>
         </div>
