@@ -506,44 +506,6 @@ html {
     width: 190px;
 }
 
-.img-area:hover .box-1 {
-    width: 330px;
-}
-.img-area:hover .box-2 {
-    width: 350px;
-}
-.img-area:hover .box-3 {
-    width: 450px;
-}
-.img-area:hover .box-4 {
-    width: 300px;
-}
-
-.img-area:hover .box-5 {
-    width: 260px;
-}
-.img-area:hover .box-6 {
-    width: 260px;
-}
-.img-area:hover .box-7 {
-    width: 210px;
-}
-.img-area:hover .box-8 {
-    width: 210px;
-}
-.img-area:hover .box-9 {
-    width: 210px;
-}
-.img-area:hover .box-10 {
-    width: 210px;
-}
-.img-area:hover .box-11 {
-    width: 210px;
-}
-.img-area:hover .box-12 {
-    width: 210px;
-}
-
 .position-relative {
     position: relative;
     overflow: hidden; /* Ensure the container doesn't overflow */
@@ -555,7 +517,7 @@ html {
     left: 22%;
     transform: translate(-50%, -50%);
     text-align: left;
-    color: white; /* Adjust text color as needed */
+    color: white; /* Adjustz text color as needed */
     padding: 20px;
     width: 80%; /* Adjust width as needed */
     max-width: 525px; /* Set a max-width to limit the width of the text */
@@ -572,7 +534,7 @@ html {
 }
 
 .box-orange {
-    background-color: #F08C03;
+    background-color: #f08c03;
     border-radius: 20px;
     margin: 5px;
     height: auto;
@@ -581,7 +543,26 @@ html {
 }
 
 .mobile .box-orange {
-    background-color: #F08C03;
+    background-color: #f08c03;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.box-filter {
+    background-color: #15172a;
+    border-radius: 20px;
+    margin: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.mobile .box-filter {
+    background-color: #15172a;
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
@@ -598,7 +579,7 @@ html {
 }
 
 .container-fluid.bg-white.py-2 {
-    background-image: linear-gradient(to bottom, #5C3925, #5C5357);
+    background-image: linear-gradient(to bottom, #5c3925, #5c5357);
     height: 50px;
 }
 
@@ -621,6 +602,7 @@ html {
 .mobile .icon-smile {
     width: 20%;
 }
+
 .box-wa {
     display: flex;
     align-items: center;
@@ -645,6 +627,61 @@ html {
     height: 80%;
     width: 90%;
     margin: 15px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    border-radius: 15px;
+    height: auto;
+    width: 15%;
+    margin: 15px;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1px;
+    border-radius: 10px;
+    background: #f08c03;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+.del-fil-btn {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+    background: white;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+#pilih {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #f08c03;
+    box-shadow: none;
+    border: none;
+}
+
+#hapus {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: none;
+    border: none;
 }
 
 .icon-smile {
@@ -712,7 +749,7 @@ html {
 }
 
 .cards {
-    display: felx;
+    display: flex;
 }
 
 .card {
@@ -729,8 +766,8 @@ html {
 
 .card-1 {
     position: relative;
-    top: 85px; /* Geser card ke atas */
-    background-color: #f2f2f2; /* Warna latar belakang card */
+    top: 85px;
+    background-color: #f2f2f2;
     padding-right: 60px;
 
     left: -10px;
@@ -762,3 +799,90 @@ html {
     position: relative;
     top: 0%;
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+    width: 30%;
+}
+
+.card img {
+    width: 50%;
+    position: absolute;
+    right: 0%;
+    top: 51%;
+    transform: translateY(-50%);
+    border-bottom-right-radius: 8px;
+}
+
+.card .content {
+    width: 70%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.card:nth-child(odd) {
+    background-image: url("../assets/bg-card-1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #82dbd4;
+}
+
+.card:nth-child(even) {
+    background-image: url("../assets/bg-card-2.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #e29134;
+}
+
+#t-session img {
+    position: relative;
+    top: -40%;
+}
+
+#t-session .img-emoji {
+    position: relative;
+    width: 15%;
+}
+
+.emo2 {
+    position: relative;
+    top: 37%;
+    left: 23%;
+}
+
+.emo1 {
+    position: relative;
+    top: 78%;
+    right: 38%;
+}
+
+.emo1,
+.emo2 {
+    margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
+}
+
+/* transform div to half its height so it will overlay other div*/
