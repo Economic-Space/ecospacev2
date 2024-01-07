@@ -15,7 +15,11 @@ use App\Http\Controllers\ViewTutorsController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
+
+Route::get('/soon', function () {
+    return view('soon');}
+);
 
 Route::get('/tutors', [ViewTutorsController::class, 'index'])->name('launched');
