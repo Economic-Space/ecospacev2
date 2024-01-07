@@ -780,3 +780,466 @@ a {
         transform: translateX(-33%);
     }
 }
+
+.img-area {
+    position: relative;
+    height: 130px;
+    width: 100%;
+}
+
+.img-box {
+    padding: 10px;
+    z-index: 200;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.img-area .box-1 {
+    width: 300px;
+    left: 200px;
+}
+
+.img-area .box-2 {
+    width: 320px;
+    top: 60%;
+    left: -30px;
+}
+
+.img-area .box-3 {
+    top: 225%;
+    left: 150px;
+    width: 400px;
+}
+
+.img-area .box-4 {
+    top: 180%;
+    left: -280px;
+    width: 240px;
+}
+
+.img-area .box-5 {
+    top: 20%;
+    left: 500px;
+    width: 240px;
+}
+.img-area .box-6 {
+    top: 225%;
+    left: 570px;
+    width: 240px;
+}
+.img-area .box-7 {
+    top: 300%;
+    left: -280px;
+    width: 190px;
+}
+.img-area .box-8 {
+    top: 137%;
+    left: 500px;
+    width: 190px;
+}
+.img-area .box-9 {
+    top: 340%;
+    left: 570px;
+    width: 190px;
+}
+.img-area .box-10 {
+    top: 325%;
+    left: -150px;
+    width: 190px;
+    transform: scaleX(-1) scaleY(1) rotate(-20deg); /* Adjust the angle as needed */
+}
+.img-area .box-11 {
+    top: -20%;
+    left: 360px;
+    width: 190px;
+    transform: scaleX(1) scaleY(-1) rotate(-20deg);
+}
+.img-area .box-12 {
+    top: 340%;
+    left: 430px;
+    width: 190px;
+}
+
+.position-relative {
+    position: relative;
+    overflow: hidden; /* Ensure the container doesn't overflow */
+}
+
+.overlay-text {
+    position: relative;
+    top: 15%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white; /* Adjustz text color as needed */
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 525px; /* Set a max-width to limit the width of the text */
+}
+
+.overlay-text p,
+.overlay-text h5 {
+    margin: 10px 0;
+}
+
+.font-literata {
+    font-family: "Literata", serif;
+    font-weight: bold;
+}
+
+.box-orange {
+    background-color: #f08c03;
+    border-radius: 20px;
+    margin: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.mobile .box-orange {
+    background-color: #f08c03;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.box-filter {
+    background-color: #15172a;
+    border-radius: 20px;
+    margin: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.mobile .box-filter {
+    background-color: #15172a;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.box-white {
+    height: auto;
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin: 15px;
+}
+
+.container-fluid.bg-white.py-2 {
+    background-image: linear-gradient(to bottom, #5c3925, #5c5357);
+    height: 50px;
+}
+
+.box-black {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding: 12px; /* Add padding to the inner box */
+    margin: 15px;
+    height: auto;
+    background-color: #15172a;
+    border-radius: 15px;
+    text-align: center;
+    width: 70%;
+}
+
+.box-black .icon-smile {
+    margin-right: 10px; /* Add space between image and text */
+}
+
+.mobile .icon-smile {
+    width: 20%;
+}
+
+.box-wa {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: auto;
+    width: 20%;
+    margin: 15px;
+}
+
+.box-wa img {
+    margin-right: 10px; /* Add space between image and text */
+}
+
+.mobile .box-wa {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    background-color: #ffffff;
+    border-radius: 15px;
+    height: 80%;
+    width: 90%;
+    margin: 15px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    border-radius: 15px;
+    height: auto;
+    width: 15%;
+    margin: 15px;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1px;
+    border-radius: 10px;
+    background: #f08c03;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+.del-fil-btn {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+    background: white;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+#pilih {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #f08c03;
+    box-shadow: none;
+    border: none;
+}
+
+#hapus {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: none;
+    border: none;
+}
+
+.icon-smile {
+    margin: 5px;
+    width: 30%;
+}
+
+.icon-wa {
+    margin: 5px;
+    width: 20%;
+}
+
+.mobile .icon-wa {
+    margin: 5px;
+    width: 10%;
+}
+
+.icon-linkedin,
+.icon-insta {
+    width: 30%;
+    margin-right: 15px;
+    position: relative;
+    top: -30px;
+}
+
+.mobile .icon-linkedin,
+.mobile .icon-insta {
+    width: 15%;
+    margin-right: 15px;
+    position: relative;
+    top: -40px;
+    left: 32%;
+}
+
+.box-wa-1 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    border-radius: 20px;
+    height: 80px;
+    width: 20%;
+}
+
+.mobile .box-wa-1 {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.mobile .overlay-text {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.mobile .overlay-text .font-black {
+    font-size: 22px;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #000000;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -40px;
+}
+
+.card-1 {
+    position: relative;
+    top: 85px;
+    background-color: #f2f2f2;
+    padding-right: 60px;
+
+    left: -10px;
+}
+
+.card-2 {
+    position: relative;
+    top: -200px; /* Geser card ke atas */
+    background-color: #f2f2f2; /* Warna latar belakang card */
+    padding-right: 30px;
+    left: 143px;
+}
+.icon-1 {
+    width: 30%;
+}
+
+.icon-2 {
+    width: 30%;
+    position: relative;
+    left: 70%;
+}
+
+.btn-danger {
+    background-color: #980000;
+    border-radius: 15px;
+}
+
+.mobile .description {
+    position: relative;
+    top: 0%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+    width: 30%;
+}
+
+.card img {
+    width: 50%;
+    position: absolute;
+    right: 0%;
+    top: 51%;
+    transform: translateY(-50%);
+    border-bottom-right-radius: 8px;
+}
+
+.card .content {
+    width: 70%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.card h2 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.card:nth-child(odd) {
+    background-image: url("../assets/bg-card-1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #82dbd4;
+}
+
+.card:nth-child(even) {
+    background-image: url("../assets/bg-card-2.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #e29134;
+}
+
+#t-session img {
+    position: relative;
+    top: -40%;
+}
+
+#t-session .img-emoji {
+    position: relative;
+    width: 15%;
+}
+
+.emo2 {
+    position: relative;
+    top: 37%;
+    left: 23%;
+}
+
+.emo1 {
+    position: relative;
+    top: 78%;
+    right: 38%;
+}
+
+.emo1,
+.emo2 {
+    margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
+}
+
+/* transform div to half its height so it will overlay other div*/

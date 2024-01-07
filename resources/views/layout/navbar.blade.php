@@ -32,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Tutor</a>
+                    <a class="nav-link font-24" aria-current="page" href="{{url('/tutors')}}">Tutor</a>
                 </li>
                 <li class="nav-item px-2">
                     <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Event</a>
