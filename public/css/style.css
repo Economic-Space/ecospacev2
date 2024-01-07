@@ -5,151 +5,54 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
 }
 
 /* default scaling for font size */
 :root {
     --vw-scale-factor: 1;
+    --color-black: #16182b;
+    --color-blue: #84dfd8;
+    --color-orange: #f08c03;
+    --color-milk: #f2eee9;
+    --color-red: #980000;
+    --color-white: #ffffff;
+    --color-darkblue: #15172a;
 }
 
-/* FOR SMALLER DESKTOP SCREEN, change font size*/
-@media screen and (max-width: 1500px) {
-    :root {
-        --vw-scale-factor: 0.8; /* Adjust for smaller screens */
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    :root {
-        --vw-scale-factor: 0.6; /* Adjust for smaller screens */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    :root {
-        --vw-scale-factor: 0.5; /* Adjust for smaller screens */
-    }
-}
-
-/* show the desktop version by default */
-.desktop {
-    display: block;
-}
-
-.mobile {
-    display: none;
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(33%);
-    }
-
-    .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-33%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-    transform: translateX(0);
-}
-
-/* background image */
-.bg-img-orange {
-    min-height: 80vh;
-    background: url("../assets/bghome.svg");
-    background-position: 0px 0px, 100% 50%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg-img-white {
-    position: static;
-    overflow: visible;
-    top: 0;
-    height: auto;
-    min-height: 30vh;
-    background: url("../assets/bgwhite.svg");
-    background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
-    background-repeat: no-repeat;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
-}
-
-.bg-img-white {
-    min-height: 30vh;
-    background: url("../assets/bgwhite.svg");
-    background-position: 0px 0px, 100% 50%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.bg-img-blue-square {
-    position: static;
-    overflow: visible;
-    top: 0;
-    height: 700px;
-    min-height: 30vh;
-    background: url("../assets/bgbluesquare.svg");
-    background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
-    background-repeat: no-repeat;
-    white-space: normal;
-    object-fit: fill;
-    -o-object-fit: fill;
-}
-
-.mobile .bg-img-blue-square {
-    height: 600px;
-}
-
+/* GENERAL */
 /* BACKGROUND COLOR FOR ELEMENT */
 .bg-white {
-    background-color: #ffffff;
+    background-color: var(--color-white);
 }
 
 .bg-orange {
-    background-color: #f08c03;
+    background-color: var(--color-orange);
 }
 
 .bg-blue {
-    background-color: #84dfd8;
+    background-color: var(--color-blue);
 }
 
 .bg-black {
-    background-color: #16182b;
+    background-color: var(--color-black);
 }
 
 .bg-red {
-    background-color: #980000;
+    background-color: var(--color-red);
 }
 
 .bg-milk {
-    background-color: #f2eee9;
+    background-color: var(--color-milk);
 }
 
-.logo-img {
-    max-width: 150px;
-    height: auto;
-}
-
-.header-line {
-    width: 300px;
-    margin-left: 200px;
+.bg-darkblue {
+    background-color: var(--color-darkblue);
 }
 
 /* TEXT SIZE  */
@@ -200,25 +103,46 @@ html {
 }
 
 /* FONT WEIGHT */
-.font-light {
+
+.font-100 {
+    font-weight: 100;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-300 {
     font-weight: 300;
 }
 
-.font-semibold {
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
     font-weight: 600;
 }
 
-.font-bold {
+.font-700 {
     font-weight: 700;
 }
 
-.font-black {
+.font-800 {
+    font-weight: 800;
+}
+
+.font-900 {
     font-weight: 900;
 }
 
 /* TEXT COLOR */
 .text-white {
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .text-black {
@@ -226,56 +150,104 @@ html {
 }
 
 .text-orange {
-    color: #f08c03;
+    color: var(--color-orange);
 }
 
 .text-blue {
-    color: #84dfd8;
+    color: var(--color-blue);
 }
 
-/* DIV STYLING */
-.circle {
-    border-radius: 50%;
-    max-width: 100px;
-    max-height: 100px;
+/* border color */
+.border-blue {
+    border-color: var(--color-blue) !important;
+}
+
+.border-red {
+    border-color: var(--color-red) !important;
+}
+
+/* show the desktop version by default */
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+/* === BACKGROUND IMAGE === */
+.bg-img-orange {
+    min-height: 80vh;
+    background: url("../assets/bghome.svg");
+    background-position: 0px 0px, 100% 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-img-white {
+    min-height: 30vh;
+    background: url("../assets/bgwhite.svg");
+    background-position: 0px 0px, 100% 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-img-blue-square {
+    position: static;
+    overflow: visible;
+    top: 0;
+    height: 700px;
+    min-height: 30vh;
+    background: url("../assets/bgbluesquare.svg");
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+}
+
+.mobile .bg-img-blue-square {
+    height: 600px;
+}
+
+/* ===== NAVBAR ====== */
+.nav-link {
+    color: var(--color-black);
+}
+
+.active {
+    font-weight: 700;
+}
+
+.logo-img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* ===== CAROUSEL ==== */
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.box-service {
-    /* width: 24vw;
-    aspect-ratio: 0.86; */
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
 }
 
-.box-potential {
-    padding-top: 5vw;
-    padding-bottom: 2vw;
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
 }
 
-/* make div have equal height */
-.equal-height {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
-.service-title {
-    width: 90%;
-}
-
-/* transform div to half its height so it will overlay other div*/
-.half-down {
-    transform: translateY(50%);
-}
-
-.half-up {
-    transform: translateY(-50%);
+/* ====== HOME ======== */
+.header-line {
+    width: 300px;
+    margin-left: 200px;
 }
 
 /* give stroke under the title header */
@@ -296,24 +268,48 @@ html {
     left: 0;
 }
 
+/* ===== SERVICES ===== */
+.box-service {
+    /* width: 24vw;
+    aspect-ratio: 0.86; */
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.service-title {
+    width: 90%;
+}
+
 .img-service {
     height: 150px;
     width: auto;
 }
 
-.img-emoji {
-    height: 100px;
-    width: auto;
+/* transform div to half its height so it will overlay other div*/
+.half-down {
+    transform: translateY(50%);
 }
 
-.img-contribute {
-    height: 150px;
-    width: auto;
+.half-up {
+    transform: translateY(-50%);
 }
 
-.img-univ {
-    height: 80px;
-    width: auto;
+.half-up-px {
+    transform: translateY(-50px);
+}
+
+.equal-height {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.width-smaller {
+    width: 75%;
+    margin: auto;
 }
 
 .img-circle {
@@ -321,15 +317,42 @@ html {
     width: auto;
 }
 
-/* make tutor div is heigher than the parent */
-.parent {
-    position: relative;
+/* ===== TUTOR =======*/
+.swiper-slide {
+    height: auto !important;
 }
 
-/* make the tutor div is in the middle of the parent */
-.bigger {
-    height: 110%;
-    transform: translateY(-5%);
+/* ==== POTENTIAL ======*/
+.box-potential {
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+}
+
+.img-emoji {
+    height: 100px;
+    width: auto;
+}
+
+/* ===== STEP ===== */
+.circle {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-slider .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+/* ===== CONTRIBUTE ===== */
+.img-contribute {
+    height: 150px;
+    width: auto;
 }
 
 /* giving vertical line between col */
@@ -337,91 +360,318 @@ html {
     border-right: 2px solid;
 }
 
-/* FOR MOBILE */
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .logo-img {
-        width: 100px;
-    }
-
-    .img-circle {
-        height: 30px;
-        width: auto;
-    }
-
-    .img-service {
-        height: 100px;
-        width: auto;
-    }
-
-    .img-emoji {
-        height: 60px;
-        width: auto;
-    }
-
-    .img-contribute {
-        height: 100px;
-        width: auto;
-    }
-
-    .img-univ {
-        height: 40px;
-        width: auto;
-    }
-
-    .stroke-underline::after {
-        display: none;
-    }
-
-    .hr-vertical {
-        border-right: none;
-    }
-
-    .circle {
-        max-width: 80px;
-        max-height: 80px;
-    }
-
-    .box-potential {
-        padding-top: 40px;
-    }
-
-    .bg-black-half {
-        position: relative;
-    }
-
-    .bg-black-half::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        background-color: #16182b; /* Set the background color you want */
-        z-index: -1; /* Ensure the pseudo-element is behind the content */
-    }
+/* ===== TESTIMONIAL ====== */
+.img-univ {
+    height: 80px;
+    width: auto;
 }
 
 /* CLOSING */
 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     padding-top: 3em;
     left: 30%;
     transform: translate(-50%, -50%);
+}
+
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+    height: 130px;
+    width: 100%;
+}
+
+.img-box {
+    padding: 10px;
+    z-index: 200;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.img-area .box-1 {
+    width: 300px;
+    left: 200px;
+}
+
+.img-area .box-2 {
+    width: 320px;
+    top: 60%;
+    left: -30px;
+}
+
+.img-area .box-3 {
+    top: 225%;
+    left: 150px;
+    width: 400px;
+}
+
+.img-area .box-4 {
+    top: 180%;
+    left: -280px;
+    width: 240px;
+}
+
+.img-area .box-5 {
+    top: 20%;
+    left: 500px;
+    width: 240px;
+}
+.img-area .box-6 {
+    top: 225%;
+    left: 570px;
+    width: 240px;
+}
+.img-area .box-7 {
+    top: 300%;
+    left: -280px;
+    width: 190px;
+}
+.img-area .box-8 {
+    top: 137%;
+    left: 500px;
+    width: 190px;
+}
+.img-area .box-9 {
+    top: 340%;
+    left: 570px;
+    width: 190px;
+}
+.img-area .box-10 {
+    top: 325%;
+    left: -150px;
+    width: 190px;
+    transform: scaleX(-1) scaleY(1) rotate(-20deg); /* Adjust the angle as needed */
+}
+.img-area .box-11 {
+    top: -20%;
+    left: 360px;
+    width: 190px;
+    transform: scaleX(1) scaleY(-1) rotate(-20deg);
+}
+.img-area .box-12 {
+    top: 340%;
+    left: 430px;
+    width: 190px;
+}
+
+.position-relative {
+    position: relative;
+    overflow: hidden; /* Ensure the container doesn't overflow */
+}
+
+.overlay-text {
+    position: relative;
+    top: 15%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white; /* Adjust text color as needed */
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 525px; /* Set a max-width to limit the width of the text */
+}
+
+.overlay-text p,
+.overlay-text h5 {
+    margin: 10px 0;
+}
+
+.box-orange {
+    background-color: var(--color-orange);
+    border-radius: 20px;
+    margin: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.mobile .box-orange {
+    background-color: var(--color-orange);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    height: auto;
+    position: relative; /* Ensure positioning context */
+    top: -50px;
+}
+
+.box-white {
+    height: auto;
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin: 15px;
+}
+
+.brown-gradient {
+    background-image: linear-gradient(to bottom, #5c3925, #5c5357);
+}
+
+.box-black {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding: 12px; /* Add padding to the inner box */
+    margin: 15px;
+    height: auto;
+    background-color: #15172a;
+    border-radius: 15px;
+    text-align: center;
+    width: 70%;
+}
+
+.box-black .icon-smile {
+    margin-right: 10px; /* Add space between image and text */
+}
+
+.mobile .icon-smile {
+    width: 20%;
+}
+.box-wa {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    background-color: var(--color-white);
+    border-radius: 15px;
+    height: auto;
+    width: 20%;
+    margin: 15px;
+}
+
+.box-wa img {
+    margin-right: 10px; /* Add space between image and text */
+}
+
+.mobile .box-wa {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    background-color: var(--color-white);
+    border-radius: 15px;
+    height: 80%;
+    width: 90%;
+    margin: 15px;
+}
+
+.icon-smile {
+    margin: 5px;
+    width: 30%;
+}
+
+.icon-wa {
+    margin: 5px;
+    width: 20%;
+}
+
+.mobile .icon-wa {
+    margin: 5px;
+    width: 10%;
+}
+
+.icon-linkedin,
+.icon-insta {
+    width: 30%;
+    margin-right: 15px;
+    position: relative;
+    top: -30px;
+}
+
+.mobile .icon-linkedin,
+.mobile .icon-insta {
+    width: 15%;
+    margin-right: 15px;
+    position: relative;
+    top: -40px;
+    left: 32%;
+}
+
+.box-wa-1 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    border-radius: 20px;
+    height: 80px;
+    width: 20%;
+}
+
+.mobile .box-wa-1 {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mobile .overlay-text {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.mobile .overlay-text .font-black {
+    font-size: 22px;
+}
+
+.cards {
+    display: felx;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: #000000;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -40px;
+}
+
+.card-1 {
+    position: relative;
+    top: 85px; /* Geser card ke atas */
+    background-color: #f2f2f2; /* Warna latar belakang card */
+    padding-right: 60px;
+
+    left: -10px;
+}
+
+.card-2 {
+    position: relative;
+    top: -200px; /* Geser card ke atas */
+    background-color: #f2f2f2; /* Warna latar belakang card */
+    padding-right: 30px;
+    left: 143px;
+}
+.icon-1 {
+    width: 30%;
+}
+
+.icon-2 {
+    width: 30%;
+    position: relative;
+    left: 70%;
+}
+
+.btn-danger {
+    background-color: var(--color-red);
+    border-radius: 15px;
+}
+
+.mobile .description {
+    position: relative;
+    top: 0%;
 }
 
 .img-area {
@@ -535,21 +785,24 @@ html {
 
 .box-orange {
     background-color: #f08c03;
+    color: white;
     border-radius: 20px;
     margin: 5px;
     height: auto;
     position: relative; /* Ensure positioning context */
-    top: -50px;
+    transform: translateY(10px);
 }
 
 .mobile .box-orange {
     background-color: #f08c03;
+    color: white;
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     height: auto;
     position: relative; /* Ensure positioning context */
-    top: -50px;
+    top: -80px;
+    margin-bottom: -50px;
 }
 
 .box-filter {
@@ -629,61 +882,6 @@ html {
     margin: 15px;
 }
 
-.filter {
-    display: flex;
-    align-items: center;
-    padding: 1px; /* Add padding to the inner box */
-    border-radius: 15px;
-    height: auto;
-    width: 15%;
-    margin: 15px;
-}
-
-.filter-btn {
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 1px;
-    border-radius: 10px;
-    background: #f08c03;
-    height: auto;
-    width: auto;
-    margin: 15px;
-}
-
-.del-fil-btn {
-    display: flex;
-    align-items: center;
-    padding: 1px;
-    border-radius: 10px;
-    background: white;
-    height: auto;
-    width: auto;
-    margin: 15px;
-}
-
-#pilih {
-    font-weight: 0;
-    height: auto;
-    width: auto;
-    padding: 1px;
-    border-radius: 15px;
-    background: #f08c03;
-    box-shadow: none;
-    border: none;
-}
-
-#hapus {
-    font-weight: 0;
-    height: auto;
-    width: auto;
-    padding: 1px;
-    border-radius: 15px;
-    background: #ffffff;
-    box-shadow: none;
-    border: none;
-}
-
 .icon-smile {
     margin: 5px;
     width: 30%;
@@ -754,9 +952,9 @@ html {
 
 .card {
     background: white;
-    width: 200px;
-    padding: 20px;
-    margin: 10px;
+    width: 180px;
+    padding: 15px;
+    margin: -15px;
     border-radius: 10px;
     border-color: #000000;
     position: relative;
@@ -768,18 +966,16 @@ html {
     position: relative;
     top: 85px;
     background-color: #f2f2f2;
-    padding-right: 60px;
-
-    left: -10px;
+    padding-right: 10%;
 }
 
 .card-2 {
     position: relative;
-    top: -200px; /* Geser card ke atas */
+    top: 48px;
     background-color: #f2f2f2; /* Warna latar belakang card */
-    padding-right: 30px;
-    left: 143px;
+    padding-right: 5%;
 }
+
 .icon-1 {
     width: 30%;
 }
@@ -800,14 +996,15 @@ html {
     top: 0%;
 }
 
-.card-container {
+/* ===== TUTORS ====== */
+.card-tutor-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
 }
 
-.card {
+.card-tutor {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
@@ -817,30 +1014,32 @@ html {
     width: 30%;
 }
 
-.card img {
-    width: 50%;
-    position: absolute;
-    right: 0%;
+.card-tutor img {
+    position: relative;
+    width: 58%;
+    right: -28%;
     top: 51%;
     transform: translateY(-50%);
     border-bottom-right-radius: 8px;
 }
 
-.card .content {
+.card-tutor .content {
+    position: relative;
+    top: -200px;
     width: 70%;
     padding-right: 20px;
     box-sizing: border-box;
 }
 
-.card h2 {
+.card-tutor h2 {
     color: #333;
 }
 
-.card p {
+.card-tutor p {
     color: #666;
 }
 
-.card:nth-child(odd) {
+.card-tutor:nth-child(odd) {
     background-image: url("../assets/bg-card-1.svg");
     background-size: cover;
     background-position: center;
@@ -849,7 +1048,7 @@ html {
     background-color: #82dbd4;
 }
 
-.card:nth-child(even) {
+.card-tutor:nth-child(even) {
     background-image: url("../assets/bg-card-2.svg");
     background-size: cover;
     background-position: center;
@@ -885,4 +1084,176 @@ html {
     margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
 }
 
+.filter {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    border-radius: 15px;
+    height: auto;
+    width: 15%;
+    margin: 15px;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1px;
+    border-radius: 10px;
+    background: #f08c03;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+.del-fil-btn {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+    background: white;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+#pilih {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #f08c03;
+    box-shadow: none;
+    border: none;
+}
+
+#hapus {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: none;
+    border: none;
+}
+
 /* transform div to half its height so it will overlay other div*/
+
+/* FOR MOBILE */
+
+/* FOR SMALLER DESKTOP SCREEN, change font size*/
+@media screen and (max-width: 1500px) {
+    :root {
+        --vw-scale-factor: 0.8; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --vw-scale-factor: 0.6; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --vw-scale-factor: 0.5; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .img-circle {
+        height: 30px;
+        width: auto;
+    }
+
+    .img-service {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-emoji {
+        height: 60px;
+        width: auto;
+    }
+
+    .img-contribute {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-univ {
+        height: 40px;
+        width: auto;
+    }
+
+    .stroke-underline::after {
+        display: none;
+    }
+
+    .hr-vertical {
+        border-right: none;
+    }
+
+    .circle {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .box-potential {
+        padding-top: 40px;
+    }
+
+    .bg-black-half {
+        position: relative;
+    }
+
+    .bg-black-half::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background-color: black;
+        z-index: -1;
+    }
+
+    .card-1,
+    .card-2 {
+        left: 0;
+    }
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}

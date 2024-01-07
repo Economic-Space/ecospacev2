@@ -1,4 +1,4 @@
-@extends('layouts.navbar')
+@extends('layout.navbar')
 
 @section('content')
     <!-- HEADER -->
@@ -67,8 +67,8 @@
 
     <!-- LIST TUTORS -->
     <div class="container">
-        <div class="card-container">
-            <div class="card">
+        <div class="card-tutor-container">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -166,7 +166,7 @@
 
 
     <!-- FOOTER -->
-    <footer class="desktop">
+    <div class="desktop">
         <div class="container px-md-5 py-md-2">
           <div class="box-white d-flex justify-content-between">
             <div class="d-flex align-items-center">
@@ -178,19 +178,10 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid py-2 bg-black mt-5 align-items-center justify-content-center">
-          <p class="text-white px-5 mb-1"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>        
-        </div>
-        <div class="container-fluid bg-white py-2 mt-auto d-flex align-items-center justify-content-between">
-          <p class="text-black px-5 mb-0" >© 2023 Economic Space. All rights reserved.</p>  
-        <div class="d-flex align-items-center">
-            <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
-            <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt=""> 
-        </div>
-        </div>     
-    </footer> 
+        
+    </div> 
 
-    <footer class="mobile">
+    <div class="mobile">
         <div class="container px-md-5 py-md-2">
           <div class="box-white d-flex flex-column justify-content-center align-items-center">
             <div class="text-center">   
@@ -206,19 +197,6 @@
               </div>
           </div>
         </div>
-        <div>
-        <div class="d-flex flex-column align-items-center" style="background: url('assets/footer.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:100px;;height:100%">
-          <div class=" container-fluid py-2 bg-black mt-2 align-items-center justify-content-center">
-            <div class="icon d-flex align-items-center" >
-                <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="">
-                <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt=""> 
-            </div>
-                <p class=" text-white px-5 mb-2 text-center" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>        
-            </div>
-        </div>
-        <div class="container-fluid bg-white py-2 align-items-center mb-3">
-            <p class="font-black text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>  
-        </div>
-        </div>
-    </footer> 
+        
+    </div> 
 @endsection
