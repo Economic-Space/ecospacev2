@@ -177,7 +177,7 @@ a {
 
 /* === BACKGROUND IMAGE === */
 .bg-img-orange {
-    min-height: 80vh;
+    min-height: 100vh;
     background: url("../assets/bghome.svg");
     background-position: 0px 0px, 100% 50%;
     background-size: cover;
@@ -364,6 +364,10 @@ a {
 .img-univ {
     height: 80px;
     width: auto;
+}
+
+#card-testimoni {
+    height: auto;
 }
 
 /* CLOSING */
@@ -1180,6 +1184,12 @@ a {
 
     .logo-img {
         width: 100px;
+    }
+
+    .bg-img-orange {
+        min-height: 60vh !important;
+        background-attachment: fixed;
+        background-position: 0px 0px, 100% 25%; /* Adjust background position as needed */
     }
 
     .img-circle {

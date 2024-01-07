@@ -562,62 +562,59 @@
 <!-- TESTIMONIAL -->
 <div class="container-fluid px-md-5 py-md-5 mt-5">
     <div class="container">
-    <div class="row">
-        <div class="col-12">
-        <h2 class="text-center font-60 font-900">Apa Kata Mereka?</h2>
-        <p class="text-center font-32 font-400">Mereka sudah mencoba - Yuk <span class="text-orange font-700">Gabung dengan Ratusan Mahasiswa</span> Lainnya </p>
-        </div>
-    </div>
-    <div class="desktop mt-3">
         <div class="row">
-        <div class="col-4" data-aos="fade-down" data-aos-duration="1000">
-            <div class="border border-3 border-black rounded-4 p-4">
-            <h5 class="font-900 font-28">Belajar jadi Seru</h5>
-            <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-            <p class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
-
-            <div class="d-flex flex-row">
-                <div class="me-auto">
-                <p class="font-20 font-400"><span class="font-bold font-700">Ester Meralda</span><br>Akuntansi 23 - UNAIR</p>
-                </div>
-                <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
-            </div>
-
+            <div class="col-12">
+            <h2 class="text-center font-60 font-900">Apa Kata Mereka?</h2>
+            <p class="text-center font-32 font-400">Mereka sudah mencoba - Yuk <span class="text-orange font-700">Gabung dengan Ratusan Mahasiswa</span> Lainnya </p>
             </div>
         </div>
-        <div class="col-4" data-aos="fade-down" data-aos-duration="2000">
-            <div class="border border-3 border-blue rounded-4 p-4">
-                <h5 class="font-900 font-28 font-900">Belajar jadi Pede</h5>
-                <img src="{{asset('assets/testi2.svg')}}" alt="" class="img-fluid">
-                <p class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.
+        <div class="desktop mt-3">
+            <div class="row">
+            <div class="col-4" data-aos="fade-down" data-aos-duration="1000">
+                <div class="border border-3 border-black rounded-4 p-4">
+                    <h5 class="font-900 font-26">Belajar jadi Seru</h5>
+                    <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
+                    <p id="card-testimoni" class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
-                </p>
-
-                <div class="d-flex flex-row">
-                <div class="me-auto">
-                    <p class="font-20 font-400"><span class="font-bold font-700">Shalima Nur Kusumastuti</span><br>Akuntansi 23 - UGM</p>
+                    <div class="d-flex flex-row">
+                        <div class="me-auto">
+                        <p class="font-20 font-400"><span class="font-bold font-700">Ester Meralda</span><br>Akuntansi 23 - UNAIR</p>
+                        </div>
+                        <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                    </div>
                 </div>
-                <div><img src="{{asset('assets/univ2.svg')}}" alt="Logo Univ" class="img-univ"></div>
-                </div>
-
             </div>
-        </div>
-        <div class="col-4" data-aos="fade-down" data-aos-duration="3000">
-            <div class="border border-3 border-red rounded-4 p-4">
-                <h5 class="font-900 font-28 font-900">Belajar jadi Menyenangkan</h5>
-                <img src="{{asset('assets/testi3.svg')}}" alt="" class="img-fluid">
-                <p class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.
-                </p>
+            <div class="col-4" data-aos="fade-down" data-aos-duration="2000">
+                <div class="border border-3 border-blue rounded-4 p-4 d-flex flex-column">
+                    <h5 class="font-900 font-26 font-900">Belajar jadi Pede</h5>
+                    <img src="{{asset('assets/testi2.svg')}}" alt="" class="img-fluid">
+                    <p id="card-testimoni" class="font-20 mt-4 font-500 ">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.
 
-                <div class="d-flex flex-row">
-                <div class="me-auto">
-                    <p class="font-20 font-400"><span class="font-bold font-700">Nabila Putri Melati</span><br>Akuntansi 23 - UNAIR</p>
+                    </p>
+                    <div class="d-flex flex-row me-auto">
+                        <div class="me-auto">
+                            <p class="font-20 font-400"><span class="font-bold font-700">Shalima Nur Kusumastuti</span><br>Akuntansi 23 - UGM</p>
+                        </div>
+                        <div><img src="{{asset('assets/univ2.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                    </div>
                 </div>
-                <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
-                </div>
-
             </div>
-        </div>
+            <div class="col-4" data-aos="fade-down" data-aos-duration="3000">
+                <div class="border border-3 border-red rounded-4 p-4">
+                    <h5 class="font-900 font-26 font-900">Belajar jadi Menyenangkan</h5>
+                    <img src="{{asset('assets/testi3.svg')}}" alt="" class="img-fluid">
+                    <p id="card-testimoni" class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.
+                    </p>
+
+                    <div class="d-flex flex-row">
+                    <div class="me-auto">
+                        <p class="font-20 font-400"><span class="font-bold font-700">Nabila Putri Melati</span><br>Akuntansi 23 - UNAIR</p>
+                    </div>
+                    <div><img src="{{asset('assets/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -629,7 +626,7 @@
                 <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white">
                     <h5 class="font-900 font-28 font-900">Belajar jadi Seru</h5>
                     <img src="{{asset('assets/testi1.svg')}}" alt="" class="img-fluid">
-                    <p class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
+                    <p id="card-testimoni" class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                     <div class="d-flex flex-row">
                         <div class="me-auto">
@@ -644,7 +641,7 @@
                 <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white">
                     <h5 class="font-900 font-28 font-900">Belajar jadi Pede</h5>
                     <img src="{{asset('assets/testi2.svg')}}" alt="" class="img-fluid">
-                    <p class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
+                    <p id="card-testimoni" class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
 
                     <div class="d-flex flex-row">
                         <div class="me-auto">
@@ -657,9 +654,9 @@
             </div>
             <div class="carousel-item" data-bs-interval="3000">
                 <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white">
-                    <h5 class="font-900 font-28 font-900">Belajar jadi Menyenangkan</h5>
+                    <h5 class="font-900 font-26 font-900">Belajar jadi Menyenangkan</h5>
                     <img src="{{asset('assets/testi3.svg')}}" alt="" class="img-fluid">
-                    <p class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
+                    <p id="card-testimoni" class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
 
                     <div class="d-flex flex-row">
                         <div class="me-auto">
@@ -748,7 +745,7 @@
 
 <div class="mobile">
     <div class="container-fluid bg-img-blue-square justify-content-center" >
-<        <div class="px-md-5 py-md-5" style="background: url('');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
+        <div class="px-md-5 py-md-5" style="background: url('');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
             <div class="overlay-text">
                 <h5 class="text-orange "><span class="font-44 font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
                 <h5 class="text-orange "><span class="font-44 font-family font-900  bg-white text-center">End to End untuk</span> </h5>
@@ -830,6 +827,34 @@
         </div>
         <div>
     </footer>
+
+    <script>
+        window.addEventListener('load', function () {
+            var cards = document.querySelectorAll('#card-testimoni');
+            var labels = document.querySelectorAll('#label-testimoni');
+
+
+            var maxHeight = 0;
+            cards.forEach(function(card) {
+                maxHeight = Math.max(maxHeight, card.offsetHeight);
+            });
+
+            var maxHeightLabel = 0;
+            labels.forEach(function(label) {
+                maxHeightLabel = Math.max(maxHeightLabel, label.offsetHeight);
+            });
+
+            console.log( maxHeightLabel);
+
+            cards.forEach(function(card) {
+                card.style.height = maxHeight + 'px';
+            });
+
+            labels.forEach(function(label) {
+                label.style.height = maxHeightLabel + 'px';
+            });
+        });
+    </script>
 
 @endsection
 
