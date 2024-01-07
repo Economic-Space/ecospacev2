@@ -67,8 +67,8 @@
 
     <!-- LIST TUTORS -->
     <div class="container">
-        <div class="card-container">
-            <div class="card">
+        <div class="card-tutor-container">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-tutor">
                 <img src="{{asset('assets/joshua.svg')}}" alt="Person Photo">
                 <div class="content">
                     <div class="my-5">

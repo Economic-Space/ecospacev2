@@ -691,41 +691,41 @@
 <!--desktop-->
 <div class="desktop">
     <div class="container-fluid bg-img-blue-square mt-5" >
-    <div class="px-md-5 py-md-5" style="background: url('assets/assetbgblue.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
-        <div class="wrapper">
-            <div class="p"></div>
-            <div class="img-area">
-            <a href="https://www.linkedin.com/company/economic-space">
-                <img src="{{ asset('assets/sheet1.svg') }}" class="img img-box box-4">
-            </a>
-            <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                <img src="{{ asset('assets/sheet2.svg') }}" class="img img-box box-5">
-            </a>
-            <img src="{{ asset('assets/sheet3.svg') }}" class="img img-box box-6">
-            <a href="https://www.linkedin.com/company/economic-space">
-                <img src="{{ asset('assets/folder1.svg') }}" class="img img-box box-7">
-            </a>
-            <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                <img src="{{ asset('assets/folder2.svg') }}" class="img img-box box-8">
-            </a>
-            <img src="{{ asset('assets/folder3.svg') }}" class="img img-box box-9">
-            <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-10">
-            <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-11">
-            <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-12">
-            <img src="{{ asset('assets/ppt2.svg') }}" class="img img-box box-1">
-            <img src="{{ asset('assets/ppt3.svg') }}" class="img img-box box-2">
-            <img src="{{ asset('assets/ppt1.svg') }}" class="img img-box box-3">
+        <div class="px-md-5 py-md-5" style="background: url('assets/assetbgblue.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
+            <div class="wrapper">
+                <div class="p"></div>
+                <div class="img-area">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+                    <img src="{{ asset('assets/sheet1.svg') }}" class="img img-box box-4">
+                </a>
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                    <img src="{{ asset('assets/sheet2.svg') }}" class="img img-box box-5">
+                </a>
+                <img src="{{ asset('assets/sheet3.svg') }}" class="img img-box box-6">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+                    <img src="{{ asset('assets/folder1.svg') }}" class="img img-box box-7">
+                </a>
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                    <img src="{{ asset('assets/folder2.svg') }}" class="img img-box box-8">
+                </a>
+                <img src="{{ asset('assets/folder3.svg') }}" class="img img-box box-9">
+                <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-10">
+                <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-11">
+                <img src="{{ asset('assets/arrow.svg') }}" class="img img-box box-12">
+                <img src="{{ asset('assets/ppt2.svg') }}" class="img img-box box-1">
+                <img src="{{ asset('assets/ppt3.svg') }}" class="img img-box box-2">
+                <img src="{{ asset('assets/ppt1.svg') }}" class="img img-box box-3">
+                </div>
+            </div>
+            <div class="overlay-text">
+                <div class="col-10 ">
+                    <h5 class="font-36 text-orange "><span class="font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
+                    <h5 class="font-36 text-orange "><span class="font-family font-900  bg-white text-center">End to End untuk</span> </h5>
+                    <h5 class="font-36 text-orange "><span class="font-family font-900 bg-white text-center">Pengembangan Dirimu</span></h5>
+                </div>
+            </div>
             </div>
         </div>
-        <div class="overlay-text">
-            <div class="col-10 ">
-                <h5 class="font-36 text-orange "><span class="font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
-                <h5 class="font-36 text-orange "><span class="font-family font-900  bg-white text-center">End to End untuk</span> </h5>
-                <h5 class="font-36 text-orange "><span class="font-family font-900 bg-white text-center">Pengembangan Dirimu</span></h5>
-            </div>
-        </div>
-        </div>
-    </div>
     </div>
 
     <div class="desktop">
@@ -748,28 +748,30 @@
 
 <div class="mobile">
     <div class="container-fluid bg-img-blue-square justify-content-center" >
-    <div class="px-md-5 py-md-5" style="background: url('');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
-        <div class="overlay-text">
-            <h5 class="text-orange "><span class="font-44 font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
-            <h5 class="text-orange "><span class="font-44 font-family font-900  bg-white text-center">End to End untuk</span> </h5>
-            <h5 class="text-orange "><span class="font-44 font-family font-900 bg-white text-center">Pengembangan Dirimu</span></h5>
-        </div>
-        <div class="cards mt-3">
-            <div class="card card-1">
-                <img src="{{ asset('assets/icon2.svg') }}" class="icon-1 m-1" alt="">
-                <h3 class="font-900 font-28 mt-1 text-right">WhatsApp Community</h3>
-                <p class="font-20 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
-                <button class="btn btn-danger font-bold mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" class="text-white">Join Now</a></button>
+        <div class="px-md-5 py-md-5" style="background: url('');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
+            <div class="overlay-text">
+                <h5 class="text-orange "><span class="font-44 font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
+                <h5 class="text-orange "><span class="font-44 font-family font-900  bg-white text-center">End to End untuk</span> </h5>
+                <h5 class="text-orange "><span class="font-44 font-family font-900 bg-white text-center">Pengembangan Dirimu</span></h5>
             </div>
-            <div class="card card-2">
-                <img src="{{ asset('assets/icon1.svg') }}" class="icon-2 m-1" alt="">
-                <h3 class="font-900 font-28 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition  Page</h3>
-                <p class="font-20 text-right mt-1" style="text-align: right;">Exclusive access information on Career, Scholarship, Competition, etc.
-                No More Miss Out on Opportunities</p>
-                <button class="btn btn-danger font-bold mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" class="text-white">Discover Now</a></button>
+            <div class="row">
+                <div class="col align-self-center justify-content-center cards mt-3">
+                    <div class="card card-1">
+                        <img src="{{ asset('assets/icon2.svg') }}" class="icon-1 m-1" alt="">
+                        <h3 class="font-900 font-28 mt-1 text-right">WhatsApp Community</h3>
+                        <p class="font-14 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
+                        <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" class="text-white">Join Now</a></button>
+                    </div>
+                    <div class="card card-2">
+                        <img src="{{ asset('assets/icon1.svg') }}" class="icon-2 m-1" alt="">
+                        <h3 class="font-900 font-28 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition  Page</h3>
+                        <p class="font-14 text-right mt-1" style="text-align: right;">Exclusive access information on Career, Scholarship, Competition, etc.
+                        No More Miss Out on Opportunities</p>
+                        <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" class="text-white">Discover Now</a></button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 
@@ -777,7 +779,7 @@
     <div class="container">
         <div class="box-orange">
         <div class="box-wa-1 justify-content-center align-items-center">
-            <p class="pt-3 text-white font-36 font-700">Punya pertanyaan lebih lanjut?</p>
+            <p class="py-text-white pt-2 font-36 font-700">Punya pertanyaan lebih lanjut?</p>
         </div>
         <div class="box-wa justify-content-center pt-0 mt-0">
             <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt="">
@@ -792,7 +794,7 @@
     </div>
 </div>
 
-<footer class="desktop">
+    <footer class="desktop">
         <div class="container">
           <div class="box-white d-flex justify-content-between">
             <div class="d-flex align-items-center">

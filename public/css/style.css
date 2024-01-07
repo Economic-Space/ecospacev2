@@ -368,6 +368,8 @@ a {
 
 /* CLOSING */
 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     padding-top: 3em;
     left: 30%;
@@ -375,6 +377,9 @@ a {
 }
 
 .img-area {
+    display: flex;
+    flex-wrap: wrap;
+
     position: relative;
     height: 130px;
     width: 100%;
@@ -669,118 +674,6 @@ a {
     top: 0%;
 }
 
-/* FOR MOBILE */
-
-/* FOR SMALLER DESKTOP SCREEN, change font size*/
-@media screen and (max-width: 1500px) {
-    :root {
-        --vw-scale-factor: 0.8; /* Adjust for smaller screens */
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    :root {
-        --vw-scale-factor: 0.6; /* Adjust for smaller screens */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    :root {
-        --vw-scale-factor: 0.5; /* Adjust for smaller screens */
-    }
-}
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-
-    .logo-img {
-        width: 100px;
-    }
-
-    .img-circle {
-        height: 30px;
-        width: auto;
-    }
-
-    .img-service {
-        height: 100px;
-        width: auto;
-    }
-
-    .img-emoji {
-        height: 60px;
-        width: auto;
-    }
-
-    .img-contribute {
-        height: 100px;
-        width: auto;
-    }
-
-    .img-univ {
-        height: 40px;
-        width: auto;
-    }
-
-    .stroke-underline::after {
-        display: none;
-    }
-
-    .hr-vertical {
-        border-right: none;
-    }
-
-    .circle {
-        max-width: 80px;
-        max-height: 80px;
-    }
-
-    .box-potential {
-        padding-top: 40px;
-    }
-
-    .bg-black-half {
-        position: relative;
-    }
-
-    .bg-black-half::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60%;
-        background-color: black;
-        z-index: -1;
-    }
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(33%);
-    }
-
-    .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-33%);
-    }
-}
-
 .img-area {
     position: relative;
     height: 130px;
@@ -892,21 +785,24 @@ a {
 
 .box-orange {
     background-color: #f08c03;
+    color: white;
     border-radius: 20px;
     margin: 5px;
     height: auto;
     position: relative; /* Ensure positioning context */
-    top: -50px;
+    transform: translateY(10px);
 }
 
 .mobile .box-orange {
     background-color: #f08c03;
+    color: white;
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     height: auto;
     position: relative; /* Ensure positioning context */
-    top: -50px;
+    top: -80px;
+    margin-bottom: -50px;
 }
 
 .box-filter {
@@ -986,61 +882,6 @@ a {
     margin: 15px;
 }
 
-.filter {
-    display: flex;
-    align-items: center;
-    padding: 1px; /* Add padding to the inner box */
-    border-radius: 15px;
-    height: auto;
-    width: 15%;
-    margin: 15px;
-}
-
-.filter-btn {
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 1px;
-    border-radius: 10px;
-    background: #f08c03;
-    height: auto;
-    width: auto;
-    margin: 15px;
-}
-
-.del-fil-btn {
-    display: flex;
-    align-items: center;
-    padding: 1px;
-    border-radius: 10px;
-    background: white;
-    height: auto;
-    width: auto;
-    margin: 15px;
-}
-
-#pilih {
-    font-weight: 0;
-    height: auto;
-    width: auto;
-    padding: 1px;
-    border-radius: 15px;
-    background: #f08c03;
-    box-shadow: none;
-    border: none;
-}
-
-#hapus {
-    font-weight: 0;
-    height: auto;
-    width: auto;
-    padding: 1px;
-    border-radius: 15px;
-    background: #ffffff;
-    box-shadow: none;
-    border: none;
-}
-
 .icon-smile {
     margin: 5px;
     width: 30%;
@@ -1111,9 +952,9 @@ a {
 
 .card {
     background: white;
-    width: 200px;
-    padding: 20px;
-    margin: 10px;
+    width: 180px;
+    padding: 15px;
+    margin: -15px;
     border-radius: 10px;
     border-color: #000000;
     position: relative;
@@ -1125,18 +966,16 @@ a {
     position: relative;
     top: 85px;
     background-color: #f2f2f2;
-    padding-right: 60px;
-
-    left: -10px;
+    padding-right: 10%;
 }
 
 .card-2 {
     position: relative;
-    top: -200px; /* Geser card ke atas */
+    top: 48px;
     background-color: #f2f2f2; /* Warna latar belakang card */
-    padding-right: 30px;
-    left: 143px;
+    padding-right: 5%;
 }
+
 .icon-1 {
     width: 30%;
 }
@@ -1157,14 +996,15 @@ a {
     top: 0%;
 }
 
-.card-container {
+/* ===== TUTORS ====== */
+.card-tutor-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
 }
 
-.card {
+.card-tutor {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
@@ -1174,30 +1014,32 @@ a {
     width: 30%;
 }
 
-.card img {
-    width: 50%;
-    position: absolute;
-    right: 0%;
+.card-tutor img {
+    position: relative;
+    width: 58%;
+    right: -28%;
     top: 51%;
     transform: translateY(-50%);
     border-bottom-right-radius: 8px;
 }
 
-.card .content {
+.card-tutor .content {
+    position: relative;
+    top: -200px;
     width: 70%;
     padding-right: 20px;
     box-sizing: border-box;
 }
 
-.card h2 {
+.card-tutor h2 {
     color: #333;
 }
 
-.card p {
+.card-tutor p {
     color: #666;
 }
 
-.card:nth-child(odd) {
+.card-tutor:nth-child(odd) {
     background-image: url("../assets/bg-card-1.svg");
     background-size: cover;
     background-position: center;
@@ -1206,7 +1048,7 @@ a {
     background-color: #82dbd4;
 }
 
-.card:nth-child(even) {
+.card-tutor:nth-child(even) {
     background-image: url("../assets/bg-card-2.svg");
     background-size: cover;
     background-position: center;
@@ -1242,4 +1084,176 @@ a {
     margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
 }
 
+.filter {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    border-radius: 15px;
+    height: auto;
+    width: 15%;
+    margin: 15px;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1px;
+    border-radius: 10px;
+    background: #f08c03;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+.del-fil-btn {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+    background: white;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+#pilih {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #f08c03;
+    box-shadow: none;
+    border: none;
+}
+
+#hapus {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: none;
+    border: none;
+}
+
 /* transform div to half its height so it will overlay other div*/
+
+/* FOR MOBILE */
+
+/* FOR SMALLER DESKTOP SCREEN, change font size*/
+@media screen and (max-width: 1500px) {
+    :root {
+        --vw-scale-factor: 0.8; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --vw-scale-factor: 0.6; /* Adjust for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --vw-scale-factor: 0.5; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .img-circle {
+        height: 30px;
+        width: auto;
+    }
+
+    .img-service {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-emoji {
+        height: 60px;
+        width: auto;
+    }
+
+    .img-contribute {
+        height: 100px;
+        width: auto;
+    }
+
+    .img-univ {
+        height: 40px;
+        width: auto;
+    }
+
+    .stroke-underline::after {
+        display: none;
+    }
+
+    .hr-vertical {
+        border-right: none;
+    }
+
+    .circle {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .box-potential {
+        padding-top: 40px;
+    }
+
+    .bg-black-half {
+        position: relative;
+    }
+
+    .bg-black-half::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background-color: black;
+        z-index: -1;
+    }
+
+    .card-1,
+    .card-2 {
+        left: 0;
+    }
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
