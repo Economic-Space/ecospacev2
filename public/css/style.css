@@ -22,7 +22,7 @@ a {
     --color-milk: #f2eee9;
     --color-red: #980000;
     --color-white: #ffffff;
-    --color-darkblue: #15172A;
+    --color-darkblue: #15172a;
 }
 
 /* GENERAL */
@@ -159,13 +159,12 @@ a {
 
 /* border color */
 .border-blue {
-    border-color:var(--color-blue) !important;
+    border-color: var(--color-blue) !important;
 }
 
 .border-red {
-    border-color:var(--color-red) !important;
+    border-color: var(--color-red) !important;
 }
-
 
 /* show the desktop version by default */
 .desktop {
@@ -214,7 +213,6 @@ a {
     height: 600px;
 }
 
-
 /* ===== NAVBAR ====== */
 .nav-link {
     color: var(--color-black);
@@ -229,7 +227,6 @@ a {
     height: auto;
 }
 
-
 /* ===== CAROUSEL ==== */
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -243,10 +240,9 @@ a {
 }
 
 .carousel-control-next,
-.carousel-control-prev  {
+.carousel-control-prev {
     filter: invert(100%);
 }
-
 
 /* ====== HOME ======== */
 .header-line {
@@ -326,7 +322,6 @@ a {
     height: auto !important;
 }
 
-
 /* ==== POTENTIAL ======*/
 .box-potential {
     padding-top: 5vw;
@@ -350,10 +345,9 @@ a {
     justify-content: center;
 }
 
-.step-slider .swiper-wrapper{
+.step-slider .swiper-wrapper {
     transition-timing-function: linear;
 }
-
 
 /* ===== CONTRIBUTE ===== */
 .img-contribute {
@@ -371,7 +365,6 @@ a {
     height: 80px;
     width: auto;
 }
-
 
 /* CLOSING */
 .wrapper {
@@ -511,7 +504,7 @@ a {
 }
 
 .brown-gradient {
-    background-image: linear-gradient(to bottom, #5C3925, #5C5357);
+    background-image: linear-gradient(to bottom, #5c3925, #5c5357);
 }
 
 .box-black {
@@ -607,6 +600,7 @@ a {
     height: auto;
     width: 100%;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .mobile .overlay-text {
@@ -675,7 +669,6 @@ a {
     top: 0%;
 }
 
-
 /* FOR MOBILE */
 
 /* FOR SMALLER DESKTOP SCREEN, change font size*/
@@ -697,9 +690,7 @@ a {
     }
 }
 
-
 @media (max-width: 767px) {
-
     .carousel-inner .carousel-item > div {
         display: none;
     }
@@ -776,7 +767,6 @@ a {
         z-index: -1;
     }
 }
-
 
 /* medium and up screens */
 @media (min-width: 768px) {

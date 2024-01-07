@@ -695,14 +695,14 @@
         <div class="wrapper">
             <div class="p"></div>
             <div class="img-area">
-            <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+            <a href="https://www.linkedin.com/company/economic-space">
                 <img src="{{ asset('assets/sheet1.svg') }}" class="img img-box box-4">
             </a>
             <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
                 <img src="{{ asset('assets/sheet2.svg') }}" class="img img-box box-5">
             </a>
             <img src="{{ asset('assets/sheet3.svg') }}" class="img img-box box-6">
-            <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+            <a href="https://www.linkedin.com/company/economic-space">
                 <img src="{{ asset('assets/folder1.svg') }}" class="img img-box box-7">
             </a>
             <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
@@ -735,7 +735,7 @@
             <h3 class="text-white font-700 font-36 mb-0 mt-2">Punya pertanyaan lebih lanjut?</h3>
         </div>
         <div class="box-wa">
-            <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="font-400 font-28">
+            <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt=""><div class="font-400 font-24">
                 <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
                     Hubungi Kami
                 </a>
@@ -777,9 +777,9 @@
     <div class="container">
         <div class="box-orange">
         <div class="box-wa-1 justify-content-center align-items-center">
-            <p class="text-white font-36 font-700">Punya pertanyaan lebih lanjut?</p>
+            <p class="pt-3 text-white font-36 font-700">Punya pertanyaan lebih lanjut?</p>
         </div>
-        <div class="box-wa justify-content-center">
+        <div class="box-wa justify-content-center pt-0 mt-0">
             <img class="icon-wa" src="{{asset('assets/wa.svg')}}" alt="">
             <div class="">
                 <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
@@ -791,6 +791,42 @@
     </div>
     </div>
 </div>
+
+<footer class="desktop">
+        <div class="container">
+          <div class="box-white d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt="">
+                <div class="box-black ml-2">
+                    <h3 class="font-40 text-white font-700">Daftar Kelas</h3>
+                </div>
+            </div>
+            <div class="p-2" style="text-align: right;">
+              <h3 class="font-700 font-40">Siap Buat Belajar bersama Economic Space?</h3>
+              <p class="font-400 font-28">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <footer class="mobile">
+        <div class="container px-md-5 py-md-2">
+          <div class="box-white d-flex flex-column justify-content-center align-items-center">
+            <div class="text-center">
+              <h3 class="font-400">Siap Buat Belajar bersama <span class="font-800">Economic Space?</span> </h3>
+              <p class="font-400">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
+            </div>
+            <div>
+            </div>
+            <div class="mt-1">
+                <div class="d-flex align-items-center">
+                  <img class="icon-smile" src="{{asset('assets/smile.svg')}}" alt=""><div class="box-black font-700 font-44 text-white ml-2">Daftar Kelas</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div>
+    </footer>
 
 @endsection
 
