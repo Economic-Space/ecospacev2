@@ -1,0 +1,147 @@
+/* ===== TUTOR PAGE ====== */
+
+/* VIEW TUTOR */
+.card-tutor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card-tutor {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+    width: 30%;
+}
+
+.card-tutor img {
+    position: relative;
+    width: 58%;
+    right: -28%;
+    top: 51%;
+    transform: translateY(-50%);
+    border-bottom-right-radius: 8px;
+}
+
+.card-tutor .content {
+    position: relative;
+    top: -200px;
+    width: 70%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.card-tutor h2 {
+    color: #333;
+}
+
+.card-tutor p {
+    color: #666;
+}
+
+.card-tutor:nth-child(odd) {
+    background-image: url("../assets/background/bg-card-1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #82dbd4;
+}
+
+.card-tutor:nth-child(even) {
+    background-image: url("../assets/background/bg-card-2.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-color: #e29134;
+}
+
+#t-session img {
+    position: relative;
+    top: -40%;
+}
+
+#t-session .img-emoji {
+    position: relative;
+    width: 15%;
+}
+
+.emo2 {
+    position: relative;
+    top: 37%;
+    left: 23%;
+}
+
+.emo1 {
+    position: relative;
+    top: 78%;
+    right: 38%;
+}
+
+.emo1,
+.emo2 {
+    margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    padding: 1px; /* Add padding to the inner box */
+    border-radius: 15px;
+    height: auto;
+    width: 15%;
+    margin: 15px;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1px;
+    border-radius: 10px;
+    background: #f08c03;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+.del-fil-btn {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+    background: white;
+    height: auto;
+    width: auto;
+    margin: 15px;
+}
+
+#pilih {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #f08c03;
+    box-shadow: none;
+    border: none;
+}
+
+#hapus {
+    font-weight: 0;
+    height: auto;
+    width: auto;
+    padding: 1px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: none;
+    border: none;
+}
+
+
+/* ==== DETAIL TUTOR ==== */
