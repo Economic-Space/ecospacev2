@@ -256,7 +256,7 @@
             <div class="col-11">
                 <div class="mobile swiper mobile-slider mt-5">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;" >
+                        <div class="swiper-slide bg-darkblue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;" >
                             <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid mt-auto" alt="...">
                         </div>
                         <div class="swiper-slide bg-orange rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">

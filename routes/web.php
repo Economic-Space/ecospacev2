@@ -22,4 +22,5 @@ Route::get('/soon', function () {
     return view('home.soon');}
 );
 
-Route::get('/tutors', [ViewTutorsController::class, 'index'])->name('launched');
+Route::get('/tutors', [ViewTutorsController::class, 'index']);
+Route::get('/detail', [ViewTutorsController::class, 'viewDetail']);
