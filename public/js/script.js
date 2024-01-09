@@ -83,13 +83,20 @@ const swiper2 = new Swiper('.mobile-slider', {
     slidesPerView: 2,
 })
 
+// flip
+
 const swiper3 = new Swiper('.step-slider', {
     loop: true,
     autoplay: {
         delay: 0,
     },
-    speed: 3000,
-    slidesPerView: 1,
+    speed: 2000,
+    mousewheel: true,
+    slidesPerView: 1,                    // slide speed
+    effect: 'flip',                     // apply flip effect
+    flipEffect: {
+        slideShadows: false,            // Remove the shadow on the slide surface
+    },
 })
 
 
