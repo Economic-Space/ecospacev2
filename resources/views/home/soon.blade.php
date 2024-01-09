@@ -1,7 +1,7 @@
 @extends('layout.navbar')
 
 @section('content')
-<div id="soon" style="background: url('{{ asset('assets/comingsoon-bg.svg') }}');background-repeat: no-repeat;width:100%;background-size: cover;z-index:20;">
+<div id="soon" style="background: url('{{ asset('assets/background/comingsoon-bg.svg') }}');background-repeat: no-repeat;width:100%;background-size: cover;z-index:20;">
     <div class="container">
         <div class="row align-items-center d-flex text-center" style="height:80vh">
             <div class="col-12 align-self-center">

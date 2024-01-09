@@ -12,7 +12,7 @@
     {{-- custom css --}}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     {{-- logo for page title --}}
-    <link rel="icon" type="image/svg" href="{{ asset('assets/logo_favicon.svg') }}" sizes="32x32">
+    <link rel="icon" type="image/svg" href="{{ asset('assets/socmed/logo_favicon.svg') }}" sizes="32x32">
     {{-- animation --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-md sticky-top bg-white px-md-5">
         <div class="container">
         <a href="{{ url('/') }}" class="logo-link">
-            <img src="{{ asset('assets/logo.svg') }}" class="logo-img" alt="Economic space">
+            <img src="{{ asset('assets/socmed/logo.svg') }}" class="logo-img" alt="Economic space">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -65,8 +65,8 @@
           <div class="container-fluid py-1 mt-auto d-flex align-items-center justify-content-between brown-gradient">
             <p class="text-white px-5 mb-0 font-700 font-24" >© 2023 Economic Space. All rights reserved.</p>
           <div class="d-flex align-items-center">
-                <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
-                <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
+                <img class="icon-insta mr-2" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
+                <img class="icon-linkedin" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
           </div>
     </footer>
 
@@ -75,8 +75,8 @@
           <div class="d-flex flex-column align-items-center" style="background: url('assets/footer.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:100px;;height:100%">
             <div class=" container-fluid py-2 bg-black mt-2 align-items-center justify-content-center">
               <div class="icon d-flex align-items-center">
-                  <img class="icon-insta mr-2" src="{{asset('assets/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
-                  <img class="icon-linkedin" src="{{asset('assets/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
+                  <img class="icon-insta mr-2" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
+                  <img class="icon-linkedin" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
               </div>
                   <p class=" text-white px-5 mb-2 text-center font-400" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
             </div>
