@@ -1,3 +1,5 @@
+/*=== GENERAL STYLE AND HOME ====*/
+
 * {
     font-family: "Poppins";
 }
@@ -62,6 +64,11 @@ a {
 .font-16 {
     font-size: calc(1rem * var(--vw-scale-factor));
 }
+
+.font-18 {
+    font-size: calc(1.125rem * var(--vw-scale-factor));
+}
+
 .font-20 {
     font-size: calc(1.25rem * var(--vw-scale-factor));
 }
@@ -155,6 +162,10 @@ a {
 
 .text-blue {
     color: var(--color-blue);
+}
+
+.text-milk {
+    color: var(--color-milk);
 }
 
 /* border color */
