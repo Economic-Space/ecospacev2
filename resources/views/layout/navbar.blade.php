@@ -17,6 +17,8 @@
     {{-- animation --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    {{-- icon --}}
+    <script src="https://kit.fontawesome.com/92b0bdfcf0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
