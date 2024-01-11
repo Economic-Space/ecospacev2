@@ -32,21 +32,23 @@
                     <img src="{{ asset('assets/tutorDetail/thumbnail.svg') }}" class="img-fluid w-100" alt="...">
                 </div>
                 <div class="col-12 col-md-6 align-self-center">
-                    <p class="font-21 font-400"><a href="">Academy</a> > Introduction to Accounting</p>
-                    <h1 class="font-48 font-700 mt-3">Introduction to Accounting</h1>
+                    <p class="font-21 font-400"><a href="{{route('viewTutors')}}">Academy</a> > {{$subject->subject_title}}</p>
+                    <h1 class="font-48 font-700 mt-3">{{$subject->subject_title}}</h1>
                     <div class="d-flex justify-content-left gap-3">
-                        <p class="bg-milk py-1 px-2 rounded-3 font-18 font-400">Accounting</p>
-                        <p class="bg-blue py-1 px-2 rounded-3 font-18 font-400">Economics</p>
+                        @foreach(json_decode($subject->subject_majors) as $major)
+                        <p class="bg-milk py-1 px-2 rounded-3 font-18 font-400">{{$major}}</p>
+                        @endforeach
                     </div>
                     <div class="d-flex justify-content-left gap-3">
-                        <p class="font-18 font-400"><i class="fa-solid fa-folder me-2"></i> Financial Accounting</p>
-                        <p class="font-18 font-400"><i class="fa-solid fa-gem me-2"></i> Semester 1 - 2</p>
+                        <p class="font-18 font-400"><i class="fa-solid fa-folder me-2"></i> {{$subject->subject_category}}</p>
+                        <p class="font-18 font-400"><i class="fa-solid fa-gem me-2"></i> {{$subject->subject_semester}}</p>
                     </div>
                     <button class="bg-orange rounded-3 border-0 font-30 font-500 text-white px-5 py-2 mt-3">
                         Mulai Belajar
                     </button>
                 </div>
                 <div class="col-6 desktop">
+                    {{-- TODO NANTI DIGANTI --}}
                     <img src="{{ asset('assets/tutorDetail/thumbnail.svg') }}" class="img-fluid w-100" alt="...">
                 </div>
 
@@ -64,77 +66,36 @@
 
                 {{-- sebelah kiri --}}
                 <div class="col-12 col-md-8">
-                    <p class="font-21 font-400 text-justify">Introduction to Accounting merupakan mata kuliah yang memberikan pengetahuan kepada mahasiswa tentang dasar-dasar penyusunan laporan keuangan, memahami konsep persamaan dasar akuntansi maupun konsep pengakuan, pengukuran, penilaian, dan pelaporan, dan menganalisis elemen-elemen laporan keuangan baik akun-akun aset, liabilitas, maupun ekuitas perusahaan.</p>
+                    <p class="font-21 font-400 text-justify">{{$subject->subject_description}}</p>
                     <h2 class="font-40 font-900 text-orange mt-4">Tutor Material Discussion</h2>
-                    <p class="font-21 font-400 text-justify"><span class="font-700">Referensi Pembelajaran: </span>Financial Accounting with International Financial Reporting Standards 4th Edition - Weygandt, Kimmel, Kieso</p>
+                    <p class="font-21 font-700 text-justify">Referensi Pembelajaran:</p>
+                    <ul>
+                        @foreach(json_decode($subject->subject_references) as $reference)
+                        <li class="font-21 font-400 text-justify">{{$reference}}</li>
+                        @endforeach
+                    </ul>
 
                     {{-- accordion --}}
                     <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
+                        @foreach($subject->topics as $topic)
                         <div class="accordion-item mb-2">
-                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button font-22 font-500" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                1. Accounting in Action and The Recording Process
+                          <h2 class="accordion-header" id="panelsStayOpen-heading{{$topic->topic_number}}">
+                            <button class="accordion-button font-22 font-500" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{$topic->topic_number}}" aria-expanded="true" aria-controls="panelsStayOpen-collapse{{$topic->topic_number}}">
+                                {{$topic->topic_number}}. {{$topic->topic_title}}
                             </button>
                           </h2>
-                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                          <div id="panelsStayOpen-collapse{{$topic->topic_number}}" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading{{$topic->topic_number}}">
                             <div class="accordion-body">
                               <ol>
-                                <li class="font-22 font-400">Test</li>
-                                <li class="font-22 font-400">Testt</li>
+                                @foreach(json_decode($topic->topic_content) as $content)
+                                <li class="font-22 font-400">{{$content}}</li>
+                                @endforeach
                               </ol>
-                              <p class="font-22 font-400 text-justify"><span class=" font-700">Objective: </span>hahahahahh</p>
+                              <p class="font-22 font-400 text-justify"><span class=" font-700">Objective: </span>{{$topic->topic_objective}}</p>
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-item mb-2">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                              <button class="accordion-button font-22 font-500" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-                                  2. Accounting in Action and The Recording Process
-                              </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
-                              <div class="accordion-body">
-                                <ol>
-                                    <li class="font-22 font-400">Test</li>
-                                    <li class="font-22 font-400">Testt</li>
-                                </ol>
-                                <p class="font-22 font-400"><span class=" font-700">Objective: </span>hahahahahh</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-2">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                              <button class="accordion-button font-22 font-500" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
-                                  3. Accounting in Action and The Recording Process
-                              </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
-                              <div class="accordion-body">
-                                <ol>
-                                    <li class="font-22 font-400">Test</li>
-                                    <li class="font-22 font-400">Testt</li>
-                                </ol>
-                                <p class="font-22 font-400"><span class=" font-700">Objective: </span>hahahahahh</p>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item mb-2">
-                            <h2 class="accordion-header" id="panelsStayOpen-heading4">
-                              <button class="accordion-button font-22 font-500" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="true" aria-controls="panelsStayOpen-collapse4">
-                                  4. Accounting in Action and The Recording Process
-                              </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading4">
-                              <div class="accordion-body">
-                                <ul>
-                                  <li class="font-22 font-400">Test</li>
-                                  <li class="font-22 font-400">Testt</li>
-                                </ul>
-                                <p class="font-22 font-400"><span class=" font-700">Objective: </span>hahahahahh</p>
-                              </div>
-                            </div>
-                        </div>
+                        @endforeach
                       </div>
                 </div>
 
@@ -145,6 +106,7 @@
                             <h3 class="font-36 font-900">Tutor Background</h3>
                             <p class="font-20 font-400">Asal Universitas Tutor:</p>
                             <div class="d-lg-flex justify-content-left gap-lg-3">
+                                {{-- TODO NANTI DIGANTI --}}
                                 <img src="{{ asset('assets/univ/univ1.svg') }}" class="img-fluid" alt="Tagline" >
                                 <img src="{{ asset('assets/univ/univ1.svg') }}" class="img-fluid" alt="Tagline" >
                                 <img src="{{ asset('assets/univ/univ1.svg') }}" class="img-fluid" alt="Tagline" >
@@ -251,51 +213,19 @@
                 </div>
             </div>
             <div class="row">
+                @foreach($other_subjects as $tutor)
                 <div class="col-12 col-md-4 card-tutor">
+                    {{-- TODO NANTI DIGANTI --}}
                     <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
                     <div class="content">
                         <div class="my-5">
-                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                            <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
+                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">{{$tutor->subject_title}}</span> </h5>
+                            {{-- <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5> --}}
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 card-tutor">
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                    <div class="content">
-                        <div class="my-5">
-                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                            <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 card-tutor">
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                    <div class="content">
-                        <div class="my-5">
-                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                            <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 card-tutor">
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                    <div class="content">
-                        <div class="my-5">
-                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                            <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 card-tutor">
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                    <div class="content">
-                        <div class="my-5">
-                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                            <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </div>

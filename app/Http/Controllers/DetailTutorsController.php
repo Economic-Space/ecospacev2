@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Subject;
 use Illuminate\Http\Request;
 
 class DetailTutorsController extends Controller
 {
-    public function viewDetail() {
-        return view('tutor.detailTutor');
+    public function index($id) {
+        $subject = Subject::with('topics')->find($id);
+        $other_subjects = Subject::where('id', '!=', $id)->where('status', 'active')->get();
+        return view('tutor.detailTutor', compact('subject', 'other_subjects'));
     }
 }

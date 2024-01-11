@@ -8,36 +8,67 @@ use Illuminate\Http\Request;
 class ViewTutorsController extends Controller
 {
     public function index() {
-        // $subjects = Subject::where('status', 'active')->get();
-        return view('tutor.viewTutors');
+        // all by default -> dikasih gini agar filter ga error
+        $major = 'all';
+        $semester = 'all';
+        $subjects = Subject::where('status', 'active')->get();
+        return view('tutor.viewTutors', compact('subjects', 'major', 'semester'));
     }
 
     // FILTER SUBJECT BASED ON MAJOR AND SEMESTER
-    public function filterSubjects($major, $semester)
+    public function filterSubjects(Request $request)
     {
-        $filteredSubjects = Subject::where('subject_major', $major)
+        $major = $request->input('major');
+        $semester = $request->input('semester');
+        $subjects = Subject::whereJsonContains('subject_major', $major)
                                 ->where('subject_semester', $semester)
                                 ->where('status', 'active')
                                 ->get();
 
-        return view('subject.index', compact('filteredSubjects'));
+        if($semester == 'all') {
+            $subjects = Subject::whereJsonContains('subject_major', $major)
+                                ->where('status', 'active')
+                                ->get();
+        }
+
+        if($major == 'all') {
+            $subjects = Subject::where('subject_semester', $semester)
+                                ->where('status', 'active')
+                                ->get();
+        }
+
+        if ($subjects->isEmpty()) {
+            $subjects = null;
+        }
+
+        // kalau ga set semester n major, secara default adalah all
+        if (!isset($semester)) {
+            $semester = 'all';
+        }
+
+        if (!isset($major)) {
+            $major = 'all';
+        }
+
+        return view('tutor.viewTutors', compact('subjects', 'semester', 'major'));
     }
 
     // SEARCH BASED ON SUBJECT TITLE
     public function searchSubjects(Request $request)
     {
-        $searchTerm = $request->input('search');
+        $major = $semester = 'all';
+        $searchTerm = $request->input('tutorSearchBar');
 
-        $subjects = Subject::where('subject_title', 'like', "%{$searchTerm}%")
+        $subjects = Subject::where('subject_title', 'ilike', "%{$searchTerm}%")
                         ->where('status', 'active')
                         ->get();
 
-        return view('subject.index');
+        return view('tutor.viewTutors', compact('subjects', 'major', 'semester'));
     }
 
     // CLEAR FILTER BUTTON FUNCTIONALITY
     public function clearFilters() {
-        return redirect()->route('viewSubject');
+        return redirect()->route('viewTutors');
     }
 
 
