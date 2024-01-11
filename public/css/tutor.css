@@ -33,8 +33,9 @@
     width: 58%;
     right: -28%;
     top: 51%;
-    transform: translateY(-50%);
+    transform: translateY(-51%);
     border-bottom-right-radius: 8px;
+    max-height: 200px;
 }
 
 .card-tutor .content {

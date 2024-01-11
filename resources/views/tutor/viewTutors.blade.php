@@ -22,6 +22,13 @@
                         <input class="form-control" type="text" placeholder="Search by Course Name" aria-label="Search by Course Name">
                         </div>
                     </div>
+                    <div class="filter-btn col-11 col-lg-4 row m-3 g-0 px-3">
+                        <div class="div-flex">
+                            <button id="pilih" style="color: white" type="submit" >
+                            Search
+                            </button>
+                        </div>
+                    </div>
                     <div class="filter col-11 col-lg-4 row m-3 g-0 ">
                         <div class="div-flex">
                             <select name="course" id="course" class="form-select me-4">

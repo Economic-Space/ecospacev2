@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DetailTutorsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewTutorsController;
 
@@ -23,4 +24,4 @@ Route::get('/soon', function () {
 );
 
 Route::get('/tutors', [ViewTutorsController::class, 'index']);
-Route::get('/detailTutor', [ViewTutorsController::class, 'viewDetail']);
+Route::get('/detailTutor', [DetailTutorsController::class, 'viewDetail']);
