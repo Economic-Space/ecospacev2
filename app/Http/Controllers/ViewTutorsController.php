@@ -20,13 +20,13 @@ class ViewTutorsController extends Controller
     {
         $major = $request->input('major');
         $semester = $request->input('semester');
-        $subjects = Subject::whereJsonContains('subject_major', $major)
+        $subjects = Subject::whereJsonContains('subject_majors', $major)
                                 ->where('subject_semester', $semester)
                                 ->where('status', 'active')
                                 ->get();
 
         if($semester == 'all') {
-            $subjects = Subject::whereJsonContains('subject_major', $major)
+            $subjects = Subject::whereJsonContains('subject_majors', $major)
                                 ->where('status', 'active')
                                 ->get();
         }
