@@ -23,4 +23,4 @@ Route::get('/soon', function () {
 );
 
 Route::get('/tutors', [ViewTutorsController::class, 'index']);
-Route::get('/detail', [ViewTutorsController::class, 'viewDetail']);
+Route::get('/detailTutor', [ViewTutorsController::class, 'viewDetail']);

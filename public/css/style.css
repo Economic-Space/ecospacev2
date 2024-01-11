@@ -1,3 +1,5 @@
+/*=== GENERAL STYLE AND HOME ====*/
+
 * {
     font-family: "Poppins";
 }
@@ -23,6 +25,7 @@ a {
     --color-red: #980000;
     --color-white: #ffffff;
     --color-darkblue: #15172a;
+    --color-lightblue: #D2F9F7;
 }
 
 /* GENERAL */
@@ -55,6 +58,10 @@ a {
     background-color: var(--color-darkblue);
 }
 
+.bg-lightblue {
+    background-color: var(--color-lightblue);
+}
+
 /* TEXT SIZE  */
 .font-14 {
     font-size: calc(0.875rem * var(--vw-scale-factor));
@@ -62,9 +69,23 @@ a {
 .font-16 {
     font-size: calc(1rem * var(--vw-scale-factor));
 }
+
+.font-18 {
+    font-size: calc(1.125rem * var(--vw-scale-factor));
+}
+
 .font-20 {
     font-size: calc(1.25rem * var(--vw-scale-factor));
 }
+
+.font-21 {
+    font-size: calc(1.3125rem * var(--vw-scale-factor));
+}
+
+.font-22 {
+    font-size: calc(1.375rem * var(--vw-scale-factor));
+}
+
 .font-24 {
     font-size: calc(1.5rem * var(--vw-scale-factor));
 }
@@ -86,9 +107,18 @@ a {
 .font-38 {
     font-size: calc(2.375rem * var(--vw-scale-factor));
 }
+
+.font-40 {
+    font-size: calc(2.5rem * var(--vw-scale-factor));
+}
 .font-44 {
     font-size: calc(2.75rem * var(--vw-scale-factor));
 }
+
+.font-48 {
+    font-size: calc(3rem * var(--vw-scale-factor));
+}
+
 .font-60 {
     font-size: calc(3.75rem * var(--vw-scale-factor));
 }
@@ -155,6 +185,14 @@ a {
 
 .text-blue {
     color: var(--color-blue);
+}
+
+.text-milk {
+    color: var(--color-milk);
+}
+
+.text-red {
+    color: var(--color-red);
 }
 
 /* border color */
