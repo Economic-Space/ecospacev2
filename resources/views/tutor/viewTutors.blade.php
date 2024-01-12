@@ -74,8 +74,8 @@
             <div class="col-12 col-md-5">
                 <form action="{{route('searchTutor')}}" method="GET">
                     <div class="d-flex flex-wrap">
-                        <input class="flex-grow-1 rounded-3 border-0 py-2 px-2 me-md-3 mt-2 mt-md-0" type="text" name="tutorSearchBar" placeholder="Search by Course Name" aria-label="Search by Course Name">
-                        <button id="search" class="bg-orange text-white border-0 rounded-3 py-2 px-3" type="submit" >
+                        <input class="flex-grow-1 rounded-3 border-0 py-2 px-2 me-md-3 mt-2 mt-md-0 mb-2 mb-md-0" type="text" name="tutorSearchBar" placeholder="Search by Course Name" aria-label="Search by Course Name">
+                        <button id="search" class="bg-orange text-white border-0 rounded-3 py-2 px-3 mb-2 mb-md-0" type="submit" >
                             Search
                         </button>
                     </div>
@@ -84,7 +84,7 @@
             <div class="col-12 col-md-7">
                 <form action="{{route('filterTutor')}}" method="GET">
                     <div class="d-flex flex-wrap">
-                        <select name="major" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3">
+                        <select name="major" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3 mb-2 mb-md-0">
                             {{-- dikasih old gini agar saat refresh, pilihan sebelumnya ttp tersimpan --}}
                             <option value="all" @if(old('major', $major) == 'all') selected @endif>All Major</option>
                             <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
@@ -92,18 +92,18 @@
                             <option value="Taxation" @if(old('major', $major) == 'Taxation') selected @endif>Taxation</option>
                         </select>
 
-                        <select name="semester" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3">
+                        <select name="semester" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3 mb-2 mb-md-0">
                             <option value="all" @if(old('semester', $semester) == 'all') selected @endif>All Semester</option>
                             <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
                             <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
                             <option value="Semester 5-6" @if(old('semester', $semester) == 'Semester 5-6') selected @endif>Semester 5-6</option>
                         </select>
 
-                        <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-3 me-md-3" type="submit" >
+                        <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-3 me-md-3 mb-2 mb-md-0" type="submit" >
                             Pilih
                         </button>
 
-                        <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-3" formaction="{{ route('clearFilters') }}">
+                        <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-3 mb-2 mb-md-0" formaction="{{ route('clearFilters') }}">
                             <i class="fa-solid fa-broom me-2"></i> Hapus Filter
                         </button>
 
