@@ -99,6 +99,8 @@
     margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
 }
 
+
+/* style filter box yg lama */
 /* .filter {
     display: flex;
     align-items: center;
@@ -130,20 +132,9 @@
     height: auto;
     width: auto;
     margin: 15px;
-} */
-
-/* #pilih {
-    font-weight: 0;
-    height: auto;
-    width: auto;
-    padding: 1px;
-    border-radius: 15px;
-    background: #f08c03;
-    box-shadow: none;
-    border: none;
 }
 
-#search {
+#pilih {
     font-weight: 0;
     height: auto;
     width: auto;
