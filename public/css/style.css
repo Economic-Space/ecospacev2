@@ -26,6 +26,7 @@ a {
     --color-white: #ffffff;
     --color-darkblue: #15172a;
     --color-lightblue: #D2F9F7;
+    --color-yellow: #FFC61A;
 }
 
 /* GENERAL */
@@ -193,6 +194,10 @@ a {
 
 .text-red {
     color: var(--color-red);
+}
+
+.text-yellow {
+    color: var(--color-yellow);
 }
 
 /* border color */

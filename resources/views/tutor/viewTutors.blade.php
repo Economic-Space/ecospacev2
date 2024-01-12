@@ -2,18 +2,20 @@
 
 @section('content')
     <!-- HEADER -->
-    <div id="banner" class="container-fluid position-relative" style="background: url('assets/background/bg_tutors.svg');background-repeat: no-repeat;background-size: cover;z-index:20;padding-top:100px;padding-bottom:108px">
-        <div class=" d-flex justify-content-center align-items-center py-4">
-            <div class="col-md-6 justify-content-center align-items-center ">
-                <h1 class="text-one px-3 px-md-0 font-bold text-center" style="color:white" >ACADEMIC <span class="text-orange">TUTOR</span> SERVICE</h1>
-                <p class="text-white text-center">Menyediakan pengajaran individu/kelompok dengan fokus pada bidang akuntansi dan ekonomi yang dilengkapi dengan modul berkualitas tinggi </p>
-                {{-- <button class="btn-orange btn-nav fw-bold mt-4" id="btn-back" onclick="window.location='{{ URL::route('viewCourses'); }}'">Daftar kelas</button> --}}
+    <div id="banner" class="container-fluid position-relative" style="background: url('assets/background/bg_tutors.svg');background-repeat: no-repeat;background-size: cover;padding-top:100px;padding-bottom:108px">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h1 class="font-700 font-64 text-center" style="color:white" >ACADEMIC <span class="text-yellow">TUTOR</span> SERVICE</h1>
+                    <p class="text-white text-center font-28 font-500">Menyediakan pengajaran individu/kelompok dengan fokus pada bidang akuntansi dan ekonomi yang dilengkapi dengan modul berkualitas tinggi </p>
+                </div>
             </div>
-         </div>
+
+        </div>
     </div>
 
-    <!-- FILTER -->
-    <div class="container" style="position: relative;">
+    <!-- FILTER YG LAMA -->
+    {{-- <div class="container" style="position: relative;">
         <form action="" method="GET">
             <div class="container" style="position: relative;">
                 <div class="box-filter d-flex justify-content-between" style="z-index: 30;">
@@ -63,72 +65,79 @@
                 </div>
             </div>
         </form>
+    </div> --}}
+
+    <!-- FILTER YG BARU -->
+
+    <div class="container bg-darkblue py-3 px-5 half-up rounded-3">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-md-center gap-5">
+                <form action="{{route('searchTutor')}}" method="GET" class="d-flex justify-content-md-between gap-3">
+                    <input class="rounded-3 border-0 py-2" type="text" name="tutorSearchBar" placeholder="Search by Course Name" aria-label="Search by Course Name">
+                    <button id="search" class="bg-orange text-white border-0 px-4 py-2 rounded-3" type="submit" >
+                        Search
+                    </button>
+
+                </form>
+                <form action="{{route('filterTutor')}}" method="GET" class="d-flex justify-content-md-between gap-3">
+                    <select name="major" id="course" class="rounded-3 border-0 py-2">
+                        {{-- dikasih old gini agar saat refresh, pilihan sebelumnya ttp tersimpan --}}
+                        <option value="all" @if(old('major', $major) == 'all') selected @endif>All Major</option>
+                        <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
+                        <option value="Economics" @if(old('major', $major) == 'Economics') selected @endif>Economics</option>
+                        <option value="Taxation" @if(old('major', $major) == 'Taxation') selected @endif>Taxation</option>
+                    </select>
+
+                    <select name="semester" id="course" class="rounded-3 border-0 py-2">
+                        <option value="all" @if(old('semester', $semester) == 'all') selected @endif>All Semester</option>
+                        <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
+                        <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
+                        <option value="Semester 5-6" @if(old('semester', $semester) == 'Semester 5-6') selected @endif>Semester 5-6</option>
+                    </select>
+
+                    <button id="pilih" class="bg-orange text-white border-0 px-4 py-2 rounded-3" type="submit" >
+                        Pilih
+                    </button>
+
+                    <button id="hapus" class="bg-white border-0 px-4 py-2 rounded-3" formaction="{{ route('clearFilters') }}"><i class="fa-solid fa-broom me-2"></i> Hapus Filter</button>
+
+                </form>
+            </div>
+        </div>
+
     </div>
+
 
     <!-- LIST TUTORS -->
     <div class="container">
         <div class="card-tutor-container">
+            @if(!is_null($subjects))
+            @foreach($subjects as $s)
+
             <div class="card-tutor">
-                <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                <div class="content">
-                    <div class="my-5">
-                        <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                        <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
+                <a href="{{ URL::route('detailTutor', $s->id) }}">
+                    {{-- TODO nanti gambar diganti kalo udah ada --}}
+                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
+                    <div class="content">
+                        <div class="my-5">
+                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">{{$s->subject_title}}</span> </h5>
+                            {{-- <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5> --}}
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="card-tutor">
-                <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                <div class="content">
-                    <div class="my-5">
-                        <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                        <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card-tutor">
-                <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                <div class="content">
-                    <div class="my-5">
-                        <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                        <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card-tutor">
-                <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                <div class="content">
-                    <div class="my-5">
-                        <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                        <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card-tutor">
-                <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                <div class="content">
-                    <div class="my-5">
-                        <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                        <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="card-tutor">
-                <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                <div class="content">
-                    <div class="my-5">
-                        <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">Introduction to</span> </h5>
-                        <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5>
-                    </div>
-                </div>
-            </div>
+
+
+            @endforeach
+            @endif
         </div>
 
-        <div class="row col-12 ">
+        {{-- blm implementasi lazy loading --}}
+        {{-- <div class="row col-12 ">
             <div class="d-grid gap-2 col-2 mx-auto px-4 " >
                 <button class="btn btn-danger w-auto" style="border-radius: 10px">Load more</button>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     <!-- TUTOR SESSION -->

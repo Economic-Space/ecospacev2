@@ -33,8 +33,9 @@
     width: 58%;
     right: -28%;
     top: 51%;
-    transform: translateY(-50%);
+    transform: translateY(-51%);
     border-bottom-right-radius: 8px;
+    max-height: 200px;
 }
 
 .card-tutor .content {
@@ -98,10 +99,12 @@
     margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
 }
 
-.filter {
+
+/* style filter box yg lama */
+/* .filter {
     display: flex;
     align-items: center;
-    padding: 1px; /* Add padding to the inner box */
+    padding: 1px;
     border-radius: 15px;
     height: auto;
     width: 15%;
@@ -151,7 +154,7 @@
     background: #ffffff;
     box-shadow: none;
     border: none;
-}
+} */
 
 
 /* ==== DETAIL TUTOR ==== */

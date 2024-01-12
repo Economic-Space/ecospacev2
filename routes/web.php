@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DetailTutorsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewTutorsController;
 
@@ -22,5 +23,9 @@ Route::get('/soon', function () {
     return view('home.soon');}
 );
 
-Route::get('/tutors', [ViewTutorsController::class, 'index']);
-Route::get('/detailTutor', [ViewTutorsController::class, 'viewDetail']);
+/* View Tutor */
+Route::get('/tutors', [ViewTutorsController::class, 'index'])->name('viewTutors');
+Route::get('/tutors/filter', [ViewTutorsController::class, 'filterSubjects'])->name('filterTutor');
+Route::get('/tutors/clear', [ViewTutorsController::class, 'clearFilters'])->name('clearFilters');
+Route::get('/tutors/search', [ViewTutorsController::class, 'searchSubjects'])->name('searchTutor');
+Route::get('/tutors/{id}', [DetailTutorsController::class, 'index'])->name('detailTutor');
