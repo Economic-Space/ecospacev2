@@ -14,62 +14,9 @@
         </div>
     </div>
 
-    <!-- FILTER YG LAMA -->
-    {{-- <div class="container" style="position: relative;">
-        <form action="" method="GET">
-            <div class="container" style="position: relative;">
-                <div class="box-filter d-flex justify-content-between" style="z-index: 30;">
-                    <div class="col-11 col-lg-4 row m-3 g-0 ">
-                        <div class="div-flex">
-                        <input class="form-control" type="text" placeholder="Search by Course Name" aria-label="Search by Course Name">
-                        </div>
-                    </div>
-                    <div class="filter col-11 col-lg-4 row m-3 g-0 ">
-                        <div class="div-flex">
-                            <select name="course" id="course" class="form-select me-4">
-                                <option value="all">All Major</option>
-                                <option value="Accounting">Accounting</option>
-                                <option value="Economics" >Economics</option>
-                                <option value="Taxation">Taxation</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="filter col-11 col-lg-4 row m-3 g-0 ">
-                        <div class="div-flex">
-                            <select name="Semester" id="course" class="form-select me-4">
-                                <option value="all">All Semester</option>
-                                <option value="Accounting">Accounting</option>
-                                <option value="Economics" >Economics</option>
-                                <option value="Taxation">Taxation</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                    <div class="filter-btn col-11 col-lg-4 row m-3 g-0 px-3">
-                        <div class="div-flex">
-                            <button id="pilih" style="color: white" type="submit" >
-                            Pilih
-                            </button>
-                        </div>
-                    </div>
-                    <div class="del-fil-btn col-11 col-lg-4 row m-3 g-0 px-3">
-                        <div class="div-flex">
-                            <div class="d-flex justify-content-lg-end">
-                                <button id="hapus"  class="no-style" formaction="" style="text-decoration: none;color:black"><i class="fa-solid fa-broom me-2"></i>Hapus Filter</button>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="mt-4" style="border: none; border-bottom: 2px solid grey;">
-                </div>
-            </div>
-        </form>
-    </div> --}}
-
     <!-- FILTER YG BARU -->
 
-    <div class="container bg-darkblue py-3 px-5 half-up rounded-3">
+    <div class="container bg-darkblue py-3 px-5 half-up rounded-3 desktop">
         <div class="row">
             <div class="col-12 col-md-5">
                 <form action="{{route('searchTutor')}}" method="GET">
@@ -145,28 +92,8 @@
     </div>
 
 
-    {{-- <div class="container">
-        <div class="card-tutor-container">
-            @if(!is_null($subjects))
-            @foreach($subjects as $s)
-
-            <div class="card-tutor">
-                <a href="{{ URL::route('detailTutor', $s->id) }}">
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                    <div class="content">
-                        <div class="my-5">
-                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">{{$s->subject_title}}</span> </h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            @endforeach
-            @endif
-        </div>
-    </div> --}}
-
     <!-- TUTOR SESSION -->
-    <div id="t-session"  class="container mt-5 mb-5">
+    <div id="t-session"  class="container mt-5 mb-5 desktop">
         <div class="row justify-content-start bg-milk rounded-4">
                 <div class="col-4 pb-4">
                     <div class="emo1 full-down quarter-right">
@@ -204,7 +131,8 @@
         <div class="container px-md-5 py-md-2">
           <div class="box-white d-flex justify-content-between">
             <div class="d-flex align-items-center">
-              <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt=""><div class="box-black font-semibold font-32 text-white ml-2">Join Mentoring</div>
+              <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+              <a class="box-black font-semibold font-32 text-white ml-2" href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">Join Community Group</a>
             </div>
             <div class="p-2">
               <h3 class="font-semibold">Siap Buat Belajar bersama Economic Space?</h3>
@@ -226,7 +154,8 @@
             </div>
             <div class="mt-3">
                 <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt=""><div class="box-black font-semibold font-36 text-white ml-2">Join Mentoring</div>
+                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                  <a class="box-black font-semibold font-36 text-white ml-2" href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">Join Community Group</a>
                 </div>
               </div>
           </div>

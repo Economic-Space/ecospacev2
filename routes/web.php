@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/soon', function () {
     return view('home.soon');}
-);
+)->name('soon');
 
 /* View Tutor */
 Route::get('/tutors', [ViewTutorsController::class, 'index'])->name('viewTutors');

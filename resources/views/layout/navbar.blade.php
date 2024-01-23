@@ -35,7 +35,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="{{url('/tutors')}}">Tutor</a>
+                    <a class="nav-link font-24 {{ Route::is('viewTutors') ? 'active' : '' }}" aria-current="page" href="{{url('/tutors')}}">Tutor</a>
                 </li>
                 <li class="nav-item px-2">
                     <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Event</a>
@@ -46,16 +46,23 @@
 
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item px-2">
+                {{-- <li class="nav-item px-2">
                     <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Sign Up</a>
                 </li>
                 <li class="nav-item px-2">
                     <a class="btn btn-dark font-24" aria-current="page" href="{{url('/soon')}}">Login</a>
+                </li> --}}
+                <li class="nav-item px-2">
+                    <a class="btn btn-dark font-24" aria-current="page" href="">Join Economic Space</a>
                 </li>
             </ul>
           </div>
         </div>
     </nav>
+
+    <div class="mobile bg-black font-400 font-18 text-white text-center">
+        Open on the desktop for the best experience
+    </div>
 
     @yield('content')
 
@@ -66,10 +73,10 @@
             <p class="text-white px-5 mb-1 font-400 font-22"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
           </div>
           <div class="container-fluid py-1 mt-auto d-flex align-items-center justify-content-between brown-gradient">
-            <p class="text-white px-5 mb-0 font-700 font-24" >© 2023 Economic Space. All rights reserved.</p>
+            <p class="text-white px-5 mb-0 font-700 font-24" >© 2024 Economic Space. All rights reserved.</p>
           <div class="d-flex align-items-center">
-                <img class="icon-insta mr-2" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
-                <img class="icon-linkedin" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
+                <img class="icon-insta mr-2 hovered" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
+                <img class="icon-linkedin hovered" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
           </div>
     </footer>
 
@@ -89,6 +96,18 @@
           </div>
         </div>
     </footer>
+
+
+    <a href="https://wa.link/fbua0a" target="_blank">
+        <div class="fix-bottom">
+            <div class="d-flex align-items-center justify-content-center bg-orange py-2 px-2 rounded-5">
+                <img src="{{asset('assets/socmed/wa.svg')}}" class="img-fluid fix-image pe-2">
+                <h5 class="font-700 text-white font-22">Tanya Konsultan</h5>
+            </div>
+        </div>
+    </a>
+
+
 
     <script>
         function redirectTo(url) {

@@ -100,3 +100,31 @@ const swiper3 = new Swiper('.step-slider', {
 })
 
 
+// agar besar div sama
+window.addEventListener('load', function () {
+    var cards = document.querySelectorAll('#card-testimoni');
+    var services = document.querySelectorAll('#label-service');
+
+    var maxHeight = 0;
+    cards.forEach(function(card) {
+        maxHeight = Math.max(maxHeight, card.offsetHeight);
+    });
+
+    console.log( maxHeight);
+
+    cards.forEach(function(card) {
+        card.style.height = maxHeight + 'px';
+    });
+
+    var maxHeightLabel = 0;
+    services.forEach(function(service) {
+        maxHeightLabel = Math.max(maxHeightLabel, service.offsetHeight);
+    });
+
+    console.log( maxHeightLabel);
+
+    services.forEach(function(service) {
+        service.style.height = maxHeightLabel + 'px';
+    });
+
+});

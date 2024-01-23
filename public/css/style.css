@@ -15,6 +15,11 @@ a {
     color: var(--color-black);
 }
 
+button:hover {
+    filter: brightness(90%);
+}
+
+
 /* default scaling for font size */
 :root {
     --vw-scale-factor: 1;
@@ -326,6 +331,10 @@ a {
 .img-service {
     height: 150px;
     width: auto;
+}
+
+.hovered:hover {
+    filter: brightness(90%);
 }
 
 /* transform div to half its height so it will overlay other div*/
@@ -1043,8 +1052,21 @@ a {
     top: 0%;
 }
 
+/* TANYA KONSULTAN YG FIX BOTTOM */
+.fix-bottom {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 999;
+    cursor: move;
+}
 
-/* transform div to half its height so it will overlay other div*/
+.fix-image {
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+}
+
 
 /* FOR MOBILE */
 
@@ -1067,6 +1089,7 @@ a {
     }
 }
 
+/* mobile */
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;

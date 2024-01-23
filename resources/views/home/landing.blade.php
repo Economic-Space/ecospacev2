@@ -51,7 +51,7 @@
             <div class="row gx-5">
                 <div class="col-4">
                     <a href="{{url('/soon')}}">
-                        <div  data-aos="fade-down" data-aos-duration="1000">
+                        <div  data-aos="fade-down" data-aos-duration="1000" class="hovered">
                             <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
                             </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-4">
                     <a href="{{url('/soon')}}">
-                        <div data-aos="fade-down" data-aos-duration="2000">
+                        <div data-aos="fade-down" data-aos-duration="2000" class="hovered">
                             <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900 text-white">Event Space</h4>
                             </div>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-4">
                     <a href="{{url('/soon')}}">
-                        <div data-aos="fade-down" data-aos-duration="3000">
+                        <div data-aos="fade-down" data-aos-duration="3000" class="hovered">
                             <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900">Mentorship Hub</h4>
                             </div>
@@ -558,7 +558,7 @@
                         <p id="card-testimoni" class="font-20 mt-4 font-500 ">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.
 
                         </p>
-                        <div class="d-flex flex-row me-auto">
+                        <div class="d-flex flex-row">
                             <div class="me-auto">
                                 <p class="font-20 font-400"><span class="font-bold font-700">Shalima Nur Kusumastuti</span><br>Akuntansi 23 - UGM</p>
                             </div>
@@ -658,25 +658,25 @@
                 <div class="p"></div>
                 <div class="img-area">
                 <a href="https://www.linkedin.com/company/economic-space/mycompany/">
-                    <img src="{{ asset('assets/home/sheet1.svg') }}" class="img img-box box-4">
+                    <img src="{{ asset('assets/home/sheet1.svg') }}" class="img img-box box-4 hovered">
                 </a>
                 <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                    <img src="{{ asset('assets/home/sheet2.svg') }}" class="img img-box box-5">
+                    <img src="{{ asset('assets/home/sheet2.svg') }}" class="img img-box box-5 hovered">
                 </a>
-                <img src="{{ asset('assets/home/sheet3.svg') }}" class="img img-box box-6">
+                <img src="{{ asset('assets/home/sheet3.svg') }}" class="img img-box box-6 hovered">
                 <a href="https://www.linkedin.com/company/economic-space/mycompany/">
-                    <img src="{{ asset('assets/home/folder1.svg') }}" class="img img-box box-7">
+                    <img src="{{ asset('assets/home/folder1.svg') }}" class="img img-box box-7 hovered">
                 </a>
                 <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                    <img src="{{ asset('assets/home/folder2.svg') }}" class="img img-box box-8">
+                    <img src="{{ asset('assets/home/folder2.svg') }}" class="img img-box box-8 hovered">
                 </a>
-                <img src="{{ asset('assets/home/folder3.svg') }}" class="img img-box box-9">
-                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-10">
-                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-11">
-                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-12">
-                <img src="{{ asset('assets/home/ppt2.svg') }}" class="img img-box box-1">
-                <img src="{{ asset('assets/home/ppt3.svg') }}" class="img img-box box-2">
-                <img src="{{ asset('assets/home/ppt1.svg') }}" class="img img-box box-3">
+                <img src="{{ asset('assets/home/folder3.svg') }}" class="img img-box box-9 hovered">
+                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-10 hovered">
+                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-11 hovered">
+                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-12 hovered">
+                <img src="{{ asset('assets/home/ppt2.svg') }}" class="img img-box box-1 hovered">
+                <img src="{{ asset('assets/home/ppt3.svg') }}" class="img img-box box-2 hovered">
+                <img src="{{ asset('assets/home/ppt1.svg') }}" class="img img-box box-3 hovered">
                 </div>
             </div>
             <div class="overlay-text">
@@ -696,7 +696,7 @@
         <div class="box-wa-1 flex-fill">
             <h3 class="text-white font-700 font-36 mb-0 mt-2">Punya pertanyaan lebih lanjut?</h3>
         </div>
-        <div class="box-wa">
+        <div class="box-wa hovered">
             <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt=""><div class="font-400 font-24">
                 <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
                     Hubungi Kami
@@ -763,9 +763,7 @@
           <div class="box-white d-flex justify-content-between">
             <div class="d-flex align-items-center">
                 <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                <div class="box-black ml-2">
-                    <h3 class="font-40 text-white font-700">Daftar Kelas</h3>
-                </div>
+                <a class="box-black font-700 font-44 text-white ml-2 hovered" href="{{ route('viewTutors') }}">Daftar Kelas</a>
             </div>
             <div class="p-2" style="text-align: right;">
               <h3 class="font-700 font-40">Siap Buat Belajar bersama Economic Space?</h3>
@@ -786,43 +784,14 @@
             </div>
             <div class="mt-1">
                 <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt=""><div class="box-black font-700 font-44 text-white ml-2">Daftar Kelas</div>
+                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                  <a class="box-black font-700 font-44 text-white ml-2" href="{{ route('viewTutors') }}">Daftar Kelas</a>
                 </div>
               </div>
           </div>
         </div>
         <div>
     </footer>
-
-    <script>
-        window.addEventListener('load', function () {
-            var cards = document.querySelectorAll('#card-testimoni');
-            var services = document.querySelectorAll('#label-service');
-
-            var maxHeight = 0;
-            cards.forEach(function(card) {
-                maxHeight = Math.max(maxHeight, card.offsetHeight);
-            });
-
-            console.log( maxHeight);
-
-            cards.forEach(function(card) {
-                card.style.height = maxHeight + 'px';
-            });
-
-            var maxHeightLabel = 0;
-            services.forEach(function(service) {
-                maxHeightLabel = Math.max(maxHeightLabel, service.offsetHeight);
-            });
-
-            console.log( maxHeightLabel);
-
-            services.forEach(function(service) {
-                service.style.height = maxHeightLabel + 'px';
-            });
-
-        });
-    </script>
 
 
 @endsection
