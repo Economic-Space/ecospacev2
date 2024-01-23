@@ -74,9 +74,9 @@
             <div class="col-12 col-md-5">
                 <form action="{{route('searchTutor')}}" method="GET">
                     <div class="d-flex flex-wrap">
-                        <input class="flex-grow-1 rounded-3 border-0 py-2 px-2 me-md-3 mt-2 mt-md-0 mb-2 mb-md-0" type="text" name="tutorSearchBar" placeholder="Search by Course Name" aria-label="Search by Course Name">
+                        <input class="flex-grow-1 rounded-3 border-0 py-2 px-2 me-md-3 mt-2 mt-md-0 mb-2 mb-md-0" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
                         <button id="search" class="bg-orange text-white border-0 rounded-3 py-2 px-3 mb-2 mb-md-0" type="submit" >
-                            Search
+                            Cari
                         </button>
                     </div>
                 </form>
@@ -86,14 +86,14 @@
                     <div class="d-flex flex-wrap">
                         <select name="major" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3 mb-2 mb-md-0">
                             {{-- dikasih old gini agar saat refresh, pilihan sebelumnya ttp tersimpan --}}
-                            <option value="all" @if(old('major', $major) == 'all') selected @endif>All Major</option>
+                            <option value="all" @if(old('major', $major) == 'all') selected @endif>Semua Jurusan</option>
                             <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
                             <option value="Economics" @if(old('major', $major) == 'Economics') selected @endif>Economics</option>
                             <option value="Taxation" @if(old('major', $major) == 'Taxation') selected @endif>Taxation</option>
                         </select>
 
                         <select name="semester" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3 mb-2 mb-md-0">
-                            <option value="all" @if(old('semester', $semester) == 'all') selected @endif>All Semester</option>
+                            <option value="all" @if(old('semester', $semester) == 'all') selected @endif>Semua Semester</option>
                             <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
                             <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
                             <option value="Semester 5-6" @if(old('semester', $semester) == 'Semester 5-6') selected @endif>Semester 5-6</option>
@@ -118,19 +118,15 @@
 
     <!-- LIST TUTORS -->
     <div class="container">
-        <div class="card-tutor-container">
+        <div class="row gx-5 gy-4">
             @if(!is_null($subjects))
             @foreach($subjects as $s)
 
-            <div class="card-tutor">
+            <div class="col-12 col-md-4">
                 <a href="{{ URL::route('detailTutor', $s->id) }}">
-                    {{-- TODO nanti gambar diganti kalo udah ada --}}
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
-                    <div class="content">
-                        <div class="my-5">
-                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">{{$s->subject_title}}</span> </h5>
-                            {{-- <h5 class="font-24 text-black "><span class="font-family font-black  bg-white text-center">Accounting</span> </h5> --}}
-                        </div>
+                    <div class="d-flex justify-content-between card-tutor rounded-3">
+                        <h5 class="font-24 text-black text-center align-self-center justify-content-center"><span class="font-family font-black bg-white text-center content-tutor">{{$s->subject_title}}</span> </h5>
+                        <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo" class="img-tutor img-fluid">
                     </div>
                 </a>
             </div>
@@ -147,6 +143,27 @@
             </div>
         </div> --}}
     </div>
+
+
+    {{-- <div class="container">
+        <div class="card-tutor-container">
+            @if(!is_null($subjects))
+            @foreach($subjects as $s)
+
+            <div class="card-tutor">
+                <a href="{{ URL::route('detailTutor', $s->id) }}">
+                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo">
+                    <div class="content">
+                        <div class="my-5">
+                            <h5 class="font-24 text-black "><span class="font-family font-black bg-white text-center">{{$s->subject_title}}</span> </h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            @endforeach
+            @endif
+        </div>
+    </div> --}}
 
     <!-- TUTOR SESSION -->
     <div id="t-session"  class="container mt-5 mb-5">
