@@ -69,10 +69,10 @@
             @if(!is_null($subjects))
             @foreach($subjects as $s)
 
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 card-tutor">
                 <a href="{{ URL::route('detailTutor', $s->id) }}">
-                    <div class="d-flex justify-content-between card-tutor rounded-3">
-                        <h5 class="font-24 text-black text-center align-self-center justify-content-center"><span class="font-family font-black bg-white text-center content-tutor">{{$s->subject_title}}</span> </h5>
+                    <div class="d-flex justify-content-center rounded-3">
+                        <h5 class="font-24 font-700 text-black text-center align-self-center justify-content-center" ><span class="font-family font-black bg-white text-center px-2">{{$s->subject_title}}</span> </h5>
                         <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="Person Photo" class="img-tutor img-fluid">
                     </div>
                 </a>
@@ -95,23 +95,23 @@
     <!-- TUTOR SESSION -->
     <div id="t-session"  class="container mt-5 mb-5 desktop">
         <div class="row justify-content-start bg-milk rounded-4">
-                <div class="col-4 pb-4">
-                    <div class="emo1 full-down quarter-right">
-                        <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-                    </div>
-                    <div class="emo2 full-down quarter-right ">
-                        <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-                    </div>
-                    <div class="m-5 bg-orange border border-dark mx-auto mb-0" style="height: 180px; width:80% ;border-radius:10px">
-                        <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block  img-fluid " style="height: 250px">
-                    </div>
+            <div class="col-4 pb-4">
+                <div class="emo1 full-down quarter-right">
+                    <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
                 </div>
-                <div class="col-7 pt-4">
-                  <div>
+                <div class="emo2 full-down quarter-right ">
+                    <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                </div>
+                <div class="m-5 bg-orange border border-dark mx-auto mb-0" style="height: 180px; width:80% ;border-radius:10px">
+                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block  img-fluid " style="height: 250px">
+                </div>
+            </div>
+            <div class="col-7 pt-4">
+                <div>
                     <h1 class="font-black font-36">Tutor Session </h1>
                     <p>Menyediakan Kebutuhan Belajar Akademikmu | Senantiasa menjaga kualitas pengajar dan memperluas jangkauan jenis mata kuliah.</p>
-                  </div>
-                  <div class="mt-1">
+                </div>
+                <div class="mt-1">
                     <h3 class="font-bold font-24">Keunggulan Kami:</h3>
                     <div class="d-flex align-items-center">
                         <img class="icon-smile" style="width:5%" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-14">Menyediakan <span class="font-bold">Tutor berdasarkan Universitas</span>  agar Relevan Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa</div>
@@ -120,7 +120,6 @@
                         <img class="icon-smile" style="width:5%" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-14"> <span class="font-bold">Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, Ilmu Ekonomi, Manajemen Bisnis & Keuangan. </div>
                     </div>
                 </div>
-              </div>
             </div>
         </div>
     </div>

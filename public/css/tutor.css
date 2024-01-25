@@ -11,59 +11,13 @@
 }
 
 /* VIEW TUTOR */
-/* .card-tutor-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-.card-tutor {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    height: 200px;
-    width: 30%;
-} */
 
 .img-tutor {
     max-height: 250px;
 }
 
-.content-tutor {
-    text-align: center;
-}
-
-/* .card-tutor img {
-    position: relative;
-    width: 58%;
-    right: -28%;
-    top: 51%;
-    transform: translateY(-51%);
-    border-bottom-right-radius: 8px;
-    max-height: 200px;
-} */
-
-/* .card-tutor .content {
-    position: relative;
-    top: -200px;
-    width: 70%;
-    padding-right: 20px;
-    box-sizing: border-box;
-} */
-
-/* .card-tutor h2 {
-    color: #333;
-}
-
-.card-tutor p {
-    color: #666;
-} */
-
-.card-tutor:nth-child(odd) {
-    background-image: url("../assets/background/bg-card-1.svg");
+.card-tutor:nth-child(odd) > a > div {
+    background-image: url("../assets/background/card-bg-blue.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,8 +25,8 @@
     background-color: #82dbd4;
 }
 
-.card-tutor:nth-child(even) {
-    background-image: url("../assets/background/bg-card-2.svg");
+.card-tutor:nth-child(even) > a > div{
+    background-image: url("../assets/background/card-bg-orange.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
