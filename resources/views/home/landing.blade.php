@@ -6,8 +6,8 @@
 <header class="container-fluid bg-img-orange px-md-5 py-md-5">
     <div class="container">
     <div class="row px-md-5">
-        <div>
-            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-900 stroke-underline">Idaman Recruiters</span></h1>
+        <div class="pt-md-5">
+            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-900 stroke-underline auto-type"></span></h1>
         </div>
     </div>
     <div class="row px-md-5 mt-4">
@@ -20,7 +20,7 @@
 
     <div class="row px-md-5 mt-4">
         <div class="col-12">
-        <button type="button" class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4">Register Now</button>
+        <a class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4" href="https://bit.ly/RegistrationTutorService">Register Now</a>
         </div>
     </div>
     </div>
@@ -62,7 +62,7 @@
                             </div>
                             <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
                                 <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
-                                <p class="font-20 font-400 mb-0">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
+                                <p class="font-24 font-400 mb-0">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                             </div>
                         </div>
                     </a>
@@ -82,7 +82,7 @@
                             </div>
                             <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
                                 <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
-                                <p class="font-20 text-white font-400 mb-0">Never say never untuk Pembelajaran Baru</p>
+                                <p class="font-24 text-white font-400 mb-0">Never say never untuk Pembelajaran Baru</p>
                             </div>
                         </div>
                     </a>
@@ -101,7 +101,7 @@
                             </div>
                             <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
                                 <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
-                                <p class="font-20 font-400 mb-0">Dapatkan Akses 1-on-1 sama Ahlinya</p>
+                                <p class="font-24 font-400 mb-0">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                             </div>
                         </div>
                     </a>
@@ -194,9 +194,24 @@
     <div class="row">
         <div class="col-md-4 d-flex justify-content-center flex-column">
         <div class="desktop">
-            <div class="ms-md-5">
+            <div class="ms-md-4 me-md-3">
                 <h3 class="font-36 text-white font-800">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
                 <p class="text-white font-20 font-400">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
+            </div>
+            <div class="bg-blue d-flex flex-row ms-md-4 me-md-3 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
+                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">1.</h3></div>
+                <div><p class="font-20 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
+            </div>
+            <div class="bg-orange d-flex flex-row ms-md-4 me-md-3 rounded-5 gap-3 align-items-center py-2 pe-1">
+                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">2.</h3></div>
+                <div><p class="font-20 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
+            </div>
+        </div>
+
+        <div class="mobile pt-5">
+            <div class="ms-md-5">
+                <h3 class="font-36 text-white font-800" style="text-align: center">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
+                <p class="text-white font-20 font-400" style="text-align: center">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
             </div>
             <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
                 <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">1.</h3></div>
@@ -205,21 +220,6 @@
             <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center py-2 pe-1">
                 <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">2.</h3></div>
                 <div><p class="font-20 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
-            </div>
-        </div>
-
-        <div class="mobile pt-5">
-            <div class="ms-md-5">
-                <h3 class="font-44 text-white font-800" style="text-align: center">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
-                <p class="text-white font-32 font-400" style="text-align: center">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
-            </div>
-            <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-60 font-900 mb-0">1.</h3></div>
-                <div><p class="font-32 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
-            </div>
-            <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-60 font-900 mb-0">2.</h3></div>
-                <div><p class="font-32 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
             </div>
         </div>
 
@@ -303,7 +303,7 @@
     </div>
 
     <div class="row half-up-px">
-        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="750">
+        <div class="col col-6 col-md-3" data-aos="fade-down" data-aos-duration="750">
             <div class="half-down">
                 <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
@@ -313,34 +313,34 @@
             </div>
         </div>
 
-        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="1500">
-        <div class="half-down">
-            <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-        </div>
-        <div class="bg-blue border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-700">One Stop Solution <br>for Students</h4>
-            <p class="text-center font-20 font-400">Tersedia secara lengkap dari pembelajaran akademik, skill penting, lomba, hingga karir</p>
-        </div>
+        <div class=" col col-6 col-md-3" data-aos="fade-down" data-aos-duration="1500">
+            <div class="half-down">
+                <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+            </div>
+            <div class="bg-blue border border-3 border-black rounded-5 box-potential">
+                <h4 class="text-center font-32 font-700">One Stop Solution for Students</h4>
+                <p class="text-center font-20 font-400">Tersedia secara lengkap dari pembelajaran akademik, skill penting, lomba, hingga karir</p>
+            </div>
 
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="2250">
-        <div class="half-down">
-            <img src="{{asset('assets/home/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-        </div>
-        <div class="bg-black border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-700 text-white">Your High Quality <br>Learning Partner</h4>
-            <p class="text-center font-20 text-white font-400">Mengundang & bekerja sama dengan Tutor, Mentor, & Pembicara terbaik </p>
-        </div>
+        <div class="col col-6 col-md-3" data-aos="fade-down" data-aos-duration="2250">
+            <div class="half-down">
+                <img src="{{asset('assets/home/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+            </div>
+            <div class="bg-black border border-3 border-black rounded-5 box-potential">
+                <h4 class="text-center font-32 font-700 text-white">Your High Quality <br>Learning Partner</h4>
+                <p class="text-center font-20 text-white font-400">Mengundang & bekerja sama dengan Tutor, Mentor, & Pembicara terbaik </p>
+            </div>
 
         </div>
-        <div class="col-6 col-md-3" data-aos="fade-down" data-aos-duration="3000">
-        <div class="half-down">
-            <img src="{{asset('assets/home/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-        </div>
-        <div class="bg-orange border border-3 border-black rounded-5 box-potential">
-            <h4 class="text-center font-32 font-700 ">Keep it Cheap <br>& Affordable</h4>
-            <p class="text-center font-20 font-400">Menjaga harga tetap terjangkau & menyediakan layanan jalur bantuan</p>
-        </div>
+        <div class="col col-6 col-md-3" data-aos="fade-down" data-aos-duration="3000">
+            <div class="half-down">
+                <img src="{{asset('assets/home/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+            </div>
+            <div class="bg-orange border border-3 border-black rounded-5 box-potential">
+                <h4 class="text-center font-32 font-700 ">Keep it Cheap <br>& Affordable</h4>
+                <p class="text-center font-20 font-400">Menjaga harga tetap terjangkau & menyediakan layanan jalur bantuan</p>
+            </div>
 
         </div>
     </div>
@@ -386,7 +386,7 @@
     </div>
 
 
-    <div class="mobile swiper step-slider">
+    <div class="mobile swiper step-slider mb-5">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="col-12 mx-auto">
@@ -547,7 +547,7 @@
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Ester Meralda</span><br>Akuntansi 23 - UNAIR</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
                     </div>
                 </div>
@@ -562,7 +562,7 @@
                             <div class="me-auto">
                                 <p class="font-20 font-400"><span class="font-bold font-700">Shalima Nur Kusumastuti</span><br>Akuntansi 23 - UGM</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/univ2.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img src="{{asset('assets/univ/ugm.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
                     </div>
                 </div>
@@ -577,7 +577,7 @@
                         <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Nabila Putri Melati</span><br>Akuntansi 23 - UNAIR</p>
                         </div>
-                        <div><img src="{{asset('assets/univ/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                        <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -593,13 +593,13 @@
                     <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white">
                         <h5 class="font-900 font-28 font-900">Belajar jadi Seru</h5>
                         <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid">
-                        <p id="card-testimoni" class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
+                        <p class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Ester Meralda</span><br>Akuntansi 23 - UNAIRR</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -608,13 +608,13 @@
                     <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white">
                         <h5 class="font-900 font-28 font-900">Belajar jadi Pede</h5>
                         <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid">
-                        <p id="card-testimoni" class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
+                        <p class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Shalima Nur Kusumastuti</span><br>Akuntansi 23 - UGM</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/univ2.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img src="{{asset('assets/univ/ugm.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -623,13 +623,13 @@
                     <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white">
                         <h5 class="font-900 font-26 font-900">Belajar jadi Menyenangkan</h5>
                         <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid">
-                        <p id="card-testimoni" class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
+                        <p class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Nabila Putri Melati</span><br>Akuntansi 23 - UNAIR</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/univ1.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -693,16 +693,17 @@
     <div class="desktop">
     <div class="container">
         <div class="box-orange d-flex justify-content-between">
-        <div class="box-wa-1 flex-fill">
-            <h3 class="text-white font-700 font-36 mb-0 mt-2">Punya pertanyaan lebih lanjut?</h3>
-        </div>
-        <div class="box-wa hovered">
-            <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt=""><div class="font-400 font-24">
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                    Hubungi Kami
-                </a>
+            <div class="box-wa-1 flex-fill">
+                <h3 class="text-white font-700 font-36 mb-0 mt-2">Punya pertanyaan lebih lanjut?</h3>
             </div>
-        </div>
+            <div class="box-wa justify-content-center hovered">
+                <img class="img-fluid icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
+                <div class="font-400 font-24">
+                    <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     </div>
@@ -762,8 +763,8 @@
         <div class="container">
           <div class="box-white d-flex justify-content-between">
             <div class="d-flex align-items-center">
-                <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                <a class="box-black font-700 font-44 text-white ml-2 hovered" href="{{ route('viewTutors') }}">Daftar Kelas</a>
+                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                <a class="box-black font-700 font-42 text-white ml-2 hovered" href="{{ route('viewTutors') }}">Daftar Kelas</a>
             </div>
             <div class="p-2" style="text-align: right;">
               <h3 class="font-700 font-40">Siap Buat Belajar bersama Economic Space?</h3>

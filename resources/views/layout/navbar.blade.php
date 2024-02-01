@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     {{-- icon --}}
     <script src="https://kit.fontawesome.com/92b0bdfcf0.js" crossorigin="anonymous"></script>
+    {{-- typed animation --}}
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
 
@@ -98,14 +100,14 @@
     </footer>
 
 
-    <a href="https://wa.link/fbua0a" target="_blank">
+    {{-- <a href="https://wa.link/fbua0a" target="_blank">
         <div class="fix-bottom">
             <div class="d-flex align-items-center justify-content-center bg-orange py-2 px-2 rounded-5">
                 <img src="{{asset('assets/socmed/wa.svg')}}" class="img-fluid fix-image pe-2">
                 <h5 class="font-700 text-white font-22">Tanya Konsultan</h5>
             </div>
         </div>
-    </a>
+    </a> --}}
 
 
 

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('topics', function (Blueprint $table) {
             $table->id();
             $table->integer('topic_number');
-            $table->string('topic_title', 50);
+            $table->string('topic_title', 1000);
             $table->json('topic_content');
             $table->string('topic_objective', 1000);
 

@@ -7,7 +7,7 @@
             <div class="col-12 align-self-center">
                 <h1 class="font-900 font-60">LAUNCHING SOON</h1>
                 <div class="col-12 align-self-center">
-                    <h1 class="font-900 font-60 mb-3">12.01.2024</h1>
+                    <h1 class="font-900 font-60 mb-3">28.02.2024</h1>
                 </div>
                 <div class="col-12">
                     <p style="visibility: hidden;">/</p>

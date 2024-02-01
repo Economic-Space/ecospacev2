@@ -25,9 +25,9 @@ button:hover {
     --vw-scale-factor: 1;
     --color-black: #16182b;
     --color-blue: #84dfd8;
-    --color-orange: #f08c03;
+    --color-orange: #FC8025;
     --color-milk: #f2eee9;
-    --color-red: #980000;
+    --color-red: #FF4778;
     --color-white: #ffffff;
     --color-darkblue: #15172a;
     --color-lightblue: #D2F9F7;
@@ -117,6 +117,11 @@ button:hover {
 .font-40 {
     font-size: calc(2.5rem * var(--vw-scale-factor));
 }
+
+.font-42 {
+    font-size: calc(2.625rem * var(--vw-scale-factor));
+}
+
 .font-44 {
     font-size: calc(2.75rem * var(--vw-scale-factor));
 }
@@ -616,10 +621,10 @@ button:hover {
 .icon-smile {
     margin: 5px;
     width: 30%;
+    max-width: 100px;
 }
 
 .icon-wa {
-    margin: 5px;
     width: 20%;
 }
 
@@ -895,7 +900,7 @@ button:hover {
 .box-black {
     display: flex;
     justify-content: center; /* Center horizontally */
-    padding: 12px; /* Add padding to the inner box */
+    padding: 10px; /* Add padding to the inner box */
     margin: 15px;
     height: auto;
     background-color: #15172a;
@@ -913,7 +918,6 @@ button:hover {
 }
 
 .box-wa {
-    display: flex;
     align-items: center;
     padding: 1px; /* Add padding to the inner box */
     background-color: #ffffff;
@@ -1091,6 +1095,9 @@ button:hover {
 
 /* mobile */
 @media (max-width: 767px) {
+    .bg-img-orange {
+        background: var(--color-orange);
+    }
     .carousel-inner .carousel-item > div {
         display: none;
     }
