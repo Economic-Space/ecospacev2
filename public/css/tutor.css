@@ -195,6 +195,10 @@
     .half-up-30 {
         transform:translateY(0%);
     }
+
+    .img-tutor {
+        max-height: 150px;
+    }
 }
 
 

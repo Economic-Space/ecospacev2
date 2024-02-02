@@ -71,15 +71,27 @@
 
     <!-- FOOTER -->
     <footer class="desktop">
-          <div class="container-fluid py-2 bg-black mt-5 align-items-center justify-content-center">
-            <p class="text-white px-5 mb-1 font-400 font-22"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
-          </div>
-          <div class="container-fluid py-1 mt-auto d-flex align-items-center justify-content-between brown-gradient">
-            <p class="text-white px-5 mb-0 font-700 font-24" >© 2024 Economic Space. All rights reserved.</p>
-          <div class="d-flex align-items-center">
-                <img class="icon-insta mr-2 hovered" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
-                <img class="icon-linkedin hovered" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
-          </div>
+        <div class="container-fluid bg-black">
+            <div class="container px-5 py-2 mt-5 align-items-center justify-content-center">
+                <div class="d-flex pt-2 pb-3">
+                    <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img me-auto">
+                    <a href="https://bit.ly/OprecTutorECONSPACE" class="text-white bg-orange p-2 px-3 rounded-3 font-24 font-400 me-3">Join as Tutor / Mentor <i class="fa fa-external-link text-white"></i></a>
+                    <a href="https://wa.link/fbua0a" class="text-white bg-orange p-2 px-3 rounded-3 font-24 font-400">Interest for Partnership? <i class="fa fa-external-link text-white"></i></a>
+                </div>
+                <p class="text-white mb-1 font-400 font-22"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
+            </div>
+        </div>
+        <div class="container-fluid brown-gradient">
+            <div class="container py-1 mt-auto d-flex align-items-center justify-content-between">
+                <p class="text-white px-5 mb-0 font-700 font-24" >© 2024 Economic Space. All rights reserved.</p>
+                <div class="d-flex align-items-center">
+                        <img class="icon-insta mr-2 hovered" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
+                        <img class="icon-linkedin hovered" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
+                </div>
+            </div>
+        </div>
+
+
     </footer>
 
     <footer class="mobile">

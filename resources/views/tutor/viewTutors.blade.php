@@ -14,9 +14,9 @@
         </div>
     </div>
 
-    <!-- FILTER YG BARU -->
+    <!-- FILTER-->
 
-    <div class="container bg-darkblue py-3 px-5 half-up rounded-3 desktop">
+    <div class="container bg-darkblue py-3 px-5 half-up rounded-3">
         <div class="row">
             <div class="col-12 col-md-5">
                 <form action="{{route('searchTutor')}}" method="GET">
@@ -63,6 +63,10 @@
     </div>
 
 
+
+
+
+
     <!-- LIST TUTORS -->
     <div class="container">
         <div class="row gx-5 gy-4">
@@ -93,9 +97,9 @@
 
 
     <!-- TUTOR SESSION -->
-    <div id="t-session"  class="container mt-5 mb-5 desktop">
+    <div id="t-session"  class="container mt-5 mb-5">
         <div class="row justify-content-start bg-milk rounded-4">
-            <div class="col-4 py-4">
+            <div class="col-10 col-md-4 py-4">
                 <div class="emo1 full-down quarter-right">
                     <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
                 </div>
@@ -106,7 +110,7 @@
                     <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block  img-fluid " style="height: 250px">
                 </div>
             </div>
-            <div class="col-7 py-4">
+            <div class="col-10 col-md-7 py-4">
                 <div>
                     <h1 class="font-black font-40 font-900">Tutor Session </h1>
                     <p class="font-24 font-400">Menyediakan Kebutuhan Belajar Akademikmu | Senantiasa menjaga kualitas pengajar dan memperluas jangkauan jenis mata kuliah.</p>

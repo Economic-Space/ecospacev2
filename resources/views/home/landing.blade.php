@@ -234,13 +234,13 @@
                     <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid mt-auto" alt="...">
                 </div>
                 <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid mt-auto" alt="...">
+                    <img src="{{asset('assets/mentor/evan.png')}}" class="img-fluid mt-auto" alt="...">
                 </div>
                 <div class="swiper-slide bg-darkblue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
                     <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid mt-auto" alt="...">
                 </div>
                 <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid mt-auto" alt="...">
+                    <img src="{{asset('assets/mentor/raihan.png')}}" class="img-fluid mt-auto" alt="...">
                 </div>
             </div>
         </div>
