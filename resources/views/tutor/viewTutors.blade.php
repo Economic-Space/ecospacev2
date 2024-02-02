@@ -16,44 +16,48 @@
 
     <!-- FILTER-->
 
-    <div class="container bg-darkblue py-3 px-5 half-up rounded-3">
-        <div class="row">
-            <div class="col-12 col-md-5">
+    <div class="container bg-darkblue py-3 px-5 half-up rounded-3 w-mobile-80">
+        <div class="row justify-content-center gy-2 gy-lg-0">
+            <div class="col-12 col-lg-5">
                 <form action="{{route('searchTutor')}}" method="GET">
-                    <div class="d-flex flex-wrap">
-                        <input class="flex-grow-1 rounded-3 border-0 py-2 px-2 me-md-3 mt-2 mt-md-0 mb-2 mb-md-0" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
-                        <button id="search" class="bg-orange text-white border-0 rounded-3 py-2 px-3 mb-2 mb-md-0" type="submit" >
+                    <div class="d-flex gap-lg-3">
+                        <input class="flex-grow-1 rounded-3 border-0 py-2 px-2" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
+                        <button id="search" class="bg-orange text-white border-0 rounded-3 py-2 px-3" type="submit" >
                             Cari
                         </button>
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-7">
                 <form action="{{route('filterTutor')}}" method="GET">
-                    <div class="d-flex flex-wrap">
-                        <select name="major" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3 mb-2 mb-md-0">
-                            {{-- dikasih old gini agar saat refresh, pilihan sebelumnya ttp tersimpan --}}
-                            <option value="all" @if(old('major', $major) == 'all') selected @endif>Semua Jurusan</option>
-                            <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
-                            <option value="Economics" @if(old('major', $major) == 'Economics') selected @endif>Economics</option>
-                            <option value="Taxation" @if(old('major', $major) == 'Taxation') selected @endif>Taxation</option>
-                        </select>
+                    <div class="row gx-3 gy-2 gy-lg-0">
+                        <div class="col-12 col-lg-3">
+                            <select name="major" id="course" class="rounded-3 border-0 py-2 w-100">
+                                <option value="all" @if(old('major', $major) == 'all') selected @endif>Semua Jurusan</option>
+                                <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
+                                <option value="Economics" @if(old('major', $major) == 'Economics') selected @endif>Economics</option>
+                                <option value="Taxation" @if(old('major', $major) == 'Taxation') selected @endif>Taxation</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <select name="semester" id="course" class="rounded-3 border-0 py-2 w-100">
+                                <option value="all" @if(old('semester', $semester) == 'all') selected @endif>Semua Semester</option>
+                                <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
+                                <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
+                                <option value="Semester 5-6" @if(old('semester', $semester) == 'Semester 5-6') selected @endif>Semester 5-6</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex w-100 gap-3">
+                                <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-xxl-3" type="submit" >
+                                    Pilih
+                                </button>
+                                <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-xxl-3" formaction="{{ route('clearFilters') }}">
+                                    <i class="fa-solid fa-broom me-2"></i> Hapus Filter
+                                </button>
+                            </div>
 
-                        <select name="semester" id="course" class="flex-grow-1 rounded-3 border-0 py-2 px-3 me-md-3 mb-2 mb-md-0">
-                            <option value="all" @if(old('semester', $semester) == 'all') selected @endif>Semua Semester</option>
-                            <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
-                            <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
-                            <option value="Semester 5-6" @if(old('semester', $semester) == 'Semester 5-6') selected @endif>Semester 5-6</option>
-                        </select>
-
-                        <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-3 me-md-3 mb-2 mb-md-0" type="submit" >
-                            Pilih
-                        </button>
-
-                        <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-3 mb-2 mb-md-0" formaction="{{ route('clearFilters') }}">
-                            <i class="fa-solid fa-broom me-2"></i> Hapus Filter
-                        </button>
-
+                        </div>
                     </div>
 
                 </form>
@@ -61,10 +65,6 @@
         </div>
 
     </div>
-
-
-
-
 
 
     <!-- LIST TUTORS -->
@@ -98,8 +98,8 @@
 
     <!-- TUTOR SESSION -->
     <div id="t-session"  class="container mt-5 mb-5">
-        <div class="row justify-content-start bg-milk rounded-4">
-            <div class="col-10 col-md-4 py-4">
+        <div class="row justify-content-center justify-content-md-start bg-milk rounded-4">
+            <div class="col-10 col-md-4 py-4 desktop">
                 <div class="emo1 full-down quarter-right">
                     <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
                 </div>
@@ -107,7 +107,7 @@
                     <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
                 </div>
                 <div class="m-5 bg-orange border border-dark mx-auto mb-0" style="height: 180px; width:80% ;border-radius:10px">
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block  img-fluid " style="height: 250px">
+                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block img-fluid" style="max-height: 250px">
                 </div>
             </div>
             <div class="col-10 col-md-7 py-4">

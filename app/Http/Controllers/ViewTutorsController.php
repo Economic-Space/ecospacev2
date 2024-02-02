@@ -59,7 +59,7 @@ class ViewTutorsController extends Controller
         $major = $semester = 'all';
         $searchTerm = $request->input('tutorSearchBar');
 
-        $subjects = Subject::where('subject_title', 'ilike', "%{$searchTerm}%")
+        $subjects = Subject::where('subject_title', 'like', "%{$searchTerm}%")
                         ->where('status', 'active')
                         ->get();
 

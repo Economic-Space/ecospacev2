@@ -15,6 +15,7 @@
 
 .img-tutor {
     max-height: 250px;
+    max-width: 50%;
 }
 
 .card-tutor:nth-child(odd) > a > div {
@@ -61,64 +62,6 @@
 .emo2 {
     margin-top: -88px; /* Sesuaikan dengan nilai yang sesuai */
 }
-
-
-/* style filter box yg lama */
-/* .filter {
-    display: flex;
-    align-items: center;
-    padding: 1px;
-    border-radius: 15px;
-    height: auto;
-    width: 15%;
-    margin: 15px;
-}
-
-.filter-btn {
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 1px;
-    border-radius: 10px;
-    background: #f08c03;
-    height: auto;
-    width: auto;
-    margin: 15px;
-}
-
-.del-fil-btn {
-    display: flex;
-    align-items: center;
-    padding: 1px;
-    border-radius: 10px;
-    background: white;
-    height: auto;
-    width: auto;
-    margin: 15px;
-}
-
-#pilih {
-    font-weight: 0;
-    height: auto;
-    width: auto;
-    padding: 1px;
-    border-radius: 15px;
-    background: #f08c03;
-    box-shadow: none;
-    border: none;
-}
-
-#hapus {
-    font-weight: 0;
-    height: auto;
-    width: auto;
-    padding: 1px;
-    border-radius: 15px;
-    background: #ffffff;
-    box-shadow: none;
-    border: none;
-} */
-
 
 /* ==== DETAIL TUTOR ==== */
 
@@ -196,8 +139,11 @@
         transform:translateY(0%);
     }
 
-    .img-tutor {
-        max-height: 150px;
+}
+
+@media(max-width: 992px) {
+    .w-mobile-80 {
+        width: 90%;
     }
 }
 
