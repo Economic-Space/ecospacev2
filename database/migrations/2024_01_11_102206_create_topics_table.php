@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        /** TOPIC DI DALAM SUBJECT */
         Schema::create('topics', function (Blueprint $table) {
             $table->id();
             $table->integer('topic_number');
