@@ -55,7 +55,7 @@
                     <a class="btn btn-dark font-24" aria-current="page" href="{{url('/soon')}}">Login</a>
                 </li> --}}
                 <li class="nav-item px-2">
-                    <a class="btn btn-dark font-24" aria-current="page" href="">Join Economic Space</a>
+                    <a class="btn btn-dark font-24" aria-current="page" href="https://bit.ly/OprecTutorECONSPACE">Join Economic Space</a>
                 </li>
             </ul>
           </div>
@@ -72,13 +72,17 @@
     <!-- FOOTER -->
     <footer class="desktop">
         <div class="container-fluid bg-black">
-            <div class="container px-5 py-2 mt-5 align-items-center justify-content-center">
-                <div class="d-flex pt-2 pb-3">
+            <div class="container px-5 pb-3 pt-4 mt-5 align-items-center justify-content-center">
+                <div class="d-flex mt-2 mb-4">
                     <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img me-auto">
-                    <a href="https://bit.ly/OprecTutorECONSPACE" class="text-white bg-orange p-2 px-3 rounded-3 font-24 font-400 me-3">Join as Tutor / Mentor <i class="fa fa-external-link text-white"></i></a>
-                    <a href="https://wa.link/fbua0a" class="text-white bg-orange p-2 px-3 rounded-3 font-24 font-400">Interest for Partnership? <i class="fa fa-external-link text-white"></i></a>
+                    <a href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
+                        Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
+                    </a>
+                    <a href="https://wa.link/fbua0a" class="button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 hovered d-flex align-items-center justify-content-center">
+                        Interest for Partnership? <i class="fa fa-external-link text-white ms-2"></i>
+                    </a>
                 </div>
-                <p class="text-white mb-1 font-400 font-22"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
+                <p class="text-white mb-1 font-400 font-22"  style="font-style: italic;">Private Enterprise Organization dedicated to Education Technology to prepare for Post-College Life</p>
             </div>
         </div>
         <div class="container-fluid brown-gradient">
@@ -94,20 +98,37 @@
 
     </footer>
 
-    <footer class="mobile">
-        <div>
-          <div class="d-flex flex-column align-items-center" style="background: url('assets/footer.svg');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:100px;;height:100%">
+    <footer class="mobile mt-5">
+
+        <div class="d-flex flex-column align-items-center">
             <div class=" container-fluid py-2 bg-black mt-2 align-items-center justify-content-center">
-              <div class="icon d-flex align-items-center">
-                  <img class="icon-insta mr-2" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
-                  <img class="icon-linkedin" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
-              </div>
-                  <p class=" text-white px-5 mb-2 text-center font-400" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to support Post-School Life</p>
+                {{-- socmed icon --}}
+                <div class="icon d-flex align-items-center">
+                    <img class="icon-insta mr-2" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
+                    <img class="icon-linkedin" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
+                </div>
+
+                {{-- buttons --}}
+                {{-- horizontal --}}
+                <div class="d-flex mb-4 justify-content-center gap-3">
+                    <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img">
+                    <div class="d-flex flex-column">
+                        {{-- vertical --}}
+                        <a href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 me-3 hovered mb-2" style="width: 100%">
+                            Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
+                        </a>
+                        <a href="https://wa.link/fbua0a" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 hovered" style="width: 100%">
+                            Interest for Partnership? <i class="fa fa-external-link text-white ms-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <p class=" text-white px-5 mb-2 text-center font-400" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to prepare for Post-College Life</p>
             </div>
-          </div>
-          <div class="container-fluid brown-gradient py-1 align-items-center">
-              <p class="font-700 text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>
-          </div>
+        </div>
+        <div class="container-fluid brown-gradient py-1 align-items-center">
+            <p class="font-700 text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>
         </div>
     </footer>
 
@@ -128,13 +149,17 @@
             window.location.href = url;
         }
     </script>
+    {{-- bootstrap --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    {{-- animation --}}
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    {{-- custom js --}}
     <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

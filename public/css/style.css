@@ -25,6 +25,8 @@ button:hover {
     --vw-scale-factor: 1;
     --color-black: #16182b;
     --color-blue: #84dfd8;
+    --color-mediumblue: #0A4AAA;
+    --color-green: #AEF495;
     --color-orange: #FC8025;
     --color-milk: #f2eee9;
     --color-red: #FF4778;
@@ -60,12 +62,20 @@ button:hover {
     background-color: var(--color-milk);
 }
 
+.bg-mediumblue {
+    background-color: var(--color-mediumblue);
+}
+
 .bg-darkblue {
     background-color: var(--color-darkblue);
 }
 
 .bg-lightblue {
     background-color: var(--color-lightblue);
+}
+
+.bg-green {
+    background-color: var(--color-green);
 }
 
 /* TEXT SIZE  */
@@ -139,6 +149,11 @@ button:hover {
 .font-82 {
     font-size: calc(5.125rem * var(--vw-scale-factor));
 }
+
+.font-86 {
+    font-size: calc(5.375rem * var(--vw-scale-factor));
+}
+
 .font-96 {
     font-size: calc(6rem * var(--vw-scale-factor));
 }
@@ -355,15 +370,6 @@ button:hover {
     transform: translateY(-50px);
 }
 
-.equal-height {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
 .width-smaller {
     width: 75%;
     margin: auto;
@@ -390,6 +396,11 @@ button:hover {
 .img-emoji {
     height: 100px;
     width: auto;
+}
+
+/* naikin box potential untuk mengkompensasi gap dari emoji yg turun ke bawah */
+.div-up-emoji {
+    transform: translateY(-100px);
 }
 
 /* ===== STEP ===== */
@@ -600,7 +611,7 @@ button:hover {
     border-radius: 15px;
     height: auto;
     width: 20%;
-    margin: 15px;
+    margin: 10px;
 }
 
 .box-wa img {
@@ -839,13 +850,8 @@ button:hover {
     margin: 10px 0;
 }
 
-.font-literata {
-    font-family: "Literata", serif;
-    font-weight: bold;
-}
-
 .box-orange {
-    background-color: #f08c03;
+    background-color: var(--color-orange);
     color: white;
     border-radius: 20px;
     margin: 5px;
@@ -855,7 +861,7 @@ button:hover {
 }
 
 .mobile .box-orange {
-    background-color: #f08c03;
+    background-color: var(--color-orange);
     color: white;
     border-radius: 20px;
     margin: 5px;
@@ -885,28 +891,9 @@ button:hover {
     top: -50px;
 }
 
-.box-white {
-    height: auto;
-    display: flex;
-    align-items: center; /* Center vertically */
-    margin: 15px;
-}
-
 .container-fluid.bg-white.py-2 {
     background-image: linear-gradient(to bottom, #5c3925, #5c5357);
     height: 50px;
-}
-
-.box-black {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    padding: 10px; /* Add padding to the inner box */
-    margin: 15px;
-    height: auto;
-    background-color: #15172a;
-    border-radius: 15px;
-    text-align: center;
-    width: 70%;
 }
 
 .box-black .icon-smile {
@@ -924,11 +911,11 @@ button:hover {
     border-radius: 15px;
     height: auto;
     width: 20%;
-    margin: 15px;
+    margin: 10px;
 }
 
 .box-wa img {
-    margin-right: 10px; /* Add space between image and text */
+    margin-right: 5px; /* Add space between image and text */
 }
 
 .mobile .box-wa {
@@ -1047,7 +1034,7 @@ button:hover {
 }
 
 .btn-danger {
-    background-color: #980000;
+    background-color: var(--color-red);
     border-radius: 15px;
 }
 
@@ -1071,6 +1058,17 @@ button:hover {
     cursor: pointer;
 }
 
+/* FOOTER */
+.button-glow {
+    display: inline-block;
+    background-color: var(--color-orange);
+    box-shadow: 0 0 18px var(--color-orange); /* Horizontal offset, Vertical offset, Blur radius, Color */
+    transition: box-shadow 0.3s ease; /* Optional: Adds smooth transition */
+}
+
+.button-glow:hover {
+    box-shadow: 0 0 24px var(--color-orange); /* Adjust the glow intensity on hover */
+}
 
 /* FOR MOBILE */
 
@@ -1114,13 +1112,17 @@ button:hover {
     }
 
     .logo-img {
-        width: 100px;
+        width: 150px;
     }
 
     .bg-img-orange {
         min-height: 60vh !important;
         background-attachment: fixed;
         background-position: 0px 0px, 100% 25%; /* Adjust background position as needed */
+    }
+
+    .bg-img-white {
+        background: url("../assets/background/bgwhitemobile.svg");
     }
 
     .img-circle {
@@ -1136,6 +1138,10 @@ button:hover {
     .img-emoji {
         height: 60px;
         width: auto;
+    }
+
+    .div-up-emoji {
+        transform: translateY(-60px);
     }
 
     .img-contribute {
