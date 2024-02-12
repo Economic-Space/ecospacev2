@@ -7,11 +7,16 @@ use Illuminate\Http\Request;
 
 class ViewTutorsController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
         // all by default -> dikasih gini agar filter ga error
         $major = 'all';
         $semester = 'all';
-        $subjects = Subject::where('status', 'active')->get();
+        $subjects = Subject::where('status', 'active')->paginate(6);
+
+        if ($request->ajax()) {
+            return view('layout.subjects', compact('subjects'))->render(); // return partial view
+        }
+
         return view('tutor.viewTutors', compact('subjects', 'major', 'semester'));
     }
 
@@ -20,35 +25,18 @@ class ViewTutorsController extends Controller
     {
         $major = $request->input('major');
         $semester = $request->input('semester');
-        $subjects = Subject::whereJsonContains('subject_majors', $major)
-                                ->where('subject_semester', $semester)
-                                ->where('status', 'active')
-                                ->get();
 
-        if($semester == 'all') {
-            $subjects = Subject::whereJsonContains('subject_majors', $major)
-                                ->where('status', 'active')
-                                ->get();
+        $query = Subject::where('status', 'active');
+
+        if ($major != 'all') {
+            $query->whereJsonContains('subject_majors', $major);
         }
 
-        if($major == 'all') {
-            $subjects = Subject::where('subject_semester', $semester)
-                                ->where('status', 'active')
-                                ->get();
+        if ($semester != 'all') {
+            $query->where('subject_semester', $semester);
         }
 
-        if ($subjects->isEmpty()) {
-            $subjects = null;
-        }
-
-        // kalau ga set semester n major, secara default adalah all
-        if (!isset($semester)) {
-            $semester = 'all';
-        }
-
-        if (!isset($major)) {
-            $major = 'all';
-        }
+        $subjects = $query->paginate(6);
 
         return view('tutor.viewTutors', compact('subjects', 'semester', 'major'));
     }
@@ -61,7 +49,7 @@ class ViewTutorsController extends Controller
 
         $subjects = Subject::where('subject_title', 'like', "%{$searchTerm}%")
                         ->where('status', 'active')
-                        ->get();
+                        ->paginate(6);;
 
         return view('tutor.viewTutors', compact('subjects', 'major', 'semester'));
     }

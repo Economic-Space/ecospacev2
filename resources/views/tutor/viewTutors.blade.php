@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- HEADER -->
-    <div id="banner" class="container-fluid position-relative" style="background: url('assets/background/bg_tutors.svg');background-repeat: no-repeat;background-size: cover;padding-top:100px;padding-bottom:108px">
+    <div id="banner" class="container-fluid position-relative tutor-header">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10">
@@ -35,7 +35,8 @@
                             <select name="major" id="course" class="rounded-3 border-0 py-2 w-100">
                                 <option value="all" @if(old('major', $major) == 'all') selected @endif>Semua Jurusan</option>
                                 <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
-                                <option value="Economics" @if(old('major', $major) == 'Economics') selected @endif>Economics</option>
+                                <option value="Management" @if(old('major', $major) == 'Management') selected @endif>Management</option>
+                                <option value="Economic" @if(old('major', $major) == 'Economic') selected @endif>Economic</option>
                                 <option value="Taxation" @if(old('major', $major) == 'Taxation') selected @endif>Taxation</option>
                             </select>
                         </div>
@@ -69,59 +70,47 @@
 
     <!-- LIST TUTORS -->
     <div class="container">
-        <div class="row gx-5 gy-4">
-            @if(!is_null($subjects))
-            @foreach($subjects as $s)
-
-            <div class="col-12 col-md-4 card-tutor">
-                <a href="{{ URL::route('detailTutor', $s->id) }}">
-                    <div class="d-flex justify-content-center rounded-3">
-                        <h5 class="font-24 font-700 text-black text-center align-self-center justify-content-center" ><span class="font-family font-black bg-white text-center px-2">{{$s->subject_title}}</span> </h5>
-                        <img src="{{asset('assets/thumbnail/'.$s->subject_thumbnail)}}" alt="Person Photo" class="img-tutor img-fluid">
-                    </div>
-                </a>
-            </div>
-
-
-            @endforeach
-            @endif
+        <div class="row gx-5 gy-4" id="subject-container">
+            @include('layout.subjects', ['subjects' => $subjects])
         </div>
 
-        {{-- blm implementasi lazy loading --}}
-        {{-- <div class="row col-12 ">
-            <div class="d-grid gap-2 col-2 mx-auto px-4 " >
-                <button class="btn btn-danger w-auto" style="border-radius: 10px">Load more</button>
-            </div>
-        </div> --}}
+        {{-- lazy loading --}}
+        <div class="row mt-3 justify-content-center">
+            <button class="btn btn-danger hovered rounded-4 lazy-loading" style="width: fit-content">Load more</button>
+        </div>
     </div>
 
 
     <!-- TUTOR SESSION -->
-    <div id="t-session"  class="container mt-5 mb-5">
-        <div class="row justify-content-center justify-content-md-start bg-milk rounded-4">
-            <div class="col-10 col-md-4 py-4 desktop">
-                <div class="emo1 full-down quarter-right">
-                    <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-                </div>
-                <div class="emo2 full-down quarter-right ">
-                    <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
-                </div>
-                <div class="m-5 bg-orange border border-dark mx-auto mb-0" style="height: 180px; width:80% ;border-radius:10px">
-                    <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block img-fluid" style="max-height: 250px">
-                </div>
-            </div>
-            <div class="col-10 col-md-7 py-4">
-                <div>
-                    <h1 class="font-black font-40 font-900">Tutor Session </h1>
-                    <p class="font-24 font-400">Menyediakan Kebutuhan Belajar Akademikmu | Senantiasa menjaga kualitas pengajar dan memperluas jangkauan jenis mata kuliah.</p>
-                </div>
-                <div class="mt-3">
-                    <h3 class="font-24 font-700">Keunggulan Kami:</h3>
-                    <div class="d-flex align-items-center">
-                        <img class="icon-smile" style="width:5%" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-18 font-400">Menyediakan <span class="font-700">Tutor berdasarkan Universitas</span>  agar Relevan <br>Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa</div>
+    <div class="container-fluid bg-milk-mobile">
+        <div id="t-session"  class="container mt-5 mb-5">
+            <div class="row justify-content-center justify-content-md-start bg-milk rounded-4">
+                {{-- gambar joshua --}}
+                <div class="col-10 col-md-4 py-4 desktop">
+                    <div class="emo1 full-down quarter-right">
+                        <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
                     </div>
-                    <div class="d-flex align-items-center mt-2">
-                        <img class="icon-smile" style="width:5%" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-18 font-400"> <span class="font-700">Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, <br>Ilmu Ekonomi, Manajemen Bisnis & Keuangan. </div>
+                    <div class="emo2 full-down quarter-right ">
+                        <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                    </div>
+                    <div class="m-5 bg-orange border border-dark mx-auto mb-0" style="height: 180px; width:80% ;border-radius:10px">
+                        <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block img-fluid" style="max-height: 250px">
+                    </div>
+                </div>
+                {{-- tulisan, ada di mobile jg --}}
+                <div class="col-10 col-md-7 py-4">
+                    <div>
+                        <h1 class="font-black font-42 font-900">Tutor Session </h1>
+                        <p class="font-26 font-400">Menyediakan Kebutuhan Belajar Akademikmu | Senantiasa menjaga kualitas pengajar dan memperluas jangkauan jenis mata kuliah.</p>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="font-26 font-700">Keunggulan Kami:</h3>
+                        <div class="d-flex align-items-center">
+                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-22 font-400">Menyediakan <span class="font-700">Tutor berdasarkan Universitas</span>  agar Relevan <br class="desktop">Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa</div>
+                        </div>
+                        <div class="d-flex align-items-center mt-2">
+                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-22 font-400"> <span class="font-700">Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, <br class="desktop">Ilmu Ekonomi, Manajemen Bisnis & Keuangan. </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,4 +153,35 @@
         </div>
         <div>
     </footer>
+
+    {{-- jquery for pagination --}}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <script>
+        // pagination
+        $('.lazy-loading').click(function() {
+            var currentPage = {{ $subjects->currentPage() }};
+            var lastPage = {{ $subjects->lastPage() }};
+
+            if (currentPage >= lastPage) {
+                $(this).hide(); // Hide the button if there are no more pages
+                return;
+            }
+
+            $.ajax({
+                url: "{{ route('viewTutors') }}",
+                type: "GET",
+                data: { page: currentPage + 1 }, // Load next page
+                success: function(data) {
+                    $('#subject-container').append(data); // Append new subjects
+                    currentPage++; // Update current page after successful load
+
+                    if (currentPage >= lastPage) {
+                        $('.lazy-loading').hide(); // Hide the button if there are no more pages
+                    }
+                }
+            });
+        });
+
+    </script>
 @endsection

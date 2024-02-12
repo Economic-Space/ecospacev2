@@ -24,8 +24,10 @@
     <div class="container-fluid mt-4">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 align-self-center">
+                <div class="col-12 col-md-7 align-self-center">
                     <p class="font-21 font-400 mb-2"><a href="{{route('viewTutors')}}">Academy</a> > {{$subject->subject_title}}</p>
+
+                    {{-- khusus mobile, peletakan gambarnya beda --}}
                     <div class="mobile mb-2 card-tutor">
                         {{-- <img src="{{ asset('assets/courseImage/'.$subject->subject_image) }}" class="img-fluid w-100" alt="..."> --}}
                         <div class="card-tutor">
@@ -37,13 +39,15 @@
                             </a>
                         </div>
                     </div>
+
+                    {{-- info spt judul dll yg sebelah kiri --}}
                     <h1 class="font-48 font-700">{{$subject->subject_title}}</h1>
-                    <div class="d-flex justify-content-left gap-3 mt-3">
+                    <div class="d-flex justify-content-left gap-3 mt-md-3">
                         @foreach(json_decode($subject->subject_majors) as $major)
                         <p class="bg-milk py-1 px-2 rounded-3 font-18 font-400">{{$major}}</p>
                         @endforeach
                     </div>
-                    <div class="d-flex justify-content-left gap-3 mb-2">
+                    <div class="d-flex justify-content-left gap-3 mb-md-2">
                         <p class="font-18 font-400"><i class="fa-solid fa-folder me-2"></i> {{$subject->subject_category}}</p>
                         <p class="font-18 font-400"><i class="fa-solid fa-gem me-2"></i> {{$subject->subject_semester}}</p>
                     </div>
@@ -51,7 +55,8 @@
                         Mulai Belajar
                     </a>
                 </div>
-                <div class="col-6 desktop">
+                {{-- yg sebelah kanan --}}
+                <div class="col-5 desktop">
                     {{-- TODO NANTI DIGANTI --}}
                     {{-- <img src="{{ asset('assets/courseImage/'.$subject->subject_image) }}" class="img-fluid w-100" alt="..."> --}}
                     <div class="card-tutor">
@@ -71,7 +76,8 @@
     {{-- tutor content --}}
     <div class="container-fluid mt-3">
         <div class="container">
-            <div class="row mb-3">
+            {{-- garis pembatas --}}
+            <div class="row mb-md-3">
                 <hr style="border: none; border-bottom: 3px solid grey;">
             </div>
             <div class="row gx-5">
@@ -79,7 +85,7 @@
                 {{-- sebelah kiri --}}
                 <div class="col-12 col-md-8">
                     <p class="font-21 font-400 text-justify">{{$subject->subject_description}}</p>
-                    <h2 class="font-40 font-900 text-orange mt-4">Tutor Material Discussion</h2>
+                    <h2 class="font-40 font-900 text-orange mt-md-4">Tutor Material Discussion</h2>
                     <p class="font-21 font-700 text-justify">Referensi Pembelajaran:</p>
                     <ul style="list-style-position: inside; padding-left: 0;">
                         @foreach(json_decode($subject->subject_references) as $reference)
@@ -90,14 +96,14 @@
 
                     {{-- accordion --}}
                     <div class="accordion mt-4" id="accordionPanelsStayOpenExample">
-                        @foreach($subject->topics as $topic)
+                        @foreach($subject->topics as $index => $topic)
                             <div class="accordion-item mb-3">
                                 <h2 class="accordion-header" id="panelsStayOpen-heading{{$topic->topic_number}}">
-                                    <button class="accordion-button font-24 font-500" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{$topic->topic_number}}" aria-expanded="true" aria-controls="panelsStayOpen-collapse{{$topic->topic_number}}">
+                                    <button class="accordion-button font-24 font-500 {{ $index === 0 ? '' : 'collapsed' }}" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse{{$topic->topic_number}}" aria-expanded="{{ $index === 0 ? 'true' : 'false' }}" aria-controls="panelsStayOpen-collapse{{$topic->topic_number}}">
                                         {{$topic->topic_number}}. {{$topic->topic_title}}
                                     </button>
                                 </h2>
-                                <div id="panelsStayOpen-collapse{{$topic->topic_number}}" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading{{$topic->topic_number}}">
+                                <div id="panelsStayOpen-collapse{{$topic->topic_number}}" class="accordion-collapse collapse {{ $index === 0 ? 'show' : '' }}" aria-labelledby="panelsStayOpen-heading{{$topic->topic_number}}">
                                     <div class="accordion-body p-0 px-4 pt-3">
                                         <ol style="list-style-position: inside; padding-left: 0;" type="a">
                                             @foreach(json_decode($topic->topic_content) as $content)

@@ -15,6 +15,15 @@
 
 /* VIEW TUTOR */
 
+/* HEADER BACKGROUND IMAGE */
+.tutor-header {
+    background: url('../assets/background/bg_tutors.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:100px;
+    padding-bottom:108px
+}
+
 .img-tutor {
     height: 250px;
 }
@@ -113,6 +122,7 @@
 
 .accordion-button {
     border: 1px solid var(--text, rgba(0, 0, 0, 0.25));
+    color: var(--color-black);
     border-radius: 10px;
     transition: 0.4s;
     outline: none;
@@ -150,6 +160,9 @@
 
 /* MOBILE */
 @media (max-width: 767px) {
+    .tutor-header {
+        padding-top: 50px;
+    }
 
     .half-up-30 {
         transform:translateY(0%);
@@ -157,6 +170,10 @@
 
     .img-tutor {
         height: 150px;
+    }
+
+    .bg-milk-mobile {
+        background-color: var(--color-milk);
     }
 
 }

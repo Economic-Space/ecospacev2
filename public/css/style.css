@@ -850,11 +850,6 @@ button:hover {
     margin: 10px 0;
 }
 
-.font-literata {
-    font-family: "Literata", serif;
-    font-weight: bold;
-}
-
 .box-orange {
     background-color: var(--color-orange);
     color: white;
