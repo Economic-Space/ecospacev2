@@ -17,11 +17,11 @@
 
 /* HEADER BACKGROUND IMAGE */
 .tutor-header {
-    background: url('../assets/background/bg_tutors.svg');
-    background-repeat: no-repeat;
+    background: url('../assets/background/bgtutors.svg');
+    height: 285px;
     background-size: cover;
-    padding-top:100px;
-    padding-bottom:108px
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .img-tutor {
@@ -158,11 +158,19 @@
     margin: auto;
 }
 
+@media(max-width: 576px) {
+    .tutor-header {
+        width: 100vw;
+        background: url('../assets/background/bgtutors_mobile.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+}
+
 /* MOBILE */
 @media (max-width: 767px) {
-    .tutor-header {
-        padding-top: 50px;
-    }
 
     .half-up-30 {
         transform:translateY(0%);

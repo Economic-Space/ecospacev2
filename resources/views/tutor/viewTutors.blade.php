@@ -2,16 +2,7 @@
 
 @section('content')
     <!-- HEADER -->
-    <div id="banner" class="container-fluid position-relative tutor-header">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10">
-                    <h1 class="font-700 font-64 text-center" style="color:white" >ACADEMIC <span class="text-yellow">TUTOR</span> SERVICE</h1>
-                    <p class="text-white text-center font-28 font-500">Menyediakan pengajaran individu/kelompok dengan fokus pada bidang akuntansi dan ekonomi yang dilengkapi dengan modul berkualitas tinggi </p>
-                </div>
-            </div>
-
-        </div>
+    <div id="banner" class="container-fluid tutor-header">
     </div>
 
     <!-- FILTER-->

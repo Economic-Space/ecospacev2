@@ -5,18 +5,7 @@
     {{-- banner --}}
     <div class="desktop container-fluid mt-3">
         <div class="container">
-            <div class="row">
-                <div class="col-12 mx-auto">
-                    <div class="d-md-flex justify-content-center align-items-center rounded-4 bg-darkblue p-3 py-4">
-                        <img src="{{ asset('assets/tutorDetail/empowering_logo.svg') }}" class="img-fluid" alt="Tagline" width="25%">
-                        <div class=" ps-4 mt-2">
-                            <h3 class="text-orange font-700 font-40">Asiknya berbagi ilmu dalam lingkaran sahabat yang kontak!</h3>
-                            <p class="text-milk font-500 font-18">Daftar bersama teman satu univmu untuk mendapatkan potongan harga!</p>
-                        </div>
-                        <img src="{{ asset('assets/tutorDetail/faces3.svg') }}" alt="logo face" class="img-fluid" width="25%">
-                    </div>
-                </div>
-            </div>
+            <img src="{{ asset('assets/tutorDetail/course_banner.svg') }}" alt="" class="img-fluid w-100 rounded-4">
         </div>
     </div>
 
@@ -187,7 +176,7 @@
                 <div class="row mt-5 gy-3 gy-md-0">
                     <div class="col-12 col-md-4">
                         <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face2.svg') }}" style="height: 140px" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/home/face4.svg') }}" style="height: 100px" class="img-fluid" alt="">
                             <p class="font-28 font-700 mt-2 text-red">Fresh Launch Kit</p>
                             <h5 class="font-48 font-900">Rp 280.000,-</h5>
                             <p class="font-400 font-24">Dari Harga Awal Rp 300.000</p>
@@ -202,7 +191,7 @@
                         <div class="half-up-30">
                             <div class="bg-orange width-80 half-down rounded-4 text-center text-white py-3 mx-auto font-24 font-600">TERFAVORIT</div>
                             <div class="bg-lightblue rounded-4 text-center py-5 px-4">
-                                <img src="{{ asset('assets/home/face1.svg') }}" style="height: 140px" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/home/face5.svg') }}" style="height: 140px" class="img-fluid" alt="">
                                 <p class="font-28 font-700 text-orange mt-2">Smart Saver Bundle</p>
                                 <h5 class="font-48 font-900">Rp 800.000,-</h5>
                                 <p class="font-400 font-24">Dari Harga Awal Rp 850.000</p>
@@ -216,7 +205,7 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face3.svg') }}" style="height: 140px" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/home/face6.svg') }}" style="height: 100px" class="img-fluid" alt="">
                             <p class="font-28 font-700 text-red mt-2">Premier Loyalty Package</p>
                             <h5 class="font-48 font-900">Rp 360.000,-</h5>
                             <p class="font-400 font-24">Dari Harga Awal Rp 390.000</p>
@@ -238,7 +227,7 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="4000">
                         <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face2.svg') }}" style="height: 90px" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/home/face4.svg') }}" style="height: 90px" class="img-fluid" alt="">
                             <p class="font-32 font-700 mt-2 text-red">Fresh Launch Kit</p>
                             <h5 class="font-60 font-900">Rp 280.000,-</h5>
                             <p class="font-400 font-28">Dari Harga Awal Rp 300.000</p>
@@ -251,7 +240,7 @@
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
                             <div class="bg-lightblue rounded-4 text-center py-5 px-4">
-                                <img src="{{ asset('assets/home/face1.svg') }}" style="height: 90px" class="img-fluid" alt="">
+                                <img src="{{ asset('assets/home/face5.svg') }}" style="height: 90px" class="img-fluid" alt="">
                                 <p class="font-32 font-700 text-orange mt-2">Smart Saver Bundle</p>
                                 <h5 class="font-60 font-900">Rp 800.000,-</h5>
                                 <p class="font-400 font-28">Dari Harga Awal Rp 850.000</p>
@@ -264,7 +253,7 @@
                       </div>
                       <div class="carousel-item">
                         <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face3.svg') }}" style="height: 90px" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/home/face6.svg') }}" style="height: 90px" class="img-fluid" alt="">
                             <p class="font-32 font-700 text-red mt-2">Premier Loyalty Package</p>
                             <h5 class="font-60 font-900">Rp 360.000,-</h5>
                             <p class="font-400 font-28">Dari Harga Awal Rp 390.000</p>

@@ -15,7 +15,6 @@ class SubjectSeeder extends Seeder
     {
         $subjects = [
             [
-                'subject_thumbnail' => 'marcheline.svg',
                 'subject_image' => 'ManagementAccounting.svg',
                 'subject_title' => 'Management Accounting',
                 'subject_majors' => json_encode(['Accounting']),
@@ -29,7 +28,6 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'rendranandira.svg',
                 'subject_image' => 'IntermediateAccountingI.svg',
                 'subject_title' => 'Intermediate Accounting I',
                 'subject_majors' => json_encode(['Accounting']),
@@ -43,7 +41,6 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'rendranandira.svg',
                 'subject_image' => 'IntermediateAccountingIII.svg',
                 'subject_title' => 'Intermediate Accounting III',
                 'subject_majors' => json_encode(['Accounting']),
@@ -57,7 +54,6 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'daffaalfredo.svg',
                 'subject_image' => 'TaxationII.svg',
                 'subject_title' => 'Taxation II',
                 'subject_majors' => json_encode(['Accounting']),
@@ -71,7 +67,6 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'kevintanli.svg',
                 'subject_image' => 'FinancialManagement.svg',
                 'subject_title' => 'Financial Management',
                 'subject_majors' => json_encode(['Accounting', 'Management']),
@@ -85,9 +80,8 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'harsyanto.svg',
-                'subject_image' => 'Statistics.svg',
-                'subject_title' => 'Statistics',
+                'subject_image' => 'StatisticsForAccounting.svg',
+                'subject_title' => 'Statistics For Accounting',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Specialized Areas',
                 'subject_semester' => 'Semester 1-2',
@@ -99,9 +93,8 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'notutor.svg',
-                'subject_image' => 'notutor.svg',
-                'subject_title' => 'Introduction to Economics II',
+                'subject_image' => 'EconomicsII.svg',
+                'subject_title' => 'Economics II',
                 'subject_majors' => json_encode(['Economic']),
                 'subject_category' => 'Macroeconomics',
                 'subject_semester' => 'Semester 1-2',
@@ -113,8 +106,7 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'notutor.svg',
-                'subject_image' => 'notutor.svg',
+                'subject_image' => 'AdvancedStatistics.svg',
                 'subject_title' => 'Advanced Statistics',
                 'subject_majors' => json_encode(['Economic']),
                 'subject_category' => 'Statistics',
@@ -127,8 +119,7 @@ class SubjectSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'subject_thumbnail' => 'notutor.svg',
-                'subject_image' => 'notutor.svg',
+                'subject_image' => 'AdvancedMathematics.svg',
                 'subject_title' => 'Advanced Mathematics',
                 'subject_majors' => json_encode(['Economic']),
                 'subject_category' => 'Mathematics',
