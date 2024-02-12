@@ -7,7 +7,7 @@
     <div class="container">
     <div class="row px-md-5">
         <div class="pt-md-5">
-            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <span class="font-900 stroke-underline auto-type"></span></h1>
+            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <br class="mobile"><span class="font-900 stroke-underline auto-type"></span></h1>
         </div>
     </div>
     <div class="row px-md-5 mt-4">
@@ -55,7 +55,7 @@
                             <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
                             </div>
-                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
+                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 ">
                                 <img src="{{asset('assets/home/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
                                 <h3 class="font-36 text-orange font-900"><b>TUTOR SERVICE</b></h3>
                                 <p id="label-service" class="font-22 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
@@ -75,7 +75,7 @@
                             <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900 text-white">Event Space</h4>
                             </div>
-                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height">
+                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 ">
                                 <img src="{{asset('assets/home/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
                                 <h3 class="font-36 font-900"><b>BOOTCAMP</b></h3>
                                 <p id="label-service" class="font-22 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
@@ -94,7 +94,7 @@
                             <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900">Mentorship Hub</h4>
                             </div>
-                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height">
+                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto ">
                                 <img src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
                                 <h3 class="font-36 text-blue font-900"><b>MENTORING</b></h3>
                                 <p id="label-service" class="font-22 font-400 ">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
@@ -113,61 +113,61 @@
     <!-- MOBILE VERSION -->
         <div class="mobile">
             <div class="row g-0">
-            <div id="carouselService" class="carousel slide mobile" data-bs-ride="carousel">
+            <div id="carouselService" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2000">
-                    <div class="equal-height width-smaller">
-                        <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="width-smaller">
+                        <div class="half-down bg-orange rounded-5 text-center service-title mx-auto pt-2 pb-1">
                             <a href="{{url('/soon')}}">
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
                             </a>
 
                         </div>
-                        <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height py-5 bg-white">
+                        <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3  py-5 bg-white">
                             <img src="{{asset('assets/home/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                             <h3 class="font-44 text-orange font-900">TUTOR SERVICE</h3>
                             <p class="font-24 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
                         </div>
-                        <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                        <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
                             <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
                             <p class="font-24 font-400 mb-0">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                         </div>
                     </div>
 
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div  class="equal-height width-smaller">
-                        <div class="bg-black rounded-5 text-center service-title mx-auto py-2 half-down">
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div  class="width-smaller">
+                        <div class="bg-black rounded-5 text-center service-title mx-auto pt-2 pb-1 half-down">
                             <a href="{{url('/soon')}}">
                                 <h4 class="font-32 font-900 text-white">Event Space</h4>
                             </a>
 
                         </div>
-                        <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 equal-height py-5 bg-white">
+                        <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3  py-5 bg-white">
                             <img src="{{asset('assets/home/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                             <h3 class="font-44 font-900">BOOTCAMP</h3>
                             <p class="font-24 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
                         </div>
-                        <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                        <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
                             <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
                             <p class="font-24 text-white font-400 mb-0">Never say never untuk Pembelajaran Baru</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                        <div  class="equal-height width-smaller">
-                            <div class="bg-blue rounded-5 text-center service-title mx-auto py-2 half-down">
+                <div class="carousel-item" data-bs-interval="4000">
+                        <div class="width-smaller">
+                            <div class="bg-blue rounded-5 text-center service-title mx-auto pt-2 pb-1 half-down">
                                 <a href="{{url('/soon')}}">
                                     <h4 class="font-32 font-900">Mentorship Hub</h4>
                                 </a>
 
                             </div>
-                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto equal-height py-5 bg-white px-3">
+                            <div class="border border-3 border-black rounded-5 text-center box-service mx-auto  py-5 bg-white px-3">
                                 <img src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                                 <h3 class="font-44 text-blue font-900">MENTORING</h3>
                                 <p class="font-24 font-400">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
                             </div>
-                            <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
+                            <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
                                 <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
                                 <p class="font-24 font-400 mb-0">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                             </div>
@@ -185,6 +185,7 @@
             </div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -210,16 +211,16 @@
 
         <div class="mobile pt-5">
             <div class="ms-md-5">
-                <h3 class="font-36 text-white font-800" style="text-align: center">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
-                <p class="text-white font-20 font-400" style="text-align: center">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
+                <h3 class="font-46 text-white font-800" style="text-align: center">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
+                <p class="text-white font-26 font-400" style="text-align: center">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
             </div>
             <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">1.</h3></div>
-                <div><p class="font-20 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
+                <div class="ms-4"><h3 class="text-white font-48 font-900 mb-0">1.</h3></div>
+                <div><p class="font-26 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
             </div>
             <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">2.</h3></div>
-                <div><p class="font-20 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
+                <div class="ms-4"><h3 class="text-white font-48 font-900 mb-0">2.</h3></div>
+                <div><p class="font-26 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
             </div>
         </div>
 
@@ -263,13 +264,13 @@
                             <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid mt-auto" alt="...">
                         </div>
                         <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid mt-auto" alt="...">
+                            <img src="{{asset('assets/mentor/evan.png')}}" class="img-fluid mt-auto" alt="...">
                         </div>
                         <div class="swiper-slide bg-darkblue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
                             <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid mt-auto" alt="...">
                         </div>
                         <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid mt-auto" alt="...">
+                            <img src="{{asset('assets/mentor/raihan.png')}}" class="img-fluid mt-auto" alt="...">
                         </div>
                     </div>
                 </div>
@@ -282,28 +283,18 @@
 <!-- POTENTIAL  -->
 <div class="container-fluid px-md-5 pt-md-5 mt-5 mb-5">
     <div class="container px-md-5">
-    <div class="desktop row mb-3">
+    <div class="row mb-3">
         <div class="col-12">
         <h2 class="text-center font-60 font-400">Learn Now & Claim Your Title:</h2>
-        <div class="bg-black mx-auto p-2" style="width: fit-content">
+        <div class="bg-black mx-auto p-2 mb-3" style="width: fit-content">
             <h1 class="text-center font-64 font-900 text-white">#Talent-Favorit-Top Company HR</h1>
         </div>
         <p class="text-center font-32 font-400">Kembangkan Potensimu sejak dini bersama Economic Space</p>
         </div>
     </div>
 
-    <div class="mobile row">
-        <div class="col-12">
-        <h2 class="text-center font-38 font-400">Learn Now & Claim Your Title:</h2>
-        <div class="bg-black mx-auto p-2" style="width: fit-content">
-            <h1 class="text-center font-44 font-900 text-white">#Talent-Favorit-Top Company HR</h1>
-        </div>
-        <p class="text-center font-28 font-400">Kembangkan Potensimu sejak dini bersama Economic Space</p>
-        </div>
-    </div>
-
-    <div class="row half-up-px">
-        <div class="col col-6 col-md-3" data-aos="fade-down" data-aos-duration="750">
+    <div class="row half-up-px mt-3">
+        <div class="col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="750">
             <div class="half-down">
                 <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
@@ -313,7 +304,7 @@
             </div>
         </div>
 
-        <div class=" col col-6 col-md-3" data-aos="fade-down" data-aos-duration="1500">
+        <div class=" col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="1500">
             <div class="half-down">
                 <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
@@ -323,17 +314,17 @@
             </div>
 
         </div>
-        <div class="col col-6 col-md-3" data-aos="fade-down" data-aos-duration="2250">
+        <div class="col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="2250">
             <div class="half-down">
                 <img src="{{asset('assets/home/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
-            <div class="bg-black border border-3 border-black rounded-5 box-potential">
+            <div class="bg-mediumblue border border-3 border-black rounded-5 box-potential">
                 <h4 class="text-center font-32 font-700 text-white">Your High Quality <br>Learning Partner</h4>
                 <p class="text-center font-20 text-white font-400">Mengundang & bekerja sama dengan Tutor, Mentor, & Pembicara terbaik </p>
             </div>
 
         </div>
-        <div class="col col-6 col-md-3" data-aos="fade-down" data-aos-duration="3000">
+        <div class="col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="3000">
             <div class="half-down">
                 <img src="{{asset('assets/home/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
             </div>
@@ -350,7 +341,7 @@
         <div class="row">
         <div class="col-4" >
             <div class="d-flex flex-row gap-3">
-            <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
+            <div class="bg-green circle ratio ratio-1x1 font-82 font-900">
                 1
             </div>
             <div>
@@ -361,7 +352,7 @@
         </div>
         <div class="col-4">
             <div class="d-flex flex-row gap-3">
-            <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
+            <div class="bg-green circle ratio ratio-1x1 font-82 font-900">
                 2
             </div>
             <div>
@@ -372,7 +363,7 @@
         </div>
         <div class="col-4">
             <div class="d-flex flex-row gap-3">
-            <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
+            <div class="bg-green circle ratio ratio-1x1 font-82 font-900">
                 3
             </div>
             <div>
@@ -391,12 +382,12 @@
             <div class="swiper-slide">
                 <div class="col-12 mx-auto">
                     <div class="d-flex flex-row gap-3">
-                        <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
+                        <div class="bg-green circle ratio ratio-1x1 font-86 font-900">
                             1
                         </div>
                         <div>
-                            <h4 class="font-36 font-700">Register / Sign In</h4>
-                            <p class="font-26 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
+                            <h4 class="font-44 font-700">Register / Sign In</h4>
+                            <p class="font-32 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
                         </div>
                     </div>
                 </div>
@@ -404,12 +395,12 @@
             <div class="swiper-slide">
                 <div class="col-12 mx-auto">
                     <div class="d-flex flex-row gap-3">
-                        <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
+                        <div class="bg-green circle ratio ratio-1x1 font-86 font-900">
                             2
                         </div>
                         <div>
-                            <h4 class="font-36 font-700">Pick & Enroll</h4>
-                            <p class="font-26 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
+                            <h4 class="font-44 font-700">Pick & Enroll</h4>
+                            <p class="font-32 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
                         </div>
                     </div>
                 </div>
@@ -417,12 +408,12 @@
             <div class="swiper-slide">
                 <div class="col-12 mx-auto">
                     <div class="d-flex flex-row gap-3">
-                        <div class="bg-milk circle ratio ratio-1x1 font-82 font-900">
+                        <div class="bg-green circle ratio ratio-1x1 font-86 font-900">
                             3
                         </div>
                         <div>
-                            <h4 class="font-36 font-700">Make a Change</h4>
-                            <p class="font-26 font-400">Selesaikan Pembelajaran & Berkarya secara Nyata</p>
+                            <h4 class="font-44 font-700">Make a Change</h4>
+                            <p class="font-32 font-400">Selesaikan Pembelajaran & Berkarya secara Nyata</p>
                         </div>
                     </div>
                 </div>
@@ -553,7 +544,7 @@
                 </div>
                 <div class="col-4" data-aos="fade-down" data-aos-duration="2000">
                     <div class="border border-3 border-blue rounded-4 p-4 d-flex flex-column">
-                        <h5 class="font-900 font-26 font-900">Belajar jadi Pede</h5>
+                        <h5 class="font-900 font-26 font-900">Lebih Pede di Kelas</h5>
                         <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid">
                         <p id="card-testimoni" class="font-20 mt-4 font-500 ">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.
 
@@ -568,7 +559,7 @@
                 </div>
                 <div class="col-4" data-aos="fade-down" data-aos-duration="3000">
                     <div class="border border-3 border-red rounded-4 p-4">
-                        <h5 class="font-900 font-26 font-900">Belajar jadi Menyenangkan</h5>
+                        <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
                         <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid">
                         <p id="card-testimoni" class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.
                         </p>
@@ -591,7 +582,7 @@
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white">
-                        <h5 class="font-900 font-28 font-900">Belajar jadi Seru</h5>
+                        <h5 class="font-900 font-28 font-900">Belajar Jadi Seru</h5>
                         <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid">
                         <p class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
@@ -606,7 +597,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white">
-                        <h5 class="font-900 font-28 font-900">Belajar jadi Pede</h5>
+                        <h5 class="font-900 font-28 font-900">Lebih Pede di Kelas</h5>
                         <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid">
                         <p class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
 
@@ -621,7 +612,7 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white">
-                        <h5 class="font-900 font-26 font-900">Belajar jadi Menyenangkan</h5>
+                        <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
                         <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid">
                         <p class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
 
@@ -664,6 +655,8 @@
                     <img src="{{ asset('assets/home/sheet2.svg') }}" class="img img-box box-5 hovered">
                 </a>
                 <img src="{{ asset('assets/home/sheet3.svg') }}" class="img img-box box-6 hovered">
+
+
                 <a href="https://www.linkedin.com/company/economic-space/mycompany/">
                     <img src="{{ asset('assets/home/folder1.svg') }}" class="img img-box box-7 hovered">
                 </a>
@@ -713,22 +706,22 @@
     <div class="container-fluid bg-img-blue-square justify-content-center" >
         <div class="px-md-5 py-md-5" style="background: url('');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
             <div class="overlay-text">
-                <h5 class="text-orange "><span class="font-44 font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
-                <h5 class="text-orange "><span class="font-44 font-family font-900  bg-white text-center">End to End untuk</span> </h5>
-                <h5 class="text-orange "><span class="font-44 font-family font-900 bg-white text-center">Pengembangan Dirimu</span></h5>
+                <h5 class="text-orange "><span class="font-48 font-family font-900 bg-white text-center"> Memberikan Layanan</span> </h5>
+                <h5 class="text-orange "><span class="font-48 font-family font-900  bg-white text-center">End to End untuk</span> </h5>
+                <h5 class="text-orange "><span class="font-48 font-family font-900 bg-white text-center">Pengembangan Dirimu</span></h5>
             </div>
             <div class="row">
                 <div class="col align-self-center justify-content-center cards mt-3">
                     <div class="card card-1">
                         <img src="{{ asset('assets/home/icon2.svg') }}" class="icon-1 m-1" alt="">
-                        <h3 class="font-900 font-28 mt-1 text-right">WhatsApp Community</h3>
-                        <p class="font-14 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
+                        <h3 class="font-900 font-32 mt-1 text-right">WhatsApp Community</h3>
+                        <p class="font-18 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
                         <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" class="text-white">Join Now</a></button>
                     </div>
                     <div class="card card-2">
                         <img src="{{ asset('assets/home/icon1.svg') }}" class="icon-2 m-1" alt="">
-                        <h3 class="font-900 font-28 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition  Page</h3>
-                        <p class="font-14 text-right mt-1" style="text-align: right;">Exclusive access information on Career, Scholarship, Competition, etc.
+                        <h3 class="font-900 font-32 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition  Page</h3>
+                        <p class="font-18 text-right mt-1" style="text-align: right;">Exclusive access information on Career, Scholarship, Competition, etc.
                         No More Miss Out on Opportunities</p>
                         <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" class="text-white">Discover Now</a></button>
                     </div>
@@ -747,11 +740,9 @@
         </div>
         <div class="box-wa justify-content-center pt-0 mt-0">
             <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
-            <div class="">
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                    Hubungi Kami
-                </a>
-            </div>
+            <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                Hubungi Kami
+            </a>
         </div>
         </div>
     </div>
@@ -761,10 +752,10 @@
 
     <footer class="desktop">
         <div class="container">
-          <div class="box-white d-flex justify-content-between">
+          <div class="d-flex justify-content-between">
             <div class="d-flex align-items-center">
                 <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                <a class="box-black font-700 font-42 text-white ml-2 hovered" href="{{ route('viewTutors') }}">Daftar Kelas</a>
+                <a class="ms-3 bg-black rounded-4 p-2 font-700 font-42 text-white hovered" href="{{ route('viewTutors') }}">Daftar Kelas</a>
             </div>
             <div class="p-2" style="text-align: right;">
               <h3 class="font-700 font-40">Siap Buat Belajar bersama Economic Space?</h3>
@@ -775,23 +766,20 @@
     </footer>
 
     <footer class="mobile">
-        <div class="container px-md-5 py-md-2">
-          <div class="box-white d-flex flex-column justify-content-center align-items-center">
-            <div class="text-center">
-              <h3 class="font-400">Siap Buat Belajar bersama <span class="font-800">Economic Space?</span> </h3>
-              <p class="font-400">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
-            </div>
-            <div>
-            </div>
-            <div class="mt-1">
-                <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                  <a class="box-black font-700 font-44 text-white ml-2" href="{{ route('viewTutors') }}">Daftar Kelas</a>
+        <div class="container">
+            <div class="row">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="font-400">Siap Buat Belajar bersama <span class="font-800">Economic Space?</span> </h3>
+                    <p class="font-400">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
                 </div>
-              </div>
-          </div>
+            <div>
+            <div class="row">
+                <div class=" mt-1 d-flex align-items-center justify-content-center">
+                    <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                    <a class="ms-3 bg-black rounded-4 p-2 font-700 font-44 text-white" href="{{ route('viewTutors') }}">Daftar Kelas</a>
+                </div>
+            </div>
         </div>
-        <div>
     </footer>
 
 
