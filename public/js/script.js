@@ -55,7 +55,7 @@ function animateValue(obj, start, end, duration) {
   observer.observe(target3);
 
 
-  // marquee
+  // marquee for tutor
 const swiper = new Swiper('.sample-slider', {
     loop: true,
     autoplay: {
