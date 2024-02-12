@@ -20,19 +20,23 @@
         <div class="row justify-content-center gy-2 gy-lg-0">
             <div class="col-12 col-lg-5">
                 <form action="{{route('searchTutor')}}" method="GET">
-                    <div class="d-flex gap-lg-3">
-                        <input class="flex-grow-1 rounded-3 border-0 py-2 px-2" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
-                        <button id="search" class="bg-orange text-white border-0 rounded-3 py-2 px-3" type="submit" >
-                            Cari
-                        </button>
+                    <div class="row gx-2 gy-1 gy-lg-0">
+                        <div class="col-9">
+                            <input class="w-100 rounded-3 border-0 py-2 px-2 font-20" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
+                        </div>
+                        <div class="col-3">
+                            <button id="search" class="w-100 bg-orange text-white border-0 rounded-3 py-2 px-3 font-20" type="submit" >
+                                Cari
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="col-12 col-lg-7">
                 <form action="{{route('filterTutor')}}" method="GET">
-                    <div class="row gx-3 gy-2 gy-lg-0">
-                        <div class="col-12 col-lg-3">
-                            <select name="major" id="course" class="rounded-3 border-0 py-2 w-100">
+                    <div class="row gx-2 gy-1 gy-lg-0">
+                        <div class="col-6 col-lg-3">
+                            <select name="major" id="course" class="rounded-3 border-0 py-2 w-100 font-20">
                                 <option value="all" @if(old('major', $major) == 'all') selected @endif>Semua Jurusan</option>
                                 <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
                                 <option value="Management" @if(old('major', $major) == 'Management') selected @endif>Management</option>
@@ -40,24 +44,23 @@
                                 <option value="Taxation" @if(old('major', $major) == 'Taxation') selected @endif>Taxation</option>
                             </select>
                         </div>
-                        <div class="col-12 col-lg-3">
-                            <select name="semester" id="course" class="rounded-3 border-0 py-2 w-100">
+                        <div class="col-6 col-lg-3">
+                            <select name="semester" id="course" class="rounded-3 border-0 py-2 w-100 font-20">
                                 <option value="all" @if(old('semester', $semester) == 'all') selected @endif>Semua Semester</option>
                                 <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
                                 <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
                                 <option value="Semester 5-6" @if(old('semester', $semester) == 'Semester 5-6') selected @endif>Semester 5-6</option>
                             </select>
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="d-flex w-100 gap-3">
-                                <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-xxl-3" type="submit" >
-                                    Pilih
-                                </button>
-                                <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-xxl-3" formaction="{{ route('clearFilters') }}">
-                                    <i class="fa-solid fa-broom me-2"></i> Hapus Filter
-                                </button>
-                            </div>
-
+                        <div class="col-6 col-lg-3">
+                            <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-xxl-3 w-100 font-20" type="submit" >
+                                Pilih
+                            </button>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-xxl-3 w-100 font-20" formaction="{{ route('clearFilters') }}">
+                                <i class="fa-solid fa-broom me-1"></i> Hapus Filter
+                            </button>
                         </div>
                     </div>
 
