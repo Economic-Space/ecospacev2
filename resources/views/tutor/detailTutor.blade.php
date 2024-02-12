@@ -17,17 +17,7 @@
                     <p class="font-21 font-400 mb-2"><a href="{{route('viewTutors')}}">Academy</a> > {{$subject->subject_title}}</p>
 
                     {{-- khusus mobile, peletakan gambarnya beda --}}
-                    <div class="mobile mb-2 card-tutor">
-                        {{-- <img src="{{ asset('assets/courseImage/'.$subject->subject_image) }}" class="img-fluid w-100" alt="..."> --}}
-                        <div class="card-tutor">
-                            <a href="{{ URL::route('detailTutor', $subject->id) }}">
-                                <div class="d-flex justify-content-center rounded-3">
-                                    <h5 class="font-24 font-700 text-black text-center align-self-center justify-content-center" ><span class="font-family font-black bg-white text-center px-2">{{$subject->subject_title}}</span> </h5>
-                                    <img src="{{asset('assets/thumbnail/'.$subject->subject_thumbnail)}}" alt="Person Photo" class="img-tutor img-fluid" width="40%">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <img src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid w-100 rounded-4 mobile mb-2">
 
                     {{-- info spt judul dll yg sebelah kiri --}}
                     <h1 class="font-48 font-700">{{$subject->subject_title}}</h1>
@@ -44,19 +34,11 @@
                         Mulai Belajar
                     </a>
                 </div>
-                {{-- yg sebelah kanan --}}
-                <div class="col-5 desktop">
-                    {{-- TODO NANTI DIGANTI --}}
-                    {{-- <img src="{{ asset('assets/courseImage/'.$subject->subject_image) }}" class="img-fluid w-100" alt="..."> --}}
-                    <div class="card-tutor">
-                        <a href="{{ URL::route('detailTutor', $subject->id) }}">
-                            <div class="d-flex justify-content-center rounded-3">
-                                <h5 class="font-24 font-700 text-black text-center align-self-center justify-content-center" ><span class="font-family font-black bg-white text-center px-2">{{$subject->subject_title}}</span> </h5>
-                                <img src="{{asset('assets/thumbnail/'.$subject->subject_thumbnail)}}" alt="Person Photo" class="img-tutor img-fluid">
-                            </div>
-                        </a>
-                    </div>
+                {{-- gambar desktop yg sebelah kanan --}}
+                <div class="desktop col-md-5">
+                    <img src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid w-100 rounded-4">
                 </div>
+
 
             </div>
         </div>
