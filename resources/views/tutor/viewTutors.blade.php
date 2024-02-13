@@ -113,50 +113,23 @@
 
 
     <!-- FOOTER -->
-    <footer class="desktop">
-        <div class="container">
-          <div class="box-white d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                <a class="box-black font-700 font-42 text-white ml-2 hovered" href="{{ route('soon') }}">Join Mentoring</a>
-            </div>
-            <div class="p-2" style="text-align: right;">
-              <h3 class="font-700 font-40">Ingin mendapatkan ilmu di luar Akademik?</h3>
-              <p class="font-400 font-28">Yuk mulai mentoring dengan expert di bidang lomba, karir, dll</p>
-            </div>
-          </div>
-        </div>
-    </footer>
+    @section('desktopBtn') Join Mentoring @endsection
+    @section('desktopTitle') Ingin mendapatkan ilmu di luar Akademik? @endsection
+    @section('desktopContent') Yuk mulai mentoring dengan expert di bidang lomba, karir, dll @endsection
+    @section('mobileTitle1') Ingin mendapatkan ilmu di @endsection
+    @section('mobileTitle2') luar Akademik? @endsection
+    @section('mobileContent') Yuk mulai mentoring dengan expert di bidang lomba, karir, dll @endsection
+    @section('mobileBtn') Join Mentoring @endsection
 
-    <footer class="mobile">
-        <div class="container px-md-5 py-md-2">
-          <div class="box-white d-flex flex-column justify-content-center align-items-center">
-            <div class="text-center">
-              <h3 class="font-400">Ingin mendapatkan ilmu di <span class="font-800">luar Akademik?</span> </h3>
-              <p class="font-400">Yuk mulai mentoring dengan expert di bidang lomba, karir, dll</p>
-            </div>
-            <div>
-            </div>
-            <div class="mt-1">
-                <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                  <a class="box-black font-700 font-44 text-white ml-2" href="{{ route('viewTutors') }}">Join Mentoring</a>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div>
-    </footer>
 
     {{-- jquery for pagination --}}
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
     <script>
-        // pagination
-        $('.lazy-loading').click(function() {
-            var currentPage = {{ $subjects->currentPage() }};
-            var lastPage = {{ $subjects->lastPage() }};
+        var currentPage = {{ $subjects->currentPage() }};
+        var lastPage = {{ $subjects->lastPage() }};
 
+        $('.lazy-loading').click(function() {
             if (currentPage >= lastPage) {
                 $(this).hide(); // Hide the button if there are no more pages
                 return;
@@ -176,6 +149,6 @@
                 }
             });
         });
-
     </script>
+
 @endsection

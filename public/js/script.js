@@ -1,6 +1,6 @@
 // TYPE ANIMATION
 var typed = new Typed(".auto-type", {
-    strings: ["Idaman Rekruter", "Favorit Dosen", "Kesayangan HR"],
+    strings: ["Idaman Recruiter", "Favorit Dosen", "Kesayangan HR"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true

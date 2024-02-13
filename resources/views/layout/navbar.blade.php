@@ -68,6 +68,38 @@
 
     @yield('content')
 
+    <footer class="desktop">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                <a class="ms-3 bg-black rounded-4 p-2 font-700 font-42 text-white hovered text-center" style="min-width: 300px;" href="{{ route('viewTutors') }}">@yield('desktopBtn')</a>
+            </div>
+            <div class="p-2" style="text-align: right;">
+              <h3 class="font-700 font-40">@yield('desktopTitle')</h3>
+              <p class="font-400 font-28">@yield('desktopContent')</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <footer class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="font-400">@yield('mobileTitle1') <span class="font-800">@yield('mobileTitle2')</span> </h3>
+                    <p class="font-400">@yield('mobileContent')</p>
+                </div>
+            <div>
+            <div class="row">
+                <div class=" mt-1 d-flex align-items-center justify-content-center">
+                    <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                    <a class="ms-3 bg-black rounded-4 p-2 font-700 font-44 text-white" href="{{ route('viewTutors') }}">@yield('mobileBtn')</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- FOOTER -->
     <footer class="desktop">

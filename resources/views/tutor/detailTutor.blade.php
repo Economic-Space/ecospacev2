@@ -13,7 +13,7 @@
     <div class="container-fluid mt-4">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-7 align-self-center">
+                <div class="col-12 col-md-6 align-self-center">
                     <p class="font-21 font-400 mb-2"><a href="{{route('viewTutors')}}">Academy</a> > {{$subject->subject_title}}</p>
 
                     {{-- khusus mobile, peletakan gambarnya beda --}}
@@ -35,8 +35,8 @@
                     </a>
                 </div>
                 {{-- gambar desktop yg sebelah kanan --}}
-                <div class="desktop col-md-5">
-                    <img src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid w-100 rounded-4">
+                <div class="desktop col-md-6">
+                    <img src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid h-100 rounded-4 w-100">
                 </div>
 
 
@@ -98,7 +98,7 @@
                             <div class="d-lg-flex justify-content-left gap-lg-3">
                                 {{-- TODO NANTI DIGANTI --}}
                                 @foreach(json_decode($subject->subject_univ) as $univ)
-                                <img src="{{ asset('assets/univ/'.$univ) }}" class="img-fluid" alt="Tagline" >
+                                <img src="{{ asset('assets/univ/'.$univ) }}" class="img-fluid img-univ" alt="Tagline" >
                                 @endforeach
 
                             </div>
@@ -270,17 +270,7 @@
                 </div>
             </div>
             <div class="row gx-5 gy-4">
-                @foreach($other_subjects as $tutor)
-                <div class="col-12 col-md-4 card-tutor">
-                    <a href="{{ URL::route('detailTutor', $tutor->id) }}">
-                        <div class="d-flex justify-content-center rounded-3">
-                            <h5 class="font-24 font-700 text-black text-center align-self-center justify-content-center" ><span class="font-family font-black bg-white text-center px-2">{{$tutor->subject_title}}</span> </h5>
-                            <img src="{{asset('assets/thumbnail/'.$tutor->subject_thumbnail)}}" alt="Person Photo" class="img-tutor img-fluid">
-                        </div>
-                    </a>
-                </div>
-                @endforeach
-
+                @include('layout.subjects', ['subjects' => $other_subjects])
             </div>
         </div>
     </div>
@@ -288,40 +278,13 @@
 
 
     <!-- FOOTER -->
-    <footer class="desktop mt-5">
-        <div class="container">
-          <div class="box-white d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                <a class="box-black font-700 font-44 text-white ml-2 hovered" href="{{ route('soon') }}">Join Mentoring</a>
-            </div>
-            <div class="p-2" style="text-align: right;">
-              <h3 class="font-700 font-40">Ingin mendapatkan ilmu di luar Akademik?</h3>
-              <p class="font-400 font-28">Yuk mulai mentoring dengan expert di bidang lomba, karir, dll</p>
-            </div>
-          </div>
-        </div>
-    </footer>
-
-    <footer class="mobile">
-        <div class="container px-md-5 py-md-2">
-          <div class="box-white d-flex flex-column justify-content-center align-items-center">
-            <div class="text-center">
-              <h3 class="font-400">Ingin mendapatkan ilmu di <span class="font-800">luar Akademik?</span> </h3>
-              <p class="font-400">Yuk mulai mentoring dengan expert di bidang lomba, karir, dll</p>
-            </div>
-            <div>
-            </div>
-            <div class="mt-1">
-                <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                  <a class="box-black font-700 font-44 text-white ml-2" href="{{ route('viewTutors') }}">Join Mentoring</a>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div>
-    </footer>
+    @section('desktopBtn') @endsection
+    @section('desktopTitle') @endsection
+    @section('desktopContent') @endsection
+    @section('mobileTitle1') @endsection
+    @section('mobileTitle2') @endsection
+    @section('mobileContent') @endsection
+    @section('mobileBtn') @endsection
 
 
 
