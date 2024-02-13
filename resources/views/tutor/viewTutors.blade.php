@@ -2,8 +2,8 @@
 
 @section('content')
     <!-- HEADER -->
-    <div id="banner" class="container-fluid tutor-header">
-    </div>
+    <img src="{{asset('assets/background/bgtutors.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor desktop">
+    <img src="{{asset('assets/background/bgtutors_mobile.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor mobile">
 
     <!-- FILTER-->
 

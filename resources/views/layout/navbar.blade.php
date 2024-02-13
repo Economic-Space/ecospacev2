@@ -191,6 +191,9 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+    {{-- jquery --}}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
     {{-- custom js --}}
     <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
 </body>

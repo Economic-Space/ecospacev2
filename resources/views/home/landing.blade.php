@@ -165,7 +165,7 @@
                             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto  py-5 bg-white px-3">
                                 <img src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                                 <h3 class="font-44 text-blue font-900">MENTORING</h3>
-                                <p class="font-24 font-400">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
+                                <p class="font-24 font-400">Keterbatasan akses bukan hambatan, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
                             </div>
                             <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
                                 <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
@@ -190,7 +190,7 @@
 </div>
 
 <!-- MENTOR PART -->
-<div class="container-fluid bg-black">
+<div class="container-fluid bg-black mt-5 mt-md-0">
     <div class="container">
         <div class="row">
         {{-- judul untuk desktop --}}
@@ -232,7 +232,7 @@
         {{-- content desktop --}}
         <div class="col-md-8">
         <div class="desktop swiper sample-slider">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper tutor">
                 <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
                     <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
                 </div>
@@ -278,7 +278,7 @@
     <div class="row justify-content-center">
         <div class="col-12">
             <div class="mobile swiper mobile-slider mt-5">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper tutor">
                     <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
                         <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
                     </div>
@@ -415,7 +415,7 @@
     </div>
 
 
-    <div class="mobile swiper step-slider mb-5">
+    <div class="mobile swiper step-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="col-12 mx-auto">
@@ -464,18 +464,18 @@
 
 <!-- CONTRIBUTION -->
 
-<div class="container-fluid bg-img-white mt-5">
+<div class="container-fluid bg-img-white">
     <div class="container">
         <div class="row desktop">
             <div class="col-12">
-                <div class="bg-orange mx-auto half-up" style="width: fit-content">
+                <div class="bg-orange mx-auto half-up mt-5" style="width: fit-content">
                 <h3 class="text-center text-white font-900 font-44">Sejak 2023, Terus Memberi Kontribusi & Berdampak</h3>
                 </div>
 
             </div>
         </div>
 
-        <div class="row mobile">
+        <div class="row mobile mt-5">
             <div class="col-12">
                 <div class="mx-auto half-up" style="width: fit-content">
                 <h3 class="bg-orange text-center text-white font-400 font-38">Sejak 2023, Terus Memberi</h3>
@@ -569,7 +569,7 @@
                 <div class="col-4" data-aos="fade-down" data-aos-duration="1000">
                     <div class="border border-3 border-black rounded-4 p-4">
                         <h5 class="font-900 font-26">Belajar jadi Seru</h5>
-                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                         <div class="d-flex flex-row">
@@ -583,7 +583,7 @@
                 <div class="col-4" data-aos="fade-down" data-aos-duration="2000">
                     <div class="border border-3 border-blue rounded-4 p-4 d-flex flex-column">
                         <h5 class="font-900 font-26 font-900">Lebih Pede di Kelas</h5>
-                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500 ">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.
 
                         </p>
@@ -598,7 +598,7 @@
                 <div class="col-4" data-aos="fade-down" data-aos-duration="3000">
                     <div class="border border-3 border-red rounded-4 p-4">
                         <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
-                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.
                         </p>
 
@@ -619,10 +619,10 @@
             <div id="carouselTesti" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white">
+                    <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-28 font-900">Belajar Jadi Seru</h5>
-                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid">
-                        <p class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
+                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid w-100">
+                        <p class="font-20 mt-4 font-500" style="height: 150px;">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
@@ -634,10 +634,10 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white">
+                    <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-28 font-900">Lebih Pede di Kelas</h5>
-                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid">
-                        <p class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
+                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid w-100">
+                        <p class="font-20 mt-4 font-500" style="height: 150px;">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
@@ -649,10 +649,10 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white">
+                    <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
-                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid">
-                        <p class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
+                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid w-100">
+                        <p class="font-20 mt-4 font-500" style="height: 150px;">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">

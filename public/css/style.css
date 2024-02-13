@@ -357,6 +357,10 @@ button:hover {
     filter: brightness(90%);
 }
 
+.equal-carousel {
+    height: 500px;
+}
+
 /* transform div to half its height so it will overlay other div*/
 .half-down {
     transform: translateY(50%);
@@ -385,7 +389,7 @@ button:hover {
     height: auto !important;
 }
 
-.swiper-slide img {
+.tutor > .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1119,10 +1123,6 @@ button:hover {
         width: 150px;
     }
 
-    .bg-img-white {
-        background: url("../assets/background/bgwhitemobile.svg");
-    }
-
     .img-circle {
         height: 30px;
         width: auto;
@@ -1187,6 +1187,12 @@ button:hover {
     .card-1,
     .card-2 {
         left: 0;
+    }
+}
+
+@media(max-width: 576px) {
+    .bg-img-white {
+        background: url("../assets/background/bgwhitemobile.svg");
     }
 }
 
