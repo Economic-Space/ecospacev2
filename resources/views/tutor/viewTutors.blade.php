@@ -159,7 +159,7 @@
                     } else {
                         $('#subject-container').html(response); // Update subject container with response
                         currentPage = 1; // Reset current page to 1 after search/filter
-                        showOrHideLoadButton();
+                        showOrHideLoadButton(); // Show or hide load button based on current page and last page
                     }
                 }
             });
@@ -169,6 +169,12 @@
         $(document).ready(function() {
             $('#tutorSearchBar').on('input', function() {
                 handleSearch();
+            });
+
+            $('#tutorSearchBar').on('keydown', function(event) {
+                if (event.which === 13) {
+                    event.preventDefault();
+                }
             });
         });
 

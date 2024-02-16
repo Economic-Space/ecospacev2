@@ -11,7 +11,7 @@ class ViewTutorsController extends Controller
         // all by default -> dikasih gini agar filter ga error
         $major = 'all';
         $semester = 'all';
-        $subjects = Subject::where('status', 'active')->paginate(6);
+        $subjects = Subject::where('status', 'active')->inRandomOrder()->paginate(6);
 
         if ($request->ajax()) {
             return view('layout.subjects', compact('subjects'))->render(); // return partial view

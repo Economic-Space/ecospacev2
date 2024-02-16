@@ -96,47 +96,50 @@
                 <div class="col-12 col-md-4">
                     <div>
                         {{-- card pertama --}}
-                        <div class="border border-2 rounded-4 py-3 px-4">
-                            <h3 class="font-38 font-900">Tutor Background</h3>
-                            <p class="font-30 font-400">Asal Universitas Tutor:</p>
-                            <div class="d-lg-flex justify-content-left gap-lg-3 flex-wrap">
-                                {{-- TODO NANTI DIGANTI --}}
-                                @foreach(json_decode($subject->subject_univ) as $univ)
-                                <img src="{{ asset('assets/univ/'.$univ) }}" class="img-fluid img-univ" alt="logo univ" >
-                                @endforeach
+                        <div class="border border-2 rounded-4 pt-3 px-4">
+                            <h3 class="font-36 font-900">Tutor Background</h3>
+                            <p class="font-26 font-400">Asal Universitas Tutor:</p>
 
+                            <div class="d-lg-flex justify-content-left gap-lg-3 flex-wrap">
+                                @php $counter = 0 @endphp
+                                @foreach(json_decode($subject->subject_univ) as $univ)
+                                    @if($counter < 4)
+                                        <img src="{{ asset('assets/univ/'.$univ) }}" class="img-fluid img-univ" alt="logo univ" >
+                                    @endif
+                                    @php $counter++ @endphp
+                                @endforeach
                             </div>
-                            <button class="font-400 font-26 bg-lightblue border-0 rounded-3 px-3 py-2 mt-3" onclick="redirectTo('https://docs.google.com/spreadsheets/d/1rQ0ZhU6Ykdu4lrhhKMoHInTBQI2ywafQ0PnWIxZG-9w/edit?usp=sharing')">Click Here for Tutor Details</button>
-                            <h5 class="font-30 font-700 mt-4">Additional Information</h5>
-                            <ul style="list-style-position: inside; padding-left: 0;">
-                                <li class="font-24 font-400 text-justify">Bagi Mahasiswa dari Universitas selain dari List diatas tetap dapat <span class="font-26 font-700 text-red">BELAJAR BERSAMA DISINI</span></li>
-                                <li class="font-24 font-400 text-justify">Customer dapat memilih Tutor dari <span class="font-700">Asal Univ / Nama Tutor</span></li>
+                            <button class="font-400 font-22 bg-lightblue border-0 rounded-3 px-3 py-2 mt-3" onclick="redirectTo('https://docs.google.com/spreadsheets/d/1rQ0ZhU6Ykdu4lrhhKMoHInTBQI2ywafQ0PnWIxZG-9w/edit?usp=sharing')">Click Here for Tutor Details</button>
+                            <h5 class="font-26 font-700 mt-4">Additional Information</h5>
+                            <ul style="padding-left: 0;" class="ms-3">
+                                <li class="font-20 font-400 text-justify">Bagi Mahasiswa dari Universitas selain dari List diatas tetap dapat <span class="font-20 font-700 text-red">"BELAJAR BERSAMA DISINI"</span></li>
+                                <li class="font-20 font-400 text-justify">Customer dapat memilih Tutor dari <span class="font-700">Asal Univ / Nama Tutor</span></li>
                             </ul>
                         </div>
 
                         {{-- card kedua --}}
                         <div class="border border-2 rounded-4 mt-4 py-3 px-4">
-                            <h3 class="font-900 font-38 text-orange">Benefit for You</h3>
+                            <h3 class="font-900 font-36 text-orange">Benefit for You</h3>
                             <div class="d-flex justify-content-left gap-2">
-                                <img src="{{ asset('assets/tutorDetail/benefit1.svg') }}" style="max-width: 80px" class="img-fluid" alt="" >
-                                <p class="font-24 font-500 align-self-center">1. </p>
-                                <p class="font-24 font-500">Expert Tutor yang telah diseleksi dengan kapabilitias pengetahuan yang baik</p>
+                                <img src="{{ asset('assets/tutorDetail/benefit1.svg') }}" class="img-fluid img-benefit" alt="" >
+                                <p class="font-20 font-500 align-self-center">1. </p>
+                                <p class="font-20 font-500 align-self-center mt-2" style="height: 100%">Expert Tutor yang telah diseleksi dengan kapabilitias pengetahuan yang baik</p>
                             </div>
                             <div class="d-flex justify-content-left gap-2 mt-2">
-                                <img src="{{ asset('assets/tutorDetail/benefit2.svg') }}" style="max-width: 80px" class="img-fluid" alt="" >
-                                <p class="font-24 font-500 align-self-center">2. </p>
-                                <p class="font-24 font-500">Sistem Mahasiswa to Mahasiswa, sehingga bahasan materi menjadi lebih tepat & relatable</p>
+                                <img src="{{ asset('assets/tutorDetail/benefit2.svg') }}" class="img-fluid img-benefit" alt="" >
+                                <p class="font-20 font-500 align-self-center">2. </p>
+                                <p class="font-20 font-500 align-self-center mt-2" style="height: 100%">Sistem Mahasiswa to Mahasiswa, sehingga bahasan materi menjadi lebih tepat & relatable</p>
                             </div>
                             <div class="d-flex justify-content-left gap-2 mt-2">
-                                <img src="{{ asset('assets/tutorDetail/benefit3.svg') }}" style="max-width: 80px" class="img-fluid" alt="" >
-                                <p class="font-24 font-500 align-self-center">3. </p>
-                                <p class="font-24 font-500">Konsultasi Materi / Tugas dan Persiapan Ujian menjadi lebih mudah bersama Tutor</p>
+                                <img src="{{ asset('assets/tutorDetail/benefit3.svg') }}" class="img-fluid img-benefit" alt="" >
+                                <p class="font-20 font-500 align-self-center">3. </p>
+                                <p class="font-20 font-500 align-self-center mt-2" style="height: 100%">Konsultasi Materi / Tugas dan Persiapan Ujian menjadi lebih mudah bersama Tutor</p>
                             </div>
                             <div class="bg-lightblue rounded-4 pt-3 pb-1 mt-2 ps-4">
-                                <p class="font-30 font-700 mb-1">1x Tutor Session:</p>
+                                <p class="font-28 font-700 mb-1">1x Tutor Session:</p>
                                 <ul style="list-style-position: inside; padding-left: 0;">
-                                <li class="font-24 font-500">90 Minutes (Online / Onsite)</li>
-                                <li class="font-24 font-500">Akses pada PPT Modul Subtopik</li>
+                                <li class="font-22 font-500">90 Minutes (Online / Onsite)</li>
+                                <li class="font-22 font-500">Akses pada PPT Modul Subtopik</li>
                                 </ul>
 
                             </div>
