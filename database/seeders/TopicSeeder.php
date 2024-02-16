@@ -771,8 +771,7 @@ class TopicSeeder extends Seeder
             [
                 'topic_number' => 10,
                 'topic_title' => 'Introduction to Real Analysis (1)',
-                'topic_content' => json_encode(['Basic Concept of Set', 'Set Operation', 'Set Types (Open Balls, Open Sets, Closed Sets, Bounded Sets, Compact Sets, Convex Set)', 'Convergence Sequences', 'Divergence Sequences', 'Subsequences', 'Monotonic Sequences', 'Supremum & Infimum', 'Maximum & Minimum']
-            ),
+                'topic_content' => json_encode(['Basic Concept of Set', 'Set Operation', 'Set Types (Open Balls, Open Sets, Closed Sets, Bounded Sets, Compact Sets, Convex Set)', 'Convergence Sequences', 'Divergence Sequences', 'Subsequences', 'Monotonic Sequences', 'Supremum & Infimum', 'Maximum & Minimum']),
                 'topic_objective' => 'Memahami dan menganalisis konsep-konsep dasar real analysis',
                 'subject_id' => 9, // Use the appropriate subject_id from the subjects table
                 'created_at' => now(),
@@ -781,13 +780,617 @@ class TopicSeeder extends Seeder
             [
                 'topic_number' => 11,
                 'topic_title' => 'Introduction to Real Analysis (2)',
-                'topic_content' => json_encode(['Mapping and Functions', 'Limits', 'Continuous Function', 'Differentiable Functions', 'Convex Function', 'Concave Function', 'Hessian Matrices', 'Existence of Solutions: Bolzano Weierstrass Theorem and Applications']
-            ),
+                'topic_content' => json_encode(['Mapping and Functions', 'Limits', 'Continuous Function', 'Differentiable Functions', 'Convex Function', 'Concave Function', 'Hessian Matrices', 'Existence of Solutions: Bolzano Weierstrass Theorem and Applications']),
                 'topic_objective' => 'Memahami konsep-konsep real analysis seperti limit, dan kontinuitas untuk memahami model ekonomi ',
                 'subject_id' => 9, // Use the appropriate subject_id from the subjects table
                 'created_at' => now(),
                 'updated_at' => now(),
+            ],
+
+            // OLD SUBJECT
+
+            // SUBJECT 10
+            [
+                'topic_number' => 1,
+                'topic_title' => 'Pengantar Akuntansi & Proses Pencatatan',
+                'topic_content' => json_encode(['Penggunaan Akuntansi dan Aktivitas', 'Fondasi-fondasi Akuntansi', 'Dasar-dasar dan Penggunaan Persamaan Akuntansi', 'Laporan Keuangan', 'Akun', 'Langkah-langkah dalam Proses Pencatatan', 'The Trial Balance']),
+                'topic_objective' => 'Mampu memahami fundamental accounting dan membuat jurnal umum',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 2,
+                'topic_title' => 'Menyesuaikan Akun & Menyelesaikan Siklus Akuntansi',
+                'topic_content' => json_encode(['Masalah Waktu', 'Dasar-dasar Jurnal Penyesuaian', 'Neraca Saldo Disesuaikan dan Laporan Keuangan', 'Menggunakan Kertas Kerja', 'Menutup Buku', 'Ringkasan Siklus Akuntansi', 'Pernyataan Posisi Keuangan Terklasiifikasi']),
+                'topic_objective' => 'Mampu membuat jurnal penyesuaian dan melengkapi siklus akuntansi jasa (worksheet, laporan keuangan, dan jurnal penutup)',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 3,
+                'topic_title' => 'Akuntansi untuk Perusahaan Dagang & Persediaan',
+                'topic_content' => json_encode(['Operasi Dagang', 'Pencatatan Pembelian Perusahaan Dagang', 'Pencatatan Penjualan Perusahaan Dagang', 'Menyelesaikan Siklus Akuntansi', 'Bentuk Laporan Keuangan', 'Klasifikasi dan Penentuan Persediaan', 'Biaya Persediaan', 'Kesalahan Persediaan', 'Presentasi Pernyataan dan Analisis']),
+                'topic_objective' => 'Mampu memahami siklus akuntansi dagang dan memahami persediaan dan kas dari suatu perusahaan',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 4,
+                'topic_title' => 'Penipuan, Pengendalian Internal, dan Kas',
+                'topic_content' => json_encode(['Penipuan dan Pengendalian Internal', 'Pengendalian Kas', 'Fitur Pengendalian: Penggunaan Bank', 'Pelaporan Kas']),
+                'topic_objective' => 'Mampu memahami dan mengendalikan risiko penipuan, pengendalian internal, dan manajemen kas.',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 5,
+                'topic_title' => 'Akuntansi untuk Piutang & Aset Tetap, SDA, & Aset Tidak Berwujud',
+                'topic_content' => json_encode(['Jenis Piutang', 'Piutang Usaha', 'Piutang Wesel', 'Aset Tetap', 'Sumber Daya Alam yang Dapat Diekstraksi', 'Aset Tidak Berwujud']),
+                'topic_objective' => 'Memahami piutang dan aset tetap dari suatu perusahaan',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 6,
+                'topic_title' => 'Utang Jangka Pendek & Utang Jangka Panjang',
+                'topic_content' => json_encode(['Wesel Bayar', 'Pendapatan Diterima Dimuka', 'Gaji dan Upah', 'Jatuh Tempo Kewajiban Jangka Panjang', 'Gambaran Umum Obligasi', 'Transaksi Obligasi', 'Akuntansi untuk Kewajiban Jangka Panjang']),
+                'topic_objective' => 'Memahami utang lancar dan tidak lancar dari suatu perusahaan',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 7,
+                'topic_title' => 'Korporasi: Organisasi, Transaksi Saham, Ekuitas & Investasi',
+                'topic_content' => json_encode(['Akuntansi untuk Transaksi Saham', 'Dividen', 'Akuntansi untuk Investasi Obligasi', 'Akuntansi untuk Investasi Saham']),
+                'topic_objective' => 'Memahami pencatatan akuntansi dalam investasi dan saham',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 8,
+                'topic_title' => 'Laporan Arus Kas & Analisis Laporan Keuangan: Gambaran Umum',
+                'topic_content' => json_encode(['Laporan Arus Kas: Kegunaan dan Format', 'Menyiapkan Laporan Arus Kas - Metode Tidak Langsung', 'Dasar-dasar Analisis Laporan Keuangan', 'Analisis Horizontal', 'Analisis Vertikal', 'Analisis Rasio']),
+                'topic_objective' => 'Memahami cash flow dan analisa laporan keuangan',
+                'subject_id' => 10,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+
+            // SUBJECT 11
+            [
+                'topic_number' => 1,
+                'topic_title' => 'Konsep Dasar Ekonomi & Permintaan dan Penawaran',
+                'topic_content' => json_encode(['Mengapa Belajar Ekonomi', 'Ekonomi Positif vs. Normatif', 'Kurva Kemungkinan Produksi', 'Biaya Peluang', 'Ekonomi Campuran Modern', 'Kurva Permintaan', 'Kurva Penawaran', 'Keseimbangan Pasar']),
+                'topic_objective' => 'Memahami konsep dasar ekonomi secara komprehensif dan permintaan & penawaran serta pasar',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 2,
+                'topic_title' => 'Elastisitas dan Aplikasi',
+                'topic_content' => json_encode(['Elastisitas Harga Permintaan', 'Elastisitas dan Pendapatan', 'Elastisitas Harga Penawaran']),
+                'topic_objective' => 'Memahami konsep elastisitas dan perhitungannya',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 3,
+                'topic_title' => 'Produksi & Analisis Biaya',
+                'topic_content' => json_encode(['Konsep Dasar Produksi', 'Skala Hasil Produksi', 'Elastisitas Harga Penawaran', 'Keuntungan Ekonomi vs. Keuntungan Akuntansi', 'Berbagai Ukuran Biaya', 'Biaya dalam Jangka Pendek dan Jangka Panjang']),
+                'topic_objective' => 'Memahami produksi dan biaya secara keseluruhan',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 4,
+                'topic_title' => 'Pasar Persaingan Sempurna & Pasar Monopoli',
+                'topic_content' => json_encode(['Apa Itu Pasar Persaingan', 'Maksimalisasi Keuntungan dan Kurva Penawaran Perusahaan dalam Pasar Persaingan', 'Kurva Penawaran dalam Pasar Persaingan', 'Mengapa Monopoli Muncul', 'Bagaimana Monopoli Mengambil Keputusan', 'Produksi dan Harga', 'Biaya Kesejahteraan Monopoli', 'Diskriminasi Harga', 'Kebijakan Publik Terhadap Monopoli']),
+                'topic_objective' => 'Memahami output market dengan baik beserta kondisi-kondisinya',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 5,
+                'topic_title' => 'Pasar Monopolistik & Oligopoli',
+                'topic_content' => json_encode(['Antara Monopoli dan Persaingan Sempurna', 'Persaingan dengan Produk yang Terdiferensiasi', 'Periklanan', 'Konsep Dasar Makroekonomi', 'Penawaran dan Permintaan Agregat']),
+                'topic_objective' => 'Memahami konsep ekonomi makro dan perhitungan pendapatan nasional.',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 6,
+                'topic_title' => 'Gambaran Umum Makroekonomi & Akuntansi Pendapatan Nasional',
+                'topic_content' => json_encode(['Konsep Makroekonomi', 'Penawaran dan Permintaan Agregrat', 'Pengukuran Produk Domestik Bruto', 'Ukuran Pendapatan Lainnya', 'Komponen PDB', 'PDB Riil vs. PDB Nominal']),
+                'topic_objective' => 'Memahami perhitungan pendapatan nasional dengan sistem perekonomian terbuka dan tertutup.',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 7,
+                'topic_title' => 'Uang dan Lembaga Finansial & Siklus Bisnis',
+                'topic_content' => json_encode(['Arti Uang', 'Permintaan Uang', 'Bank dan Penawaran Uang', 'Apa Itu Siklus Bisnis?', 'Kurva Permintaan Agregat', 'Kurva Penawaran Agregat', 'Model Permintaan Agregat dan Penawaran Agregat']),
+                'topic_objective' => 'Memahami konsep sistem keuangan di suatu negara dan siklus bisnis.',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 8,
+                'topic_title' => 'Pengangguran dan Inflasi',
+                'topic_content' => json_encode(['Tingkat Pengangguran', 'Inflasi', 'Kompromi Jangka Pendek antara Inflasi dan Pengangguran']),
+                'topic_objective' => 'Memahami konsep pengangguran dan inflasi.',
+                'subject_id' => 11,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+
+            // SUBJECT 12
+            [
+                'topic_number' => 1,
+                'topic_title' => 'Manajer dan Manajemen Akuntansi & Pengantar Syarat dan Tujuan Biaya & Menentukan Bagaimana Perilaku Biaya',
+                'topic_content' => json_encode([
+                    'Akuntansi Keuangan, Akuntansi Manajemen, dan Akuntansi Biaya',
+                    'Keputusan Strategis dan Akuntan Manajemen',
+                    'Pengambilan Keputusan, Perencanaan, dan Pengendalian: Proses Pengambilan Keputusan Lima Langkah',
+                    'Struktur Organisasi dan Akuntan Manajemen',
+                    'Etika Profesi',
+                    'Biaya dan Terminologi Biaya',
+                    'Pola Perilaku Biaya: Biaya Variabel dan Biaya Tetap',
+                    'Total Biaya dan Biaya Satuan',
+                    'Bidang Usaha, Jenis Persediaan, Biaya Persediaan, dan Biaya Periode',
+                    'Mengilustrasikan Aliran Biaya Persediaan dan Biaya Periode Mengukur Biaya Membutuhkan Pertimbangan',
+                    'Kerangka Akuntansi Biaya dan Biaya Manajemen',
+                    'Asumsi Dasar dan Contoh Fungsi Biaya',
+                    'Mengidentifikasi Penggerak Biaya',
+                    'Metode Estimasi Biaya',
+                    'Langkah-Langkah Estimasi Fungsi Biaya Menggunakan Kuantitatif Analisis',
+                    'Mengevaluasi Penggerak Biaya dari Estimasi Biaya Fungsi'
+                ]),
+                'topic_objective' => 'Mampu memahami peran manajer dalam akuntansi manajemen, konsep dasar biaya, serta analisis perilaku biaya dalam pengambilan keputusan.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 2,
+                'topic_title' => 'Siklus Akuntansi Biaya, Sistem Biaya, dan Metode Akumulasi Biaya & Analisis Laba Volume Biaya',
+                'topic_content' => json_encode([
+                    'Jenis Siklus Kegiatan Usaha',
+                    'Jenis Laporan Sistem Laporan dan Metode Akumulasi Biaya',
+                    'Esensi Analisis CVP',
+                    'Titik Impas dan Target Pendapatan Operasional',
+                    'Target Pendapatan Bersih dan Pajak Penghasilan',
+                    'Menggunakan Analisis CVP untuk Pengambilan Keputusan',
+                    'Analisis Sensitivitas dan Margin Keamanan',
+                    'Perencanaan Biaya dan CVP',
+                    'Pengaruh Bauran Penjualan terhadap Pendapatan',
+                    'Analisis CVP pada Organisasi Jasa dan Nirlaba'
+                ]),
+                'topic_objective' => 'Mampu memahami siklus akuntansi biaya, sistem biaya, metode akumulasi biaya, dan analisis biaya-volume-laba (CVP) dalam pengambilan keputusan.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 3,
+                'topic_title' => 'Penetapan Job Costing',
+                'topic_content' => json_encode([
+                    'Konsep Dasar Sistem Penetapan Biaya',
+                    'Penetapan Job Order Costing: Evaluasi dan Implementasi',
+                    'Penetapan Biaya Normal',
+                    'Biaya Aktual',
+                    'Sistem Penetapan Biaya Pekerjaan yang Normal di Manufaktur',
+                    'Biaya Tidak Langsung yang Dianggarkan dan Penyesuaian Akhir Tahun Buku',
+                    'Variasi dari Penetapan Biaya Normal: Contoh Sektor Jasa'
+                ]),
+                'topic_objective' => 'Mampu memahami konsep biaya pekerjaan, sistem biaya normal, dan implementasinya dalam pengambilan keputusan akuntansi.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 4,
+                'topic_title' => 'Process Costing - Average & Process Costing - FIFO',
+                'topic_content' => json_encode([
+                    'Alur Biaya Produksi dan Penjurnalannya',
+                    'Perhitungan Process Costing menggunakan metode Rata-rata',
+                    'Langkah-langkah Menyusun Laporan Biaya Produksi',
+                    'Format Standar Laporan Biaya Produksi',
+                    'Perbedaan Metode Rata-Rata dan Metode FIFO',
+                    'Perhitungan Process Costing menggunakan metode FIFO',
+                    'Penyajian Laporan Biaya Produksi dengan Metode FIFO'
+                ]),
+                'topic_objective' => 'Mampu memahami konsep biaya proses, metode rata-rata, dan metode FIFO dalam akuntansi biaya.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 5,
+                'topic_title' => 'Biaya Kualitas & Spoilage, Rework, and Scrap',
+                'topic_content' => json_encode([
+                    'Produk Berkualitas',
+                    'Jenis Biaya Kualitas',
+                    'Mendefinisikan Spoilage, Rework dan Scrap',
+                    'Kerusakan dalam Penetapan Biaya Proses Menggunakan Rata-Rata Tertimbang dan FIFO',
+                    'Titik Inspeksi dan Alokasi Biaya Kerusakan Normal',
+                    'Pentapan Biaya dan Spoilage',
+                    'Penetapan Biaya Pekerjaan dan Rework',
+                    'Akuntansi Scrap'
+                ]),
+                'topic_objective' => 'Mampu memahami konsep biaya kualitas serta spoilage, rework, dan scrap dalam konteks akuntansi biaya.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 6,
+                'topic_title' => 'Alokasi Biaya: Joint Products and Byproducts',
+                'topic_content' => json_encode([
+                    'Dasar-Dasar Joint Cost',
+                    'Mengalokasikan Joint Cost',
+                    'Memilih Metode Alokasi',
+                    'Tidak Relevansi Joint Cost untuk Pengambilan Keputusan',
+                    'Akuntansi Produk Sampingan'
+                ]),
+                'topic_objective' => 'Mampu memahami konsep alokasi biaya untuk produk bersama (joint products) dan produk sampingan (byproducts) dalam konteks akuntansi biaya.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 7,
+                'topic_title' => 'Anggaran Fleksibel, Varians Biaya Langsung, dan Pengendalian Manajemen & Overhead Pabrik: Terencana, Aktual, dan Terapan, Departementalisasi',
+                'topic_content' => json_encode([
+                    'Anggaran Statis dan Varians',
+                    'Anggaran Fleksibel',
+                    'Varians Harga dan Varians Efisiensi untuk Biaya Langsung Masukan',
+                    'Penerapan Penetapan Biaya Standar',
+                    'Penggunaan Varians dalam Manajemen',
+                    'Perencanaan Biaya Overhead Variabel dan Tetap',
+                    'Varians Biaya Overhead Variabel',
+                    'Varians Biaya Overhead Tetap',
+                    'Analisis Terpadu Varians Biaya Overhead',
+                    'Analisis Varians dan Penetapan Biaya Berbasis Aktivitas',
+                    'Varians Overhead dalam Pengaturan Nonmanufaktur'
+                ]),
+                'topic_objective' => 'Mampu memahami konsep anggaran fleksibel, varians biaya langsung, pengendalian manajemen, serta perencanaan dan analisis biaya overhead pabrik.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 8,
+                'topic_title' => 'Manajemen Inventaris, Just-in-Time, dan Metode Penetapan Biaya yang Disederhanakan & Penetapan Biaya Berbasis Aktivitas dan Berbasis Aktivitas Manajemen',
+                'topic_content' => json_encode([
+                    'Manajemen Inventaris di Organisasi Ritel',
+                    'Memperkirakan Biaya Relevan Terkait Persediaan dan Dampaknya',
+                    'Pembelian Tepat Waktu',
+                    'Manajemen Inventaris, Produksi MRP dan JIT',
+                    'Biaya Backflush',
+                    'Akuntansi Lean',
+                    'Rata-rata Luas dan Konsekuensinya',
+                    'Sistem Penetapan Biaya Sederhana di Plastim Corporation',
+                    'Menyempurnakan Sistem Penetapan Biaya',
+                    'Sistem dan Penerapan Penetapan Biaya Berbasis Aktivitas'
+                ]),
+                'topic_objective' => 'Mampu memahami konsep manajemen persediaan, metode pengendalian persediaan Just-in-Time, serta sistem biaya sederhana dan Activity-Based Costing dalam akuntansi biaya.',
+                'subject_id' => 12,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+
+            // SUBJECT 13
+            [
+                'topic_number' => 1,
+                'topic_title' => 'Aset Tetap, Tanah, & Peralatan',
+                'topic_content' => json_encode([
+                    'Properti, Tanah, dan Peralatan',
+                    'Perolehan Properti, Tanah, dan Peralatan',
+                    'Biaya Bunga Selama Konstruksi',
+                    'Penilaian Properti, Tanah, dan Peralatan',
+                    'Biaya Setelah Perolehan',
+                    'Pelepasan Properti, Tanah, dan Peralatan'
+                ]),
+                'topic_objective' => 'Mampu mendeskripsikan aset tetap dan memahami perolehan, valuasi dan pelepasan dari aset tetap dan memahami penyusutan, penurunan nilai, deplesi, dan revaluasi dari aset tetap',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 2,
+                'topic_title' => 'Aset Tetap, Tanah, & Peralatan',
+                'topic_content' => json_encode([
+                    'Penyusutan—Metode Alokasi Biaya',
+                    'Masalah Penyusutan Lainnya',
+                    'Masalah Akuntansi yang Berkaitan dengan Penurunan Nilai Aset',
+                    'Prosedur Akuntansi untuk Penyusutan Sumber Daya Mineral',
+                    'Akuntansi untuk Penilaian Ulang',
+                    'Cara Melaporkan dan Menganalisis Properti, Tanah, Peralatan, dan Sumber Daya Mineral'
+                ]),
+                'topic_objective' => 'Mampu memahami penyusutan, penurunan nilai, deplesi, dan revaluasi dari aset tetap.',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 3,
+                'topic_title' => 'Aset Tidak Berwujud',
+                'topic_content' => json_encode([
+                    'Karakteristik, Penilaian, dan Amortisasi Aset Tidak Berwujud',
+                    'Akuntansi untuk Berbagai Jenis Aset Tidak Berwujud',
+                    'Masalah Akuntansi untuk Pencatatan Goodwill',
+                    'Prosedur Penurunan Nilai dan Persyaratan Penyajian untuk Aset Tidak Berwujud',
+                    'Akuntansi dan Penyajian untuk Biaya Penelitian dan Pengembangan serta Biaya Serupa'
+                ]),
+                'topic_objective' => 'Mampu memahami karakteristik, valuasi, dan amortisasi dari aset tak berwujud dan jenisnya serta memahami isu-isu dan pencatatan terkait dengan goodwill',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 4,
+                'topic_title' => 'Utang Lancar',
+                'topic_content' => json_encode([
+                    'Karakteristik, Penilaian, dan Pelaporan Kewajiban Jangka Pendek',
+                    'Akuntansi untuk Jenis-Jenis Ketentuan',
+                    'Akuntansi untuk Ketentuan Kerugian dan Keuntungan',
+                    'Cara Menyajikan dan Menganalisis Informasi yang Berkaitan dengan Kewajiban'
+                ]),
+                'topic_objective' => 'Mampu memahami sifat, jenis, dan penilaian liabilitas jangka pendek dan jenisnya serta memahami akuntansi untuk berbagai jenis provisi.',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 5,
+                'topic_title' => 'Utang Jangka Panjang',
+                'topic_content' => json_encode([
+                    'Sifat Obligasi dan Indikasi Akuntansi untuk Penerbitan Obligasi',
+                    'Akuntansi untuk Utang Jangka Panjang',
+                    'Akuntansi untuk Penghapusan Kewajiban Non-Jangka Panjang',
+                    'Cara Menyajikan dan Menganalisis Kewajiban Non-Jangka Panjang'
+                ]),
+                'topic_objective' => 'Mampu memahami sifat dan akuntansi untuk penilaian pada waktu penerbitan dan pelunasan utang jangka panjang dan jenisnya, serta menerapkan metode amortisasi diskonto dan premi.',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 6,
+                'topic_title' => 'Ekuitas',
+                'topic_content' => json_encode([
+                    'Bentuk Perusahaan dan Penerbitan Saham',
+                    'Akuntansi dan Pelaporan untuk Saham Treasury',
+                    'Masalah Akuntansi dan Pelaporan yang Berkaitan dengan Dividen',
+                    'Cara Menyajikan dan Menganalisis Ekuitas'
+                ]),
+                'topic_objective' => 'Mampu memahami karakteristik dari bentuk organisasi perusahaan, akuntansi untuk penerbitan saham, saham preferen, dan treasuri, serta memahami kebijakan yang digunakan dalam membagikan dividen.',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 7,
+                'topic_title' => 'Dilutive Securities dan Earnings per Share',
+                'topic_content' => json_encode([
+                    'Akuntansi untuk Penerbitan, Konversi, dan Penghapusan Efek Konversi',
+                    'Akuntansi untuk Waran Saham dan Waran Saham yang Diterbitkan Bersama dengan Efek Lain',
+                    'Akuntansi dan Pelaporan untuk Rencana Kompensasi Saham',
+                    'Laba per Saham Dasar',
+                    'Laba per Saham Dilusi'
+                ]),
+                'topic_objective' => 'Mampu memahami akuntansi untuk penerbitan, konversi, dan penghentian efek konversi, akuntansi untuk saham preferen, waran saham, program kompensasi saham, dan memahami perhitungan laba per saham dalam struktur modal sederhana maupun kompleks.',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_number' => 8,
+                'topic_title' => 'Investasi',
+                'topic_content' => json_encode([
+                    'Akuntansi untuk Investasi Obligasi',
+                    'Akuntansi untuk Investasi Saham',
+                    'Metode Ekuitas dalam Akuntansi',
+                    'Masalah Besar Lainnya yang Berkaitan dengan Investasi Obligasi dan Saham'
+                ]),
+                'topic_objective' => 'Mampu memahami akuntansi untuk investasi utang dan ekuitas, membandingkan metode ekuitas dengan metode nilai wajar, dan memahami isu-isu terkait lainnya',
+                'subject_id' => 13,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+
+            // SUBJECT 14
+            [
+                'topic_title' => 'Dasar Perpajakkan & Review Perpajakkan di Indonesia',
+                'topic_number' => 1,
+                'topic_content' => json_encode([
+                    'Kebijakan Fiskal',
+                    'Definisi dan Sejarah Pengumpulan Pajak',
+                    'Sumber Pendapatan Negara, Filosofi, dan Fungsi Pajak',
+                    'Posisi dan Hubungan Hukum Pajak dengan Hukum Sipil dan Hukum Pidana, Sistematisasi Hukum Pajak, dan Interpretasi dalam Hukum Pajak',
+                    'Resistensi Pajak Aktif dan Pasif',
+                    'Prinsip Pengumpulan Pajak',
+                    'Teori-Teori Justifikasi Pengumpulan Pajak',
+                    'Sistem Pajak dan Distribusi Pajak',
+                    'Metode-Metode Pengumpulan Pajak',
+                    'Jenis-Jenis Tarif Pajak',
+                    'Definisi Utang Pajak, Timbul dan Berakhirnya Utang Pajak',
+                    'Sistem Pengumpulan Pajak'
+                ]),
+                'topic_objective' => 'Memberikan pengetahuan mengenai dasar perpajakkan dan review dari perpajakkan di Indonesia',
+                'subject_id' => 14,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_title' => 'Pajak Internasional & Pengenalan pada KUP',
+                'topic_number' => 2,
+                'topic_content' => json_encode([
+                    'Definisi Hukum Pajak Internasional',
+                    'Sumber Hukum Pajak Internasional',
+                    'Subjek dan Objek Pajak dalam Pajak Internasional',
+                    'Pajak Ganda (Double Taxation)',
+                    'Perjanjian Pajak (Tax Treaty)',
+                    'Dasar Hukum & Pemahaman Umum dalam Ketentuan Umum Perpajakkan (KUP)',
+                    'Fungsi dan Manfaat NPWP/NPPKP',
+                    'Pendaftaran, perubahan alamat, pencabutan NPWP/NPPKP',
+                    'Subjek Pajak (mulai dan berakhir), kewajiban pajak subjektif, dan pengecualian mereka.',
+                    'Objek Pajak, Objek Pajak final, dan Bukan Objek Pajak.',
+                    'Aturan untuk format baru NPWP: NIK sebagai NPWP'
+                ]),
+                'topic_objective' => 'Memahami pajak internasional suatu negara dan pengantar pada UU KUP',
+                'subject_id' => 14,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_title' => 'SPT Tahunan & SPT Masa, Pencatatan & Pembukuan',
+                'topic_number' => 3,
+                'topic_content' => json_encode([
+                    'Jenis-jenis laporan pajak berkala dan tahunan.',
+                    'Prosedur pembayaran dan pelaporan pajak.',
+                    'Koreksi laporan pajak sebelum dan setelah pemeriksaan.',
+                    'Perpanjangan pengajuan laporan pajak tahunan beserta alasannya.',
+                    'Pajak Penghasilan Final dari Laporan Pajak dan pelaporannya.',
+                    'Pemotongan Pajak Penghasilan pada Laporan Pajak (Periode).',
+                    'Pembukuan & Pencatatan serta kewajiban yang harus dipenuhi.',
+                    'Pembukuan menggunakan bahasa asing dan mata uang asing serta penyimpanan dokumen dan batas waktu yang harus dipatuhi.',
+                    'Pengecualian dari kewajiban melakukan pembukuan dan sanksi terkait pembukuan.'
+                ]),
+                'topic_objective' => 'Memahami maksud dari SPT beserta pencatatan dan pembukuan dalam perpajakkan',
+                'subject_id' => 14,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_title' => 'Pengenalan pada Penyidikan & Pengenalan Pajak dan Restitusi',
+                'topic_number' => 4,
+                'topic_content' => json_encode([
+                    'Definisi Penelitian, Pemeriksaan, dan Investigasi',
+                    'Jenis-jenis dan sanksi untuk laporan pajak berkala dan tahunan',
+                    'Tujuan dari Penelitian, Pemeriksaan, dan Investigasi',
+                    'Hak dan Kewajiban dari wajib pajak yang diperiksa',
+                    'Prosedur untuk pemeriksaan dan investigasi',
+                    'Fungsi, jenis Surat Ketetapan Pajak (SKP), pembayaran pajak, dan kadaluwarsa penentuan',
+                    'Angsuran, penundaan pembayaran pajak, dan pencabutan piutang pajak',
+                    'Definisi, dasar hukum, dan prosedur pengembalian pajak (Pasal 17, 17B; 17C)',
+                    'Persyaratan untuk mengajukan pengembalian pajak dan Pengembalian Awal (Preliminary Returns)'
+                ]),
+                'topic_objective' => 'Memahami penyidikan secara mendalam dan pembayaran pajak & restitusi',
+                'subject_id' => 14,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_title' => 'Penetapan, Penagihan, Sanksi Pajak & Pemungutan Pajak',
+                'topic_number' => 5,
+                'topic_content' => json_encode([
+                    'Keberatan, Banding, dan prosedur pengajuan Keberatan/Banding serta syarat yang harus dipenuhi oleh Wajib Pajak.',
+                    'Pembatalan keputusan (Pasal 16 dan Pasal 36) dan syarat yang harus dipenuhi dalam pengajuan peninjauan kembali.',
+                    'Denda untuk keberatan dan banding.',
+                    'Imbalan Bunga (Interest Rewards).',
+                    'Dasar Pengumpulan Pajak.',
+                    'Prosedur Pengumpulan Pajak mulai dari surat peringatan hingga lelang.',
+                    'Kadaluwarsa Penagihan.',
+                    'Hak-hak yang mendahului Penagihan.',
+                    'Penagihan segera dan semua dalam satu berdasarkan Undang-Undang Ketentuan Umum Perpajakan (KUP).',
+                    'Penundaan penagihan akibat keberatan dan banding.',
+                    'Pajak Dengan Surat Paksa (PPSP) termasuk pencegahan dan penyanderaan.'
+                ]),
+                'topic_objective' => 'Memahami penetapan, penagihan, & sanksi pajak, beserta pemungutan pajak',
+                'subject_id' => 14,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_title' => 'Tindak Pidana Fiskal & Bea Meterai',
+                'topic_number' => 6,
+                'topic_content' => json_encode([
+                    'Lingkup Tindak Pidana Fiskal',
+                    'Sanksi Administratif',
+                    'Hak & Kewajiban Wajib Pajak dalam UU KUP',
+                    'Kewenangan dan Kewajiban Otoritas Pajak dalam UU KUP',
+                    'Subjek dan Objek Bea Meterai',
+                    'Tarif Bea Meterai',
+                    'Metode pembayaran Bea Meterai dan pengelembungan kemudian',
+                    'Prosedur untuk mengajukan penggunaan mesin ukur (measuring machine)'
+                ]),
+                'topic_objective' => 'Memahami mengenai tindak pidana fiskal dan bea meterai',
+                'subject_id' => 14,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'topic_title' => 'PBB, BPHTB, Pajak Daerah & Retribusi',
+                'topic_number' => 7,
+                'topic_content' => json_encode([
+                    'Pajak Bumi dan Bangunan (PBB) P2  dan Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB)',
+                    'Tujuan dan Sasaran dari Undang-Undang Pajak Daerah dan Retribusi Daerah (PDRD)',
+                    'Jenis-Jenis Pajak dan Retribusi, Wilayah, metode perhitungan, dan distribusi pendapatan pajak daerah.',
+                    'Sistem pengumpulan pajak daerah dan prosedur pembayaran',
+                    'Prosedur pengajuan keberatan dan banding.'
+                ]),
+                'topic_summary' => 'Memahami mengenai Pajak Bumi dan Bangunan (PBB) P2, Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB), serta pajak daerah dan retribusi daerah.',
+                'subject_id' => 14,
+                'created_at' => now(),
+                'updated_at' => now(),
             ]
+
+
+
+
         ];
 
         // Insert data into the topics table

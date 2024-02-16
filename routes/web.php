@@ -29,3 +29,4 @@ Route::get('/tutors/filter', [ViewTutorsController::class, 'filterSubjects'])->n
 Route::get('/tutors/clear', [ViewTutorsController::class, 'clearFilters'])->name('clearFilters');
 Route::get('/tutors/search', [ViewTutorsController::class, 'searchSubjects'])->name('searchTutor');
 Route::get('/tutors/{id}', [DetailTutorsController::class, 'index'])->name('detailTutor');
+

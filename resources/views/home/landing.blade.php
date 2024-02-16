@@ -3,26 +3,26 @@
 @section('content')
 
 <!-- HEADER -->
-<header class="container-fluid bg-img-orange px-md-5 py-md-5">
-    <div class="container">
-    <div class="row px-md-5">
-        <div class="pt-md-5">
-            <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <br class="mobile"><span class="font-900 stroke-underline auto-type"></span></h1>
+<header class="container-fluid bg-img-orange px-md-5 py-md-5 pb-5">
+    <div class="container align-items-center">
+        <div class="row px-md-5 pt-md-5">
+            <div>
+                <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <br class="mobile"><span class="font-900 stroke-underline auto-type"></span></h1>
+            </div>
         </div>
-    </div>
-    <div class="row px-md-5 mt-4">
-        <div class="col-12">
-        <p class="font-400 text-white font-30">Mendukung pengembangan kemampuan spesifik, dengan tetap<br>
-            Memperluas Wawasan & Kapabilitas dalam berbagai area lain
-        </p>
+        <div class="row px-md-5 mt-4">
+            <div class="col-12">
+            <p class="font-400 text-white font-30">Mendukung pengembangan kemampuan spesifik, dengan tetap<br class="desktop">
+                memperluas Wawasan & Kapabilitas dalam berbagai area lain
+            </p>
+            </div>
         </div>
-    </div>
 
-    <div class="row px-md-5 mt-4">
-        <div class="col-12">
-        <a class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4" href="https://bit.ly/RegistrationTutorService">Register Now</a>
+        <div class="row px-md-5 mt-4">
+            <div class="col-12">
+            <a target="_blank" class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4" href="https://bit.ly/RegistrationTutorService">Register Now</a>
+            </div>
         </div>
-    </div>
     </div>
 
 </header>
@@ -115,7 +115,7 @@
             <div class="row g-0">
             <div id="carouselService" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="4000">
+                <div class="carousel-item active" data-bs-interval="3000">
                     <div class="width-smaller">
                         <div class="half-down bg-orange rounded-5 text-center service-title mx-auto pt-2 pb-1">
                             <a href="{{url('/soon')}}">
@@ -135,7 +135,7 @@
                     </div>
 
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-item" data-bs-interval="3000">
                     <div  class="width-smaller">
                         <div class="bg-black rounded-5 text-center service-title mx-auto pt-2 pb-1 half-down">
                             <a href="{{url('/soon')}}">
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="4000">
+                <div class="carousel-item" data-bs-interval="3000">
                         <div class="width-smaller">
                             <div class="bg-blue rounded-5 text-center service-title mx-auto pt-2 pb-1 half-down">
                                 <a href="{{url('/soon')}}">
@@ -165,7 +165,7 @@
                             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto  py-5 bg-white px-3">
                                 <img src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                                 <h3 class="font-44 text-blue font-900">MENTORING</h3>
-                                <p class="font-24 font-400">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
+                                <p class="font-24 font-400">Keterbatasan akses bukan hambatan, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
                             </div>
                             <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
                                 <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
@@ -190,76 +190,81 @@
 </div>
 
 <!-- MENTOR PART -->
-<div class="container-fluid bg-black">
+<div class="container-fluid bg-black mt-5 mt-md-0">
     <div class="container">
-    <div class="row">
-        <div class="col-md-4 d-flex justify-content-center flex-column">
-        <div class="desktop">
-            <div class="ms-md-4 me-md-3">
-                <h3 class="font-36 text-white font-800">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
-                <p class="text-white font-20 font-400">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
-            </div>
-            <div class="bg-blue d-flex flex-row ms-md-4 me-md-3 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">1.</h3></div>
-                <div><p class="font-20 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
-            </div>
-            <div class="bg-orange d-flex flex-row ms-md-4 me-md-3 rounded-5 gap-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">2.</h3></div>
-                <div><p class="font-20 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
-            </div>
-        </div>
+        <div class="row">
+        {{-- judul untuk desktop --}}
+            <div class="col-md-4 d-flex justify-content-center flex-column">
 
-        <div class="mobile pt-5">
-            <div class="ms-md-5">
-                <h3 class="font-46 text-white font-800" style="text-align: center">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
-                <p class="text-white font-26 font-400" style="text-align: center">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
-            </div>
-            <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-48 font-900 mb-0">1.</h3></div>
-                <div><p class="font-26 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
-            </div>
-            <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center py-2 pe-1">
-                <div class="ms-4"><h3 class="text-white font-48 font-900 mb-0">2.</h3></div>
-                <div><p class="font-26 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
-            </div>
-        </div>
+                <div class="desktop">
+                    <div class="ms-md-4 me-md-3">
+                        <h3 class="font-36 text-white font-800">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
+                        <p class="text-white font-20 font-400">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
+                    </div>
+                    <div class="bg-blue d-flex flex-row ms-md-4 me-md-3 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
+                        <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">1.</h3></div>
+                        <div><p class="font-20 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
+                    </div>
+                    <div class="bg-orange d-flex flex-row ms-md-4 me-md-3 rounded-5 gap-3 align-items-center py-2 pe-1">
+                        <div class="ms-4"><h3 class="text-white font-44 font-900 mb-0">2.</h3></div>
+                        <div><p class="font-20 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
+                    </div>
+                </div>
 
-        </div>
+                {{-- judul untuk mobile --}}
+                <div class="mobile pt-5">
+                    <div class="ms-md-5">
+                        <h3 class="font-46 text-white font-800" style="text-align: center">TEMUKAN TUTOR KULIAH & MENTOR KARIRMU</h3>
+                        <p class="text-white font-26 font-400" style="text-align: center">Mengundang Talent Terbaik untuk membantu kalian menghadapi Akademik & Karirmu</p>
+                    </div>
+                    <div class="bg-blue d-flex flex-row ms-md-5 rounded-5 gap-3 mb-3 align-items-center py-2 pe-1">
+                        <div class="ms-4"><h3 class="text-white font-48 font-900 mb-0">1.</h3></div>
+                        <div><p class="font-26 font-400 mb-0">Persiapan bersama <span class="font-600">Ahlinya pada Mata Kuliah</span> yang dipilih</p></div>
+                    </div>
+                    <div class="bg-orange d-flex flex-row ms-md-5 rounded-5 gap-3 align-items-center py-2 pe-1">
+                        <div class="ms-4"><h3 class="text-white font-48 font-900 mb-0">2.</h3></div>
+                        <div><p class="font-26 font-400 mb-0">Memulai perjalanan <span class="font-600">lomba, beasiswa, karir</span> dengan Mentor</p></div>
+                    </div>
+                </div>
+
+            </div>
+
+        {{-- content desktop --}}
         <div class="col-md-8">
         <div class="desktop swiper sample-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;" >
-                    <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+            <div class="swiper-wrapper tutor">
+                <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
+                    <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
                 </div>
-                <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="...">
                 </div>
-                <div class="swiper-slide bg-orange rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+                <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="...">
                 </div>
-                <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+                <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="...">
                 </div>
-                <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                </div>
-
-
-                <div class="swiper-slide bg-orange rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;" >
-                    <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                </div>
-                <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="...">
                 </div>
 
-                <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+
+                <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;" >
+                    <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="...">
                 </div>
-                <div class="swiper-slide bg-orange rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+                <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="...">
                 </div>
-                <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid mt-auto w-100" alt="...">
+
+                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="...">
+                </div>
+                <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="...">
+                </div>
+                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                    <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="...">
                 </div>
             </div>
         </div>
@@ -270,43 +275,41 @@
 
 {{-- slider mentor untuk mobile --}}
 <div class="container-fluid bg-black-half">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-11">
-                <div class="mobile swiper mobile-slider mt-5">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;" >
-                            <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-orange rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="mobile swiper mobile-slider mt-5">
+                <div class="swiper-wrapper tutor">
+                    <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
+                        <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="...">
+                    </div>
 
 
-                        <div class="swiper-slide bg-orange rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;" >
-                            <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-red rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-orange rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
-                        <div class="swiper-slide bg-blue rounded-3 pt-3" style="margin-left: 3%; margin-right: 3%;">
-                            <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid mt-auto w-100" alt="...">
-                        </div>
+                    <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;" >
+                        <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="...">
                     </div>
                 </div>
             </div>
@@ -381,7 +384,7 @@
             </div>
             <div>
                 <h4 class="font-36 font-700">Register / Sign In</h4>
-                <p class="font-26 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
+                <p class="font-26 font-400">Isi Data Diri & Gabung dalam Komunitas & Mulai Belajar</p>
             </div>
             </div>
         </div>
@@ -392,7 +395,7 @@
             </div>
             <div>
                 <h4 class="font-36 font-700">Pick & Enroll</h4>
-                <p class="font-26 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
+                <p class="font-26 font-400">Ambil sesuai Kebutuhan Akademik/ Tujuan Karirmu</p>
             </div>
             </div>
         </div>
@@ -412,7 +415,7 @@
     </div>
 
 
-    <div class="mobile swiper step-slider mb-5">
+    <div class="mobile swiper step-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="col-12 mx-auto">
@@ -422,7 +425,7 @@
                         </div>
                         <div>
                             <h4 class="font-44 font-700">Register / Sign In</h4>
-                            <p class="font-32 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
+                            <p class="font-32 font-400">Isi Data Diri & Gabung dalam Komunitas & Mulai Belajar</p>
                         </div>
                     </div>
                 </div>
@@ -435,7 +438,7 @@
                         </div>
                         <div>
                             <h4 class="font-44 font-700">Pick & Enroll</h4>
-                            <p class="font-32 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
+                            <p class="font-32 font-400">Ambil sesuai Kebutuhan Akademik/ Tujuan Karirmu</p>
                         </div>
                     </div>
                 </div>
@@ -461,18 +464,18 @@
 
 <!-- CONTRIBUTION -->
 
-<div class="container-fluid bg-img-white mt-5">
+<div class="container-fluid bg-img-white">
     <div class="container">
         <div class="row desktop">
             <div class="col-12">
-                <div class="bg-orange mx-auto half-up" style="width: fit-content">
+                <div class="bg-orange mx-auto half-up mt-5" style="width: fit-content">
                 <h3 class="text-center text-white font-900 font-44">Sejak 2023, Terus Memberi Kontribusi & Berdampak</h3>
                 </div>
 
             </div>
         </div>
 
-        <div class="row mobile">
+        <div class="row mobile mt-5">
             <div class="col-12">
                 <div class="mx-auto half-up" style="width: fit-content">
                 <h3 class="bg-orange text-center text-white font-400 font-38">Sejak 2023, Terus Memberi</h3>
@@ -566,7 +569,7 @@
                 <div class="col-4" data-aos="fade-down" data-aos-duration="1000">
                     <div class="border border-3 border-black rounded-4 p-4">
                         <h5 class="font-900 font-26">Belajar jadi Seru</h5>
-                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                         <div class="d-flex flex-row">
@@ -580,7 +583,7 @@
                 <div class="col-4" data-aos="fade-down" data-aos-duration="2000">
                     <div class="border border-3 border-blue rounded-4 p-4 d-flex flex-column">
                         <h5 class="font-900 font-26 font-900">Lebih Pede di Kelas</h5>
-                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500 ">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.
 
                         </p>
@@ -595,7 +598,7 @@
                 <div class="col-4" data-aos="fade-down" data-aos-duration="3000">
                     <div class="border border-3 border-red rounded-4 p-4">
                         <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
-                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid">
+                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.
                         </p>
 
@@ -616,10 +619,10 @@
             <div id="carouselTesti" class="carousel slide mobile carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white">
+                    <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-28 font-900">Belajar Jadi Seru</h5>
-                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid">
-                        <p class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
+                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid w-100">
+                        <p class="font-20 mt-4 font-500" style="height: 150px;">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
@@ -631,10 +634,10 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white">
+                    <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-28 font-900">Lebih Pede di Kelas</h5>
-                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid">
-                        <p class="font-20 mt-4 font-500">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
+                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid w-100">
+                        <p class="font-20 mt-4 font-500" style="height: 150px;">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
@@ -646,10 +649,10 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white">
+                    <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
-                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid">
-                        <p class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
+                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid w-100">
+                        <p class="font-20 mt-4 font-500" style="height: 150px;">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
@@ -683,19 +686,19 @@
             <div class="wrapper">
                 <div class="p"></div>
                 <div class="img-area">
-                <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank">
                     <img src="{{ asset('assets/home/sheet1.svg') }}" class="img img-box box-4 hovered">
                 </a>
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
                     <img src="{{ asset('assets/home/sheet2.svg') }}" class="img img-box box-5 hovered">
                 </a>
                 <img src="{{ asset('assets/home/sheet3.svg') }}" class="img img-box box-6 hovered">
 
 
-                <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank">
                     <img src="{{ asset('assets/home/folder1.svg') }}" class="img img-box box-7 hovered">
                 </a>
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
                     <img src="{{ asset('assets/home/folder2.svg') }}" class="img img-box box-8 hovered">
                 </a>
                 <img src="{{ asset('assets/home/folder3.svg') }}" class="img img-box box-9 hovered">
@@ -727,7 +730,7 @@
             <div class="box-wa justify-content-center hovered">
                 <img class="img-fluid icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
                 <div class="font-400 font-24">
-                    <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                    <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
                         Hubungi Kami
                     </a>
                 </div>
@@ -737,6 +740,8 @@
     </div>
 </div>
 
+
+{{-- KOTAK BIRU YANG MOBILE --}}
 <div class="mobile">
     <div class="container-fluid bg-img-blue-square justify-content-center" >
         <div class="px-md-5 py-md-5" style="background: url('');background-repeat: no-repeat;background-size: cover;z-index:0px;padding-top:0px;padding-bottom:100px;height:100%">
@@ -748,17 +753,16 @@
             <div class="row">
                 <div class="col align-self-center justify-content-center cards mt-3">
                     <div class="card card-1">
-                        <img src="{{ asset('assets/home/icon2.svg') }}" class="icon-1 m-1" alt="">
+                        <img src="{{ asset('assets/home/icon2.svg') }}" class="icon-1 m-1" alt="img-fluid" style="width: 50px;">
                         <h3 class="font-900 font-32 mt-1 text-right">WhatsApp Community</h3>
                         <p class="font-18 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
-                        <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" class="text-white">Join Now</a></button>
+                        <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank" class="text-white">Join Now</a></button>
                     </div>
                     <div class="card card-2">
-                        <img src="{{ asset('assets/home/icon1.svg') }}" class="icon-2 m-1" alt="">
-                        <h3 class="font-900 font-32 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition  Page</h3>
-                        <p class="font-18 text-right mt-1" style="text-align: right;">Exclusive access information on Career, Scholarship, Competition, etc.
-                        No More Miss Out on Opportunities</p>
-                        <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" class="text-white">Discover Now</a></button>
+                        <img src="{{ asset('assets/home/icon1.svg') }}" class="icon-2 m-1" alt="img-fluid" style="width: 50px;">
+                        <h3 class="font-900 font-32 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition</h3>
+                        <p class="font-18 text-right mt-1" style="text-align: right;">Exclusive information on Career, Scholarship, Competition, etc. No More Miss Out on Opportunities</p>
+                        <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank" class="text-white">Discover Now</a></button>
                     </div>
                 </div>
             </div>
@@ -766,56 +770,34 @@
     </div>
 
 
+    {{-- kotak oren --}}
 
     <div class="mobile">
-    <div class="container">
-        <div class="box-orange">
-        <div class="box-wa-1 justify-content-center align-items-center">
-            <p class="py-text-white pt-2 font-36 font-700">Punya pertanyaan lebih lanjut?</p>
+        <div class="container">
+            <div class="box-orange">
+                <div class="text-center">
+                    <p class="font-36 font-700 mb-1">Punya pertanyaan lebih lanjut?</p>
+                </div>
+                <div class="box-wa justify-content-center mb-1 mt-0">
+                    <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
+                    <a target="_blank" href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="box-wa justify-content-center pt-0 mt-0">
-            <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
-            <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                Hubungi Kami
-            </a>
-        </div>
-        </div>
-    </div>
     </div>
 </div>
 
+{{-- FOOTER --}}
 
-    <footer class="desktop">
-        <div class="container">
-          <div class="d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                <a class="ms-3 bg-black rounded-4 p-2 font-700 font-42 text-white hovered" href="{{ route('viewTutors') }}">Daftar Kelas</a>
-            </div>
-            <div class="p-2" style="text-align: right;">
-              <h3 class="font-700 font-40">Siap Buat Belajar bersama Economic Space?</h3>
-              <p class="font-400 font-28">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
-            </div>
-          </div>
-        </div>
-    </footer>
-
-    <footer class="mobile">
-        <div class="container">
-            <div class="row">
-                <div class="text-center d-flex flex-column justify-content-center align-items-center">
-                    <h3 class="font-400">Siap Buat Belajar bersama <span class="font-800">Economic Space?</span> </h3>
-                    <p class="font-400">Langsung Daftarkan diri & Persiapkan Masa Depanmu</p>
-                </div>
-            <div>
-            <div class="row">
-                <div class=" mt-1 d-flex align-items-center justify-content-center">
-                    <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                    <a class="ms-3 bg-black rounded-4 p-2 font-700 font-44 text-white" href="{{ route('viewTutors') }}">Daftar Kelas</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+@section('desktopBtn') Daftar Kelas @endsection
+@section('desktopTitle') Siap Buat Belajar bersama Economic Space? @endsection
+@section('desktopContent') Langsung Daftarkan diri & Persiapkan Masa Depanmu @endsection
+@section('mobileTitle1') Siap Buat Belajar bersama @endsection
+@section('mobileTitle2') Economic Space? @endsection
+@section('mobileContent') Langsung Daftarkan diri & <br>Persiapkan Masa Depanmu @endsection
+@section('mobileBtn') Daftar Kelas @endsection
 
 
 @endsection

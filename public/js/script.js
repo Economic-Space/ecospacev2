@@ -1,6 +1,6 @@
 // TYPE ANIMATION
 var typed = new Typed(".auto-type", {
-    strings: ["Idaman Rekruter", "Favorit Dosen", "Kesayangan HR"],
+    strings: ["Idaman Recruiter", "Favorit Dosen", "Kesayangan HR"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true
@@ -101,7 +101,7 @@ window.addEventListener('load', function () {
         maxHeight = Math.max(maxHeight, card.offsetHeight);
     });
 
-    console.log( maxHeight);
+    console.log("maxHeight: " + maxHeight);
 
     cards.forEach(function(card) {
         card.style.height = maxHeight + 'px';
@@ -112,11 +112,10 @@ window.addEventListener('load', function () {
         maxHeightLabel = Math.max(maxHeightLabel, service.offsetHeight);
     });
 
-    console.log( maxHeightLabel);
-
     services.forEach(function(service) {
         service.style.height = maxHeightLabel + 'px';
     });
 
 });
+
 

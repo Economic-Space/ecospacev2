@@ -55,7 +55,7 @@
                     <a class="btn btn-dark font-24" aria-current="page" href="{{url('/soon')}}">Login</a>
                 </li> --}}
                 <li class="nav-item px-2">
-                    <a class="btn btn-dark font-24" aria-current="page" href="https://bit.ly/OprecTutorECONSPACE">Join Economic Space</a>
+                    <a target="_blank" class="btn btn-dark font-24" aria-current="page" href="https://bit.ly/OprecTutorECONSPACE">Join Economic Space</a>
                 </li>
             </ul>
           </div>
@@ -68,17 +68,51 @@
 
     @yield('content')
 
+    {{-- FOOTER YG INGIN MENDAPATKAN --}}
+
+    <footer class="desktop mt-4">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                <a class="ms-3 bg-black rounded-4 p-2 font-700 font-42 text-white hovered text-center" style="min-width: 300px;" href="{{ route('viewTutors') }}">@yield('desktopBtn')</a>
+            </div>
+            <div class="align-items-center pt-3" style="text-align: right;">
+              <h3 class="font-700 font-40">@yield('desktopTitle')</h3>
+              <p class="font-400 font-28">@yield('desktopContent')</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <footer class="mobile mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="text-center d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="font-400">@yield('mobileTitle1') <span class="font-800">@yield('mobileTitle2')</span> </h3>
+                    <p class="font-400">@yield('mobileContent')</p>
+                </div>
+            <div>
+            <div class="row">
+                <div class=" mt-1 d-flex align-items-center justify-content-center">
+                    <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                    <a class="ms-3 bg-black rounded-4 p-2 font-700 font-44 text-white" href="{{ route('viewTutors') }}">@yield('mobileBtn')</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- FOOTER -->
     <footer class="desktop">
         <div class="container-fluid bg-black">
             <div class="container px-5 pb-3 pt-4 mt-5 align-items-center justify-content-center">
-                <div class="d-flex mt-2 mb-4">
+                <div class="d-flex mt-2 mb-3">
                     <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img me-auto">
-                    <a href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
+                    <a target="_blank" href="https://bit.ly/OprecTutorECONSPACE" class="align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
                         Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
                     </a>
-                    <a href="https://wa.link/fbua0a" class="button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 hovered d-flex align-items-center justify-content-center">
+                    <a target="_blank" href="https://wa.link/fbua0a" class=" align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 hovered d-flex align-items-center justify-content-center">
                         Interest for Partnership? <i class="fa fa-external-link text-white ms-2"></i>
                     </a>
                 </div>
@@ -86,8 +120,8 @@
             </div>
         </div>
         <div class="container-fluid brown-gradient">
-            <div class="container py-1 mt-auto d-flex align-items-center justify-content-between">
-                <p class="text-white px-5 mb-0 font-700 font-24" >© 2024 Economic Space. All rights reserved.</p>
+            <div class="container px-5 d-flex align-items-center justify-content-between">
+                <p class="text-white mb-0 font-700 font-22" >© 2024 Economic Space. All rights reserved.</p>
                 <div class="d-flex align-items-center">
                         <img class="icon-insta mr-2 hovered" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
                         <img class="icon-linkedin hovered" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
@@ -114,10 +148,10 @@
                     <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img">
                     <div class="d-flex flex-column">
                         {{-- vertical --}}
-                        <a href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 me-3 hovered mb-2" style="width: 100%">
+                        <a target="_blank" href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 me-3 hovered mb-2" style="width: 100%">
                             Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
                         </a>
-                        <a href="https://wa.link/fbua0a" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 hovered" style="width: 100%">
+                        <a target="_blank" href="https://wa.link/fbua0a" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 hovered" style="width: 100%">
                             Interest for Partnership? <i class="fa fa-external-link text-white ms-2"></i>
                         </a>
                     </div>
@@ -158,6 +192,9 @@
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    {{-- jquery --}}
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
     {{-- custom js --}}
     <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>

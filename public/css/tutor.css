@@ -15,17 +15,12 @@
 
 /* VIEW TUTOR */
 
-/* HEADER BACKGROUND IMAGE */
-.tutor-header {
-    background: url('../assets/background/bgtutors.svg');
-    height: 285px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .img-tutor {
     height: 250px;
+}
+
+.img-univ {
+    height: 70px;
 }
 
 .card-tutor:nth-child(odd) > a > div {
@@ -86,7 +81,7 @@
 
 /* comparison half up */
 .half-up-30 {
-    transform:translateY(-15%);
+    transform: translateY(-15%);
 }
 
 /* give check icon to li in course detail */
@@ -158,16 +153,21 @@
     margin: auto;
 }
 
-@media(max-width: 576px) {
-    .tutor-header {
-        width: 100vw;
-        background: url('../assets/background/bgtutors_mobile.svg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+/* tablet */
+@media (max-width: 992px) {
+    .header-tutor.mobile {
+        display: block;
+    }
 
+    .header-tutor.desktop {
+        display: none;
+    }
+
+    .list-tutor-up {
+        transform: translateY(-30px);
     }
 }
+
 
 /* MOBILE */
 @media (max-width: 767px) {
@@ -178,6 +178,10 @@
 
     .img-tutor {
         height: 150px;
+    }
+
+    .img-univ {
+        height: 50px;
     }
 
     .bg-milk-mobile {

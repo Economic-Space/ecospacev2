@@ -49,9 +49,10 @@ class ViewTutorsController extends Controller
 
         $subjects = Subject::where('subject_title', 'like', "%{$searchTerm}%")
                         ->where('status', 'active')
-                        ->paginate(6);;
+                        ->paginate(6);
 
-        return view('tutor.viewTutors', compact('subjects', 'major', 'semester'));
+
+        return view('layout.subjects', compact('subjects', 'major', 'semester'));
     }
 
     // CLEAR FILTER BUTTON FUNCTIONALITY

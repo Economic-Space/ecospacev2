@@ -2,23 +2,18 @@
 
 @section('content')
     <!-- HEADER -->
-    <div id="banner" class="container-fluid tutor-header">
-    </div>
+    <img src="{{asset('assets/background/bgtutors.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor desktop">
+    <img src="{{asset('assets/background/bgtutors_mobile.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor mobile">
 
     <!-- FILTER-->
 
-    <div class="container bg-darkblue py-3 px-5 half-up rounded-3 w-mobile-80">
+    <div class="container bg-darkblue py-3 px-lg-3 half-up rounded-3 w-mobile-80">
         <div class="row justify-content-center gy-2 gy-lg-0">
             <div class="col-12 col-lg-5">
-                <form action="{{route('searchTutor')}}" method="GET">
+                <form id="searchForm" action="{{route('searchTutor')}}" method="GET">
                     <div class="row gx-2 gy-1 gy-lg-0">
-                        <div class="col-9">
-                            <input class="w-100 rounded-3 border-0 py-2 px-2 font-20" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
-                        </div>
-                        <div class="col-3">
-                            <button id="search" class="w-100 bg-orange text-white border-0 rounded-3 py-2 px-3 font-20" type="submit" >
-                                Cari
-                            </button>
+                        <div class="col-12">
+                            <input id="tutorSearchBar" class="w-100 rounded-3 border-0 py-2 px-2 font-18" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
                         </div>
                     </div>
                 </form>
@@ -27,7 +22,7 @@
                 <form action="{{route('filterTutor')}}" method="GET">
                     <div class="row gx-2 gy-1 gy-lg-0">
                         <div class="col-6 col-lg-3">
-                            <select name="major" id="course" class="rounded-3 border-0 py-2 w-100 font-20">
+                            <select name="major" id="course" class="rounded-3 border-0 py-2 px-1 w-100 font-18">
                                 <option value="all" @if(old('major', $major) == 'all') selected @endif>Semua Jurusan</option>
                                 <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
                                 <option value="Management" @if(old('major', $major) == 'Management') selected @endif>Management</option>
@@ -36,7 +31,7 @@
                             </select>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <select name="semester" id="course" class="rounded-3 border-0 py-2 w-100 font-20">
+                            <select name="semester" id="course" class="rounded-3 border-0 py-2 px-1 w-100 font-18">
                                 <option value="all" @if(old('semester', $semester) == 'all') selected @endif>Semua Semester</option>
                                 <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
                                 <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
@@ -63,7 +58,7 @@
 
 
     <!-- LIST TUTORS -->
-    <div class="container">
+    <div class="container list-tutor-up">
         <div class="row gx-5 gy-4" id="subject-container">
             @include('layout.subjects', ['subjects' => $subjects])
         </div>
@@ -77,7 +72,7 @@
 
     <!-- TUTOR SESSION -->
     <div class="container-fluid bg-milk-mobile">
-        <div id="t-session"  class="container mt-5 mb-5">
+        <div id="t-session"  class="container mt-0 mt-md-5 mb-5">
             <div class="row justify-content-center justify-content-md-start bg-milk rounded-4">
                 {{-- gambar joshua --}}
                 <div class="col-10 col-md-4 py-4 desktop">
@@ -92,18 +87,24 @@
                     </div>
                 </div>
                 {{-- tulisan, ada di mobile jg --}}
-                <div class="col-10 col-md-7 py-4">
-                    <div>
+                <div class="col-12 col-md-7 py-4">
+                    <div class="ps-3 ps-md-0">
                         <h1 class="font-black font-42 font-900">Tutor Session </h1>
                         <p class="font-26 font-400">Menyediakan Kebutuhan Belajar Akademikmu | Senantiasa menjaga kualitas pengajar dan memperluas jangkauan jenis mata kuliah.</p>
                     </div>
-                    <div class="mt-3">
+                    <div class="ps-3 ps-md-0 mt-3">
                         <h3 class="font-26 font-700">Keunggulan Kami:</h3>
                         <div class="d-flex align-items-center">
-                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-22 font-400">Menyediakan <span class="font-700">Tutor berdasarkan Universitas</span>  agar Relevan <br class="desktop">Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa</div>
+                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="">
+                            <div class="font-22 font-400">
+                                Menyediakan <span class="font-700">Tutor berdasarkan Universitas</span>  agar Relevan <br class="desktop">Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa
+                            </div>
                         </div>
                         <div class="d-flex align-items-center mt-2">
-                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-22 font-400"> <span class="font-700">Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, <br class="desktop">Ilmu Ekonomi, Manajemen Bisnis & Keuangan. </div>
+                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="">
+                            <div class="font-22 font-400"> <span class="font-700">
+                                Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, <br class="desktop">Ilmu Ekonomi, Manajemen Bisnis & Keuangan.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,69 +114,96 @@
 
 
     <!-- FOOTER -->
-    <footer class="desktop">
-        <div class="container">
-          <div class="box-white d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                <a class="box-black font-700 font-42 text-white ml-2 hovered" href="{{ route('soon') }}">Join Mentoring</a>
-            </div>
-            <div class="p-2" style="text-align: right;">
-              <h3 class="font-700 font-40">Ingin mendapatkan ilmu di luar Akademik?</h3>
-              <p class="font-400 font-28">Yuk mulai mentoring dengan expert di bidang lomba, karir, dll</p>
-            </div>
-          </div>
-        </div>
-    </footer>
+    @section('desktopBtn') Join Mentoring @endsection
+    @section('desktopTitle') Ingin mendapatkan ilmu di luar Akademik? @endsection
+    @section('desktopContent') Yuk mulai mentoring dengan expert di bidang lomba, karir, dll @endsection
+    @section('mobileTitle1') Ingin mendapatkan ilmu di @endsection
+    @section('mobileTitle2') luar Akademik? @endsection
+    @section('mobileContent') Yuk mulai mentoring dengan expert di bidang lomba, karir, dll @endsection
+    @section('mobileBtn') Join Mentoring @endsection
 
-    <footer class="mobile">
-        <div class="container px-md-5 py-md-2">
-          <div class="box-white d-flex flex-column justify-content-center align-items-center">
-            <div class="text-center">
-              <h3 class="font-400">Ingin mendapatkan ilmu di <span class="font-800">luar Akademik?</span> </h3>
-              <p class="font-400">Yuk mulai mentoring dengan expert di bidang lomba, karir, dll</p>
-            </div>
-            <div>
-            </div>
-            <div class="mt-1">
-                <div class="d-flex align-items-center">
-                  <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
-                  <a class="box-black font-700 font-44 text-white ml-2" href="{{ route('viewTutors') }}">Join Mentoring</a>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div>
-    </footer>
 
     {{-- jquery for pagination --}}
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 
     <script>
-        // pagination
-        $('.lazy-loading').click(function() {
-            var currentPage = {{ $subjects->currentPage() }};
-            var lastPage = {{ $subjects->lastPage() }};
+        var currentPage = {{ $subjects->currentPage() }};
+        var lastPage = {{ $subjects->lastPage() }};
 
+        // Function to show or hide load button based on current page and last page
+        function showOrHideLoadButton() {
+            if (currentPage >= lastPage) {
+                $('.lazy-loading').hide(); // Hide the button if there are no more pages
+            } else {
+                $('.lazy-loading').show(); // Show the button if there are more pages
+            }
+        }
+
+        // Function to display "No data" message
+        function showNoDataMessage() {
+            $('#subject-container').html('<p class="text-center">No data to display</p>');
+            $('.lazy-loading').hide(); // Hide the load button
+        }
+
+        // Function to handle live search and filter
+        function handleSearch() {
+            var searchTerm = $('#tutorSearchBar').val().trim(); // Get the search term and remove leading/trailing whitespace
+
+            $.ajax({
+                url: $('#searchForm').attr('action'),
+                type: $('#searchForm').attr('method'),
+                data: $('#searchForm').serialize(),
+                success: function(response) {
+                    if (response.trim() === '') {
+                        showNoDataMessage(); // Display "No data" message if response is empty
+                    } else {
+                        $('#subject-container').html(response); // Update subject container with response
+                        currentPage = 1; // Reset current page to 1 after search/filter
+                        showOrHideLoadButton();
+                    }
+                }
+            });
+        }
+
+        // Event listener for live search
+        $(document).ready(function() {
+            $('#tutorSearchBar').on('input', function() {
+                handleSearch();
+            });
+        });
+
+        // Event listener for lazy loading
+        $('.lazy-loading').click(function() {
             if (currentPage >= lastPage) {
                 $(this).hide(); // Hide the button if there are no more pages
                 return;
             }
 
+            var searchTerm = $('#tutorSearchBar').val().trim(); // Get the current search term
+            var nextPage = currentPage + 1;
+
             $.ajax({
                 url: "{{ route('viewTutors') }}",
                 type: "GET",
-                data: { page: currentPage + 1 }, // Load next page
+                data: { page: nextPage, tutorSearchBar: searchTerm }, // Include the search term in the pagination request
                 success: function(data) {
-                    $('#subject-container').append(data); // Append new subjects
-                    currentPage++; // Update current page after successful load
-
-                    if (currentPage >= lastPage) {
-                        $('.lazy-loading').hide(); // Hide the button if there are no more pages
+                    if (data.trim() === '') {
+                        showNoDataMessage(); // Display "No data" message if response is empty
+                    } else {
+                        $('#subject-container').append(data); // Append new subjects
+                        currentPage++; // Update current page after successful load
+                        showOrHideLoadButton(); // Show or hide load button based on current page and last page
                     }
                 }
             });
         });
 
+        // Initial setup
+        $(document).ready(function() {
+            showOrHideLoadButton(); // Show or hide load button based on current page and last page
+        });
+
     </script>
+
+
 @endsection

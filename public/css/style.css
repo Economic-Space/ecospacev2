@@ -291,7 +291,7 @@ button:hover {
 }
 
 .logo-img {
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
 }
 
@@ -357,6 +357,10 @@ button:hover {
     filter: brightness(90%);
 }
 
+.equal-carousel {
+    height: 500px;
+}
+
 /* transform div to half its height so it will overlay other div*/
 .half-down {
     transform: translateY(50%);
@@ -383,6 +387,12 @@ button:hover {
 /* ===== TUTOR =======*/
 .swiper-slide {
     height: auto !important;
+}
+
+.tutor > .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ==== POTENTIAL ======*/
@@ -621,12 +631,11 @@ button:hover {
 .mobile .box-wa {
     display: flex;
     align-items: center;
-    padding: 1px; /* Add padding to the inner box */
+    padding: 1px;
     background-color: var(--color-white);
     border-radius: 15px;
-    height: 80%;
     width: 90%;
-    margin: 15px;
+    margin-top: 0;
 }
 
 .icon-smile {
@@ -674,10 +683,7 @@ button:hover {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    height: auto;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .mobile .overlay-text {
@@ -726,14 +732,10 @@ button:hover {
     padding-right: 30px;
     left: 143px;
 }
-.icon-1 {
-    width: 30%;
-}
 
 .icon-2 {
-    width: 30%;
     position: relative;
-    left: 70%;
+    left: 60%;
 }
 
 .btn-danger {
@@ -970,15 +972,6 @@ button:hover {
     width: 20%;
 }
 
-.mobile .box-wa-1 {
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    height: auto;
-    width: 100%;
-    padding-left: 15px;
-}
-
 .mobile .overlay-text {
     position: relative;
     top: 20%;
@@ -1043,8 +1036,9 @@ button:hover {
     top: 0%;
 }
 
+
 /* TANYA KONSULTAN YG FIX BOTTOM */
-.fix-bottom {
+/* .fix-bottom {
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -1056,18 +1050,18 @@ button:hover {
     width: 20%;
     height: auto;
     cursor: pointer;
-}
+} */
 
 /* FOOTER */
 .button-glow {
     display: inline-block;
     background-color: var(--color-orange);
-    box-shadow: 0 0 18px var(--color-orange); /* Horizontal offset, Vertical offset, Blur radius, Color */
-    transition: box-shadow 0.3s ease; /* Optional: Adds smooth transition */
+    box-shadow: 0 0 18px var(--color-orange);
+    transition: box-shadow 0.3s ease;
 }
 
 .button-glow:hover {
-    box-shadow: 0 0 24px var(--color-orange); /* Adjust the glow intensity on hover */
+    box-shadow: 0 0 24px var(--color-orange);
 }
 
 /* FOR MOBILE */
@@ -1095,6 +1089,7 @@ button:hover {
 @media (max-width: 767px) {
     .bg-img-orange {
         background: var(--color-orange);
+        min-height: auto;
     }
     .carousel-inner .carousel-item > div {
         display: none;
@@ -1113,16 +1108,6 @@ button:hover {
 
     .logo-img {
         width: 150px;
-    }
-
-    .bg-img-orange {
-        min-height: 60vh !important;
-        background-attachment: fixed;
-        background-position: 0px 0px, 100% 25%; /* Adjust background position as needed */
-    }
-
-    .bg-img-white {
-        background: url("../assets/background/bgwhitemobile.svg");
     }
 
     .img-circle {
@@ -1189,6 +1174,12 @@ button:hover {
     .card-1,
     .card-2 {
         left: 0;
+    }
+}
+
+@media(max-width: 576px) {
+    .bg-img-white {
+        background: url("../assets/background/bgwhitemobile.svg");
     }
 }
 
