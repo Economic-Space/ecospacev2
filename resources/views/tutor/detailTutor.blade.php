@@ -20,7 +20,7 @@
                     <img src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid w-100 rounded-4 mobile mb-2">
 
                     {{-- info spt judul dll yg sebelah kiri --}}
-                    <h1 class="font-48 font-700">{{$subject->subject_title}}</h1>
+                    <h1 class="font-44 font-700">{{$subject->subject_title}}</h1>
                     <div class="d-flex justify-content-left gap-3 mt-md-3">
                         @foreach(json_decode($subject->subject_majors) as $major)
                         <p class="bg-milk py-1 px-2 rounded-3 font-18 font-400">{{$major}}</p>
@@ -208,42 +208,42 @@
                 <div id="carouselPromotion" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="4000">
-                        <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face4.svg') }}" style="height: 90px" class="img-fluid" alt="">
-                            <p class="font-32 font-700 mt-2 text-red">Fresh Launch Kit</p>
-                            <h5 class="font-60 font-900">Rp 280.000,-</h5>
-                            <p class="font-400 font-28">Dari Harga Awal Rp 300.000</p>
+                        <div class="bg-milk rounded-4 text-center py-5 px-4 width-smaller">
+                            <img src="{{ asset('assets/home/face4.svg') }}" style="height: 80px;" class="img-fluid" alt="">
+                            <p class="font-30 font-700 mt-2 text-red">Fresh Launch Kit</p>
+                            <h5 class="font-48 font-900">Rp 280.000,-</h5>
+                            <p class="font-400 font-26">Dari Harga Awal Rp 300.000</p>
                             <ul class="text-start check ps-3 mt-2 mb-4">
-                                <li class="font-24 font-500">Pengguna baru Tutor Service</li>
-                                <li class="font-24 font-500">Pembelian Paket A (1-3 orang)</li>
+                                <li class="font-22 font-500">Pengguna baru Tutor Service</li>
+                                <li class="font-22 font-500">Pembelian Paket A (1-3 orang)</li>
                             </ul>
-                            <a class="border-0 rounded-5 bg-red text-white px-5 py-2 font-36 font-500 w-100" href="https://bit.ly/RegistrationTutorService">Book Now</a>
+                            <a class="border-0 rounded-5 bg-red text-white px-5 py-2 font-30 font-500 w-100" href="https://bit.ly/RegistrationTutorService">Book Now</a>
                         </div>
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
-                            <div class="bg-lightblue rounded-4 text-center py-5 px-4">
-                                <img src="{{ asset('assets/home/face5.svg') }}" style="height: 90px" class="img-fluid" alt="">
-                                <p class="font-32 font-700 text-orange mt-2">Smart Saver Bundle</p>
-                                <h5 class="font-60 font-900">Rp 800.000,-</h5>
-                                <p class="font-400 font-28">Dari Harga Awal Rp 850.000</p>
+                            <div class="bg-lightblue rounded-4 text-center py-5 px-4 width-smaller">
+                                <img src="{{ asset('assets/home/face5.svg') }}" style="height: 80px;" class="img-fluid" alt="">
+                                <p class="font-30 font-700 text-orange mt-2">Smart Saver Bundle</p>
+                                <h5 class="font-48 font-900">Rp 800.000,-</h5>
+                                <p class="font-400 font-26">Dari Harga Awal Rp 850.000</p>
                                 <ul class="text-start check check-center ps-3 mt-2 mb-4">
-                                    <li class="font-24 font-500">Minimum pembelian 5 sesi</li>
-                                    <li class="font-24 font-500">Pembelian Paket B (4-5 orang)</li>
+                                    <li class="font-22 font-500">Minimum pembelian 5 sesi</li>
+                                    <li class="font-22 font-500">Pembelian Paket B (4-5 orang)</li>
                                 </ul>
-                                <a class="border-0 rounded-5 bg-orange text-white px-5 py-2 font-36 font-500 w-100 mt-3" href="https://bit.ly/RegistrationTutorService">Book Now</a>
+                                <a class="border-0 rounded-5 bg-orange text-white px-5 py-2 font-30 font-500 w-100 mt-3" href="https://bit.ly/RegistrationTutorService">Book Now</a>
                             </div>
                       </div>
-                      <div class="carousel-item">
-                        <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face6.svg') }}" style="height: 90px" class="img-fluid" alt="">
-                            <p class="font-32 font-700 text-red mt-2">Premier Loyalty Package</p>
-                            <h5 class="font-60 font-900">Rp 360.000,-</h5>
-                            <p class="font-400 font-28">Dari Harga Awal Rp 390.000</p>
+                      <div class="carousel-item" data-bs-interval="4000">
+                        <div class="bg-milk rounded-4 text-center py-5 px-4 width-smaller">
+                            <img src="{{ asset('assets/home/face6.svg') }}" style="height: 80px;" class="img-fluid" alt="">
+                            <p class="font-30 font-700 text-red mt-2">Premier Loyalty Package</p>
+                            <h5 class="font-48 font-900">Rp 360.000,-</h5>
+                            <p class="font-400 font-26">Dari Harga Awal Rp 390.000</p>
                             <ul class="text-start check ps-3 mt-2 mb-4">
-                                <li class="font-24 font-500">Telah melakukan pembelian ≥ 5 sesi</li>
-                                <li class="font-24 font-500">Pembelian Paket C (6-8 orang)</li>
+                                <li class="font-22 font-500">Minimum pembelian 5 sesi</li>
+                                <li class="font-22 font-500">Pembelian Paket C (6-8 orang)</li>
                             </ul>
-                            <a class="border-0 rounded-5 bg-red text-white px-5 py-2 font-36 font-500 w-100 mt-3" href="https://bit.ly/RegistrationTutorService">Book Now</a>
+                            <a class="border-0 rounded-5 bg-red text-white px-5 py-2 font-30 font-500 w-100 mt-3" href="https://bit.ly/RegistrationTutorService">Book Now</a>
                         </div>
                       </div>
                     </div>
@@ -278,13 +278,13 @@
 
 
     <!-- FOOTER -->
-    @section('desktopBtn') @endsection
-    @section('desktopTitle') @endsection
-    @section('desktopContent') @endsection
-    @section('mobileTitle1') @endsection
-    @section('mobileTitle2') @endsection
-    @section('mobileContent') @endsection
-    @section('mobileBtn') @endsection
+    @section('desktopBtn') Join Mentoring @endsection
+    @section('desktopTitle') Ingin mendapatkan ilmu di luar Akademik? @endsection
+    @section('desktopContent') Yuk mulai mentoring dengan expert di bidang lomba, karir, dll @endsection
+    @section('mobileTitle1') Ingin mendapatkan ilmu di @endsection
+    @section('mobileTitle2') luar Akademik? @endsection
+    @section('mobileContent') Yuk mulai mentoring dengan expert di bidang lomba, karir, dll @endsection
+    @section('mobileBtn') Join Mentoring @endsection
 
 
 

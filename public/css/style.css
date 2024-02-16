@@ -291,7 +291,7 @@ button:hover {
 }
 
 .logo-img {
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
 }
 
@@ -1069,12 +1069,12 @@ button:hover {
 .button-glow {
     display: inline-block;
     background-color: var(--color-orange);
-    box-shadow: 0 0 18px var(--color-orange); /* Horizontal offset, Vertical offset, Blur radius, Color */
-    transition: box-shadow 0.3s ease; /* Optional: Adds smooth transition */
+    box-shadow: 0 0 18px var(--color-orange);
+    transition: box-shadow 0.3s ease;
 }
 
 .button-glow:hover {
-    box-shadow: 0 0 24px var(--color-orange); /* Adjust the glow intensity on hover */
+    box-shadow: 0 0 24px var(--color-orange);
 }
 
 /* FOR MOBILE */

@@ -7,16 +7,16 @@
 
     <!-- FILTER-->
 
-    <div class="container bg-darkblue py-3 px-5 half-up rounded-3 w-mobile-80">
+    <div class="container bg-darkblue py-3 px-lg-3 half-up rounded-3 w-mobile-80">
         <div class="row justify-content-center gy-2 gy-lg-0">
             <div class="col-12 col-lg-5">
                 <form action="{{route('searchTutor')}}" method="GET">
                     <div class="row gx-2 gy-1 gy-lg-0">
                         <div class="col-9">
-                            <input class="w-100 rounded-3 border-0 py-2 px-2 font-20" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
+                            <input class="w-100 rounded-3 border-0 py-2 px-2 font-18" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
                         </div>
                         <div class="col-3">
-                            <button id="search" class="w-100 bg-orange text-white border-0 rounded-3 py-2 px-3 font-20" type="submit" >
+                            <button id="search" class="w-100 bg-orange text-white border-0 rounded-3 py-2 px-3 font-18" type="submit" >
                                 Cari
                             </button>
                         </div>
@@ -27,7 +27,7 @@
                 <form action="{{route('filterTutor')}}" method="GET">
                     <div class="row gx-2 gy-1 gy-lg-0">
                         <div class="col-6 col-lg-3">
-                            <select name="major" id="course" class="rounded-3 border-0 py-2 w-100 font-20">
+                            <select name="major" id="course" class="rounded-3 border-0 py-2 px-1 w-100 font-18">
                                 <option value="all" @if(old('major', $major) == 'all') selected @endif>Semua Jurusan</option>
                                 <option value="Accounting" @if(old('major', $major) == 'Accounting') selected @endif>Accounting</option>
                                 <option value="Management" @if(old('major', $major) == 'Management') selected @endif>Management</option>
@@ -36,7 +36,7 @@
                             </select>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <select name="semester" id="course" class="rounded-3 border-0 py-2 w-100 font-20">
+                            <select name="semester" id="course" class="rounded-3 border-0 py-2 px-1 w-100 font-18">
                                 <option value="all" @if(old('semester', $semester) == 'all') selected @endif>Semua Semester</option>
                                 <option value="Semester 1-2" @if(old('semester', $semester) == 'Semester 1-2') selected @endif>Semester 1-2</option>
                                 <option value="Semester 3-4" @if(old('semester', $semester) == 'Semester 3-4') selected @endif>Semester 3-4</option>
@@ -44,12 +44,12 @@
                             </select>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-xxl-3 w-100 font-20" type="submit" >
+                            <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-xxl-3 w-100 font-18" type="submit" >
                                 Pilih
                             </button>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-xxl-3 w-100 font-20" formaction="{{ route('clearFilters') }}">
+                            <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-xxl-3 w-100 font-18" formaction="{{ route('clearFilters') }}">
                                 <i class="fa-solid fa-broom me-1"></i> Hapus Filter
                             </button>
                         </div>
@@ -63,7 +63,7 @@
 
 
     <!-- LIST TUTORS -->
-    <div class="container">
+    <div class="container list-tutor-up">
         <div class="row gx-5 gy-4" id="subject-container">
             @include('layout.subjects', ['subjects' => $subjects])
         </div>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 {{-- tulisan, ada di mobile jg --}}
-                <div class="col-10 col-md-7 py-4">
+                <div class="col-12 col-md-7 py-4">
                     <div>
                         <h1 class="font-black font-42 font-900">Tutor Session </h1>
                         <p class="font-26 font-400">Menyediakan Kebutuhan Belajar Akademikmu | Senantiasa menjaga kualitas pengajar dan memperluas jangkauan jenis mata kuliah.</p>
@@ -100,10 +100,16 @@
                     <div class="mt-3">
                         <h3 class="font-26 font-700">Keunggulan Kami:</h3>
                         <div class="d-flex align-items-center">
-                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-22 font-400">Menyediakan <span class="font-700">Tutor berdasarkan Universitas</span>  agar Relevan <br class="desktop">Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa</div>
+                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="">
+                            <div class="font-22 font-400">
+                                Menyediakan <span class="font-700">Tutor berdasarkan Universitas</span>  agar Relevan <br class="desktop">Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa
+                            </div>
                         </div>
                         <div class="d-flex align-items-center mt-2">
-                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt=""><div class="font-22 font-400"> <span class="font-700">Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, <br class="desktop">Ilmu Ekonomi, Manajemen Bisnis & Keuangan. </div>
+                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="">
+                            <div class="font-22 font-400"> <span class="font-700">
+                                Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, <br class="desktop">Ilmu Ekonomi, Manajemen Bisnis & Keuangan.
+                            </div>
                         </div>
                     </div>
                 </div>

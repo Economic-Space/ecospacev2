@@ -162,6 +162,10 @@
     .header-tutor.desktop {
         display: none;
     }
+
+    .list-tutor-up {
+        transform: translateY(-30px);
+    }
 }
 
 

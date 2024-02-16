@@ -75,7 +75,7 @@
                 <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
                 <a class="ms-3 bg-black rounded-4 p-2 font-700 font-42 text-white hovered text-center" style="min-width: 300px;" href="{{ route('viewTutors') }}">@yield('desktopBtn')</a>
             </div>
-            <div class="p-2" style="text-align: right;">
+            <div class="align-items-center pt-3" style="text-align: right;">
               <h3 class="font-700 font-40">@yield('desktopTitle')</h3>
               <p class="font-400 font-28">@yield('desktopContent')</p>
             </div>
@@ -105,12 +105,12 @@
     <footer class="desktop">
         <div class="container-fluid bg-black">
             <div class="container px-5 pb-3 pt-4 mt-5 align-items-center justify-content-center">
-                <div class="d-flex mt-2 mb-4">
+                <div class="d-flex mt-2 mb-3">
                     <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img me-auto">
-                    <a href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
+                    <a href="https://bit.ly/OprecTutorECONSPACE" class="align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
                         Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
                     </a>
-                    <a href="https://wa.link/fbua0a" class="button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 hovered d-flex align-items-center justify-content-center">
+                    <a href="https://wa.link/fbua0a" class=" align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 hovered d-flex align-items-center justify-content-center">
                         Interest for Partnership? <i class="fa fa-external-link text-white ms-2"></i>
                     </a>
                 </div>
@@ -118,8 +118,8 @@
             </div>
         </div>
         <div class="container-fluid brown-gradient">
-            <div class="container py-1 mt-auto d-flex align-items-center justify-content-between">
-                <p class="text-white px-5 mb-0 font-700 font-24" >© 2024 Economic Space. All rights reserved.</p>
+            <div class="container px-5 d-flex align-items-center justify-content-between">
+                <p class="text-white mb-0 font-700 font-22" >© 2024 Economic Space. All rights reserved.</p>
                 <div class="d-flex align-items-center">
                         <img class="icon-insta mr-2 hovered" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
                         <img class="icon-linkedin hovered" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
