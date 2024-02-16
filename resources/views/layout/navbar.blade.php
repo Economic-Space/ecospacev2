@@ -55,7 +55,7 @@
                     <a class="btn btn-dark font-24" aria-current="page" href="{{url('/soon')}}">Login</a>
                 </li> --}}
                 <li class="nav-item px-2">
-                    <a class="btn btn-dark font-24" aria-current="page" href="https://bit.ly/OprecTutorECONSPACE">Join Economic Space</a>
+                    <a target="_blank" class="btn btn-dark font-24" aria-current="page" href="https://bit.ly/OprecTutorECONSPACE">Join Economic Space</a>
                 </li>
             </ul>
           </div>
@@ -68,7 +68,9 @@
 
     @yield('content')
 
-    <footer class="desktop">
+    {{-- FOOTER YG INGIN MENDAPATKAN --}}
+
+    <footer class="desktop mt-4">
         <div class="container">
           <div class="d-flex justify-content-between">
             <div class="d-flex align-items-center">
@@ -83,7 +85,7 @@
         </div>
     </footer>
 
-    <footer class="mobile">
+    <footer class="mobile mt-4">
         <div class="container">
             <div class="row">
                 <div class="text-center d-flex flex-column justify-content-center align-items-center">
@@ -107,10 +109,10 @@
             <div class="container px-5 pb-3 pt-4 mt-5 align-items-center justify-content-center">
                 <div class="d-flex mt-2 mb-3">
                     <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img me-auto">
-                    <a href="https://bit.ly/OprecTutorECONSPACE" class="align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
+                    <a target="_blank" href="https://bit.ly/OprecTutorECONSPACE" class="align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
                         Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
                     </a>
-                    <a href="https://wa.link/fbua0a" class=" align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 hovered d-flex align-items-center justify-content-center">
+                    <a target="_blank" href="https://wa.link/fbua0a" class=" align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 hovered d-flex align-items-center justify-content-center">
                         Interest for Partnership? <i class="fa fa-external-link text-white ms-2"></i>
                     </a>
                 </div>
@@ -146,10 +148,10 @@
                     <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img">
                     <div class="d-flex flex-column">
                         {{-- vertical --}}
-                        <a href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 me-3 hovered mb-2" style="width: 100%">
+                        <a target="_blank" href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 me-3 hovered mb-2" style="width: 100%">
                             Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
                         </a>
-                        <a href="https://wa.link/fbua0a" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 hovered" style="width: 100%">
+                        <a target="_blank" href="https://wa.link/fbua0a" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 hovered" style="width: 100%">
                             Interest for Partnership? <i class="fa fa-external-link text-white ms-2"></i>
                         </a>
                     </div>

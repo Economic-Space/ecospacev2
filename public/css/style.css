@@ -631,12 +631,11 @@ button:hover {
 .mobile .box-wa {
     display: flex;
     align-items: center;
-    padding: 1px; /* Add padding to the inner box */
+    padding: 1px;
     background-color: var(--color-white);
     border-radius: 15px;
-    height: 80%;
     width: 90%;
-    margin: 15px;
+    margin-top: 0;
 }
 
 .icon-smile {
@@ -684,10 +683,7 @@ button:hover {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    height: auto;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .mobile .overlay-text {
@@ -974,15 +970,6 @@ button:hover {
     border-radius: 20px;
     height: 80px;
     width: 20%;
-}
-
-.mobile .box-wa-1 {
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    height: auto;
-    width: 100%;
-    padding-left: 15px;
 }
 
 .mobile .overlay-text {

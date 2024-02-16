@@ -10,15 +10,10 @@
     <div class="container bg-darkblue py-3 px-lg-3 half-up rounded-3 w-mobile-80">
         <div class="row justify-content-center gy-2 gy-lg-0">
             <div class="col-12 col-lg-5">
-                <form action="{{route('searchTutor')}}" method="GET">
+                <form id="searchForm" action="{{route('searchTutor')}}" method="GET">
                     <div class="row gx-2 gy-1 gy-lg-0">
-                        <div class="col-9">
-                            <input class="w-100 rounded-3 border-0 py-2 px-2 font-18" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
-                        </div>
-                        <div class="col-3">
-                            <button id="search" class="w-100 bg-orange text-white border-0 rounded-3 py-2 px-3 font-18" type="submit" >
-                                Cari
-                            </button>
+                        <div class="col-12">
+                            <input id="tutorSearchBar" class="w-100 rounded-3 border-0 py-2 px-2 font-18" type="text" name="tutorSearchBar" placeholder="Cari Nama Mata Kuliah" aria-label="Cari Nama Mata Kuliah">
                         </div>
                     </div>
                 </form>
@@ -44,12 +39,12 @@
                             </select>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-xxl-3 w-100 font-18" type="submit" >
+                            <button id="pilih" class="bg-orange text-white border-0 rounded-3 py-2 px-xxl-3 w-100 font-20" type="submit" >
                                 Pilih
                             </button>
                         </div>
                         <div class="col-6 col-lg-3">
-                            <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-xxl-3 w-100 font-18" formaction="{{ route('clearFilters') }}">
+                            <button id="hapus" class="bg-white border-0  rounded-3 py-2 px-xxl-3 w-100 font-20" formaction="{{ route('clearFilters') }}">
                                 <i class="fa-solid fa-broom me-1"></i> Hapus Filter
                             </button>
                         </div>
@@ -77,7 +72,7 @@
 
     <!-- TUTOR SESSION -->
     <div class="container-fluid bg-milk-mobile">
-        <div id="t-session"  class="container mt-5 mb-5">
+        <div id="t-session"  class="container mt-0 mt-md-5 mb-5">
             <div class="row justify-content-center justify-content-md-start bg-milk rounded-4">
                 {{-- gambar joshua --}}
                 <div class="col-10 col-md-4 py-4 desktop">
@@ -93,11 +88,11 @@
                 </div>
                 {{-- tulisan, ada di mobile jg --}}
                 <div class="col-12 col-md-7 py-4">
-                    <div>
+                    <div class="ps-3 ps-md-0">
                         <h1 class="font-black font-42 font-900">Tutor Session </h1>
                         <p class="font-26 font-400">Menyediakan Kebutuhan Belajar Akademikmu | Senantiasa menjaga kualitas pengajar dan memperluas jangkauan jenis mata kuliah.</p>
                     </div>
-                    <div class="mt-3">
+                    <div class="ps-3 ps-md-0 mt-3">
                         <h3 class="font-26 font-700">Keunggulan Kami:</h3>
                         <div class="d-flex align-items-center">
                             <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="">
@@ -135,26 +130,80 @@
         var currentPage = {{ $subjects->currentPage() }};
         var lastPage = {{ $subjects->lastPage() }};
 
+        // Function to show or hide load button based on current page and last page
+        function showOrHideLoadButton() {
+            if (currentPage >= lastPage) {
+                $('.lazy-loading').hide(); // Hide the button if there are no more pages
+            } else {
+                $('.lazy-loading').show(); // Show the button if there are more pages
+            }
+        }
+
+        // Function to display "No data" message
+        function showNoDataMessage() {
+            $('#subject-container').html('<p class="text-center">No data to display</p>');
+            $('.lazy-loading').hide(); // Hide the load button
+        }
+
+        // Function to handle live search and filter
+        function handleSearch() {
+            var searchTerm = $('#tutorSearchBar').val().trim(); // Get the search term and remove leading/trailing whitespace
+
+            $.ajax({
+                url: $('#searchForm').attr('action'),
+                type: $('#searchForm').attr('method'),
+                data: $('#searchForm').serialize(),
+                success: function(response) {
+                    if (response.trim() === '') {
+                        showNoDataMessage(); // Display "No data" message if response is empty
+                    } else {
+                        $('#subject-container').html(response); // Update subject container with response
+                        currentPage = 1; // Reset current page to 1 after search/filter
+                        showOrHideLoadButton();
+                    }
+                }
+            });
+        }
+
+        // Event listener for live search
+        $(document).ready(function() {
+            $('#tutorSearchBar').on('input', function() {
+                handleSearch();
+            });
+        });
+
+        // Event listener for lazy loading
         $('.lazy-loading').click(function() {
             if (currentPage >= lastPage) {
                 $(this).hide(); // Hide the button if there are no more pages
                 return;
             }
 
+            var searchTerm = $('#tutorSearchBar').val().trim(); // Get the current search term
+            var nextPage = currentPage + 1;
+
             $.ajax({
                 url: "{{ route('viewTutors') }}",
                 type: "GET",
-                data: { page: currentPage + 1 }, // Load next page
+                data: { page: nextPage, tutorSearchBar: searchTerm }, // Include the search term in the pagination request
                 success: function(data) {
-                    $('#subject-container').append(data); // Append new subjects
-                    currentPage++; // Update current page after successful load
-
-                    if (currentPage >= lastPage) {
-                        $('.lazy-loading').hide(); // Hide the button if there are no more pages
+                    if (data.trim() === '') {
+                        showNoDataMessage(); // Display "No data" message if response is empty
+                    } else {
+                        $('#subject-container').append(data); // Append new subjects
+                        currentPage++; // Update current page after successful load
+                        showOrHideLoadButton(); // Show or hide load button based on current page and last page
                     }
                 }
             });
         });
+
+        // Initial setup
+        $(document).ready(function() {
+            showOrHideLoadButton(); // Show or hide load button based on current page and last page
+        });
+
     </script>
+
 
 @endsection

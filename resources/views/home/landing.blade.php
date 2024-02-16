@@ -3,9 +3,9 @@
 @section('content')
 
 <!-- HEADER -->
-<header class="container-fluid bg-img-orange px-md-5 py-md-5 pb-5 ">
+<header class="container-fluid bg-img-orange px-md-5 py-md-5 pb-5">
     <div class="container align-items-center">
-        <div class="row px-md-5">
+        <div class="row px-md-5 pt-md-5">
             <div>
                 <h1 class="font-400 text-white font-64 mt-5" style="display: inline-block">Persiapkan Dirimu<br>menjadi <br class="mobile"><span class="font-900 stroke-underline auto-type"></span></h1>
             </div>
@@ -20,7 +20,7 @@
 
         <div class="row px-md-5 mt-4">
             <div class="col-12">
-            <a class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4" href="https://bit.ly/RegistrationTutorService">Register Now</a>
+            <a target="_blank" class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4" href="https://bit.ly/RegistrationTutorService">Register Now</a>
             </div>
         </div>
     </div>
@@ -384,7 +384,7 @@
             </div>
             <div>
                 <h4 class="font-36 font-700">Register / Sign In</h4>
-                <p class="font-26 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
+                <p class="font-26 font-400">Isi Data Diri & Gabung dalam Komunitas & Mulai Belajar</p>
             </div>
             </div>
         </div>
@@ -395,7 +395,7 @@
             </div>
             <div>
                 <h4 class="font-36 font-700">Pick & Enroll</h4>
-                <p class="font-26 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
+                <p class="font-26 font-400">Ambil sesuai Kebutuhan Akademik/ Tujuan Karirmu</p>
             </div>
             </div>
         </div>
@@ -425,7 +425,7 @@
                         </div>
                         <div>
                             <h4 class="font-44 font-700">Register / Sign In</h4>
-                            <p class="font-32 font-400">Isi Data Diri & Gabung dalam Komunitas</p>
+                            <p class="font-32 font-400">Isi Data Diri & Gabung dalam Komunitas & Mulai Belajar</p>
                         </div>
                     </div>
                 </div>
@@ -438,7 +438,7 @@
                         </div>
                         <div>
                             <h4 class="font-44 font-700">Pick & Enroll</h4>
-                            <p class="font-32 font-400">Pilih Program sesuai Kebutuhan Belajarmu</p>
+                            <p class="font-32 font-400">Ambil sesuai Kebutuhan Akademik/ Tujuan Karirmu</p>
                         </div>
                     </div>
                 </div>
@@ -686,19 +686,19 @@
             <div class="wrapper">
                 <div class="p"></div>
                 <div class="img-area">
-                <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank">
                     <img src="{{ asset('assets/home/sheet1.svg') }}" class="img img-box box-4 hovered">
                 </a>
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
                     <img src="{{ asset('assets/home/sheet2.svg') }}" class="img img-box box-5 hovered">
                 </a>
                 <img src="{{ asset('assets/home/sheet3.svg') }}" class="img img-box box-6 hovered">
 
 
-                <a href="https://www.linkedin.com/company/economic-space/mycompany/">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank">
                     <img src="{{ asset('assets/home/folder1.svg') }}" class="img img-box box-7 hovered">
                 </a>
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
                     <img src="{{ asset('assets/home/folder2.svg') }}" class="img img-box box-8 hovered">
                 </a>
                 <img src="{{ asset('assets/home/folder3.svg') }}" class="img img-box box-9 hovered">
@@ -730,7 +730,7 @@
             <div class="box-wa justify-content-center hovered">
                 <img class="img-fluid icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
                 <div class="font-400 font-24">
-                    <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                    <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
                         Hubungi Kami
                     </a>
                 </div>
@@ -756,13 +756,13 @@
                         <img src="{{ asset('assets/home/icon2.svg') }}" class="icon-1 m-1" alt="img-fluid" style="width: 50px;">
                         <h3 class="font-900 font-32 mt-1 text-right">WhatsApp Community</h3>
                         <p class="font-18 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
-                        <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" class="text-white">Join Now</a></button>
+                        <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank" class="text-white">Join Now</a></button>
                     </div>
                     <div class="card card-2">
                         <img src="{{ asset('assets/home/icon1.svg') }}" class="icon-2 m-1" alt="img-fluid" style="width: 50px;">
                         <h3 class="font-900 font-32 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition</h3>
-                        <p class="font-18 text-right mt-1" style="text-align: right;">Exclusive information on Career, Scholarship, Competition, etc.No More Miss Out on Opportunities</p>
-                        <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" class="text-white">Discover Now</a></button>
+                        <p class="font-18 text-right mt-1" style="text-align: right;">Exclusive information on Career, Scholarship, Competition, etc. No More Miss Out on Opportunities</p>
+                        <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank" class="text-white">Discover Now</a></button>
                     </div>
                 </div>
             </div>
@@ -773,19 +773,19 @@
     {{-- kotak oren --}}
 
     <div class="mobile">
-    <div class="container">
-        <div class="box-orange">
-        <div class="box-wa-1 justify-content-center align-items-center">
-            <p class="py-text-white pt-2 font-36 font-700">Punya pertanyaan lebih lanjut?</p>
+        <div class="container">
+            <div class="box-orange">
+                <div class="text-center">
+                    <p class="font-36 font-700 mb-1">Punya pertanyaan lebih lanjut?</p>
+                </div>
+                <div class="box-wa justify-content-center mb-1 mt-0">
+                    <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
+                    <a target="_blank" href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="box-wa justify-content-center pt-0 mt-0">
-            <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
-            <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
-                Hubungi Kami
-            </a>
-        </div>
-        </div>
-    </div>
     </div>
 </div>
 
