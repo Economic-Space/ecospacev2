@@ -3,6 +3,7 @@
 use App\Http\Controllers\DetailTutorsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewTutorsController;
+use App\Http\Controllers\ViewMentorshipController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,11 @@ Route::get('/', function () {
     return view('home.landing');
 });
 
-Route::get('/soon', function () {
-    return view('home.soon');}
+Route::get(
+    '/soon',
+    function () {
+        return view('home.soon');
+    }
 )->name('soon');
 
 /* View Tutor */
@@ -30,3 +34,5 @@ Route::get('/tutors/clear', [ViewTutorsController::class, 'clearFilters'])->name
 Route::get('/tutors/search', [ViewTutorsController::class, 'searchSubjects'])->name('searchTutor');
 Route::get('/tutors/{id}', [DetailTutorsController::class, 'index'])->name('detailTutor');
 
+/* View mentorship */
+Route::get('/mentorship', [ViewMentorshipController::class, 'index'])->name('viewMentorship');

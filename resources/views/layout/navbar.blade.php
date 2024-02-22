@@ -12,6 +12,7 @@
     {{-- custom css --}}
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tutor.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mentorship.css') }}" rel="stylesheet">
     {{-- logo for page title --}}
     <link rel="icon" type="image/svg" href="{{ asset('assets/socmed/logo_favicon.svg') }}" sizes="32x32">
     {{-- animation --}}
@@ -43,7 +44,7 @@
                     <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Event</a>
                 </li>
                 <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Mentorship</a>
+                    <a class="nav-link font-24" aria-current="page" href="{{url('/mentorship')}}">Mentorship</a>
                 </li>
 
             </ul>

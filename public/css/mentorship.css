@@ -1,0 +1,62 @@
+.card-section {
+    padding: 80px 0 80px;
+}
+
+.card {
+    padding: 15px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border: none !important;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 75%,
+        rgba(255, 165, 0, 0.8) 110%
+    );
+    z-index: 1;
+}
+
+.card-two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 75%,
+        rgba(130, 219, 212, 1) 110%
+    );
+    z-index: 1;
+}
+
+.card-title {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0px;
+}
+
+.card-text {
+    color: #ddd;
+    padding-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.top-75 {
+    top: 75%;
+}
