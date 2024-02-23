@@ -50,7 +50,7 @@
         <div class="desktop py-md-3 px-md-5">
             <div class="row gx-5">
                 <div class="col-4">
-                    <a href="{{url('/soon')}}">
+                    <a href="{{url('/tutors')}}">
                         <div  data-aos="fade-down" data-aos-duration="1000" class="hovered">
                             <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
@@ -118,7 +118,7 @@
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="width-smaller">
                         <div class="half-down bg-orange rounded-5 text-center service-title mx-auto pt-2 pb-1">
-                            <a href="{{url('/soon')}}">
+                            <a href="{{url('/tutors')}}">
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
                             </a>
 
