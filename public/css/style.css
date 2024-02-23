@@ -19,21 +19,21 @@ button:hover {
     filter: brightness(90%);
 }
 
-
 /* default scaling for font size */
 :root {
     --vw-scale-factor: 1;
     --color-black: #16182b;
     --color-blue: #84dfd8;
-    --color-mediumblue: #0A4AAA;
-    --color-green: #AEF495;
-    --color-orange: #FC8025;
+    --color-mediumblue: #0a4aaa;
+    --color-green: #aef495;
+    --color-orange: #fc8025;
     --color-milk: #f2eee9;
-    --color-red: #FF4778;
+    --color-red: #ff4778;
+    --color-secondorange: #f44730;
     --color-white: #ffffff;
     --color-darkblue: #15172a;
-    --color-lightblue: #D2F9F7;
-    --color-yellow: #FFC61A;
+    --color-lightblue: #d2f9f7;
+    --color-yellow: #ffc61a;
 }
 
 /* GENERAL */
@@ -219,6 +219,9 @@ button:hover {
 
 .text-red {
     color: var(--color-red);
+}
+.text-secondorange {
+    color: var(--color-secondorange);
 }
 
 .text-yellow {
@@ -1036,7 +1039,6 @@ button:hover {
     top: 0%;
 }
 
-
 /* TANYA KONSULTAN YG FIX BOTTOM */
 /* .fix-bottom {
     position: fixed;
@@ -1177,7 +1179,7 @@ button:hover {
     }
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
     .bg-img-white {
         background: url("../assets/background/bgwhitemobile.svg");
     }
@@ -1195,4 +1197,3 @@ button:hover {
         transform: translateX(-33%);
     }
 }
-
