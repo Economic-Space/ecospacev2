@@ -20,7 +20,7 @@
 
         <div class="row px-md-5 mt-4">
             <div class="col-12">
-            <a target="_blank" class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4" href="https://bit.ly/RegistrationTutorService">Register Now</a>
+            <a target="_blank" class="btn btn-dark font-32 font-700 p-2 px-4 rounded-4" href="https://bit.ly/RegistrationTutorService">Mulai Belajar</a>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="desktop py-md-3 px-md-5">
             <div class="row gx-5">
                 <div class="col-4">
-                    <a href="{{url('/soon')}}">
+                    <a href="{{url('/tutors')}}">
                         <div  data-aos="fade-down" data-aos-duration="1000" class="hovered">
                             <div class="bg-orange rounded-5 text-center service-title mx-auto py-2 half-down">
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
@@ -118,7 +118,7 @@
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="width-smaller">
                         <div class="half-down bg-orange rounded-5 text-center service-title mx-auto pt-2 pb-1">
-                            <a href="{{url('/soon')}}">
+                            <a href="{{url('/tutors')}}">
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
                             </a>
 
@@ -231,43 +231,43 @@
 
         {{-- content desktop --}}
         <div class="col-md-8">
-        <div class="desktop swiper sample-slider">
-            <div class="swiper-wrapper tutor">
-                <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
-                    <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
-                </div>
-                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="...">
-                </div>
-                <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="...">
-                </div>
-                <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="...">
-                </div>
-                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="...">
-                </div>
+            <div class="desktop swiper sample-slider">
+                <div class="swiper-wrapper tutor">
+                    <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
+                        <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="...">
+                    </div>
 
 
-                <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;" >
-                    <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="...">
-                </div>
-                <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="...">
-                </div>
+                    <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;" >
+                        <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="...">
+                    </div>
 
-                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="...">
-                </div>
-                <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="...">
-                </div>
-                <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                    <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="...">
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="...">
+                    </div>
+                    <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
+                        <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="...">
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
     </div>
