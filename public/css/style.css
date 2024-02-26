@@ -249,12 +249,9 @@ button:hover {
 /* === BACKGROUND IMAGE === */
 .bg-img-orange {
     min-height: 100vh;
-    background: url("../assets/background/bghome.svg");
-    background-position: 0px 0px, 100% 50%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../assets/background/bghome.webp") center/cover no-repeat;
 }
+
 
 .bg-img-white {
     min-height: 30vh;
@@ -1089,6 +1086,23 @@ button:hover {
 
 /* mobile */
 @media (max-width: 767px) {
+    /* font */
+    .font-18 {
+        font-size: calc(1.5rem * var(--vw-scale-factor)); /* equivalent to 12px */
+    }
+
+    .font-20 {
+        font-size: calc(1.6667rem * var(--vw-scale-factor)); /* equivalent to 13.3333px */
+    }
+
+    .font-21 {
+        font-size: calc(1.75rem * var(--vw-scale-factor)); /* equivalent to 14px */
+    }
+
+    .font-22 {
+        font-size: calc(1.8333rem * var(--vw-scale-factor)); /* equivalent to 14.6667px */
+    }
+
     .bg-img-orange {
         background: var(--color-orange);
         min-height: auto;

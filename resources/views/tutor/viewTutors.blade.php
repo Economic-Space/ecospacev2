@@ -2,8 +2,8 @@
 
 @section('content')
     <!-- HEADER -->
-    <img src="{{asset('assets/background/bgtutors.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor desktop">
-    <img src="{{asset('assets/background/bgtutors_mobile.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor mobile">
+    <img loading="lazy"  src="{{asset('assets/background/bgtutors.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor desktop">
+    <img loading="lazy"  src="{{asset('assets/background/bgtutors_mobile.svg')}}" alt="Banner tutor" class="img-fluid w-100 header-tutor mobile">
 
     <!-- FILTER-->
 
@@ -77,13 +77,13 @@
                 {{-- gambar joshua --}}
                 <div class="col-10 col-md-4 py-4 desktop">
                     <div class="emo1 full-down quarter-right">
-                        <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                        <img loading="lazy"  src="{{asset('assets/home/emoji1.svg')}}" alt="emoji 1" class="mx-auto d-block img-fluid img-emoji">
                     </div>
                     <div class="emo2 full-down quarter-right ">
-                        <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                        <img loading="lazy"  src="{{asset('assets/home/emoji2.svg')}}" alt="emoji 2" class="mx-auto d-block img-fluid img-emoji">
                     </div>
                     <div class="m-5 bg-orange border border-dark mx-auto mb-0" style="height: 180px; width:80% ;border-radius:10px">
-                        <img src="{{asset('assets/mentor/joshua2.svg')}}" alt="" class="mx-auto d-block img-fluid" style="max-height: 250px">
+                        <img loading="lazy"  src="{{asset('assets/mentor/joshua2.svg')}}" alt="Joshua" class="mx-auto d-block img-fluid" style="max-height: 250px">
                     </div>
                 </div>
                 {{-- tulisan, ada di mobile jg --}}
@@ -95,13 +95,13 @@
                     <div class="ps-3 ps-md-0 mt-3">
                         <h3 class="font-26 font-700">Keunggulan Kami:</h3>
                         <div class="d-flex align-items-center">
-                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="">
+                            <img loading="lazy"  style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="icon">
                             <div class="font-22 font-400">
                                 Menyediakan <span class="font-700">Tutor berdasarkan Universitas</span>  agar Relevan <br class="desktop">Ilmu & Pembelajaran sesuai dengan kebutuhan Mahasiswa
                             </div>
                         </div>
                         <div class="d-flex align-items-center mt-2">
-                            <img style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="">
+                            <img loading="lazy"  style="width:10%; max-width: 50px;" class="me-2" src="{{asset ('assets/home/icon3.svg')}}" alt="icon">
                             <div class="font-22 font-400"> <span class="font-700">
                                 Spesialisasi Pengajaran Mata Kuliah</span> pada Bidang Akuntansi, <br class="desktop">Ilmu Ekonomi, Manajemen Bisnis & Keuangan.
                             </div>
