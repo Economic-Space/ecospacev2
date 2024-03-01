@@ -10,18 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     {{-- custom css --}}
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/tutor.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/mentorship.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="{{ asset('css/tutor.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="{{ asset('css/mentorship.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
     {{-- logo for page title --}}
     <link rel="icon" type="image/svg" href="{{ asset('assets/socmed/logo_favicon.svg') }}" sizes="32x32">
     {{-- animation --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     {{-- icon --}}
-    <script src="https://kit.fontawesome.com/92b0bdfcf0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/92b0bdfcf0.js" crossorigin="anonymous" defer></script>
     {{-- typed animation --}}
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    {{-- meta description --}}
+    <meta
+  name="description"
+  content="Ultimate hub for university students to support them Academically with Expert Tutors, while providing with Insights for their Future Career Plan through Insights Exploration with Mentors">
 </head>
 <body>
 
@@ -30,7 +36,7 @@
     <nav class="navbar navbar-expand-md sticky-top bg-white px-md-5">
         <div class="container">
         <a href="{{ url('/') }}" class="logo-link">
-            <img src="{{ asset('assets/socmed/logo.svg') }}" class="logo-img" alt="Economic space">
+            <img loading="lazy"  src="{{ asset('assets/socmed/logo.svg') }}" class="logo-img" alt="Economic space">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,7 +81,7 @@
         <div class="container">
           <div class="d-flex justify-content-between">
             <div class="d-flex align-items-center">
-                <img class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                <img loading="lazy"  class="img-fluid icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="economic space logo">
                 <a class="ms-3 bg-black rounded-4 p-2 font-700 font-42 text-white hovered text-center" style="min-width: 300px;" href="{{ route('viewTutors') }}">@yield('desktopBtn')</a>
             </div>
             <div class="align-items-center pt-3" style="text-align: right;">
@@ -96,7 +102,7 @@
             <div>
             <div class="row">
                 <div class=" mt-1 d-flex align-items-center justify-content-center">
-                    <img class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="">
+                    <img loading="lazy"  class="icon-smile" src="{{asset('assets/home/smile.svg')}}" alt="icon smile">
                     <a class="ms-3 bg-black rounded-4 p-2 font-700 font-44 text-white" href="{{ route('viewTutors') }}">@yield('mobileBtn')</a>
                 </div>
             </div>
@@ -109,7 +115,7 @@
         <div class="container-fluid bg-black">
             <div class="container px-5 pb-3 pt-4 mt-5 align-items-center justify-content-center">
                 <div class="d-flex mt-2 mb-3">
-                    <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img me-auto">
+                    <img loading="lazy"  src="{{asset('assets/socmed/logowhite.svg')}}" alt="economic space logo white" class="logo-img me-auto">
                     <a target="_blank" href="https://bit.ly/OprecTutorECONSPACE" class="align-self-start py-2 button-glow text-white bg-orange px-3 rounded-5 font-22 font-400 me-3 hovered d-flex align-items-center justify-content-center">
                         Join as Tutor / Mentor <i class="fa fa-external-link text-white ms-2"></i>
                     </a>
@@ -124,8 +130,8 @@
             <div class="container px-5 d-flex align-items-center justify-content-between">
                 <p class="text-white mb-0 font-700 font-22" >© 2024 Economic Space. All rights reserved.</p>
                 <div class="d-flex align-items-center">
-                        <img class="icon-insta mr-2 hovered" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
-                        <img class="icon-linkedin hovered" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
+                        <img loading="lazy"  class="icon-insta mr-2 hovered" src="{{asset('assets/socmed/insta.svg')}}" alt="instagram icon" onclick="redirectTo('https://www.instagram.com/economic.space/')">
+                        <img loading="lazy"  class="icon-linkedin hovered" src="{{asset('assets/socmed/linkedin.svg')}}" alt="linkedin icon" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
                 </div>
             </div>
         </div>
@@ -139,14 +145,14 @@
             <div class=" container-fluid py-2 bg-black mt-2 align-items-center justify-content-center">
                 {{-- socmed icon --}}
                 <div class="icon d-flex align-items-center">
-                    <img class="icon-insta mr-2" src="{{asset('assets/socmed/insta.svg')}}" alt="" onclick="redirectTo('https://www.instagram.com/economic.space/')">
-                    <img class="icon-linkedin" src="{{asset('assets/socmed/linkedin.svg')}}" alt="" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
+                    <img loading="lazy"  class="icon-insta mr-2" src="{{asset('assets/socmed/insta.svg')}}" alt="icon instagram" onclick="redirectTo('https://www.instagram.com/economic.space/')">
+                    <img loading="lazy"  class="icon-linkedin" src="{{asset('assets/socmed/linkedin.svg')}}" alt="icon linkedin" onclick="redirectTo('https://www.linkedin.com/company/economic-space/')">
                 </div>
 
                 {{-- buttons --}}
                 {{-- horizontal --}}
                 <div class="d-flex mb-4 justify-content-center gap-3">
-                    <img src="{{asset('assets/socmed/logowhite.svg')}}" alt="" class="logo-img">
+                    <img loading="lazy"  src="{{asset('assets/socmed/logowhite.svg')}}" alt="economic space logo" class="logo-img">
                     <div class="d-flex flex-column">
                         {{-- vertical --}}
                         <a target="_blank" href="https://bit.ly/OprecTutorECONSPACE" class="button-glow text-white text-center bg-orange p-2 rounded-5 font-22 font-400 me-3 hovered mb-2" style="width: 100%">
@@ -159,11 +165,11 @@
 
                 </div>
 
-                <p class=" text-white px-5 mb-2 text-center font-400" style="font-style: italic; font-size: 0.6em;">Private Enterprise Organization dedicated to Education Technology to prepare for Post-College Life</p>
+                <p class=" text-white px-5 mb-2 text-center font-400" style="font-style: italic; font-size: 12px;">Private Enterprise Organization dedicated to Education Technology to prepare for Post-College Life</p>
             </div>
         </div>
         <div class="container-fluid brown-gradient py-1 align-items-center">
-            <p class="font-700 text-white px-5 mb-0 text-center" style="font-size: 0.6em;">© 2023 Economic Space. All rights reserved.</p>
+            <p class="font-700 text-white px-5 mb-0 text-center" style="font-size: 12px;">© 2023 Economic Space. All rights reserved.</p>
         </div>
     </footer>
 
@@ -171,7 +177,7 @@
     {{-- <a href="https://wa.link/fbua0a" target="_blank">
         <div class="fix-bottom">
             <div class="d-flex align-items-center justify-content-center bg-orange py-2 px-2 rounded-5">
-                <img src="{{asset('assets/socmed/wa.svg')}}" class="img-fluid fix-image pe-2">
+                <img loading="lazy"  src="{{asset('assets/socmed/wa.svg')}}" class="img-fluid fix-image pe-2">
                 <h5 class="font-700 text-white font-22">Tanya Konsultan</h5>
             </div>
         </div>

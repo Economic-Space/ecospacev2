@@ -32,90 +32,46 @@ function animateValue(obj, start, end, duration) {
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const obj1 = document.getElementById("numcounter1");
-        animateValue(obj1, 0, 250, 3000);
-
-        const obj2 = document.getElementById("numcounter2");
-        animateValue(obj2, 0, 70, 3000);
-
-        const obj3 = document.getElementById("numcounter3");
-        animateValue(obj3, 0, 90, 3000);
-      }
+        if (entry.isIntersecting) {
+            animateValue(document.getElementById("numcounter1"), 0, 250, 3000);
+            animateValue(document.getElementById("numcounter2"), 0, 70, 3000);
+            animateValue(document.getElementById("numcounter3"), 0, 90, 3000);
+        }
     });
-  }, options);
+}, options);
 
-  const target1 = document.querySelector('#numcounter1');
-  observer.observe(target1);
-
-  const target2 = document.querySelector('#numcounter2');
-  observer.observe(target2);
-
-  const target3 = document.querySelector('#numcounter3');
-  observer.observe(target3);
-
+const targets = document.querySelectorAll('.numcounter');
+targets.forEach(target => observer.observe(target));
 
   // marquee for tutor
-const swiper = new Swiper('.sample-slider', {
-    loop: true,
-    autoplay: {
-        delay: 0,
-    },
-    speed: 3000,
-    slidesPerView: 3,
-})
+  function initializeSwiper(selector, slidesPerView) {
+    return new Swiper(selector, {
+        loop: true,
+        autoplay: {
+            delay: 0,
+        },
+        speed: 3000,
+        slidesPerView: slidesPerView,
+    });
+}
 
-const swiper2 = new Swiper('.mobile-slider', {
-    loop: true,
-    autoplay: {
-        delay: 0,
-    },
-    speed: 3000,
-    slidesPerView: 2,
-})
-
+initializeSwiper('.sample-slider', 3);
+initializeSwiper('.mobile-slider', 2);
 // flip
-
-const swiper3 = new Swiper('.step-slider', {
-    loop: true,
-    autoplay: {
-        delay: 0,
-    },
-    speed: 2000,
-    mousewheel: true,
-    slidesPerView: 1,                    // slide speed
-    effect: 'flip',                     // apply flip effect
-    flipEffect: {
-        slideShadows: false,            // Remove the shadow on the slide surface
-    },
-})
-
+initializeSwiper('.step-slider', 1, 'flip');
 
 // agar besar div sama
 window.addEventListener('load', function () {
-    var cards = document.querySelectorAll('#card-testimoni');
-    var services = document.querySelectorAll('#label-service');
+    const cards = document.querySelectorAll('#card-testimoni');
+    const services = document.querySelectorAll('#label-service');
 
-    var maxHeight = 0;
-    cards.forEach(function(card) {
-        maxHeight = Math.max(maxHeight, card.offsetHeight);
-    });
+    let maxHeight = 0;
+    cards.forEach(card => maxHeight = Math.max(maxHeight, card.offsetHeight));
+    cards.forEach(card => card.style.height = maxHeight + 'px');
 
-    console.log("maxHeight: " + maxHeight);
-
-    cards.forEach(function(card) {
-        card.style.height = maxHeight + 'px';
-    });
-
-    var maxHeightLabel = 0;
-    services.forEach(function(service) {
-        maxHeightLabel = Math.max(maxHeightLabel, service.offsetHeight);
-    });
-
-    services.forEach(function(service) {
-        service.style.height = maxHeightLabel + 'px';
-    });
-
+    let maxHeightLabel = 0;
+    services.forEach(service => maxHeightLabel = Math.max(maxHeightLabel, service.offsetHeight));
+    services.forEach(service => service.style.height = maxHeightLabel + 'px');
 });
 
 

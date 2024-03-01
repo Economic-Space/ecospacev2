@@ -56,12 +56,12 @@
                                 <h4 class="font-32 font-900">Academic Chamber</h4>
                             </div>
                             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 ">
-                                <img src="{{asset('assets/home/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
+                                <img loading="lazy"  src="{{asset('assets/home/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
                                 <h3 class="font-36 text-orange font-900"><b>TUTOR SERVICE</b></h3>
                                 <p id="label-service" class="font-22 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
                             </div>
                             <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
-                                <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                                <img loading="lazy"  src="{{asset('assets/home/circle.svg')}}" alt="decorative image" class="img-fluid img-circle align-self-center">
                                 <p class="font-24 font-400 mb-0">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                             </div>
                         </div>
@@ -76,12 +76,12 @@
                                 <h4 class="font-32 font-900 text-white">Event Space</h4>
                             </div>
                             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3 ">
-                                <img src="{{asset('assets/home/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
+                                <img loading="lazy"  src="{{asset('assets/home/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
                                 <h3 class="font-36 font-900"><b>BOOTCAMP</b></h3>
                                 <p id="label-service" class="font-22 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
                             </div>
                             <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
-                                <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                                <img loading="lazy"  src="{{asset('assets/home/circle.svg')}}" alt="decorative image" class="img-fluid img-circle align-self-center">
                                 <p class="font-24 text-white font-400 mb-0">Never say never untuk Pembelajaran Baru</p>
                             </div>
                         </div>
@@ -95,12 +95,12 @@
                                 <h4 class="font-32 font-900">Mentorship Hub</h4>
                             </div>
                             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto ">
-                                <img src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
+                                <img loading="lazy"  src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service">
                                 <h3 class="font-36 text-blue font-900"><b>MENTORING</b></h3>
                                 <p id="label-service" class="font-22 font-400 ">Keterbatasan akses bukan menjadi tantangan lagi, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
                             </div>
                             <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-3 px-2 gap-3 half-up">
-                                <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                                <img loading="lazy"  src="{{asset('assets/home/circle.svg')}}" alt="decorative image" class="img-fluid img-circle align-self-center">
                                 <p class="font-24 font-400 mb-0">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                             </div>
                         </div>
@@ -124,12 +124,12 @@
 
                         </div>
                         <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3  py-5 bg-white">
-                            <img src="{{asset('assets/home/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
+                            <img loading="lazy"  src="{{asset('assets/home/face1.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                             <h3 class="font-44 text-orange font-900">TUTOR SERVICE</h3>
                             <p class="font-24 font-400">Perkuliahan jadi mudah bersama Expert yang <span class="font-600">membantu pembelajaran akademik</span> kalian</p>
                         </div>
                         <div class="bg-orange rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
-                            <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                            <img loading="lazy"  src="{{asset('assets/home/circle.svg')}}" alt="decorative image" class="img-fluid img-circle align-self-center">
                             <p class="font-24 font-400 mb-0">Minimal IPK 4 :) Ingin Belajar Lebih Dalam</p>
                         </div>
                     </div>
@@ -144,12 +144,12 @@
 
                         </div>
                         <div class="border border-3 border-black rounded-5 text-center box-service mx-auto px-3  py-5 bg-white">
-                            <img src="{{asset('assets/home/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
+                            <img loading="lazy"  src="{{asset('assets/home/face2.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                             <h3 class="font-44 font-900">BOOTCAMP</h3>
                             <p class="font-24 font-400">Belajar Ilmu Spesifik & Mendalam untuk <span class="font-600">pengembangan skill beyond kehidupan akademik</span></p>
                         </div>
                         <div class="bg-black rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
-                            <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                            <img loading="lazy"  src="{{asset('assets/home/circle.svg')}}" alt="decorative image" class="img-fluid img-circle align-self-center">
                             <p class="font-24 text-white font-400 mb-0">Never say never untuk Pembelajaran Baru</p>
                         </div>
                     </div>
@@ -163,12 +163,12 @@
 
                             </div>
                             <div class="border border-3 border-black rounded-5 text-center box-service mx-auto  py-5 bg-white px-3">
-                                <img src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
+                                <img loading="lazy"  src="{{asset('assets/home/face3.svg')}}" alt="face icon" class="mx-auto d-block img-fluid img-service pt-1">
                                 <h3 class="font-44 text-blue font-900">MENTORING</h3>
                                 <p class="font-24 font-400">Keterbatasan akses bukan hambatan, tetapi kesempatan buat <span class="font-600">belajar sama orang dalam</span></p>
                             </div>
                             <div class="bg-blue rounded-5 service-title d-flex flex-row mx-auto py-2 px-2 gap-3 half-up">
-                                <img src="{{asset('assets/home/circle.svg')}}" alt="" class="img-fluid img-circle align-self-center">
+                                <img loading="lazy"  src="{{asset('assets/home/circle.svg')}}" alt="decorative image" class="img-fluid img-circle align-self-center">
                                 <p class="font-24 font-400 mb-0">Dapatkan Akses 1-on-1 sama Ahlinya</p>
                             </div>
                         </div>
@@ -234,37 +234,37 @@
             <div class="desktop swiper sample-slider">
                 <div class="swiper-wrapper tutor">
                     <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
-                        <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="Raihan">
                     </div>
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="Hanum">
                     </div>
                     <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="Evan">
                     </div>
                     <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="Anjar">
                     </div>
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="Joshua">
                     </div>
 
 
                     <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;" >
-                        <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="Harsyanto">
                     </div>
                     <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="Rendra">
                     </div>
 
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="Daffa">
                     </div>
                     <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="Marcheline">
                     </div>
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="Dewa">
                     </div>
                 </div>
             </div>
@@ -280,36 +280,36 @@
             <div class="mobile swiper mobile-slider mt-5">
                 <div class="swiper-wrapper tutor">
                     <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;" >
-                        <img src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/raihan.svg')}}" class="img-fluid" alt="Raihan">
                     </div>
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/hanum.svg')}}" class="img-fluid" alt="Hanum">
                     </div>
                     <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/evan.svg')}}" class="img-fluid" alt="Evan">
                     </div>
                     <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/anjar.svg')}}" class="img-fluid" alt="Anjar">
                     </div>
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/joshua.svg')}}" class="img-fluid" alt="Joshua">
                     </div>
 
 
                     <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;" >
-                        <img src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/harsyanto.svg')}}" class="img-fluid" alt="Harsyanto">
                     </div>
                     <div class="swiper-slide bg-red rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/rendra.svg')}}" class="img-fluid" alt="Rendra">
                     </div>
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/daffa.svg')}}" class="img-fluid" alt="Daffa">
                     </div>
                     <div class="swiper-slide bg-orange rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/marcheline.svg')}}" class="img-fluid" alt="Marcheline">
                     </div>
                     <div class="swiper-slide bg-blue rounded-3" style="margin-left: 3%; margin-right: 3%;">
-                        <img src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="...">
+                        <img loading="lazy"  src="{{asset('assets/mentor/dewa.svg')}}" class="img-fluid" alt="Dewa">
                     </div>
                 </div>
             </div>
@@ -334,7 +334,7 @@
     <div class="row half-up-px mt-3">
         <div class="col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="750">
             <div class="half-down">
-                <img src="{{asset('assets/home/emoji1.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                <img loading="lazy"  src="{{asset('assets/home/emoji1.svg')}}" alt="emoji" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-red border border-3 border-black rounded-5 box-potential">
                 <h4 class="text-center font-32 font-700 text-white">Easy Access & <br>Widely Available</h4>
@@ -344,7 +344,7 @@
 
         <div class=" col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="1500">
             <div class="half-down">
-                <img src="{{asset('assets/home/emoji2.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                <img loading="lazy"  src="{{asset('assets/home/emoji2.svg')}}" alt="emoji" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-blue border border-3 border-black rounded-5 box-potential">
                 <h4 class="text-center font-32 font-700">One Stop Solution for Students</h4>
@@ -354,7 +354,7 @@
         </div>
         <div class="col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="2250">
             <div class="half-down">
-                <img src="{{asset('assets/home/emoji3.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                <img loading="lazy"  src="{{asset('assets/home/emoji3.svg')}}" alt="emoji" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-mediumblue border border-3 border-black rounded-5 box-potential">
                 <h4 class="text-center font-32 font-700 text-white">Your High Quality <br>Learning Partner</h4>
@@ -364,7 +364,7 @@
         </div>
         <div class="col col-6 col-md-3 div-up-emoji" data-aos="fade-down" data-aos-duration="3000">
             <div class="half-down">
-                <img src="{{asset('assets/home/emoji4.svg')}}" alt="" class="mx-auto d-block img-fluid img-emoji">
+                <img loading="lazy"  src="{{asset('assets/home/emoji4.svg')}}" alt="emoji" class="mx-auto d-block img-fluid img-emoji">
             </div>
             <div class="bg-orange border border-3 border-black rounded-5 box-potential">
                 <h4 class="text-center font-32 font-700 ">Keep it Cheap <br>& Affordable</h4>
@@ -490,7 +490,7 @@
         <div class="row px-md-5">
             <div class="col-4">
                 <div>
-                    <img src="{{asset('assets/home/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                    <img loading="lazy"  src="{{asset('assets/home/contribute1.svg')}}" alt="decorative image" class="mx-auto d-block img-contribute">
                     <div class="hr-vertical">
                         <h1 class="text-center font-96 font-900 text-orange"><span id="numcounter1">250</span>+</h1>
                         <p class="text-center font-28 font-400">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
@@ -499,7 +499,7 @@
             </div>
             <div class="col-4">
                 <div>
-                    <img src="{{asset('assets/home/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                    <img loading="lazy"  src="{{asset('assets/home/contribute2.svg')}}" alt="decorative image" class="mx-auto d-block img-contribute">
                     <div class="hr-vertical">
                         <h1 class="text-center font-96 font-900 text-orange"><span id="numcounter2">70</span>+</h1>
                         <p class="text-center font-28 font-400">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
@@ -509,7 +509,7 @@
             </div>
             <div class="col-4">
                 <div>
-                    <img src="{{asset('assets/home/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                    <img loading="lazy"  src="{{asset('assets/home/contribute3.svg')}}" alt="decorative image" class="mx-auto d-block img-contribute">
                     <div>
                         <h1 class="text-center font-96 font-900 text-orange"><span id="numcounter3">90</span>%</h1>
                         <p class="text-center font-28 font-400">Tingkat Kepuasan<br>Penggunaan Layanan</p>
@@ -525,7 +525,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="col-12 mx-auto">
-                        <img src="{{asset('assets/home/contribute1.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                        <img loading="lazy"  src="{{asset('assets/home/contribute1.svg')}}" alt="decorative image" class="mx-auto d-block img-contribute">
                         <div class="hr-vertical">
                             <h1 class="text-center font-96 font-900 text-orange">250+</h1>
                             <p class="text-center font-28 font-400">Total Mahasiswa dalam<br>Tutor & Mentor Session</p>
@@ -534,7 +534,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="col-12 mx-auto">
-                        <img src="{{asset('assets/home/contribute2.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                        <img loading="lazy"  src="{{asset('assets/home/contribute2.svg')}}" alt="decorative image" class="mx-auto d-block img-contribute">
                         <div class="hr-vertical">
                             <h1 class="text-center font-96 text-orange font-900">70+</h1>
                             <p class="text-center font-28 font-400">Sesi Tutor & Mentor<br>telah sukses dilakukan </p>
@@ -543,7 +543,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="col-12 mx-auto">
-                        <img src="{{asset('assets/home/contribute3.svg')}}" alt="" class="mx-auto d-block img-contribute">
+                        <img loading="lazy"  src="{{asset('assets/home/contribute3.svg')}}" alt="decorative image" class="mx-auto d-block img-contribute">
                         <div>
                             <h1 class="text-center font-96 font-900 text-orange">90%</h1>
                             <p class="text-center font-28 font-400">Tingkat Kepuasan<br>Penggunaan Layanan</p>
@@ -569,21 +569,21 @@
                 <div class="col-4" data-aos="fade-down" data-aos-duration="1000">
                     <div class="border border-3 border-black rounded-4 p-4">
                         <h5 class="font-900 font-26">Belajar jadi Seru</h5>
-                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid w-100">
+                        <img loading="lazy"  src="{{asset('assets/testi/testi1.svg')}}" alt="testimonial picture" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Ester Meralda</span><br>Akuntansi 23 - UNAIR</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img loading="lazy"  src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4" data-aos="fade-down" data-aos-duration="2000">
                     <div class="border border-3 border-blue rounded-4 p-4 d-flex flex-column">
                         <h5 class="font-900 font-26 font-900">Lebih Pede di Kelas</h5>
-                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid w-100">
+                        <img loading="lazy"  src="{{asset('assets/testi/testi2.svg')}}" alt="testimonial picture" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500 ">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.
 
                         </p>
@@ -591,14 +591,14 @@
                             <div class="me-auto">
                                 <p class="font-20 font-400"><span class="font-bold font-700">Shalima Nur Kusumastuti</span><br>Akuntansi 23 - UGM</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/ugm.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img loading="lazy"  src="{{asset('assets/univ/ugm.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4" data-aos="fade-down" data-aos-duration="3000">
                     <div class="border border-3 border-red rounded-4 p-4">
                         <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
-                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid w-100">
+                        <img loading="lazy"  src="{{asset('assets/testi/testi3.svg')}}" alt="testimonial picture" class="img-fluid w-100">
                         <p id="card-testimoni" class="font-20 mt-4 font-500">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.
                         </p>
 
@@ -606,7 +606,7 @@
                         <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Nabila Putri Melati</span><br>Akuntansi 23 - UNAIR</p>
                         </div>
-                        <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                        <div><img loading="lazy"  src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -621,14 +621,14 @@
                 <div class="carousel-item active" data-bs-interval="3000">
                     <div class="border border-3 border-black rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-28 font-900">Belajar Jadi Seru</h5>
-                        <img src="{{asset('assets/testi/testi1.svg')}}" alt="" class="img-fluid w-100">
+                        <img loading="lazy"  src="{{asset('assets/testi/testi1.svg')}}" alt="testimonial picture" class="img-fluid w-100">
                         <p class="font-20 mt-4 font-500" style="height: 150px;">Wah, nggak nyangka banget deh belajar Ekonomi jadi lebih seru berkat bimbingan Kak Ali! Selain suasana yang asik, penjelasannya juga super jelas dan gampang dimengerti. Kak Ali bener-bener punya cara yang unik untuk menyampaikan materi sehingga ga bikin bosen.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Ester Meralda</span><br>Akuntansi 23 - UNAIRR</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img loading="lazy"  src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -636,14 +636,14 @@
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="border border-3 border-blue rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-28 font-900">Lebih Pede di Kelas</h5>
-                        <img src="{{asset('assets/testi/testi2.svg')}}" alt="" class="img-fluid w-100">
+                        <img loading="lazy"  src="{{asset('assets/testi/testi2.svg')}}" alt="testimonial picture" class="img-fluid w-100">
                         <p class="font-20 mt-4 font-500" style="height: 150px;">Kelas Kak Raihan dalam akuntansi adalah petualangan seru! Kak Raihan mengajar dengan sangat baik, sabar, dan penjelasan yang apik. Latihan soalnya sangat membantu untuk persiapan UAS dan meningkatkan kepercayaan diri.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Shalima Nur Kusumastuti</span><br>Akuntansi 23 - UGM</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/ugm.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img loading="lazy"  src="{{asset('assets/univ/ugm.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -651,14 +651,14 @@
                 <div class="carousel-item" data-bs-interval="3000">
                     <div class="border border-3 border-red rounded-4 box-testi p-4 width-smaller bg-white ">
                         <h5 class="font-900 font-26 font-900">Asyik Bareng Temen</h5>
-                        <img src="{{asset('assets/testi/testi3.svg')}}" alt="" class="img-fluid w-100">
+                        <img loading="lazy"  src="{{asset('assets/testi/testi3.svg')}}" alt="testimonial picture" class="img-fluid w-100">
                         <p class="font-20 mt-4 font-500" style="height: 150px;">Belajar Akuntansi jadi seru dan menyenangkan berkat Kak Imel! Kakak ini nggak hanya enak ngajarnya, tapi juga baik banget karena mau berbagi ilmu dan sharing ke kita. Kalau ada tugas atau ada yang kurang paham, Kak Imel selalu dengan sabar membantu sampai benar-benar paham.</p>
 
                         <div class="d-flex flex-row">
                             <div class="me-auto">
                             <p class="font-20 font-400"><span class="font-bold font-700">Nabila Putri Melati</span><br>Akuntansi 23 - UNAIR</p>
                             </div>
-                            <div><img src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
+                            <div><img loading="lazy"  src="{{asset('assets/univ/unair.svg')}}" alt="Logo Univ" class="img-univ"></div>
                         </div>
 
                     </div>
@@ -686,28 +686,28 @@
             <div class="wrapper">
                 <div class="p"></div>
                 <div class="img-area">
-                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank">
-                    <img src="{{ asset('assets/home/sheet1.svg') }}" class="img img-box box-4 hovered">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank" aria-label="go to economic space linkedin">
+                    <img loading="lazy"  src="{{ asset('assets/home/sheet1.svg') }}" class="img img-box box-4 hovered" alt="linkedin">
                 </a>
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
-                    <img src="{{ asset('assets/home/sheet2.svg') }}" class="img img-box box-5 hovered">
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank" aria-label="economic space whatsapp number">
+                    <img loading="lazy"  src="{{ asset('assets/home/sheet2.svg') }}" class="img img-box box-5 hovered" alt="whatsapp">
                 </a>
-                <img src="{{ asset('assets/home/sheet3.svg') }}" class="img img-box box-6 hovered">
+                <img loading="lazy"  src="{{ asset('assets/home/sheet3.svg') }}" class="img img-box box-6 hovered" alt="website">
 
 
-                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank">
-                    <img src="{{ asset('assets/home/folder1.svg') }}" class="img img-box box-7 hovered">
+                <a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank" aria-label="go to economic space linkedin">
+                    <img loading="lazy"  src="{{ asset('assets/home/folder1.svg') }}" class="img img-box box-7 hovered" alt="linkedin">
                 </a>
-                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
-                    <img src="{{ asset('assets/home/folder2.svg') }}" class="img img-box box-8 hovered">
+                <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank" aria-label="economic space whatsapp number">
+                    <img loading="lazy"  src="{{ asset('assets/home/folder2.svg') }}" class="img img-box box-8 hovered" alt="whatsapp">
                 </a>
-                <img src="{{ asset('assets/home/folder3.svg') }}" class="img img-box box-9 hovered">
-                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-10 hovered">
-                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-11 hovered">
-                <img src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-12 hovered">
-                <img src="{{ asset('assets/home/ppt2.svg') }}" class="img img-box box-1 hovered">
-                <img src="{{ asset('assets/home/ppt3.svg') }}" class="img img-box box-2 hovered">
-                <img src="{{ asset('assets/home/ppt1.svg') }}" class="img img-box box-3 hovered">
+                <img loading="lazy"  src="{{ asset('assets/home/folder3.svg') }}" class="img img-box box-9 hovered" alt="decorative image">
+                <img loading="lazy"  src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-10 hovered" alt="decorative image">
+                <img loading="lazy"  src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-11 hovered" alt="decorative image">
+                <img loading="lazy"  src="{{ asset('assets/home/arrow.svg') }}" class="img img-box box-12 hovered" alt="decorative image">
+                <img loading="lazy"  src="{{ asset('assets/home/ppt2.svg') }}" class="img img-box box-1 hovered" alt="decorative image">
+                <img loading="lazy"  src="{{ asset('assets/home/ppt3.svg') }}" class="img img-box box-2 hovered" alt="decorative image">
+                <img loading="lazy"  src="{{ asset('assets/home/ppt1.svg') }}" class="img img-box box-3 hovered" alt="decorative image">
                 </div>
             </div>
             <div class="overlay-text">
@@ -728,9 +728,9 @@
                 <h3 class="text-white font-700 font-36 mb-0 mt-2">Punya pertanyaan lebih lanjut?</h3>
             </div>
             <div class="box-wa justify-content-center hovered">
-                <img class="img-fluid icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
+                <img loading="lazy"  class="img-fluid icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="icon whatsapp">
                 <div class="font-400 font-24">
-                    <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank">
+                    <a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank" aria-label="economic space whatsapp number">
                         Hubungi Kami
                     </a>
                 </div>
@@ -753,16 +753,16 @@
             <div class="row">
                 <div class="col align-self-center justify-content-center cards mt-3">
                     <div class="card card-1">
-                        <img src="{{ asset('assets/home/icon2.svg') }}" class="icon-1 m-1" alt="img-fluid" style="width: 50px;">
+                        <img loading="lazy"  src="{{ asset('assets/home/icon2.svg') }}" class="icon-1 m-1" alt="whatsapp icon" style="width: 50px;">
                         <h3 class="font-900 font-32 mt-1 text-right">WhatsApp Community</h3>
                         <p class="font-18 text-right mt-1">Open Space Community to learn insightful thing about College & Professional Life</p>
-                        <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank" class="text-white">Join Now</a></button>
+                        <button class="btn btn-danger font-700 font-24   mt-1"><a href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" target="_blank" class="text-white" aria-label="economic space whatsapp number">Join Now</a></button>
                     </div>
                     <div class="card card-2">
-                        <img src="{{ asset('assets/home/icon1.svg') }}" class="icon-2 m-1" alt="img-fluid" style="width: 50px;">
+                        <img loading="lazy"  src="{{ asset('assets/home/icon1.svg') }}" class="icon-2 m-1" alt="whatsapp icon" style="width: 50px;">
                         <h3 class="font-900 font-32 mt-1 text-right" style="text-align: right;">LinkedIn Career & Competition</h3>
                         <p class="font-18 text-right mt-1" style="text-align: right;">Exclusive information on Career, Scholarship, Competition, etc. No More Miss Out on Opportunities</p>
-                        <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank" class="text-white">Discover Now</a></button>
+                        <button class="btn btn-danger font-700 font-24 mt-1"><a href="https://www.linkedin.com/company/economic-space/mycompany/" target="_blank" class="text-white" aria-label="go to economic space linkedin">Discover Now</a></button>
                     </div>
                 </div>
             </div>
@@ -779,8 +779,8 @@
                     <p class="font-36 font-700 mb-1">Punya pertanyaan lebih lanjut?</p>
                 </div>
                 <div class="box-wa justify-content-center mb-1 mt-0">
-                    <img class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="">
-                    <a target="_blank" href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW">
+                    <img loading="lazy"  class="icon-wa" src="{{asset('assets/socmed/wa.svg')}}" alt="whatsapp icon">
+                    <a target="_blank" href="https://chat.whatsapp.com/IDInUpM1avX7ogb091PLnW" aria-label="economic space whatsapp number">
                         Hubungi Kami
                     </a>
                 </div>

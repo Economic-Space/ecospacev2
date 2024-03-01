@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DetailMentorshipController;
 use App\Http\Controllers\DetailTutorsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewTutorsController;
@@ -36,3 +37,4 @@ Route::get('/tutors/{id}', [DetailTutorsController::class, 'index'])->name('deta
 
 /* View mentorship */
 Route::get('/mentorship', [ViewMentorshipController::class, 'index'])->name('viewMentorship');
+Route::get('/mentorship/detail', [DetailMentorshipController::class, 'index'])->name('detailMentorship');

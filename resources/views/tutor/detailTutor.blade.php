@@ -5,7 +5,7 @@
     {{-- banner --}}
     <div class="desktop container-fluid mt-3">
         <div class="container">
-            <img src="{{ asset('assets/tutorDetail/course_banner.svg') }}" alt="" class="img-fluid w-100 rounded-4">
+            <img loading="lazy"  src="{{ asset('assets/tutorDetail/course_banner.svg') }}" alt="course banner" class="img-fluid w-100 rounded-4">
         </div>
     </div>
 
@@ -17,7 +17,7 @@
                     <p class="font-21 font-400 mb-2"><a href="{{route('viewTutors')}}">Academy</a> > {{$subject->subject_title}}</p>
 
                     {{-- khusus mobile, peletakan gambarnya beda --}}
-                    <img src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid w-100 rounded-4 mobile mb-2">
+                    <img loading="lazy"  src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid w-100 rounded-4 mobile mb-2">
 
                     {{-- info spt judul dll yg sebelah kiri --}}
                     <h1 class="font-44 font-700">{{$subject->subject_title}}</h1>
@@ -40,7 +40,7 @@
                 </div>
                 {{-- gambar desktop yg sebelah kanan --}}
                 <div class="desktop col-md-6">
-                    <img src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid h-100 rounded-4 w-100">
+                    <img loading="lazy"  src="{{asset('assets/courseInside/'.$subject->subject_image)}}" alt="{{$subject->subject_image}}" class="img-fluid h-100 rounded-4 w-100">
                 </div>
 
 
@@ -55,6 +55,7 @@
             <div class="row mb-md-3">
                 <hr style="border: none; border-bottom: 3px solid grey;">
             </div>
+
             <div class="row gx-5">
 
                 {{-- sebelah kiri --}}
@@ -104,7 +105,7 @@
                                 @php $counter = 0 @endphp
                                 @foreach(json_decode($subject->subject_univ) as $univ)
                                     @if($counter < 4)
-                                        <img src="{{ asset('assets/univ/'.$univ) }}" class="img-fluid img-univ" alt="logo univ" >
+                                        <img loading="lazy"  src="{{ asset('assets/univ/'.$univ) }}" class="img-fluid img-univ" alt="logo univ" >
                                     @endif
                                     @php $counter++ @endphp
                                 @endforeach
@@ -121,17 +122,17 @@
                         <div class="border border-2 rounded-4 mt-4 py-3 px-4">
                             <h3 class="font-900 font-36 text-orange">Benefit for You</h3>
                             <div class="d-flex justify-content-left gap-2">
-                                <img src="{{ asset('assets/tutorDetail/benefit1.svg') }}" class="img-fluid img-benefit" alt="" >
+                                <img loading="lazy"  src="{{ asset('assets/tutorDetail/benefit1.svg') }}" class="img-fluid img-benefit" alt="benefit icon" >
                                 <p class="font-20 font-500 align-self-center">1. </p>
                                 <p class="font-20 font-500 align-self-center mt-2" style="height: 100%">Expert Tutor yang telah diseleksi dengan kapabilitias pengetahuan yang baik</p>
                             </div>
                             <div class="d-flex justify-content-left gap-2 mt-2">
-                                <img src="{{ asset('assets/tutorDetail/benefit2.svg') }}" class="img-fluid img-benefit" alt="" >
+                                <img loading="lazy"  src="{{ asset('assets/tutorDetail/benefit2.svg') }}" class="img-fluid img-benefit" alt="benefit icon" >
                                 <p class="font-20 font-500 align-self-center">2. </p>
                                 <p class="font-20 font-500 align-self-center mt-2" style="height: 100%">Sistem Mahasiswa to Mahasiswa, sehingga bahasan materi menjadi lebih tepat & relatable</p>
                             </div>
                             <div class="d-flex justify-content-left gap-2 mt-2">
-                                <img src="{{ asset('assets/tutorDetail/benefit3.svg') }}" class="img-fluid img-benefit" alt="" >
+                                <img loading="lazy"  src="{{ asset('assets/tutorDetail/benefit3.svg') }}" class="img-fluid img-benefit" alt="benefit icon" >
                                 <p class="font-20 font-500 align-self-center">3. </p>
                                 <p class="font-20 font-500 align-self-center mt-2" style="height: 100%">Konsultasi Materi / Tugas dan Persiapan Ujian menjadi lebih mudah bersama Tutor</p>
                             </div>
@@ -165,7 +166,7 @@
                 <div class="row mt-5 gb-0">
                     <div class="col-12 col-md-4">
                         <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face4.svg') }}" style="height: 100px" class="img-fluid" alt="">
+                            <img loading="lazy"  src="{{ asset('assets/home/face4.svg') }}" style="height: 100px" class="img-fluid" alt="face icon">
                             <p class="font-28 font-700 mt-2 text-red">Fresh Launch Kit</p>
                             <h5 class="font-48 font-900">Rp 280.000,-</h5>
                             <p class="font-400 font-24">Dari Harga Awal Rp 300.000</p>
@@ -180,7 +181,7 @@
                         <div class="half-up-30">
                             <div class="bg-orange width-80 half-down rounded-4 text-center text-white py-3 mx-auto font-24 font-600">TERFAVORIT</div>
                             <div class="bg-lightblue rounded-4 text-center py-5 px-4">
-                                <img src="{{ asset('assets/home/face5.svg') }}" style="height: 120px" class="img-fluid" alt="">
+                                <img loading="lazy"  src="{{ asset('assets/home/face5.svg') }}" style="height: 120px" class="img-fluid" alt="face icon">
                                 <p class="font-28 font-700 text-orange mt-2">Smart Saver Bundle</p>
                                 <h5 class="font-48 font-900">Rp 800.000,-</h5>
                                 <p class="font-400 font-24">Dari Harga Awal Rp 850.000</p>
@@ -194,7 +195,7 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="bg-milk rounded-4 text-center py-5 px-4">
-                            <img src="{{ asset('assets/home/face6.svg') }}" style="height: 100px" class="img-fluid" alt="">
+                            <img loading="lazy"  src="{{ asset('assets/home/face6.svg') }}" style="height: 100px" class="img-fluid" alt="face icon">
                             <p class="font-28 font-700 text-red mt-2">Premier Loyalty Package</p>
                             <h5 class="font-48 font-900">Rp 360.000,-</h5>
                             <p class="font-400 font-24">Dari Harga Awal Rp 390.000</p>
@@ -216,7 +217,7 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="4000">
                         <div class="bg-milk rounded-4 text-center py-5 px-4 width-smaller">
-                            <img src="{{ asset('assets/home/face4.svg') }}" style="height: 80px;" class="img-fluid" alt="">
+                            <img loading="lazy"  src="{{ asset('assets/home/face4.svg') }}" style="height: 80px;" class="img-fluid" alt="face icon">
                             <p class="font-30 font-700 mt-2 text-red">Fresh Launch Kit</p>
                             <h5 class="font-48 font-900">Rp 280.000,-</h5>
                             <p class="font-400 font-26">Dari Harga Awal Rp 300.000</p>
@@ -229,7 +230,7 @@
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
                             <div class="bg-lightblue rounded-4 text-center py-5 px-4 width-smaller">
-                                <img src="{{ asset('assets/home/face5.svg') }}" style="height: 80px;" class="img-fluid" alt="">
+                                <img loading="lazy"  src="{{ asset('assets/home/face5.svg') }}" style="height: 80px;" class="img-fluid" alt="face icon">
                                 <p class="font-30 font-700 text-orange mt-2">Smart Saver Bundle</p>
                                 <h5 class="font-48 font-900">Rp 800.000,-</h5>
                                 <p class="font-400 font-26">Dari Harga Awal Rp 850.000</p>
@@ -242,7 +243,7 @@
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
                         <div class="bg-milk rounded-4 text-center py-5 px-4 width-smaller">
-                            <img src="{{ asset('assets/home/face6.svg') }}" style="height: 80px;" class="img-fluid" alt="">
+                            <img loading="lazy"  src="{{ asset('assets/home/face6.svg') }}" style="height: 80px;" class="img-fluid" alt="face icon">
                             <p class="font-30 font-700 text-red mt-2">Premier Loyalty Package</p>
                             <h5 class="font-48 font-900">Rp 360.000,-</h5>
                             <p class="font-400 font-26">Dari Harga Awal Rp 390.000</p>
