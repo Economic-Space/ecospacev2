@@ -26,6 +26,7 @@ button:hover {
     --color-blue: #84dfd8;
     --color-mediumblue: #0a4aaa;
     --color-green: #aef495;
+    --color-darkgreen: #499F42;
     --color-orange: #fc8025;
     --color-milk: #f2eee9;
     --color-red: #ff4778;
@@ -213,6 +214,10 @@ button:hover {
     color: var(--color-blue);
 }
 
+.text-mediumblue {
+    color: var(--color-mediumblue);
+}
+
 .text-milk {
     color: var(--color-milk);
 }
@@ -226,6 +231,10 @@ button:hover {
 
 .text-yellow {
     color: var(--color-yellow);
+}
+
+.text-darkgreen {
+    color: var(--color-darkgreen);
 }
 
 /* border color */
