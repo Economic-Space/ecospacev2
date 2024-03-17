@@ -23,7 +23,7 @@
     height: 60px;
 }
 
-.card-tutor:nth-child(odd) > a > div {
+/* .card-tutor:nth-child(odd) > a > div {
     background-image: url("../assets/background/card-bg-blue.svg");
     background-size: cover;
     background-position: center;
@@ -39,7 +39,7 @@
     background-repeat: no-repeat;
     color: #ffffff;
     background-color: var(--color-orange);
-}
+} */
 
 #t-session img {
     position: relative;

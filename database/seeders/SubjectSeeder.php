@@ -17,6 +17,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'ManagementAccounting.svg',
                 'subject_title' => 'Management Accounting',
+                'subject_tutor' => 'kevin.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Managerial Accounting',
                 'subject_semester' => 'Semester 3-4',
@@ -30,6 +31,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'IntermediateAccountingI.svg',
                 'subject_title' => 'Intermediate Accounting I',
+                'subject_tutor' => 'evan.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Financial Accounting',
                 'subject_semester' => 'Semester 1-2',
@@ -43,6 +45,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'IntermediateAccountingIII.svg',
                 'subject_title' => 'Intermediate Accounting III',
+                'subject_tutor' => 'rendra.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Financial Accounting',
                 'subject_semester' => 'Semester 3-4',
@@ -56,6 +59,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'TaxationII.svg',
                 'subject_title' => 'Taxation II',
+                'subject_tutor' => 'raihan.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Tax',
                 'subject_semester' => 'Semester 3-4',
@@ -69,6 +73,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'FinancialManagement.svg',
                 'subject_title' => 'Financial Management',
+                'subject_tutor' => 'dewa.svg',
                 'subject_majors' => json_encode(['Accounting', 'Management']),
                 'subject_category' => 'Finance',
                 'subject_semester' => 'Semester 1-2',
@@ -82,6 +87,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'StatisticsForAccounting.svg',
                 'subject_title' => 'Statistics For Accounting',
+                'subject_tutor' => 'raihan.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Specialized Areas',
                 'subject_semester' => 'Semester 1-2',
@@ -95,6 +101,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'EconomicsII.svg',
                 'subject_title' => 'Economics II',
+                'subject_tutor' => 'hanum.svg',
                 'subject_majors' => json_encode(['Economic']),
                 'subject_category' => 'Macroeconomics',
                 'subject_semester' => 'Semester 1-2',
@@ -108,6 +115,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'AdvancedStatistics.svg',
                 'subject_title' => 'Advanced Statistics',
+                'subject_tutor' => 'rendra.svg',
                 'subject_majors' => json_encode(['Economic']),
                 'subject_category' => 'Statistics',
                 'subject_semester' => 'Semester 1-2',
@@ -121,6 +129,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'AdvancedMathematics.svg',
                 'subject_title' => 'Advanced Mathematics',
+                'subject_tutor' => 'anjar.svg',
                 'subject_majors' => json_encode(['Economic']),
                 'subject_category' => 'Mathematics',
                 'subject_semester' => 'Semester 1-2',
@@ -136,6 +145,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'IntroductionToAccounting.svg',
                 'subject_title' => 'Introduction to Accounting',
+                'subject_tutor' => 'kevin.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Financial Accounting',
                 'subject_semester' => 'Semester 1-2',
@@ -149,6 +159,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'BasicEconomics.svg',
                 'subject_title' => 'Basic Economics',
+                'subject_tutor' => 'anjar.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Financial Accounting',
                 'subject_semester' => 'Semester 1-2',
@@ -162,6 +173,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'CostAccounting.svg',
                 'subject_title' => 'Cost Accounting',
+                'subject_tutor' => 'dewa.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Financial Accounting',
                 'subject_semester' => 'Semester 3-4',
@@ -175,6 +187,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'IntermediateAccountingII.svg',
                 'subject_title' => 'Intermediate Accounting II',
+                'subject_tutor' => 'marcheline.svg',
                 'subject_majors' => json_encode(['Accounting']),
                 'subject_category' => 'Financial Accounting',
                 'subject_semester' => 'Semester 3-4',
@@ -188,6 +201,7 @@ class SubjectSeeder extends Seeder
             [
                 'subject_image' => 'IntroductionToTaxation.svg',
                 'subject_title' => 'Introduction to Taxation',
+                'subject_tutor' => 'daffa.svg',
                 'subject_majors' => json_encode(['Taxation']),
                 'subject_category' => 'Taxation & Business Law',
                 'subject_semester' => 'Semester 1-2',
