@@ -13,6 +13,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tutor.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mentorship.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
     {{-- logo for page title --}}
     <link rel="icon" type="image/svg" href="{{ asset('assets/socmed/logo_favicon.svg') }}" sizes="32x32">
     {{-- animation --}}
