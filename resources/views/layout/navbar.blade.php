@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     {{-- custom css --}}
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="{{ asset('css/tutor.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="{{ asset('css/mentorship.css') }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tutor.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mentorship.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
     {{-- logo for page title --}}
     <link rel="icon" type="image/svg" href="{{ asset('assets/socmed/logo_favicon.svg') }}" sizes="32x32">
     {{-- animation --}}
@@ -55,15 +56,40 @@
 
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
-                {{-- <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Sign Up</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="btn btn-dark font-24" aria-current="page" href="{{url('/soon')}}">Login</a>
-                </li> --}}
-                <li class="nav-item px-2">
-                    <a target="_blank" class="btn btn-dark font-24" aria-current="page" href="https://bit.ly/OprecTutorECONSPACE">Join Economic Space</a>
-                </li>
+                @guest
+                    @if (Route::has('register'))
+                        <li class="nav-item px-2">
+                            <a class="nav-link font-24" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
+                        </li>
+                    @endif
+                    @if (Route::has('login'))
+                        <li class="nav-item px-2">
+                            <a class="btn btn-dark font-24" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                    @endif
+
+
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+
+
             </ul>
           </div>
         </div>

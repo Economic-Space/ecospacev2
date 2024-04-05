@@ -17,7 +17,7 @@
                 <div class="col-12 col-md-8">
                     <div class="row">
                         <div class="col-4">
-                            <img src="{{asset('assets/mentorDetail/mentor_profile.svg')}}" alt="" class="w-100 img-fluid">
+                            <img src="{{asset('assets/mentorDetail/mentor_profile.svg')}}" alt="" class="w-75 img-fluid">
                         </div>
                         <div class="col-8">
                             <h1 class="font-48 font-700">Delvin Theodorus Hansell</h1>
@@ -39,14 +39,14 @@
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
+                            <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="d-block w-75 mx-auto" alt="...">
+                          </div>
+                          {{-- <div class="carousel-item">
                             <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
                             <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="d-block w-100" alt="...">
-                          </div>
+                          </div> --}}
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -127,25 +127,22 @@
                     <p class="font-20 font-400">Photo of My Journey</p>
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="d-block w-100" alt="...">
-                          </div>
+                            <div class="carousel-item active">
+                                <div> <!-- Adjusted width to 50px -->
+                                    <img src="{{asset('assets/mentorDetail/mentor_journey.svg')}}" class="" alt="..." style="width: 100px">
+                                </div>
+                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
+
                 </div>
 
                 {{-- topic of mentoring --}}
