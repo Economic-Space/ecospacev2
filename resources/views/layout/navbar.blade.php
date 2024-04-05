@@ -56,18 +56,19 @@
 
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
-                {{-- @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
+                @guest
+                    @if (Route::has('register'))
+                        <li class="nav-item px-2">
+                            <a class="nav-link font-24" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
+                        </li>
+                    @endif
+                    @if (Route::has('login'))
+                        <li class="nav-item px-2">
+                            <a class="btn btn-dark font-24" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                    @endif
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
+
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -86,16 +87,9 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest --}}
-                {{-- <li class="nav-item px-2">
-                    <a class="nav-link font-24" aria-current="page" href="{{url('/soon')}}">Sign Up</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="btn btn-dark font-24" aria-current="page" href="{{url('/soon')}}">Login</a>
-                </li> --}}
-                <li class="nav-item px-2">
-                    <a target="_blank" class="btn btn-dark font-24" aria-current="page" href="https://bit.ly/OprecTutorECONSPACE">Join Economic Space</a>
-                </li>
+                        @endguest
+
+
             </ul>
           </div>
         </div>

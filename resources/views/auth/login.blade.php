@@ -3,14 +3,14 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-7 mt-5">
+        <div class="col-12 col-md-7 mt-5">
             <img src="{{asset('assets/socmed/logo_orange.svg')}}" alt="" class="mx-auto d-block logo-auth">
-            <p class="text-center font-24 font-400 mt-3">Yuk, lanjutkan perjalananmu belajar di Economic Space dan <br>kembangkan skill ekonomimu!</p>
+            <p class="text-center font-24 font-400 mt-3">Yuk, lanjutkan perjalananmu belajar di Economic Space dan <br class="desktop">kembangkan skill ekonomimu!</p>
         </div>
     </div>
     <div class="row justify-content-center mt-4">
-        <div class="col-6">
-            <div class="p-5 auth-card mb-5">
+        <div class="col-12 col-md-6">
+            <div class="p-3 p-md-5 auth-card mb-5">
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
