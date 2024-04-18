@@ -65,7 +65,7 @@
                         </button>
 
                         {{-- login --}}
-                    <p class="text-center font-21 mt-3">Sudah punya akun? <a href="" class="text-orange">Log in</a></p>
+                    <p class="text-center font-21 mt-3">Sudah punya akun? <a href="{{ route('login') }}" class="text-orange">Log in</a></p>
                 </form>
             </div>
 
