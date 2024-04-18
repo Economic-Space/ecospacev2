@@ -50,13 +50,13 @@
 
                     {{-- forget password --}}
                     @if (Route::has('password.request'))
-                        <a href="{{ route('password.request') }}" class="text-center d-block font-21 mt-4">
+                        <a href="{{ route('password.request') }}" class="text-center d-block font-21 mt-4 text-orange">
                             {{ __('Lupa Password?') }}
                         </a>
                     @endif
 
                     {{-- sign in --}}
-                    <p class="text-center font-21 mt-3">Belum punya akun? <a href="" class="text-orange">Sign in</a></p>
+                    <p class="text-center font-21 mt-3">Belum punya akun? <a href="{{ route('register') }}" class="text-orange">Sign in</a></p>
 
                 </form>
             </div>
