@@ -5,6 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-12 col-md-7 mt-5">
             <img src="{{asset('assets/socmed/logo_orange.svg')}}" alt="" class="mx-auto d-block logo-auth">
+            <h1 class="text-center font-32 font-700 mt-3">Register</h1>
             <p class="text-center font-24 font-400 mt-3">Yuk, lanjutkan perjalananmu belajar di Economic Space dan <br class="desktop">kembangkan skill ekonomimu!</p>
         </div>
     </div>
